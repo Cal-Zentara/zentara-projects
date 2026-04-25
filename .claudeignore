@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.next/
+photos/
+images/
+*.jpeg
+*.jpg
+*.png
+*.webp
+*.mp4
+*.mov
+tmp/
+.tmp/

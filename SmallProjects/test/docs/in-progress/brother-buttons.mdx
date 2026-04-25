@@ -1,0 +1,71 @@
+---
+title: Brother Button Counter
+description: Two workflows to log and report how many times you push your brother's buttons
+status: in-progress
+---
+
+## Objective
+
+Build a personal tracking system with two manual workflows:
+
+1. **Log** — record one "button push" incident with an optional note, notify with running total
+2. **Stats** — report all-time total, today, this week, this month, and 5 most recent incidents
+
+All data lives in platform storage (no external database needed).
+
+## Plan
+
+### Step 1: Create log-brother-button workflow -- IN PROGRESS
+
+File: `src/personal/log-brother-button.ts`
+
+- Input: `{ note?: string }`
+- Reads `personal/brother-buttons.json` from storage (creates empty log if missing)
+- Appends `{ timestamp, note }` entry
+- Re-uploads the updated log
+- Fires in-app notification: "Button pushed! Total: N times"
+
+### Step 2: Create brother-button-stats workflow -- PENDING
+
+File: `src/personal/brother-button-stats.ts`
+
+- Input: none
+- Reads log from storage
+- Computes: all-time total, today, this week, this month, last 5 incidents
+- Fires in-app notification with full report
+
+### Step 3: Create personal domain barrel -- PENDING
+
+File: `src/personal/index.ts` — exports both workflows
+
+### Step 4: Wire into src/index.ts -- PENDING
+
+Add `personal` domain to the root `OrganizationResources`.
+
+### Step 5: Deploy and test -- PENDING
+
+Run `pnpm run check` then `pnpm run deploy`, test with `pnpm exec elevasis-sdk exec`.
+
+## Progress
+
+### Step 1: Create log-brother-button workflow -- IN PROGRESS
+
+### Step 2: Create brother-button-stats workflow -- PENDING
+
+### Step 3: Create personal domain barrel -- PENDING
+
+### Step 4: Wire into src/index.ts -- PENDING
+
+### Step 5: Deploy and test -- PENDING
+
+## Resume Context
+
+Current State (2026-03-09): Plan created, starting implementation.
+
+Files to read on resume:
+- `src/personal/log-brother-button.ts` — log workflow
+- `src/personal/brother-button-stats.ts` — stats workflow
+- `src/personal/index.ts` — domain barrel
+- `src/index.ts` — root org resources
+
+To continue: "Resume the brother-buttons task. Start from the next PENDING step."

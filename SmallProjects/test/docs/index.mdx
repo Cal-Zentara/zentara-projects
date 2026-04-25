@@ -1,0 +1,68 @@
+---
+title: test
+description: Documentation for the test Elevasis workspace
+order: 1
+---
+
+# test
+
+An [Elevasis](https://elevasis.io) workspace built with the `@elevasis/sdk`.
+
+## Setup
+
+```bash
+pnpm install
+```
+
+Add your API key to `.env`:
+
+```
+ELEVASIS_PLATFORM_KEY=sk_...
+```
+
+## Development
+
+```bash
+pnpm run check                                              # Validate resource definitions
+pnpm run deploy                                             # Bundle and deploy to platform
+pnpm exec elevasis-sdk exec <resourceId> --input '...'      # Execute a resource
+pnpm exec elevasis-sdk resources                            # List deployed resources
+pnpm exec elevasis-sdk describe <resourceId>                # Show resource definition + schemas
+pnpm exec elevasis-sdk executions <resourceId>              # View execution history
+```
+
+## Project Structure
+
+- `elevasis.config.ts` -- Workspace config (optional settings)
+- `src/index.ts` -- Resource registry (aggregates from domain barrels)
+- `src/operations/` -- Operations domain (platform-status workflow)
+- `src/example/` -- Example domain (echo workflow -- replace with your own)
+- `src/shared/` -- Cross-domain shared types and utilities
+- `docs/` -- Documentation (.mdx files, deployed alongside code)
+- `.env` -- API key for CLI authentication
+
+## Resources
+
+### Platform Status Workflow (`src/operations/`)
+
+A multi-step workflow that queries platform status and compiles a natural language
+summary using an LLM. Demonstrates platform API usage with the `llm` typed adapter and `platform.call()`.
+
+```bash
+pnpm exec elevasis-sdk exec platform-status --input '{"timeRange": "24h"}'
+```
+
+**Input:** `{ "timeRange": "1h" | "24h" | "7d" }`
+**Output:** `{ "raw": object, "summary": string }`
+
+### Echo Workflow (`src/example/`)
+
+A simple workflow that echoes the input message back. Use it as a starter pattern
+for new workflows:
+
+```bash
+pnpm exec elevasis-sdk exec echo --input '{"message": "hello"}'
+```
+
+**Input:** `{ "message": string }`
+**Output:** `{ "echo": string }`

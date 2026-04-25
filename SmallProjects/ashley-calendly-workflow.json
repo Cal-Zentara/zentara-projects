@@ -1,0 +1,64 @@
+{
+  "name": "Ashley - Calendly Booking",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ashley-booking",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "id": "webhook-1",
+      "name": "Webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "const now = new Date();\nnow.setHours(now.getHours() + 2);\nconst start = now.toISOString();\nconst end_date = new Date(now.getTime() + 5 * 24 * 60 * 60 * 1000);\nconst end = end_date.toISOString();\n\nconst url = 'https://api.calendly.com/event_type_available_times?event_type=https://api.calendly.com/event_types/5277bfb6-29bf-48e0-81c0-24e8aeab6bab&start_time=' + encodeURIComponent(start) + '&end_time=' + encodeURIComponent(end);\n\nconst resp = await this.helpers.httpRequest({\n  method: 'GET',\n  url: url,\n  headers: {\n    'Authorization': 'Bearer eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNzc0NzU4MjYxLCJqdGkiOiJmOGIxYjU0OC0wZmViLTQzYmItOTQ4YS04NGIyMTUwNGViOGMiLCJ1c2VyX3V1aWQiOiJhZTcyMTE0Yi0zOGEyLTQ0NDktYWE4Yy1jYTU0MzA0NDEyZWEiLCJzY29wZSI6ImF2YWlsYWJpbGl0eTpyZWFkIGF2YWlsYWJpbGl0eTp3cml0ZSBldmVudF90eXBlczpyZWFkIGV2ZW50X3R5cGVzOndyaXRlIGxvY2F0aW9uczpyZWFkIHJvdXRpbmdfZm9ybXM6cmVhZCBzaGFyZXM6d3JpdGUgc2NoZWR1bGVkX2V2ZW50czpyZWFkIHNjaGVkdWxlZF9ldmVudHM6d3JpdGUgc2NoZWR1bGluZ19saW5rczp3cml0ZSBncm91cHM6cmVhZCBvcmdhbml6YXRpb25zOnJlYWQgb3JnYW5pemF0aW9uczp3cml0ZSB1c2VyczpyZWFkIHdlYmhvb2tzOnJlYWQgd2ViaG9va3M6d3JpdGUifQ.zFXmn1Tw-PE3s9rRDny9Gczqk8CpRhv2SqO6rWeX5LSgGUrnpRjlxSVRXsq6qTyFPnaw-jIzEuu239cgQEZYIg'\n  }\n});\n\nconst slots = resp.collection || [];\nconst available = slots.slice(0, 6).map(s => {\n  const d = new Date(s.start_time);\n  const day = d.toLocaleDateString('en-AU', { weekday: 'long', month: 'short', day: 'numeric', timeZone: 'Australia/Brisbane' });\n  const time = d.toLocaleTimeString('en-AU', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Australia/Brisbane' });\n  return day + ' at ' + time;\n});\n\nconst toolCallId = $('Webhook').first().json?.body?.message?.toolCallList?.[0]?.id || 'unknown';\n\nconst result = available.length > 0\n  ? 'Available times in the next few days: ' + available.join(', ') + '. Ask which one works best for them.'\n  : 'No available times right now. Ask the caller to visit calendly.com/aestheticcal22/30min to check other dates.';\n\nreturn [{ json: { results: [{ toolCallId: toolCallId, result: result }] } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 300],
+      "id": "code-all",
+      "name": "Check Calendly"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($input.first().json) }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [720, 300],
+      "id": "respond-1",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [{ "node": "Check Calendly", "type": "main", "index": 0 }]
+      ]
+    },
+    "Check Calendly": {
+      "main": [
+        [{ "node": "Respond to Webhook", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

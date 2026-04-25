@@ -1,0 +1,20 @@
+# Code repos — each has its own git
+ZentaraHQ/
+GlobalRoadSealingInc/
+NirvanaMarketing/
+
+# SmallProjects sub-repos — each has its own git
+SmallProjects/AutoBuildCharlie/
+SmallProjects/LavenderMoon/
+SmallProjects/PhillipLoans/
+SmallProjects/SalviasApp/
+SmallProjects/SpiritNancy/
+
+# Dependencies
+**/node_modules/
+
+# Archive — not worth tracking
+_archive/
+
+# Local Claude settings (machine-specific)
+.claude/

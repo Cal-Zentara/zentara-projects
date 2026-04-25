@@ -1,0 +1,7 @@
+node_modules/
+.env
+dist/
+__elevasis_worker.ts
+.claude/settings.local.json
+.claude/memory/
+package-lock.json
