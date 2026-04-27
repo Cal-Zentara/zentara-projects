@@ -48,7 +48,7 @@ Moved to `../_archive/`. Do not read or edit unless Cal explicitly resumes.
 |---|---|
 | AutoBuildCharlie | Main brand site — chatbot, Calendly, Stripe |
 
-*Note: The active Global Road Sealing client project lives outside SSP at `../GlobalRoadSealingInc/` — it's a paying client (not a demo), with a full field ops management system + marketing site deployed at globalroadsealing.com.*
+*Note: The active Global Road Sealing client project lives outside SSP at `../ZentaraHQ/Clients/GlobalRoadSealingInc/` — it's a paying client (not a demo), with a full field ops management system + marketing site deployed at globalroadsealing.com.*
 
 ---
 
@@ -75,7 +75,7 @@ Moved to `../_archive/`. Do not read or edit unless Cal explicitly resumes.
 
 Cal uses Elevasis to build workflow automation for clients. It's a TypeScript platform with 70+ tools — email campaigns, LLM, lead management, scheduling, CRM, scraping, and more.
 
-**Existing Elevasis workspaces:** `SmallProjects/test/`, `ZentaraHQ/`, `NirvanaMarketing/`
+**Existing Elevasis workspaces:** `SmallProjects/test/`, `ZentaraHQ/`, `ZentaraHQ/Clients/NirvanaMarketing/`
 
 **To init a new workspace:** run `/meta init` inside the project folder after `pnpm install @elevasis/sdk`.
 

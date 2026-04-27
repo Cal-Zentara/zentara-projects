@@ -566,6 +566,7 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 | April 21, 2026 | "I built a full Zoho sales pipeline demo in under a week with zero Zoho experience. Lead → contract → fabrication → invoice. All real data. All live." |
 | April 22, 2026 | "I sent the Loom. Now I wait. That's the part nobody talks about — you do the work, hit send, and sit with it." |
 | April 22, 2026 | "She posts one reel. Someone comments a word. They automatically get the guide, the pitch, and a follow-up — and she never touches it again." — ManyChat lead magnet idea for Dalena |
+| April 26, 2026 | "Tried to drag a project folder into another folder. VS Code had it open. Half my project disappeared. Here's why git is the reason I still have a job tomorrow." — folder move incident |
 
 ---
 
@@ -598,6 +599,7 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 | April 21, 2026 | DonorSigns | Zoho has a read-after-write lag — if you query a deal immediately after updating it, you often get stale data. The optimistic UI pattern is the right fix for this: don't wait for confirmation from Zoho, update the local store immediately and let the next poll catch any drift. |
 | April 21, 2026 | DonorSigns | The N+1 query pattern: when you fetch a list of 10 deals and then make a separate API call per deal to get one missing field, you've turned 1 request into 11. Always audit what fields you actually need before writing the search query — adding one field to the initial request costs nothing. |
 | April 26, 2026 | Doc audit | Found plaintext client logins (Dalena's Square + TikTok) sitting in a project CLAUDE.md. That folder has its own GitHub repo — one push and the passwords are public, and git history keeps them forever even if you delete the line later. Rule: client logins never go in a project doc. They live in `Projects/credentials.md` only — gitignored, can't leak. |
+| April 26, 2026 | Folder moves | Tried to move two client folders into `ZentaraHQ/Clients/`. VS Code had the parent open, which locked a file inside `.git`. Windows quietly fell back from a clean rename to copy-then-delete, the copy bailed halfway, and then a follow-up delete chewed through ~112k files of the original before bailing on a long path. Half the project ended up split across both locations. Recovered by running `git restore .` in the destination — git tracked everything that mattered, so it all came back. Rule: before moving any project folder on Windows, close VS Code, kill dev servers, and verify the first move actually finished before deleting the source. |
 
 ---
 
@@ -1050,6 +1052,19 @@ First attempt at "rock bottom" Mira came back looking like a movie set — kitch
 - "Most AI influencers look like stock photos. Here's the prompt tweak that makes them look real."
 
 *Last updated: April 25, 2026*
+
+---
+
+## April 26, 2026 — Client Folder Cleanup
+
+**What happened:**
+Moved NirvanaMarketing and GlobalRoadSealingInc into `ZentaraHQ/Clients/` so all active client projects live in one place (now: GlobalRoadSealingInc, NaildItSpa, NirvanaMarketing, SpiritNancy).
+
+GRSI moved cleanly. Nirvana didn't — VS Code had a lock on a file inside the repo's `.git`, which made Windows silently fall back from a true rename to copy-then-delete. The copy bailed partway, the follow-up cleanup deleted ~112k files of the original, and the project ended up split across both folders. Pulled the working state back together with `git restore .` in the destination — every tracked file came back from git history. `node_modules/` is gone but regenerates with `pnpm install`.
+
+Updated PROJECT_MAP.md (GRSI path, added Nirvana as active client, removed off-limits flag), SmallProjects/CLAUDE.md (path notes), and JOURNEY.md.
+
+**Open follow-up:** Nirvana doesn't have a STATUS.md yet — needs one created from `_templates/STATUS.md` next session.
 
 ---
 
