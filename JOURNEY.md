@@ -597,6 +597,7 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 | April 21, 2026 | DonorSigns | The silent failure pattern: `catch` blocks that return `{ success: false }` instead of throwing are the worst kind of bug — the system thinks it worked, the logs show nothing, and you spend hours wondering why the UI seems fine but nothing happened. Rule: critical failures always throw, never return a success-shaped failure. |
 | April 21, 2026 | DonorSigns | Zoho has a read-after-write lag — if you query a deal immediately after updating it, you often get stale data. The optimistic UI pattern is the right fix for this: don't wait for confirmation from Zoho, update the local store immediately and let the next poll catch any drift. |
 | April 21, 2026 | DonorSigns | The N+1 query pattern: when you fetch a list of 10 deals and then make a separate API call per deal to get one missing field, you've turned 1 request into 11. Always audit what fields you actually need before writing the search query — adding one field to the initial request costs nothing. |
+| April 26, 2026 | Doc audit | Found plaintext client logins (Dalena's Square + TikTok) sitting in a project CLAUDE.md. That folder has its own GitHub repo — one push and the passwords are public, and git history keeps them forever even if you delete the line later. Rule: client logins never go in a project doc. They live in `Projects/credentials.md` only — gitignored, can't leak. |
 
 ---
 
@@ -1049,6 +1050,29 @@ First attempt at "rock bottom" Mira came back looking like a movie set — kitch
 - "Most AI influencers look like stock photos. Here's the prompt tweak that makes them look real."
 
 *Last updated: April 25, 2026*
+
+---
+
+## April 26, 2026 — Cal AI Influencer: First Videos Generated
+
+**What happened:**
+Built the full AI influencer pipeline for Zentara — from zero to 3 generated videos in one session. Soul ID uploaded with 19 real photos of Cal. Voice cloned as CAL-1. Three Seedance 2.0 prompts written using Sandy's framework and tested end-to-end. Videos came out at 80% quality on first run.
+
+**What was built:**
+- `AIInfluencers/cal/` folder — cal-reference.png, profile.md, prompts.md
+- @Cal Soul ID character in Higgsfield — 19 photos, eligible
+- CAL-1 voice clone in Higgsfield Audio
+- 3 content pillars: Recognition ("wasn't built for people like me"), Revelation ("what 7 weeks looks like"), Conviction ("you're not behind")
+- 3 full Seedance 2.0 prompts generated and tested at 720p
+
+**Lessons learned:**
+- If you can't tell whether the pauses in an AI video are real or AI — that's the prompt working. That's the whole goal. Stop second-guessing it and send it to someone who doesn't know it's AI.
+- Higgsfield flags your own real photos as "check eligibility" because it detects real faces. Use the Soul ID @Cal element in the Elements tab — not the raw photo uploads.
+- Soul ID locks you to Soul 2.0 model — that's by design, not a bug. It's the right model for Soul ID characters. Nano Banana Pro is only for generating characters from scratch without a real face.
+
+**Content ideas:**
+- "I made an AI version of myself that talks like me, sounds like me, and I genuinely couldn't tell if it was real. Here's how I built it in one day."
+- "I went from construction laborer to building an AI influencer of myself. The hardest part wasn't the AI."
 
 ---
 

@@ -8,7 +8,7 @@ SmallProjects/AutoBuildCharlie/
 SmallProjects/LavenderMoon/
 SmallProjects/PhillipLoans/
 SmallProjects/SalviasApp/
-SmallProjects/SpiritNancy/
+SmallProjects/MyTa/
 
 # Dependencies
 **/node_modules/
@@ -18,3 +18,9 @@ _archive/
 
 # Local Claude settings (machine-specific)
 .claude/
+
+# Cloudflare Wrangler cache (contains account IDs)
+SmallProjects/cse-worker/.wrangler/
+
+# Secrets — never commit
+credentials.md

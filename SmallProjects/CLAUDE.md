@@ -10,7 +10,7 @@ Cal's main workspace for demo projects, experiments, and client work.
 |---|---|---|
 | LavenderMoon | `LavenderMoon/STATUS.md` | `LavenderMoon/CLAUDE.md` |
 | PhillipLoans | `PhillipLoans/STATUS.md` | `PhillipLoans/CLAUDE.md` |
-| SpiritNancy | `SpiritNancy/STATUS.md` | `SpiritNancy/CLAUDE.md` |
+| MyTa | `MyTa/STATUS.md` | `MyTa/CLAUDE.md` |
 | SalviasApp | `SalviasApp/STATUS.md` | `SalviasApp/CLAUDE.md` |
 
 **Do not explore.** Read the sub-project STATUS.md first.
@@ -23,7 +23,7 @@ Cal's main workspace for demo projects, experiments, and client work.
 |---|---|---|
 | LavenderMoon | Dalena's spiritual business — tarot, life coaching, Reiki, mediumship. Live at lavendermoontarot.com | `LavenderMoon/CLAUDE.md` |
 | PhillipLoans | Client site — Phillip La, Mortgage Loan Officer, Loan Factory CA. Live at philliplaloans.com | `PhillipLoans/CLAUDE.md` |
-| SpiritNancy | Demo/pending site — Salvia Lion (Nancy's pen name), spiritual healer. Live at cal-zentara.github.io/salvia-lion/ | `SpiritNancy/CLAUDE.md` |
+| MyTa | Bilingual SoCal real estate agent — discovery phase | `MyTa/CLAUDE.md` |
 | SalviasApp | Nancy's gym tracker PWA. Live at cal-zentara.github.io/nancys-gym/ | `SalviasApp/CLAUDE.md` |
 
 ---
@@ -47,7 +47,6 @@ Moved to `../_archive/`. Do not read or edit unless Cal explicitly resumes.
 | Project | What It Is |
 |---|---|
 | AutoBuildCharlie | Main brand site — chatbot, Calendly, Stripe |
-| NeilDang | Demo site — personal trainer |
 
 *Note: The active Global Road Sealing client project lives outside SSP at `../GlobalRoadSealingInc/` — it's a paying client (not a demo), with a full field ops management system + marketing site deployed at globalroadsealing.com.*
 
@@ -58,7 +57,7 @@ Moved to `../_archive/`. Do not read or edit unless Cal explicitly resumes.
 | Folder | What It Is |
 |---|---|
 | `cse-worker/` | Cloudflare Worker — proxies AI Vision API calls (OpenAI, Gemini, Claude) for PavementScan crack detection |
-| `shared/` | Reusable helpers — `base.css` and `utils.js` shared across projects (used by SpiritNancy and others) |
+| `shared/` | Reusable helpers — `base.css` and `utils.js` shared across projects |
 
 ---
 
@@ -66,10 +65,7 @@ Moved to `../_archive/`. Do not read or edit unless Cal explicitly resumes.
 
 | File | What It Is |
 |---|---|
-| `MCP.md` | MCP servers installed — Supabase accounts explained |
 | `../ClaudeWAT.md` | WAT framework (Workflows/Agents/Tools) — read when building real automation |
-| `NOTES.md` | Demo project notes + learning log |
-| `Cal.Zentara.Logo.png` | Cal's logo |
 | `ashley-calendly-workflow.json` | n8n workflow — voice AI demo that checks Calendly availability. For Ashley client + showing other businesses |
 | `zentara-outreach-script.js` | Google Sheets script — sends cold outreach emails to construction companies. Cal's own outreach tool |
 
