@@ -14,6 +14,12 @@ One-line index of every project. Read a project's STATUS.md first — always.
 | MyTa | active client — discovery | `SmallProjects/MyTa/STATUS.md` |
 | SpiritNancy | demo | `ZentaraHQ/Clients/SpiritNancy/STATUS.md` |
 
+## Reference docs & resources
+
+| Resource | What it is | Path |
+|---|---|---|
+| Marketing Skills | Plain-English guide to all 15 installed marketing skills and how to use them | `Marketing/skills-reference.md` |
+
 ## Cal's own tools
 
 | Project | Status | STATUS.md path |
