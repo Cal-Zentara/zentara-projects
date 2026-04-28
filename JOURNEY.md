@@ -503,6 +503,29 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 
 ---
 
+## April 28, 2026 — Nail'd It IG Video Pipeline (Fixed End-to-End)
+
+**What happened:**
+- Spent a full session debugging why Dalena's nail videos weren't posting to Instagram after the initial test worked
+- Root cause: iPhones record in HEVC (H.265), not H.264. Instagram only accepts H.264. The first successful post happened to use an already-H.264 file — a fluke. Every real nail tech video failed.
+- Secondary issue: even MOV files that the proxy *did* convert were failing because the conversion took ~19 seconds live while Instagram was waiting for the URL — it timed out before the video loaded
+- Fixed it the right way: built a `/api/convert` Vercel endpoint that pre-converts during the prepare step (before Dalena even gets the email). By the time she approves and Instagram tries to fetch the file, it's already a clean H.264 MP4 sitting in Drive waiting to serve instantly
+- Added smart aspect ratio handling: if the video is landscape or Veo 3 generated (16:9), it auto-crops to 9:16 portrait. Portrait videos pass through untouched. One FFmpeg filter handles both cases.
+- Nancy's approved video ("Blue flowers for the summer~") posted live — first real nail tech video successfully on IG. Post ID: 18099831968281840.
+- Also built AI learning: the system now saves Dalena's caption edits to a `caption-examples.json` file in Drive and feeds the last 5 edits back into the prompt so it learns her style over time
+- Drive watcher fixed: was using Elevasis storage for a JSON tracking file (silently rejected), switched to stamping Drive file properties (`naild_it_triggered: true`) directly on each file — no more flooding Dalena with duplicate emails
+
+**Why it matters:** The automation is now fully working end-to-end. Dalena drops a video in her tech's Drive folder → gets an email with a preview and AI caption → taps one button → posts to Instagram. She doesn't touch any settings or tools.
+
+**Lessons learned:**
+- The first successful test can lie. One working run doesn't mean the system works — it means that specific file worked. Test with the actual files the real users will upload.
+- When something works once and fails consistently after, compare the two. The difference between the working file (3.6MB H.264 MP4) and the failing files (HEVC in MOV or MP4) pointed directly at the codec issue.
+- Don't convert at fetch time if the conversion takes longer than the caller's timeout. Move heavy processing earlier in the pipeline where you control the timing.
+
+**Content idea:** "The automation worked once. Then it broke every time after. Here's why one successful test is the most dangerous thing in software." — iPhone HEVC vs H.264 debugging story.
+
+---
+
 ## April 28, 2026 — PhillipLoans Outreach System + LO Research
 
 **What happened:**
@@ -634,6 +657,7 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 | April 26, 2026 | "Tried to drag a project folder into another folder. VS Code had it open. Half my project disappeared. Here's why git is the reason I still have a job tomorrow." — folder move incident |
 | April 27, 2026 | "She wanted a site like Luxury Presence builds. I looked at 15 of their real examples and reverse-engineered exactly what they do. Here's the whole playbook." — My Ta Realtor |
 | April 28, 2026 | "I built a mortgage loan officer a complete automated cold email system. Then I looked up whether cold email actually works for mortgage. The answer made me park the whole thing." — PhillipLoans outreach |
+| April 28, 2026 | "The automation worked once. Then it broke every time after. Here's why one successful test is the most dangerous thing in software." — iPhone HEVC vs H.264 nail salon IG pipeline debugging |
 
 ---
 
@@ -669,6 +693,8 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 | April 26, 2026 | Folder moves | Tried to move two client folders into `ZentaraHQ/Clients/`. VS Code had the parent open, which locked a file inside `.git`. Windows quietly fell back from a clean rename to copy-then-delete, the copy bailed halfway, and then a follow-up delete chewed through ~112k files of the original before bailing on a long path. Half the project ended up split across both locations. Recovered by running `git restore .` in the destination — git tracked everything that mattered, so it all came back. Rule: before moving any project folder on Windows, close VS Code, kill dev servers, and verify the first move actually finished before deleting the source. |
 | April 28, 2026 | PhillipLoans | 87% of mortgage business comes from referrals and past clients — not cold email. What works for SaaS doesn't work for a loan officer. Before recommending any outreach channel, research how that specific industry actually gets clients. |
 | April 28, 2026 | PhillipLoans | A passive client is a signal. Phil wasn't engaging because he doesn't see a gap — not because the build was wrong. More automation won't fix low engagement. Build the tool, park it, wait for the client to lean in. |
+| April 28, 2026 | Nail'd It IG pipeline | One successful test doesn't mean the system works — it means that specific file worked. The first IG post used an already-H.264 file by chance. Every real iPhone nail tech video was HEVC and failed. Always test with the actual files real users will upload. |
+| April 28, 2026 | Nail'd It IG pipeline | Don't do heavy processing at fetch time if the caller has a timeout. Converting MOV→MP4 live while Instagram waited for the URL took 19 seconds and timed out. Moving the conversion to the prepare step (before Dalena gets the email) fixed it — Instagram gets instant response every time. |
 
 ---
 
