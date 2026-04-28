@@ -24,3 +24,4 @@ SmallProjects/cse-worker/.wrangler/
 
 # Secrets — never commit
 credentials.md
+.env

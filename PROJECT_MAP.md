@@ -8,11 +8,12 @@ One-line index of every project. Read a project's STATUS.md first — always.
 |---|---|---|
 | GlobalRoadSealingInc | active client | `ZentaraHQ/Clients/GlobalRoadSealingInc/STATUS.md` |
 | NaildItSpa | active client | `ZentaraHQ/Clients/NaildItSpa/STATUS.md` |
-| NirvanaMarketing | active client | `ZentaraHQ/Clients/NirvanaMarketing/` (no STATUS.md yet — create from `_templates/STATUS.md` next session) |
+| NirvanaMarketing | active client | `ZentaraHQ/Clients/NirvanaMarketing/STATUS.md` |
 | LavenderMoon | active client | `SmallProjects/LavenderMoon/STATUS.md` |
 | PhillipLoans | active client | `SmallProjects/PhillipLoans/STATUS.md` |
 | MyTa | active client — discovery | `SmallProjects/MyTa/STATUS.md` |
 | SpiritNancy | demo | `ZentaraHQ/Clients/SpiritNancy/STATUS.md` |
+| DonorSigns (Zoho) | active client — waiting on Stephanie | `ZentaraHQ/Clients/Zoho/STATUS.md` |
 
 ## Reference docs & resources
 
@@ -43,5 +44,3 @@ Do not read or edit these unless Cal explicitly resumes the project.
 - `_archive/DistressedLeads/`
 - `_archive/FitTrackAI/`
 
-## Off limits — do not touch
-- `ZentaraHQ/Zoho/`
