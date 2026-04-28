@@ -483,6 +483,50 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 
 ---
 
+## April 27, 2026 — Byron Salvatierra Campaign Strategy
+
+**What happened:**
+- Built a full social media strategy for Byron Salvatierra — running for Irvine City Council District 5, election November 2026
+- Campaign starting from near-zero (39 IG followers), no ad spend, organic only on IG and Facebook
+- Cal's sister is running the pages — everything was built to hand off, not to manage ourselves
+- Delivered a clean PDF strategy covering: what to set up before posting, 6 content pillars, month-by-month game plan (May → November), posting frequency, and content format guide
+- Wrote two versions of the May 9 friendraiser caption (IG + FB) — caught a date error in the sister's draft (said May 3rd, should be May 9th) before it went out
+- Wrote Byron's "why I'm running" intro post — goes up this week so voters know who he is before the friendraiser
+
+**Why it matters:** First political campaign strategy Cal has delivered. Same playbook as any local business — humanize first, build trust second, mobilize last. Organic-only forces discipline: every post has to earn its keep.
+
+**Lessons learned:**
+- A political campaign at the city council level is basically a local business launch — human story beats policy every time at this scale
+- Always read what the client already wrote before writing your own version — his sister's draft was good, just had a date error. Catch it, don't replace it.
+
+**Content idea:** "I built a 6-month social media strategy for a city council candidate in one session. Zero ad spend. Starting from 39 followers. Here's the whole plan."
+
+---
+
+## April 27, 2026 — My Ta Realtor (Website Build)
+
+**What happened:**
+- My Ta (Cal's cousin's wife) submitted her discovery form answers — bilingual SoCal real estate agent targeting first-time buyers/sellers in SGV and OC
+- Ran the full `/shape` brief to lock the design direction: Editorial Luxury, warm cream and gold, left-aligned asymmetric, Gilda Display + Jost fonts
+- Built a full single-page bilingual (EN/VI) personal brand website from scratch in vanilla HTML/CSS/JS
+- Researched Luxury Presence portfolio examples to match the LP-style that My Ta admired — looked at jademillsestates.com, thefridmangroup.com, carolwoodre.com, and ~15 others
+- Added LP-style animations: clip-path hero photo wipe-reveal, blur-reveal on the heading, eyebrow line-grow, staggered property type list, parallax on the hero photo, auto-hide nav on scroll, gold scroll progress bar at the top
+- Used her cafe headshot as a temp photo — she's gathering home/property photos and professional headshots
+- Fixed mobile alignment bug (photo was left-skewed instead of centered on phones)
+- Site is fully built and ready — just waiting on the photos, real testimonials, and DRE license number before it deploys
+
+**Why it matters:** First full bilingual real estate personal brand site Cal has built. The Luxury Presence research angle was the unlock — seeing what those $10k+ agency sites actually do made the design direction click immediately.
+
+**Lessons learned:**
+- Clip-path on the image itself acts as overflow:hidden for the hover zoom — the container couldn't take overflow:hidden because the decorative frames extend outside it. One CSS property did two jobs.
+- Avoid text-splitting animations on bilingual sites — when the language toggle swaps innerHTML, split-text animations break. Whole-element blur/fade is the safe move.
+
+**Content idea:** "She wanted a site like Luxury Presence builds. I looked at 15 of their real examples and reverse-engineered exactly what they do. Here's the whole playbook."
+
+**Status:** Built, not yet deployed. Waiting on: home/property photos, real testimonials (2–3), CalDRE license number, better headshots.
+
+---
+
 ## ZCS — Zentara Content System (Sellable Version)
 
 **What it is:** Everything Cal built for his own content — ZCE, Zentara Studio, Script Generator — packaged and set up for a paying client.
@@ -567,6 +611,7 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 | April 22, 2026 | "I sent the Loom. Now I wait. That's the part nobody talks about — you do the work, hit send, and sit with it." |
 | April 22, 2026 | "She posts one reel. Someone comments a word. They automatically get the guide, the pitch, and a follow-up — and she never touches it again." — ManyChat lead magnet idea for Dalena |
 | April 26, 2026 | "Tried to drag a project folder into another folder. VS Code had it open. Half my project disappeared. Here's why git is the reason I still have a job tomorrow." — folder move incident |
+| April 27, 2026 | "She wanted a site like Luxury Presence builds. I looked at 15 of their real examples and reverse-engineered exactly what they do. Here's the whole playbook." — My Ta Realtor |
 
 ---
 
@@ -1052,6 +1097,57 @@ First attempt at "rock bottom" Mira came back looking like a movie set — kitch
 - "Most AI influencers look like stock photos. Here's the prompt tweak that makes them look real."
 
 *Last updated: April 25, 2026*
+
+---
+
+## April 27, 2026 — Nail'd It! Spa: Marketing Phase Started
+
+**What happened:**
+Started full marketing push for Dalena. Ran competitor research (7 parallel agents), AI findability audit (scored 62/100), and found that her salon doesn't show up when people search "Vietnamese nail salon Stanton" — even though she's Vietnamese-owned. Nobody had claimed that angle online.
+
+Built a FAQ section on the site (8 questions, accordion style) with FAQPage JSON-LD schema so AI assistants can pull her answers directly. Pushed live at nailditspa.com/#faq.
+
+Also mapped out the full marketing roadmap: TikTok cross-posting, ManyChat comment automation on Instagram + TikTok, before/after carousels, and a referral program (10% off for both people). Waiting on Dalena to create her ManyChat account.
+
+**Referral copy (saved here for Fresha):**
+- Fresha checkout: "Love your nails? Bring a friend and you both get 10% off your next visit. Just have them mention your name at checkout."
+- Register card: "Refer a friend to Nail'd It! Spa — you both get 10% off your next visit. They just mention your name when they book."
+
+**Lessons learned:**
+- A FAQ page isn't just for clients — it's how AI assistants find you. Add one to every client site.
+- Claiming a differentiator online matters more than having it. Dalena IS Vietnamese-owned but nobody could find that online.
+
+**Content idea:** "I ran an AI search for 'Vietnamese nail salon Stanton' — my client didn't show up even though she IS Vietnamese-owned. Fixed it in 10 minutes."
+
+---
+
+## April 27, 2026 — Nail'd It! Spa: Homepage Audit + GSC Check
+
+**What happened:**
+Ran a homepage audit on nailditspa.com. Scored 3.14/5 — bones are solid but the hero wasn't doing its job for cold Google visitors. Original headline ("Where every visit feels like love.") was kept but the Vietnamese-owned angle was added as a subheadline below it. Also added a walk-in line under the booking button.
+
+Checked Google Search Console 8 days after the local SEO build: 15/15 pages indexed, 104 impressions, 1 click, avg position 15.8, 36 queries already showing up. "Vietnamese nail salon near me" appearing in impressions — the angle is working. Expect positions to climb in 3–4 more weeks.
+
+**Lessons learned:**
+- A pretty headline that doesn't tell Google visitors where they are or what you do is a conversion problem — even if it sounds good.
+- 8 days is too early to judge SEO results but early impressions on the right keywords means the build was correct.
+
+**Content idea:** "Her site had a beautiful headline. Problem was — nobody could tell what she did or where she was. One line fixed it."
+
+---
+
+## April 27, 2026 — Nail'd It! Spa: Referral Program Live
+
+**What happened:**
+Built a full referral program for Dalena in one session. Client gets a referral link in their Fresha checkout email → friend opens nailditspa.com/referral → fills out a form → gets a coupon screen to screenshot and show at checkout. Dalena gets an email notification for every submission via Gmail filter forwarding from Formspree.
+
+The "show this email" approach didn't work (no proof mechanism), the "mention your name" approach didn't work (staff language barrier), and a full tracking system was overkill. The screenshot coupon was the right middle ground — visual proof, no English required.
+
+**Lessons learned:**
+- For a small business with a language barrier, the solution needs to be visual — not verbal. A screenshot someone can show is better than a code someone has to say.
+- Build the simple version first. Tracking systems can come later if the referrals actually start coming in.
+
+**Content idea:** "The nail salon staff doesn't speak much English. So I built a referral program that doesn't need any words — just a screenshot."
 
 ---
 
