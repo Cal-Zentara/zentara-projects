@@ -4,6 +4,59 @@ Reference material and frameworks worth knowing. Not action items — just saved
 
 ---
 
+## The Speed Strategy — Danny Young (IM8) (April 27, 2026)
+
+Source: Podcast interview with Danny Young, founder of IM8 — $0 to $100M annual run rate in under a year.
+
+---
+
+### The Core Idea
+
+Speed is a competitive advantage. Most people wait until they're ready. Danny's entire career is built on moving before anyone else does — on ideas that are already proven somewhere else.
+
+---
+
+### The Pattern (He Used It 4 Times)
+
+1. **Spot something working somewhere else** — not an original idea, a proven one in a different place
+2. **Move to where it doesn't exist yet** — different geography, different industry, different market
+3. **Execute before anyone else shows up**
+
+He never invented anything. He just transplanted proven ideas faster than competitors could follow.
+
+- Saw Groupon winning in the US → moved to Hong Kong in one month, built the same thing
+- Saw 23andMe winning in the US → built the DNA testing version for Asia
+- Saw COVID testing demand before anyone else → launched in 3 weeks using existing lab infrastructure
+- Saw the supplement industry was massive and underserved by science-backed brands → built IM8
+
+---
+
+### Why It Works
+
+Most competition isn't about being smarter or having more money. It's about being first to a proven idea in a new place. By the time competitors react, you're already the market leader.
+
+Being first — even imperfect — beats being polished and late.
+
+---
+
+### How He Keeps the Speed
+
+- Stays involved in every department so decisions don't slow down in committees
+- Makes the call himself instead of running it through layers of people
+- Hires people with ambitious growth mindset — one person without it slows everyone down
+- Accepts being messy early (bought Starbucks vouchers and resold at a loss just to get customers, knowing they'd eventually send a cease and desist)
+
+---
+
+### The Mindset Behind It
+
+- You don't need to invent. You need to see what's working and move.
+- Speed is more valuable than perfection at the start.
+- Individuals create their own luck — being in the right position is intentional, not random.
+- When the business does well, you have options. Focus on making it work, the exits and opportunities follow.
+
+---
+
 ## LEAD MAGNET — Hormozi Framework (April 19, 2026)
 
 Source: Alex Hormozi, acquisition.com — portfolio companies did $250M last year. This is from his book "$100M Leads" (page 31).
@@ -275,3 +328,99 @@ If you're a big business with lots of capacity: use cohorts. "We only onboard X 
 - **Type 2 idea:** Free 15-min Claude walkthrough → they see what's possible → they want it built for them ($300–$800).
 - **Type 3 idea:** Build them the first piece of their system for free (e.g., the intake form or the first automation step). Once it works, they need the rest of the workflow.
 - Qualifying matters: don't give free time to people without budget or a real business. Use a form with qualifying questions first.
+
+---
+
+## CLIENT OUTREACH — Sandy's Upwork Playbook (April 27, 2026)
+
+Source: YouTube video — "How I closed $34K on Upwork in 2 weeks." Sandy — AI agency owner, full-time job, 3 kids under 7. Closed $34K contract on day 2 of starting her agency. Sent 6 proposals, heard from 2, signed 1.
+
+---
+
+### The Core Idea
+
+Video proposals, customized to each client, with the client's own website visible in the background of the recording. Nobody else was doing this. No reviews, no case studies — still got the client.
+
+---
+
+### Profile Setup
+
+- **Photo:** Professional headshot against a solid color background (not nature/generic). Stands out in a list.
+- **Intro:** First 3 lines only — clients don't click "more." Concise, numbered, niche-specific.
+- **Portfolio:** 2–4 pieces minimum. If you have nothing, copy a free Naden template, screenshot it, use ChatGPT to write the description. Not lying — just showing capability.
+- **Skills:** 10–15 skills listed. Tells Upwork you're qualified → algorithm boosts you higher.
+- **Certifications:** Make, n8n, HubSpot. Clients don't care. The algorithm does. Free to get.
+- **Profile video:** Under 1 minute. Not your life story — just vibe check. "This is me, this is what I do."
+- **Stay green:** Keep Upwork open on your laptop. The green availability bubble leads to 30% more hires. Not a myth — there's a case study on it.
+
+---
+
+### Proposal Strategy
+
+- **Speed matters most.** Clients look at early applicants. Apply as fast as possible after a job posts.
+- **Max 20 competing applicants on a job.** Skip anything with 50+. Too competitive, bids too high.
+- **Skip posts older than 36 hours.** Client has probably already talked to someone.
+- **Connects budget:** Stay in the 40–60 connects range per application including bidding. Don't blow budget on quantity.
+- **Bidding:** If you bid extra and the client never clicks your proposal, the money comes back. Use it — but stay within range.
+- **Don't do copy-paste proposals.** Clients can tell. It's the most common mistake.
+
+---
+
+### The Video Proposal Format
+
+1. Quick intro — name + title ("AI automation specialist")
+2. "I'm new to Upwork, but I'm not new to this industry"
+3. "I saw your post and noticed you're probably dealing with [specific pain point]"
+4. Show the workflow or infographic — built specifically for their job description
+5. Their website in the background of the screen recording
+6. Keep it under 90 seconds
+
+**Tools for the workflow visual:**
+- Naden (n8n) — paste the job description into n8n's AI agent, it builds a workflow. Screenshot it.
+- Mermaid Live Editor — free, generates workflow diagrams from text
+- Nano Banana Pro — free infographic tool
+
+---
+
+### Why the Videos Work
+
+Every proposal video = a free sales call practice rep. Whether they reply or not, you're building:
+- How to present yourself on camera
+- How to explain your offer without rambling
+- Confidence under low stakes
+
+By rep 10, the real sales calls feel easy. Most people quit after 3 rejections — staying in it gives you the edge.
+
+---
+
+### Sandy's Paid System (Claude Code + Cursor)
+
+For scale, she built an automated sheet using Claude Code inside Cursor ("anti-gravity"):
+- Paste a job URL → AI generates: cover letter, video script, workflow diagram, apply link
+- She films one Loom, pastes the cover letter, done
+- Cut application time from 20 minutes to a few minutes each
+
+She also connected her n8n API key so Claude could auto-generate real n8n workflows and post them directly into her sheet — one click, professional-looking workflow, ready to show.
+
+She still does 50% manual (finds jobs herself, reads the post) — the AI handles the proposal generation.
+
+---
+
+### Where Else This Applies (Not Just Upwork)
+
+Same playbook works anywhere clients look for help:
+- **LinkedIn DMs** — attach a Loom, show their website in the recording
+- **Facebook Groups** — small biz owners post "looking for help with X" constantly, usually 3 replies vs. 50
+- **Reddit** — r/entrepreneur, r/smallbusiness — people ask publicly
+
+The video + customization move is what separates you. The platform is secondary.
+
+---
+
+### What Not to Do
+
+- Don't apply to everything — quality over quantity
+- Don't bid 100 connects on one job unless you're 90% sure you're getting it
+- Don't apply to old posts (36+ hours, 50+ applicants)
+- Don't send template proposals — clients immediately recognize them
+- Don't skip the green bubble — it matters more than most people think
