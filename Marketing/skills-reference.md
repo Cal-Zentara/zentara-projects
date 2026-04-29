@@ -1,10 +1,10 @@
 # Marketing Skills — Reference Guide
 
-Last updated: April 26, 2026
+Last updated: April 28, 2026
 
 Four skill sources. All skills total ~75.
 
-- **Cal's custom skills (built April 2026):** 4 skills — content chain, pitch chain, PDF-wrapped audit, AI findability
+- **Cal's custom skills (built April 2026):** 6 skills — content chain, pitch chain, PDF-wrapped audit, AI findability, keyword research, blog content pipeline
 - **Pack 1 — `/market` suite (zubair-trabzada):** 15 skills, client-facing audits and PDF reports
 - **Pack 2 — Brian Wagner skills:** 23 skills, content + voice + outreach + research
 - **Pack 3 — coreyhaines31/marketingskills:** 33 skills, conversion, growth, ads, pricing, research
@@ -17,6 +17,8 @@ These are the three highest-value commands. Built specifically for how Cal works
 
 | Command | What it does |
 |---|---|
+| `/cal-keywords [business type] [city]` | Finds winnable keywords using free tools — checks real SERPs, filters for low competition, outputs a blog post list and a service page list. Works for any niche. |
+| `/cal-blog [keyword] [business]` | Writes a full SEO-optimized blog post — researches top 3 competing pages, steals their format, injects the business's voice, applies on-page SEO, outputs a ready-to-deploy HTML file. |
 | `/cal-pitch https://[prospect-site]` | Runs a full audit, picks your best matching case study, writes a proposal in your voice, saves everything to Marketing/pitches/ — one command, pitch is ready |
 | `/cal-content` | Full content session for Zentara — loads saved positioning (or sets it up once), generates 10-15 ideas, turns picks into Twitter/LinkedIn/Reddit posts, saves to Marketing/content/ |
 | `/cal-content [client-name]` | Same content session but for a client (e.g. `/cal-content nailditspa`) |

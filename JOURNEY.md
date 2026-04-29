@@ -526,6 +526,23 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 
 ---
 
+## April 28, 2026 — Built the keyword research skill (SEO pipeline, step 1)
+
+**What happened:**
+- Watched a video of a guy who made $500K using Claude Code + SEO. Two tactics: blog posts at scale and service pages.
+- Realized the existing `/market-seo` skill is an audit tool — it checks pages that already exist. It's useless without knowing what keywords to target first.
+- Researched whether free keyword tools are good enough to skip paying for SEMrush ($130/mo). Answer: yes, for local businesses. Local keywords are low-competition enough that free tools (Keywords Everywhere, Google Keyword Planner, manual SERP checks) are accurate enough.
+- Built `/cal-keywords` — finds winnable blog and service page keywords for any business using free tools. Takes a business type + city, checks real Google results, filters for low competition, outputs two sorted lists.
+- This is step 1 of a full SEO content pipeline. Step 2 (blog content at scale) and step 3 (audit with `/market-seo`) come after.
+
+**Why it matters:** The audit skills were always backwards — you can't audit a page that was never aimed at the right keyword. Now there's a front end to the whole SEO workflow.
+
+**Lessons learned:**
+- SEO audits without keyword research first are just formatting checks. The strategy comes before the execution.
+- Free tools work for local businesses because the competition is thin. You don't need precision data when you're not fighting national brands.
+
+---
+
 ## April 28, 2026 — PhillipLoans Outreach System + LO Research
 
 **What happened:**
@@ -544,6 +561,38 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 - Building the tool anyway (parked, ready to run) was still the right call. The system exists. When Phil is ready, it's one command.
 
 **Content idea:** "I built a mortgage loan officer a complete automated cold email system. Then I looked up whether cold email actually works for mortgage. The answer made me park the whole thing."
+
+---
+
+## April 28, 2026 — Nail'd It SEO Content Pipeline (Blog + Service Pages + Search Console)
+
+**What happened:**
+Full SEO content pipeline executed end-to-end for Nail'd It Spa. Went from no blog to 6 published posts, 4 new service pages, a blog section on the main site, and 15+ pages queued in Google Search Console — all in one session.
+
+**What was built:**
+- 6 blog posts (parallel agent dispatch): how-often-nail-fill, how-much-do-acrylic-nails-cost, what-is-gel-x-nails, dip-powder-vs-gel-nails, how-long-do-acrylic-nails-last, nail-art-trends-2026-orange-county
+- 4 new service pages: La Palma, Hawaiian Gardens, nail fill (Stanton), dip powder (Garden Grove)
+- Blog section added to main nailditspa.com homepage — 6 cards, 3-col grid, blush background, terracotta accents, mobile responsive
+- Blog nav link added to desktop nav, mobile menu, and footer
+- sitemap.xml updated from 15 → 25 pages
+- All 6 blog posts submitted via URL Inspection in Search Console for fast indexing (~24hr)
+- Mandatory visual design standards locked into the cal-blog skill: 10 components required on every post (hero photo grid, gold callout, H2 accents, check-list cards, signal grid, pull quote, badge pills, FAQ accordion, scroll animations, mobile-first)
+- No emojis, no decorative hyphens — rule baked into the skill permanently
+
+**Mobile fixes applied across all posts:**
+- Hero photo grid: 4x1 desktop → 2x1 mobile (hide photos 3+4 via nth-child)
+- Main site photo strip: 4x1 → 3x1 mobile
+- About section: max-height bumped to show stats row that was getting clipped
+
+**Lessons learned:**
+- 4 parallel agents writing blog posts at the same time = same quality as sequential, 4x faster. The skill context travels with each agent — they all write like they know the brand.
+- Dispatching individual page URLs to Google Search Console as "sitemaps" doesn't work — Google expects an XML file, not an HTML page. URL Inspection is the right tool for requesting individual page indexing.
+- Search Console data has a 2–3 day lag. "Nothing happening" after submitting is normal — it's working in the background.
+- The about section clipping was caused by a hard max-height: 520px on the grid. Content grew with the blog nav addition; bumping to 580px fixed it.
+
+**Content ideas:**
+- "I wrote 6 SEO blog posts in one session using parallel AI agents. Here's the exact process."
+- "Built a nail salon a full content pipeline — keyword research, 6 blog posts, service pages, sitemap — in one afternoon."
 
 ---
 

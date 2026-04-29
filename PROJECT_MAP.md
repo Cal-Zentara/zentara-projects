@@ -6,6 +6,7 @@ One-line index of every project. Read a project's STATUS.md first — always.
 
 | Project | Status | STATUS.md path |
 |---|---|---|
+| SpiritSisters | active — NaildIt live, LavenderMoon + SpiritNancy next | `SpiritSisters/STATUS.md` |
 | GlobalRoadSealingInc | active client | `ZentaraHQ/Clients/GlobalRoadSealingInc/STATUS.md` |
 | NaildItSpa | active client | `ZentaraHQ/Clients/NaildItSpa/STATUS.md` |
 | NirvanaMarketing | active client | `ZentaraHQ/Clients/NirvanaMarketing/STATUS.md` |
