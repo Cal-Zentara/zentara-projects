@@ -564,6 +564,24 @@ Sat down and mapped the real path from $0 to $1M. Zentara's been running free bu
 
 ---
 
+## April 29, 2026 — NirvanaMarketing Repo Migration
+
+**What happened:**
+Moved NirvanaMarketing out of `ZentaraHQ/Clients/` and into its own standalone folder at `Projects/NirvanaMarketing` — sitting next to ZentaraHQ, not inside it.
+
+**Why:**
+Had two separate Elevasis SDK backends living inside one repo. The SDK CLI walks up directories to find `.env`, which meant NirvanaMarketing could accidentally pick up ZentaraHQ's credentials and deploy to the wrong org. Brother flagged it as bad practice — he was right.
+
+**What changed:**
+- NirvanaMarketing is now a clean standalone repo at `Projects/NirvanaMarketing`
+- ZentaraHQ's git no longer tracks it
+- PROJECT_MAP.md path updated
+- Both git histories preserved, remotes intact
+
+**Lesson:** If a project has its own git repo and its own Elevasis backend, it belongs in its own folder — not nested inside another project.
+
+---
+
 ## April 28, 2026 — Nail'd It SEO Content Pipeline (Blog + Service Pages + Search Console)
 
 **What happened:**

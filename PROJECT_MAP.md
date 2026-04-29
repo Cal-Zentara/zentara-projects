@@ -9,7 +9,7 @@ One-line index of every project. Read a project's STATUS.md first — always.
 | SpiritSisters | active — NaildIt live, LavenderMoon + SpiritNancy next | `SpiritSisters/STATUS.md` |
 | GlobalRoadSealingInc | active client | `ZentaraHQ/Clients/GlobalRoadSealingInc/STATUS.md` |
 | NaildItSpa | active client | `ZentaraHQ/Clients/NaildItSpa/STATUS.md` |
-| NirvanaMarketing | active client | `ZentaraHQ/Clients/NirvanaMarketing/STATUS.md` |
+| NirvanaMarketing | active client | `NirvanaMarketing/STATUS.md` |
 | LavenderMoon | active client | `SmallProjects/LavenderMoon/STATUS.md` |
 | PhillipLoans | active client | `SmallProjects/PhillipLoans/STATUS.md` |
 | MyTa | active client — discovery | `SmallProjects/MyTa/STATUS.md` |
