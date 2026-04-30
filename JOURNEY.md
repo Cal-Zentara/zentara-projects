@@ -6,6 +6,114 @@
 
 ---
 
+## April 29, 2026 — Salvia Lion: Bath Salts Reel Built, Booking Calendar Planned
+
+**What happened:**
+Built Nancy's first bath salts Reel from scratch in Descript. 6 phone-filmed clips (no audio), edited down to 48 seconds, warm color grade, Studio Sound noise removal, music "Dreamers", Salvia Lion logo as outro. Nancy reviewed and approved ("Looks perfect!"). She's posting it tomorrow (April 30).
+
+Also planned the booking calendar feature Nancy asked for — 2 sessions/week max (1 weekend + 1 weekday), weekly cap. Decided on Calendly free plan as the right tool — handles everything she needs, free forever, embeds on the site.
+
+Sticker label redesign prompt written — same circular layout as existing label but shifted to black/purple/teal brand colors for GPT Image 2.
+
+**Lessons learned:**
+- Descript is more powerful than CapCut but way harder for beginners — muting an audio track isn't obvious at all. Next time, point non-technical clients to CapCut first unless they're already paying for Descript.
+- AI video generation models (Kling, Veo, Sora) can't use your actual logo — they generate from text. For branded outros, just drop the logo image on a black background in the editor. Simpler and more accurate.
+- For product label redesigns, describe the exact layout first, then the color changes — AI image tools need the structure anchored before you shift the aesthetic.
+
+**Content ideas:**
+- "She had 6 phone videos and no idea what to do with them. We turned it into a Reel in one session."
+- "You don't need a professional camera or a studio. You need the right tool and someone to show you how."
+
+---
+
+## April 29, 2026 — NaildIt: CreatorFlow Live, PNG Bug Fixed, Token Refresh Diagnosed
+
+**What happened:**
+Audited the full NaildIt pipeline. Found two real issues and fixed them both. Also switched the comment-to-DM automation from ManyChat to CreatorFlow — free forever, works on every post automatically.
+
+**What changed:**
+- CreatorFlow is live on @naildit.spa. Anyone commenting "BOOK" on any post gets the Fresha booking link auto-DM'd. No manual step per post, no monthly fee.
+- Caption template updated — every caption now ends with "Comment BOOK and I'll send you our booking link 💅"
+- PNG token bug fixed — Google's CDN was returning full-res PNGs that were too large for Anthropic's API. Dropped image size from 768px to 400px and added a hard 500KB guard. JPEGs were fine, this only hit PNGs.
+- IG token refresh workflow: still fails every run, but it's not urgent. The token itself works. Diagnosed as an OAuth flow mismatch — the token was generated through Facebook Login, but the refresh script calls the Instagram Login endpoint. Two different flows, two different refresh mechanisms. Token good until June 19.
+
+**Lessons learned:**
+- ManyChat free plan only watches one specific post at a time — you have to manually attach the flow to each new post. CreatorFlow free plan watches all posts automatically. Same price ($0), completely different behavior. Research before defaulting to the most recognized name.
+- "Failed to decode" from the Instagram refresh endpoint doesn't mean the token is bad — it can mean you're using the wrong endpoint for how the token was originally generated. The token can work fine for posting and still fail the refresh. Check which OAuth flow created it before debugging the token format.
+
+**Content ideas:**
+- "ManyChat free is basically useless for this. Found a free tool that does it better and nobody talks about it."
+
+---
+
+## April 29, 2026 — SpiritNancy: First Carousel Posted to IG, Full Pipeline Live
+
+**What happened:**
+Built the full seamless Instagram posting pipeline for Nancy (salvialion). She had 3 PNG slides ready (HowSalt, Ritual, WhySalt). The goal was zero manual steps after dropping the files. Built a "Post Existing Slides to IG" panel in the IG Mega Generator UI — drag PNGs in, they convert to JPEG via Sharp, upload to Google Drive, go public via permissions API, create IG containers, and publish as a carousel. All in one drop. Posted the Bath Salt Tips carousel successfully.
+
+Also: added Nancy as Instagram Tester on the Meta app, generated her IG token, set the IG bio ("Reiki practitioner · Bath salts charged with intention · For people who feel everything"), and gave her a story engagement strategy for building followers.
+
+**What was built:**
+- `/post-converted` endpoint in IG Mega Generator — full PNG→JPEG→Drive→IG pipeline
+- `clients.json` — stores per-client IG credentials (user ID + token)
+- `/clients` endpoint — serves account list to UI dropdown
+- Bath Salt Tips carousel posted to @salvialion (2026-04-29)
+- IG bio written and set in Salvia's voice
+
+**Lessons learned:**
+- Instagram only accepts JPEG — PNGs get rejected. Convert server-side with Sharp before touching the API.
+- Google Drive URLs fail with Instagram (redirects to HTML login). Fix: use Drive permissions API to make files public, then pass `https://lh3.googleusercontent.com/d/{fileId}` — Google's CDN URL. Works every time.
+- When a server reads a config file at startup (`fs.readFileSync`), you must fully restart it after creating that file — a browser refresh does nothing.
+
+**Content ideas:**
+- "She dropped 3 PNG files. They showed up on her Instagram as a carousel. She didn't touch anything else."
+- "The hardest part of building for clients isn't the code. It's making it so simple they don't need to think."
+
+---
+
+## April 29, 2026 — NaildIt: Facebook Built, Token Setup Blocked by Security
+
+**What happened (part 2):**
+Attempted to generate the Facebook Page Access Token for Nail'd It SPA. Hit Facebook's device security wall — logging into Dalena's account from an unfamiliar machine triggered a lock. Spent time working through Meta Business Suite to add Cal's account as admin instead. Got all the way to the final invite step before the account locked. Dalena unlocked it from her phone. Facebook Page ID confirmed (`751935888534556`). Invite needs to be resent from her phone — letting it sit 1-2 days before trying again.
+
+**What's confirmed and ready:**
+- Facebook Page ID: `751935888534556`
+- Facebook publish step deployed and working — just waiting on the token
+- Next step: Dalena sends invite from her own phone to `aestheticcal22@gmail.com`, Cal accepts, generates token from his own developer account, drops it in Elevasis, updates the Page ID constant, deploys
+
+**Lessons learned:**
+- Never log into a client's Facebook account from your own machine. Facebook's security flags it immediately as suspicious and locks the account. Always have the client do it from their own device, or add yourself as admin first through a trusted path.
+- The cleanest path for future clients: ask them to add you as admin in Meta Business Suite from their phone BEFORE you touch anything. 5 minutes of setup saves an hour of security headaches.
+
+---
+
+## April 29, 2026 — NaildIt: Facebook Added, TikTok Planned
+
+**What happened:**
+Activated the monthly IG token refresh schedule (permanent, no maintenance needed). Then researched Facebook Graph API with 7 parallel agents and built Facebook as a second publish step in the NaildIt workflow — same video, same caption, fires automatically after Instagram. Deployed to production. Also researched TikTok but made the call to wait before building it.
+
+**What was built:**
+- `naild-it-ig-token-refresh-schedule` — activated, runs monthly at 9am Pacific, IG token never expires manually again
+- Facebook publish step in `operations/src/naild-it/video-post.ts` — step 2 after Instagram, skips cleanly if token not set
+- Facebook research file saved at `research-to-connect/facebook-graph-api.md`
+- TikTok research file saved at `research-to-connect/tiktok-content-posting-api.md`
+- STATUS.md updated with full TikTok decision log
+
+**Pending (plug-and-play when ready):**
+- Facebook: Dalena needs to confirm phone → log in via Graph API Explorer → send Page token + Page ID → Cal drops them in → Facebook goes live
+- TikTok: wait until LavenderMoon is live, register app under Zentara brand, submit audit, build step while pending
+
+**Lessons learned:**
+- Facebook Page Access Tokens are permanent once generated — no monthly refresh needed unlike Instagram's 60-day expiry. One setup, never touch again.
+- Facebook cross-posting from Instagram via `share_to_feed: true` only creates a regular feed video on Facebook, not a Reel. Separate API call required for true cross-posting.
+- TikTok forces all posts to SELF_ONLY (private) until the app passes their audit. No way around it. Audit takes ~3 weeks and requires proof of multi-tenant use. Single-business apps get rejected.
+
+**Content ideas:**
+- "One approval from Dalena now posts to Instagram AND Facebook at the same time. She doesn't know any of this is happening."
+- "TikTok won't let you automate posting unless you prove you're building for multiple businesses. So I planned for that before writing a line of code."
+
+---
+
 ## Roadmap — Where Cal Is Going
 
 ### What's Stable (Don't Touch)
@@ -725,6 +833,12 @@ Full SEO content pipeline executed end-to-end for Nail'd It Spa. Went from no bl
 | April 27, 2026 | "She wanted a site like Luxury Presence builds. I looked at 15 of their real examples and reverse-engineered exactly what they do. Here's the whole playbook." — My Ta Realtor |
 | April 28, 2026 | "I built a mortgage loan officer a complete automated cold email system. Then I looked up whether cold email actually works for mortgage. The answer made me park the whole thing." — PhillipLoans outreach |
 | April 28, 2026 | "The automation worked once. Then it broke every time after. Here's why one successful test is the most dangerous thing in software." — iPhone HEVC vs H.264 nail salon IG pipeline debugging |
+| April 29, 2026 | "She draws two symbols before every Reiki session. The same ones she uses to charge your bath salts." — Salvia Lion Reiki symbols |
+| April 29, 2026 | "Most people offering Reiki stopped training at Level 2. Here's what Level 3 actually unlocks — and why it shows up differently in the room." — Salvia Lion Master vs Practitioner |
+| April 29, 2026 | "Distance Reiki sounds like magic. There's actually a specific symbol for it — Hon Sha Ze Sho Nen. It's what makes healing work across any distance." — Salvia Lion distance Reiki |
+| April 29, 2026 | "She could take students. She doesn't want to. She just wants to heal people." — Salvia Lion master who doesn't teach |
+| April 29, 2026 | "5 lines every Reiki student learns by heart. Most people have never heard of them. They might change how you think about your day." — The 5 Reiki Precepts |
+| April 29, 2026 | "Your bath salts didn't just get made. They got charged — with Reiki symbols, by a master, before they shipped." — Salvia Lion bath salts ritual |
 
 ---
 
@@ -762,6 +876,7 @@ Full SEO content pipeline executed end-to-end for Nail'd It Spa. Went from no bl
 | April 28, 2026 | PhillipLoans | A passive client is a signal. Phil wasn't engaging because he doesn't see a gap — not because the build was wrong. More automation won't fix low engagement. Build the tool, park it, wait for the client to lean in. |
 | April 28, 2026 | Nail'd It IG pipeline | One successful test doesn't mean the system works — it means that specific file worked. The first IG post used an already-H.264 file by chance. Every real iPhone nail tech video was HEVC and failed. Always test with the actual files real users will upload. |
 | April 28, 2026 | Nail'd It IG pipeline | Don't do heavy processing at fetch time if the caller has a timeout. Converting MOV→MP4 live while Instagram waited for the URL took 19 seconds and timed out. Moving the conversion to the prepare step (before Dalena gets the email) fixed it — Instagram gets instant response every time. |
+| April 29, 2026 | Salvia Lion | For custom circle stickers, Sticky Brand (thestickybrand.com) is the cheapest legit option — $35 for 100 × 3" vinyl, 4.9 stars from 22k+ reviews. Code YCSTUDIO20 takes 20% off, bringing it to $28 before shipping. Final order: $36.94 shipped. |
 
 ---
 
