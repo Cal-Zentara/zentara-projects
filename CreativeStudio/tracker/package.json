@@ -1,0 +1,13 @@
+{
+  "name": "creative-studio-tracker",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "setup": "node setup.js",
+    "log": "node log.js"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0",
+    "open": "^11.0.0"
+  }
+}

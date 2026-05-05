@@ -117,3 +117,13 @@ Then I looked up whether cold email actually works for mortgage brokers. It does
 **Hook:** "I built a complete automated cold email system for a mortgage broker. Then I looked up whether cold email actually works for mortgages. The answer made me stop the whole thing."
 
 ---
+
+## May 2026 — A Creative Studio That Runs While You Sleep
+
+Figured out how to turn Claude into a full ad agency for product clients. You give it a reference photo, a brand doc, and a research file on what converts in that niche — and it plans 50 ad variations, generates them through Higgsfield, and logs everything in a Google Sheet. First real client is Salvia Lion and her Reiki-charged bath salts. The whole system is built to scale — one new folder per client, same tools, same workflow.
+
+**What I learned:** The bottleneck in content creation isn't ideas or production — it's the gap between having a good idea and actually making it. This closes that gap completely.
+
+**Content idea:** "What if your ad creative agency ran overnight and you woke up to 100 finished ads ready to test? That's what we built."
+
+---

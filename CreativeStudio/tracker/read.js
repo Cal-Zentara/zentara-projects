@@ -1,0 +1,10 @@
+import { google } from 'googleapis';
+import { readFileSync } from 'fs';
+const CREDS = JSON.parse(readFileSync('./credentials.json', 'utf8')).installed;
+const { sheetId } = JSON.parse(readFileSync('./config.json', 'utf8'));
+const token = JSON.parse(readFileSync('./token.json', 'utf8'));
+const oauth2Client = new google.auth.OAuth2(CREDS.client_id, CREDS.client_secret, 'http://localhost:3000');
+oauth2Client.setCredentials(token);
+const sheets = google.sheets({ version: 'v4', auth: oauth2Client });
+const read = await sheets.spreadsheets.values.get({ spreadsheetId: sheetId, range: 'Generations!A:G' });
+read.data.values.forEach((r, i) => console.log(`row${i}:`, r[2], '|', r[3]?.slice(0, 60), '|', r[5], '|', r[6]));
