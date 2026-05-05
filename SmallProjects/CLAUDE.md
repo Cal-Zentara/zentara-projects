@@ -8,10 +8,8 @@ Cal's main workspace for demo projects, experiments, and client work.
 
 | Project | STATUS | CLAUDE |
 |---|---|---|
-| LavenderMoon | `LavenderMoon/STATUS.md` | `LavenderMoon/CLAUDE.md` |
 | PhillipLoans | `PhillipLoans/STATUS.md` | `PhillipLoans/CLAUDE.md` |
 | MyTa | `MyTa/STATUS.md` | `MyTa/CLAUDE.md` |
-| SalviasApp | `SalviasApp/STATUS.md` | `SalviasApp/CLAUDE.md` |
 
 **Do not explore.** Read the sub-project STATUS.md first.
 
@@ -21,10 +19,9 @@ Cal's main workspace for demo projects, experiments, and client work.
 
 | Project | What It Is | Docs |
 |---|---|---|
-| LavenderMoon | Dalena's spiritual business — tarot, life coaching, Reiki, mediumship. Live at lavendermoontarot.com | `LavenderMoon/CLAUDE.md` |
 | PhillipLoans | Client site — Phillip La, Mortgage Loan Officer, Loan Factory CA. Live at philliplaloans.com | `PhillipLoans/CLAUDE.md` |
 | MyTa | Bilingual SoCal real estate agent — discovery phase | `MyTa/CLAUDE.md` |
-| SalviasApp | Nancy's gym tracker PWA. Live at cal-zentara.github.io/nancys-gym/ | `SalviasApp/CLAUDE.md` |
+| ByronCampaign | Possible new client — early stage | `ByronCampaign/` |
 
 ---
 
@@ -75,7 +72,7 @@ Moved to `../_archive/`. Do not read or edit unless Cal explicitly resumes.
 
 Cal uses Elevasis to build workflow automation for clients. It's a TypeScript platform with 70+ tools — email campaigns, LLM, lead management, scheduling, CRM, scraping, and more.
 
-**Existing Elevasis workspaces:** `SmallProjects/test/`, `ZentaraHQ/`, `ZentaraHQ/Clients/NirvanaMarketing/`
+**Existing Elevasis workspaces:** `SmallProjects/test/`, `ZentaraHQ/`
 
 **To init a new workspace:** run `/meta init` inside the project folder after `pnpm install @elevasis/sdk`.
 
@@ -85,3 +82,4 @@ Cal uses Elevasis to build workflow automation for clients. It's a TypeScript pl
 
 - **AutoBuildCharlie** Supabase → demos and experiments (this workspace)
 - **Cal_Zentara** Supabase → real clients (GRSI and future paying clients)
+

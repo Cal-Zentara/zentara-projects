@@ -6,13 +6,14 @@ One-line index of every project. Read a project's STATUS.md first — always.
 
 | Project | Status | STATUS.md path |
 |---|---|---|
+| CreativeStudio | active — Higgsfield setup, first client Salvia Lion | `CreativeStudio/STATUS.md` |
 | SpiritSisters | active — NaildIt live, LavenderMoon + SpiritNancy next | `SpiritSisters/STATUS.md` |
 | GlobalRoadSealingInc | active client | `ZentaraHQ/Clients/GlobalRoadSealingInc/STATUS.md` |
 | NaildItSpa | active client | `ZentaraHQ/Clients/NaildItSpa/STATUS.md` |
 | NirvanaMarketing | active client | `NirvanaMarketing/STATUS.md` |
 | LavenderMoon | active client | `SmallProjects/LavenderMoon/STATUS.md` |
 | PhillipLoans | active client | `SmallProjects/PhillipLoans/STATUS.md` |
-| MyTa | active client — discovery | `SmallProjects/MyTa/STATUS.md` |
+| MyTa | active client — site live at mytarealtor.com, IG strategy next | `SmallProjects/MyTa/STATUS.md` |
 | SpiritNancy | demo | `ZentaraHQ/Clients/SpiritNancy/STATUS.md` |
 | DonorSigns (Zoho) | active client — waiting on Stephanie | `ZentaraHQ/Clients/Zoho/STATUS.md` |
 
@@ -29,6 +30,7 @@ One-line index of every project. Read a project's STATUS.md first — always.
 | CapCal | active | `ZentaraHQ/AppTools/CapCal/STATUS.md` |
 | MindDrop | active | `ZentaraHQ/AppTools/MindDrop/STATUS.md` |
 | BrowserBot | active | `ZentaraHQ/AppTools/BrowserBot/STATUS.md` |
+| ZentaraAudit | live — YouTube lead magnet quiz | `SmallProjects/ZentaraAudit/STATUS.md` |
 
 ## Demos & experiments
 
