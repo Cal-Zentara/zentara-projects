@@ -68,6 +68,36 @@ higgsfield product-photoshoot create \
 | Jasmine Euca | citrine | eucalyptus leaves |
 | White Tea Lavender | clear quartz | dried lavender sprigs |
 
+### Winning Formula — Video (locked 2026-05-05)
+
+**Model:** `seedance_2_0` — 480p, 1:1 aspect ratio, 4-8s duration, drama genre
+**Format:** Product sitting upright on edge of white ceramic bathtub, steam rising, candles, botanicals in water
+**Structure:** 3 clips stitched with FFmpeg — one per product, ending with full collection wide shot
+**Audio:** Always strip with `ffmpeg -i input.mp4 -an output.mp4`
+**Reference image:** Pass as `--start-image` for product clips. Omit for lifestyle/bathtub atmosphere clips.
+
+**Approved prompt template (product clip):**
+```
+higgsfield generate create seedance_2_0 \
+  --prompt "the kraft paper bath salts pouch sitting upright on the edge of a white ceramic bathtub, steam rising from the hot water in the background, two warm candles glowing nearby, [BOTANICALS] floating in the bath water visible behind the product, warm golden candlelight, cozy spa atmosphere, shallow depth of field, slow gentle camera push toward the product label" \
+  --start-image "clients/salvia-lion/[PRODUCT_PHOTO]" \
+  --resolution 480p --aspect_ratio 1:1 --duration 4 --genre drama --json --wait
+```
+
+**Collection wide shot prompt (ending clip):**
+```
+higgsfield generate create seedance_2_0 \
+  --prompt "wide shot: the full collection of kraft paper bath salts pouches arranged together on the edge of a white ceramic bathtub, all products visible in frame, steam rising from the warm water behind them, two warm candles glowing nearby, botanicals floating in the bath water, warm golden candlelight, cozy spa atmosphere, shallow depth of field, camera stays wide — no zoom in, full collection on display" \
+  --start-image "clients/salvia-lion/EsponSalt.jpeg" \
+  --resolution 480p --aspect_ratio 1:1 --duration 4 --genre drama --json --wait
+```
+
+**Stitch command:**
+```bash
+printf "file 'clip1.mp4'\nfile 'clip2.mp4'\nfile 'clip3.mp4'" > concat.txt
+ffmpeg -f concat -safe 0 -i concat.txt -c copy output.mp4 -y && rm concat.txt
+```
+
 ### Known Gotchas
 
 | Situation | Fix |
@@ -82,6 +112,13 @@ higgsfield product-photoshoot create \
 | **Background generation (no product)** | Inconsistent — model keeps adding products anyway. Not reliable. |
 | **Composite with rembg** | Tested — poor quality, rough cutout edges. Not worth using. |
 | **Tracker log.js deprecation warning** | `[DEP0040] punycode` — harmless, logging still works |
+| **CLI credits show raw units (100x)** | CLI cost numbers look huge — divide by 100 for the real website-equivalent cost. e.g. CLI shows 480 = 4.8 actual credits |
+| **Higgsfield app vs Cloud are separate** | higgsfield.ai (app subscription) and cloud.higgsfield.ai (developer API) have separate credit pools. CLI and MCP both use app subscription credits. |
+| **Seedance 2.0 minimum duration is 4 seconds** | `--duration 3` errors. Minimum is 4. |
+| **`--generate_audio` not supported on Seedance 2.0** | No audio flag exists. Strip audio post-generation with FFmpeg: `ffmpeg -i input.mp4 -an output.mp4` |
+| **`--start-image` always locks first frame** | No "reference only" mode. When passed, the video starts from that exact image frame. Use it when you want the product to appear at the start; omit it for lifestyle scenes. |
+| **NSFW: "dark moody" + "bathtub"** | This combo can trigger NSFW. Use "cozy spa atmosphere" or "warm moody" instead. |
+| **Video text/spelling is unreliable** | AI garbles label text on generated bags (e.g. "LAIIX ROSE"). Accept it for now — will be resolved when real sticker product photos are used as reference. |
 
 ---
 
