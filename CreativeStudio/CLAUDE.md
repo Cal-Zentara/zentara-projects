@@ -31,12 +31,13 @@
 
 **Google Sheets Tracker:** `https://docs.google.com/spreadsheets/d/1Z15ZahCI_woqABikf8unma054ayBfshDN70yqa3NB-0`
 Columns: Date | Client | Model | Prompt | Output URL | Rating | Notes
-Log command: `cd tracker && node log.js "<prompt>" "<model>" "<url>" "<client>" "<rating>" "<notes>"`
+Log command (manual): `cd tracker && node log.js "<prompt>" "<model>" "<url>" "<client>" "<rating>" "<notes>"`
+Auto-log (preferred): pipe Higgsfield JSON output → `node tracker/log-from-json.js "<prompt>" "<model>" "<client>"`
 
 ### Hard Rules — Always Apply
 - **NEVER use the Higgsfield MCP.** CLI only (`higgsfield product-photoshoot create`).
 - **After EVERY generation, open the file immediately** — `start "" "C:\path\to\file.png"` so Cal can see it.
-- **After EVERY generation, log to the Google Sheet immediately** — no exceptions, no batching.
+- **After EVERY generation, log to the Google Sheet immediately** — pipe `--json` output to `node tracker/log-from-json.js`. No manual logging, no batching, no exceptions.
 - **Always pass `--json` flag** to Higgsfield CLI for clean output parsing.
 - **Always poll with `until [ -s output.file ]`** — never sleep + cat.
 - **Video: always pass `--generate_audio false`** — audio off on all video generations, no exceptions.
@@ -56,7 +57,7 @@ higgsfield product-photoshoot create \
   --product_context "Handmade bath salts in kraft paper stand-up pouch with handwritten black label directly on kraft — NO black box, NO chalkboard label. One pouch only — [SCENT]. Artisan, Reiki-charged, handmade." \
   --aspect_ratio "2:3" \
   --count 1 \
-  --json
+  --json | node tracker/log-from-json.js "[SCENT] hero shot — dark velvet, candle light, [CRYSTAL], [PROPS]" "product_photoshoot" "salvia-lion"
 ```
 
 **Crystal + prop mapping per scent:**
@@ -81,7 +82,7 @@ higgsfield product-photoshoot create \
 higgsfield generate create seedance_2_0 \
   --prompt "the kraft paper bath salts pouch sitting upright on the edge of a white ceramic bathtub, steam rising from the hot water in the background, two warm candles glowing nearby, [BOTANICALS] floating in the bath water visible behind the product, warm golden candlelight, cozy spa atmosphere, shallow depth of field, slow gentle camera push toward the product label" \
   --start-image "clients/salvia-lion/[PRODUCT_PHOTO]" \
-  --resolution 480p --aspect_ratio 1:1 --duration 4 --genre drama --json --wait
+  --resolution 480p --aspect_ratio 1:1 --duration 4 --genre drama --json --wait | node tracker/log-from-json.js "[SCENT] bathtub product clip" "seedance_2_0" "salvia-lion"
 ```
 
 **Collection wide shot prompt (ending clip):**
@@ -89,7 +90,7 @@ higgsfield generate create seedance_2_0 \
 higgsfield generate create seedance_2_0 \
   --prompt "wide shot: the full collection of kraft paper bath salts pouches arranged together on the edge of a white ceramic bathtub, all products visible in frame, steam rising from the warm water behind them, two warm candles glowing nearby, botanicals floating in the bath water, warm golden candlelight, cozy spa atmosphere, shallow depth of field, camera stays wide — no zoom in, full collection on display" \
   --start-image "clients/salvia-lion/EsponSalt.jpeg" \
-  --resolution 480p --aspect_ratio 1:1 --duration 4 --genre drama --json --wait
+  --resolution 480p --aspect_ratio 1:1 --duration 4 --genre drama --json --wait | node tracker/log-from-json.js "collection wide shot — all scents on bathtub" "seedance_2_0" "salvia-lion"
 ```
 
 **Stitch command:**
