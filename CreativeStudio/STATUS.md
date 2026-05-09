@@ -1,6 +1,6 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-05*
+*Last updated: 2026-05-09*
 
 ## What this is
 AI-powered creative studio using Higgsfield CLI to generate product ads and content for clients.
@@ -29,6 +29,20 @@ AI-powered creative studio using Higgsfield CLI to generate product ads and cont
 
 ## Current best video output
 `clients/salvia-lion/three-scents-v3.mp4` — 12 seconds, 3 products, no audio, on desktop for second opinion
+
+## Completed this session (2026-05-09)
+- Onboarded Garlic High as second client — `clients/garlic-high/brief.md` with full visual identity locked
+- Built auto-logging system — `tracker/log-from-json.js` pipes Higgsfield JSON output directly to Google Sheet on every generation
+- Built PowerShell system-level wrapper — `higgsfield` command auto-logs for any generation (manual or via Claude). Set client with `Set-HiggsfieldClient <name>` once per session.
+- Added `.gitignore` — credentials.json and token.json protected from git
+- Fixed Google Sheets tracker — re-linked to correct sheet, all 4 Garlic High generations logged
+- Logged Garlic High ramen shop iterations: noren direction, yellow chef coat approval, ghost NPC, final solid NPC asset
+
+## Clients
+| Client | Status | Notes |
+|---|---|---|
+| Salvia Lion | Waiting on stickers | All formulas locked. Redo hero shots + video once branded labels arrive. |
+| Garlic High | Active — demo pitch | Ramen shop asset approved. 15-second video concept written for Kling 3.0. |
 
 ## Waiting on
 - Salvia Lion stickers to arrive — all hero shots and video will be redone with the real branded label once available
