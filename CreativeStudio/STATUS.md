@@ -1,6 +1,6 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-10*
+*Last updated: 2026-05-11*
 
 ## What this is
 AI-powered creative studio using Higgsfield CLI to generate product ads and content for clients.
@@ -38,6 +38,11 @@ AI-powered creative studio using Higgsfield CLI to generate product ads and cont
 - Fixed Google Sheets tracker — re-linked to correct sheet, all 4 Garlic High generations logged
 - Logged Garlic High ramen shop iterations: noren direction, yellow chef coat approval, ghost NPC, final solid NPC asset
 
+## Completed this session (2026-05-11)
+- Added Cal as a client — `clients/cal/` with CLAUDE.md, brief.md, prompts.md
+- Moved AI influencer files from ZentaraHQ knowledge base into CreativeStudio
+- Added Lucy and Cal to client table in STATUS.md
+
 ## Completed this session (2026-05-10)
 - Locked Garlic High video production rules: 90s anime illustrated style, split-track music method, one emotion (HUNGRY), 9:16 reel format
 - Generated music track "Static Sunlight" on Suno — instrumental, no vocals. Source: `C:\Users\Aesth\Desktop\Static Sunlight (1).mp3`
@@ -51,6 +56,8 @@ AI-powered creative studio using Higgsfield CLI to generate product ads and cont
 |---|---|---|
 | Salvia Lion | Waiting on stickers | All formulas locked. Redo hero shots + video once branded labels arrive. |
 | Garlic High | Active — video in progress | Shot 1 corrected. Shots 2-4 prompts pending. Shop image needs regen (empty seat). |
+| Lucy (@xolucy.pearls) | Active — 2 posts live | AI influencer for Nail'd It Spa. Character locked. 4 prompts ready. Building to 6–9 grid posts. |
+| Cal (Zentara) | Setup — not yet generated | AI influencer for Zentara. 3 prompts written. Blocked on Soul ID character generation. |
 
 ## Waiting on
 - Salvia Lion stickers to arrive — all hero shots and video will be redone with the real branded label once available
