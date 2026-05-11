@@ -16,7 +16,12 @@
 
 ## Dev Reference — Symbol Map / Schema / Gotchas
 
-> **Scaffold only — populate on first real touch.** Update ranges inline whenever code shifts lines (see global `CLAUDE.md` → "Mid-Session Efficiency"). For fast-churning files, use grep-able comments like `<!-- SECTION: hero -->` and reference the comment name instead of raw line numbers.
+> **Scaffold only — populate on first real touch.** Three things every active project needs:
+> 1. **Symbol Map** — `feature → file:line-range`. Read slices, not whole files.
+> 2. **Data Schema** — localStorage keys, API payloads, form fields, query params.
+> 3. **Known Gotchas** — weird-looking code + reason. Stops "fixing" working code.
+>
+> Update rules: line shift → update map | schema change → update schema | weird-but-works → log gotcha. For fast-churning files, use grep-able comments like `<!-- SECTION: hero -->` and reference the comment name instead of raw line numbers.
 
 ### Symbol Map
 

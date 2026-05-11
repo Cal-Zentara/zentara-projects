@@ -127,3 +127,15 @@ Figured out how to turn Claude into a full ad agency for product clients. You gi
 **Content idea:** "What if your ad creative agency ran overnight and you woke up to 100 finished ads ready to test? That's what we built."
 
 ---
+
+## May 9, 2026 — I Built a Pause Switch That Already Existed
+
+The clients said the auto-posted nail content was looking too AI-sloppy. I wanted to pause everything until I had better photos. Spent a whole session building a workaround — wrote new code, deployed it, set up a flag in the platform settings — the works.
+
+Then I clicked around the dashboard and found a "pause" button right there. Does the exact same thing. One click.
+
+**What I learned:** Look at the dashboard before you build. The button you need is usually already there.
+
+**Content idea:** "I just spent an hour building a tool to pause my automation. Then I found a button on the dashboard that does the same thing in one click. Look before you build."
+
+---

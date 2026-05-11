@@ -36,6 +36,8 @@ Rotate through this order each week:
 - Why simple beats impressive every time
 - Checking if the tool already exists before you build it
 - Why coming from a completely different field makes you better, not worse
+- Why the business owner who thinks tech isn't for them is exactly who this is built for
+- What "feeling left behind by tech" actually costs a business every week
 
 **Nurture hooks (human side):**
 - The day you quit construction and had no idea what was next
@@ -46,7 +48,9 @@ Rotate through this order each week:
 **Convert (one clear ask):**
 - "I have one Build spot open this week. DM me."
 - "Want me to set this up for your business? DM BUILD."
-- "This is what the $300 build looks like. Want one? DM me."
+- "This is what a done-for-you build looks like. Want one? DM me."
+
+> **SCRIPTS READY TO USE → open Content Ideas in the KB.**
 
 ---
 
@@ -82,7 +86,7 @@ Rotate through this order each week:
 Don't freeze. Four steps:
 
 1. Reply within 2 hours: *"Hey — quick question: do you want to learn how to build this yourself, or do you just want it handled for you?"*
-2. **"Learn it"** → Teach offer ($150–250). Book a call.
+2. **"Learn it"** → Teach offer ($500/session). Book a call.
 3. **"Handled"** → Ask 3 questions: what do you do, what's the repetitive task, how much time does it eat per week.
 4. *"I can put together a plan and quote. Want me to?"*
 
