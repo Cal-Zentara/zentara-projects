@@ -1,6 +1,6 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-09*
+*Last updated: 2026-05-10*
 
 ## What this is
 AI-powered creative studio using Higgsfield CLI to generate product ads and content for clients.
@@ -38,22 +38,36 @@ AI-powered creative studio using Higgsfield CLI to generate product ads and cont
 - Fixed Google Sheets tracker — re-linked to correct sheet, all 4 Garlic High generations logged
 - Logged Garlic High ramen shop iterations: noren direction, yellow chef coat approval, ghost NPC, final solid NPC asset
 
+## Completed this session (2026-05-10)
+- Locked Garlic High video production rules: 90s anime illustrated style, split-track music method, one emotion (HUNGRY), 9:16 reel format
+- Generated music track "Static Sunlight" on Suno — instrumental, no vocals. Source: `C:\Users\Aesth\Desktop\Static Sunlight (1).mp3`
+- Wrote 4-clip video concept (4s each = 16s total): street approach → enters shop → food arrives → first bite
+- Regenerated shots 3 & 4 with correct emotion (hungry, eyes open) — approved
+- Tested Shot 1 generation — two issues found: wrong direction (walked away from camera) + @Audio1 tag missing. Corrected prompt saved in `clients/garlic-high/CLAUDE.md`
+- Created `clients/garlic-high/CLAUDE.md` — all formulas, prompts, issues, and assets locked
+
 ## Clients
 | Client | Status | Notes |
 |---|---|---|
 | Salvia Lion | Waiting on stickers | All formulas locked. Redo hero shots + video once branded labels arrive. |
-| Garlic High | Active — demo pitch | Ramen shop asset approved. 15-second video concept written for Kling 3.0. |
+| Garlic High | Active — video in progress | Shot 1 corrected. Shots 2-4 prompts pending. Shop image needs regen (empty seat). |
 
 ## Waiting on
 - Salvia Lion stickers to arrive — all hero shots and video will be redone with the real branded label once available
 
 ## What's next
-1. When stickers arrive — take one clean product photo per scent with sticker on bag
-2. Redo hero shots with the branded label as reference
+
+**Garlic High (priority):**
+1. Regenerate ramen shop image with one empty stool on the right
+2. Retry Shot 1 with corrected prompt (direction + @Audio1)
+3. Write + generate Shots 2, 3, 4
+4. Stitch 4 clips with FFmpeg
+5. If quality good → upgrade to 1080p for final version
+
+**Salvia Lion (waiting):**
+1. When stickers arrive — take one clean product photo per scent
+2. Redo hero shots with branded label as reference
 3. Redo video clips with branded product
-4. Add text overlays to videos (product name, brand name, CTA)
-5. Reverse-engineer winning prompts into reusable skills
-6. Build `/new-client` skill for onboarding future clients
 
 ## Key files
 - `clients/salvia-lion/` — all generated outputs (images + videos)
