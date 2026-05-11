@@ -6,13 +6,35 @@
 |---|---|
 | Continuing work / resuming | `STATUS.md` |
 | Working on a specific client | `clients/[client-name]/CLAUDE.md` |
-| Adding a new client | `_templates/CLAUDE.md` + Client Structure section below |
+| Adding a new client | `_templates/CLAUDE.md` + Structure section below |
 | Universal rules (every client) | This file |
 | Starting a character-based video | Prompt Examples (bottom of this file) |
 
 **Do not explore.** If the answer isn't in the files above, ask before searching.
 
 This file is universal — applies to every client. Each client has their own `clients/[name]/CLAUDE.md` with their locked formulas, NSFW words, and prompt templates.
+
+---
+
+## Role Split
+
+**Cal:** Character design only — face description, vibe, outfit, anchor details, creative direction.
+**Claude:** Everything else — runs all CLI commands, generates faces/outfits, fuses in Nano Banana Pro, builds the world, directs and generates every shot, logs to tracker.
+
+---
+
+## Models — What to Use and Why
+
+| Job | Model | Why |
+|---|---|---|
+| Character face generation | `soul_cinematic` | Holds bone structure and facial detail better than gpt_image_2 for people. Run same base prompt multiple times, pick best result. *(From Zephr breakdown — untested on our clients)* |
+| Character outfit generation | `soul_cinematic` | Same reason — detail and consistency. Separate prompt, no face in it. *(Untested)* |
+| Fuse face + outfit into master reference | `nano_banana_2` | Nano Banana Pro is a blending/fusion tool, not a text-to-image model. Combines two assets into one locked reference image. |
+| Blend creature / world variations | `nano_banana_2` | Same — merge best parts of multiple gens you'd never get from a single prompt. |
+| All video (every shot) | `seedance_2_0` | Only video model used. Handles personality, dialogue, physics, fight scenes, and synchronized choreography. |
+| General image generation (non-character) | `nano_banana_2` | Default for products, creatures, environments. Switch to `gpt_image_2` only when text rendering is needed. |
+| World prompt expansion | Claude (this conversation) | Turns a mood into cinematography language before anything is generated. |
+| Music generation | Suno — suno.com | Custom mode. Leave Lyrics blank. Add "no vocals, no singing, pure instrumental" to Styles. Generate before any video clip. |
 
 ---
 
@@ -25,7 +47,7 @@ This file is universal — applies to every client. Each client has their own `c
 - **Always poll with `until [ -s output.file ]`** — never sleep + cat.
 - **Video tests: always use `seedance_2_0 --resolution 480p --aspect_ratio 1:1`** — cheapest option until Cal approves a direction.
 - **Default audio off for product/test clips** — strip with `ffmpeg -i input.mp4 -an output.mp4`. **For narrative pieces with music**, plan music as part of the generation (see Video Production Principles → Sound).
-- **Always use `gpt_image_2`** for all Higgsfield image generation. No other image models.
+- **Image model rule:** `soul_cinematic` for character faces and outfits. `nano_banana_2` for fusing assets and everything else (products, creatures, environments). `gpt_image_2` only when text rendering is needed — it handles text better than any other model.
 
 ---
 
@@ -63,15 +85,6 @@ These are the lessons that separate AI slop from real productions. Apply on ever
 18. **Choreographed / synchronized sequences → music INSIDE the generation.** Upload the track (+ lyrics if it has them) as an audio element in Seedance. The model reads the tempo and energy before generating a single frame — cuts sync naturally. Use this for: dance sequences, K-pop formations, any scene where characters move together to a beat.
 
 19. **Narrative / story-driven clips (multiple separate generations) → split-track method.** Generate the full music track first. Split it into segments matching each clip's duration using FFmpeg. Upload each segment into its corresponding Seedance generation — music is baked in during generation, not added after. Stitch the clips — music flows continuously because each clip was built against its own portion of the same track. Use this for: any multi-clip story where you have different reference images per scene.
-
-### Tool stack
-| Job | Tool |
-|---|---|
-| Face + outfit images | `gpt_image_2` (Higgsfield image gen) |
-| Fuse / blend reference assets | Nana Banana Pro |
-| World prompt expansion | Claude (this conversation) |
-| Video | Seedance 2.0 |
-| Music generation | Suno (suno.com) — Custom mode, leave Lyrics blank, add "no vocals, no singing, pure instrumental" to Styles |
 
 ### Writing Discipline — How to Apply These Without Sounding Like AI
 
@@ -136,56 +149,27 @@ ffmpeg -i input.mp4 -an output.mp4
 
 ---
 
-## Project Overview
+## Structure
 
-Zentara's internal creative studio for generating AI video ads and content using Higgsfield. Folder-per-client structure. Each client has their own CLAUDE.md with locked formulas.
-
----
-
-## Stack
-
-| Layer | Tech |
-|---|---|
-| Video/Image generation | Higgsfield (CLI only) |
-| Client management | Folder-based (`clients/[client-name]/`) |
-| Storage | Local + client delivery |
-| Hosting | N/A — output delivery only |
-
----
-
-## File Structure
+Zentara's internal creative studio for AI video ads and content. One folder per client. Universal rules live here — locked formulas live in each client's own CLAUDE.md.
 
 ```
 CreativeStudio/
 ├── STATUS.md
-├── CLAUDE.md              ← universal rules (this file)
-├── tracker/               ← Google Sheets logging scripts
+├── CLAUDE.md                  ← universal rules (this file)
+├── tracker/                   ← Google Sheets logging scripts
 └── clients/
-    ├── salvia-lion/
-    │   ├── CLAUDE.md      ← her locked formulas + NSFW words
-    │   └── (brief, assets, outputs)
-    └── garlic-high/
-        ├── CLAUDE.md      ← his locked formulas (once locked)
-        └── (brief, assets, outputs)
+    └── [client-name]/
+        ├── CLAUDE.md          ← locked formulas, NSFW words, prompt templates
+        ├── brief.md           ← who they are, product, vibe, target audience
+        ├── assets/            ← logos, product photos, brand colors
+        └── outputs/           ← generated videos/images, ready to deliver
 ```
 
----
-
-## Client Structure
-
-Each client folder:
-```
-clients/[client-name]/
-├── CLAUDE.md     — locked formulas, NSFW words, prompt templates (their playbook)
-├── brief.md      — who they are, product, vibe, target audience
-├── assets/       — logos, product photos, brand colors
-└── outputs/      — generated videos/images, ready to deliver
-```
-
-**New client workflow:**
-1. Create the folder under `clients/`
+**Adding a new client:**
+1. Create folder under `clients/`
 2. Copy `_templates/CLAUDE.md` as a starting point
-3. Add brief.md, assets, etc.
+3. Add brief.md and assets
 4. Lock formulas in their CLAUDE.md as you find what works
 
 ---
@@ -204,33 +188,12 @@ clients/[client-name]/
 | `higgsfield auth login` | Re-authenticate if session expires |
 | `npx skills add higgsfield-ai/skills --yes` | Reinstall all 4 default skills |
 
-### Models Available
-- **Seedance 2.0** — locked default for all video
-- **gpt_image_2** — locked default for all image generation
-
 ### Skill Workflow
 1. Generate 3–5 variations
 2. Pick the best output
 3. Copy its prompt
 4. Ask Claude to reverse-engineer a skill from it → saves to `.claude/skills/`
 5. Every future generation using that skill is consistent
-
----
-
-## Key Decisions
-
-| Decision | Why |
-|---|---|
-| Folder-per-client structure | Simple, no database needed at this scale |
-| Each client has own CLAUDE.md | Universal rules stay here; locked formulas live with the client. Stops the studio doc from becoming any single client's museum. |
-| Higgsfield for generation | Video-first, growing model library, good for product ads |
-
----
-
-## Current Version & Status
-
-**Version:** 0.2 — multi-client structure
-**Status:** active — Salvia Lion locked, Garlic High in progress
 
 ---
 
@@ -242,7 +205,7 @@ Source: Higgsfield's own breakdown video of the Zephr trailer — 5 characters, 
 
 ---
 
-### Step 1 — Character Face (gpt_image_2)
+### Step 1 — Character Face (soul_cinematic)
 
 Generate the face first. Run this same base prompt multiple times, pick the best bone structure.
 
@@ -250,7 +213,7 @@ Generate the face first. Run this same base prompt multiple times, pick the best
 
 ---
 
-### Step 2 — Outfit Only (gpt_image_2)
+### Step 2 — Outfit Only (soul_cinematic)
 
 Separate prompt. No face. Check that every accessory survives — if a strap or belt disappears between gens, add it back explicitly now.
 
@@ -266,7 +229,7 @@ Pass both images into Nana Banana Pro with this prompt. Output = the locked char
 
 ---
 
-### Creature / Enemy (gpt_image_2)
+### Creature / Enemy (nano_banana_2)
 
 Same white background + product-render lighting — just applied to a non-human asset.
 

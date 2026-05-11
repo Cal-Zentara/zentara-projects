@@ -13,7 +13,7 @@
 ## Who They Are
 
 Japanese ramen restaurant. Brand name: ガーリックハイ. Full name: GARLIC HIGH · JIRO RAMEN.
-Demo pitch content for Instagram (Reels).
+Demo pitch content for Instagram Reels. Target: ramen shop owner.
 
 **Visual style (locked):** 90s anime illustrated. Warm, nostalgic, late-night ramen shop energy.
 
@@ -36,8 +36,8 @@ Demo pitch content for Instagram (Reels).
 | Ramen shop base image | `C:\Users\Aesth\Downloads\hf_20260509_014727_b1c934de.png` | Yellow chef coat + hat. Base image. |
 | Ramen shop with NPC | `C:\Users\Aesth\Desktop\RAMEN SHOP ASSET.png` | Older man on leftmost stool. ⚠️ All seats look full — needs regen with empty seat on right before Shot 2. |
 | GHsuit girl (mascot) | `C:\Users\Aesth\Desktop\GHsuit.png` | Tired young woman, black blazer + pencil skirt, pink headband, brown hair. |
-| Shot 3 reference | `C:\Users\Aesth\Downloads\hf_20260511_012705...` | Eyes wide, chopsticks raised, hungry anticipation. |
-| Shot 4 reference | `C:\Users\Aesth\Downloads\hf_20260511_012759...` | First bite reaction, bowl in foreground. |
+| Shot 3 reference | ⚠️ Missing — regen needed | Eyes wide, chopsticks raised, hungry anticipation. |
+| Shot 4 reference | ⚠️ Missing — regen needed | First bite reaction, bowl in foreground. |
 
 ---
 

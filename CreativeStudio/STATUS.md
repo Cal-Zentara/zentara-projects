@@ -72,5 +72,5 @@ AI-powered creative studio using Higgsfield CLI to generate product ads and cont
 ## Key files
 - `clients/salvia-lion/` — all generated outputs (images + videos)
 - `tracker/` — Google Sheets logging scripts (log.js, format.js, mark-approved.js)
-- `advertising-masterclass.md` — research on what converts for spiritual wellness
+- `clients/salvia-lion/advertising-masterclass.md` — research on what converts for spiritual wellness
 - `CLAUDE.md` — full winning formula, video rules, gotchas
