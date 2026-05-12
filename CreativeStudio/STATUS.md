@@ -1,6 +1,23 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-11*
+*Last updated: 2026-05-12*
+
+## Completed this session (2026-05-12)
+- Shot 1 (bowl slam) v2 generated and APPROVED for Garlic High demo
+- All Shot 2/3/4 start-images regenerated for stronger anime motion (mid-action poses, 3/4 angles)
+- B-roll concept pivoted: cozy noodle macro → feral mouth close-up (matches "Savage & Happy" brand)
+- Shot 2 v1 BLOCKED by NSFW filter — "glare/jaw tight/lock onto camera/bright flash" combo triggered it; softer rewrite passed
+- Shot 2 v2 generated but Cal says too quiet — psychological beat doesn't sell for Reels
+- Added universal CreativeStudio rule: regenerate start-image before video when it would improve output (cheap retry beats expensive video retry)
+- Added universal rule: no blockquote sidebars in prompts/summaries
+- B-roll mood word locked: "feral" instead of "demolition" (warmer, matches Savage & Happy)
+- Tracker still broken — credentials.json missing — pushed through without logging
+
+## What's next (Garlic High, paused mid-session)
+- Cal to choose: add physical action to Shot 2 / move eye-lock to Shot 3 / cut Shot 2 entirely
+- Generate Shots 3, 4, B-roll
+- Trim + stitch in FFmpeg → 10-12s final reel
+- Text overlay + NOTICE end card
 
 ## What this is
 AI-powered creative studio using Higgsfield CLI to generate product ads and content for clients.

@@ -48,6 +48,8 @@ This file is universal — applies to every client. Each client has their own `c
 - **Video tests: always use `seedance_2_0 --resolution 480p --aspect_ratio 1:1`** — cheapest option until Cal approves a direction.
 - **Default audio off for product/test clips** — strip with `ffmpeg -i input.mp4 -an output.mp4`. **For narrative pieces with music**, plan music as part of the generation (see Video Production Principles → Sound).
 - **Image model rule:** `soul_cinematic` for character faces and outfits. `nano_banana_2` for fusing assets and everything else (products, creatures, environments). `gpt_image_2` only when text rendering is needed — it handles text better than any other model.
+- **Start-image first, motion second.** Before generating any video clip, check if regenerating the start-image would give a better result. If the start frame is wrong pose, wrong angle, wrong expression, or wrong scale for the motion we want, Seedance burns half the clip just repositioning. ALWAYS suggest regenerating the image to Cal before generating the video when it would improve output. Cheap image retry now beats expensive video retry later.
+- **No sidebars (blockquotes) in prompts or summaries.** Never wrap prompt text or summaries in `>` markdown blockquotes — they render with a vertical sidebar that makes copy-pasting prompts a pain. Use plain paragraphs or bold labels. Reserve `>` only for genuine quoted speech.
 
 ---
 

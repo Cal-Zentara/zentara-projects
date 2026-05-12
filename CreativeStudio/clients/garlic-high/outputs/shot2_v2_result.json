@@ -1,0 +1,38 @@
+[
+  {
+    "id": "41bebfa9-c550-4eb7-8d9b-8391807ce512",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260512_022830_41bebfa9-c550-4eb7-8d9b-8391807ce512.mp4",
+    "created_at": 1778552910.175823,
+    "params": {
+      "width": 768,
+      "height": 1344,
+      "prompt": "Same young woman, brown hair, black blazer, seated at the ramen counter inside the shop. Bowl in front of her, steam rising. She looks down at the bowl quietly, focused. Camera moves slowly from wide to medium close-up. She lifts her eyes from the bowl to meet the camera and holds her gaze steady. 90s anime illustrated style. Warm interior light. One emotion: focus.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "3f8160c4-68f6-43cf-8acc-ae6a954ca1be",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/3f8160c4-68f6-43cf-8acc-ae6a954ca1be.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        }
+      ],
+      "duration": 5,
+      "resolution": "480p",
+      "aspect_ratio": "9:16",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "std",
+      "model": "seedance_2_0"
+    }
+  }
+]

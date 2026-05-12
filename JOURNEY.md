@@ -139,3 +139,19 @@ Then I clicked around the dashboard and found a "pause" button right there. Does
 **Content idea:** "I just spent an hour building a tool to pause my automation. Then I found a button on the dashboard that does the same thing in one click. Look before you build."
 
 ---
+
+## May 12, 2026 — The AI Thought My Anime Girl Was Too Aggressive
+
+Building a ramen ad for a client. The shot was simple — a girl sitting at the counter, looking at her bowl, then looking at the camera. That's it. No fighting. No violence. Just a stare.
+
+The AI blocked it. Said the prompt was too aggressive. The words it didn't like? "Glare." "Jaw tight." "Lock onto camera."
+
+I softened the words — "looks quietly focused," "lifts her eyes to meet the camera" — same exact scene. It passed. Generated fine.
+
+The picture didn't change. Just the way I described it.
+
+**What I learned:** AI tools have invisible word triggers. The fix is usually swapping one word, not rebuilding the idea.
+
+**Content idea:** "I tried to make an anime ad. The AI blocked it because my anime girl looked 'too serious.' Same girl, same bowl, same camera — I just had to change three words and it worked."
+
+---
