@@ -1,6 +1,15 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-12*
+*Last updated: 2026-05-11*
+
+## Completed this session (2026-05-11, evening)
+- Installed Joey's two new free Claude skills — `banana-pro-director` (image prompts) and `cinema-worldbuilder` (Seedance video prompts) at `.claude/skills/`
+- Added a "CreativeStudio CLI Integration" section to both skills so they run via Higgsfield CLI with auto-log to Google Sheet (overrides Joey's default "paste into web UI" workflow)
+- Resolved image model conflict — deleted the global memory file `feedback_higgsfield_image_model.md` that said "always use gpt_image_2"; CLAUDE.md's rule wins now (soul_cinematic for faces/outfits, nano_banana_2 for everything else, gpt_image_2 only for text)
+- Moved Joey's 15 Zephr example prompts out of CLAUDE.md into new file `zephr-prompt-examples.md` (reference only, can delete after skills prove themselves)
+- CLAUDE.md slimmed from 339 → 198 lines
+- Updated Quick Nav to point to the new Zephr file
+- **All untested — first real client gen is the validation moment**
 
 ## Completed this session (2026-05-12)
 - Shot 1 (bowl slam) v2 generated and APPROVED for Garlic High demo
@@ -80,6 +89,13 @@ AI-powered creative studio using Higgsfield CLI to generate product ads and cont
 - Salvia Lion stickers to arrive — all hero shots and video will be redone with the real branded label once available
 
 ## What's next
+
+**Test the new skills (priority — blocks deleting Zephr examples):**
+1. Pick one client (likely Cal or Lucy — both fit Joey's defaults)
+2. Run one simple gen through the new skill — image first, video second
+3. Check that the CLI command Claude generates actually runs without flag errors
+4. Check that the gen auto-logs to the Google Sheet
+5. If skills pass → safe to delete `zephr-prompt-examples.md`. If not → patch the skills' CLI section.
 
 **Garlic High (priority):**
 1. Regenerate ramen shop image with one empty stool on the right
