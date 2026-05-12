@@ -1,5 +1,8 @@
 node_modules/
 tracker/credentials.json
 tracker/token.json
+credentials.json
+config.json
+token.json
 *.mp4
 *.mov

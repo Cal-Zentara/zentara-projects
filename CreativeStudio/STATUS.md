@@ -39,13 +39,14 @@
 - B-roll cut from plan — 4 shots only, every shot is its own impact.
 - Saved feedback memory: "Push AI video to the wild version, not the safe one" — for future creative work, lead with the impossible version first.
 
-## What's next (Garlic High — paused for fresh session)
-- Cal generates 3 new start-images via Higgsfield web (nano_banana_2): Shot 2 cleaver setup, Shot 3 noodle pull setup, Shot 4 mid-bite setup
-- Drop favorites into `clients/Garlic-high/assets/`
-- Claude generates Shots 2, 3, 4 via Seedance 2.0 (480p, 9:16, 5s each, std mode)
-- Trim each to 2-3s sweet spot
-- Stitch with FFmpeg + NOTICE end card + text overlay
-- Tracker still broken — credentials.json missing — fix before next campaign
+## What's next (Garlic High — paused May 12 session 2)
+- All start-images locked. Tracker fixed. End card updated to soon.png (cities + franchise angle).
+- Generate Shots 2, 3, 4 via Seedance CLI (4 sec each, trim to 3 sec)
+- Final order: Bowl SLAM → Garlic NUKE → Noodle WHIRLWIND → Power-UP
+- Music: Garlic High.mp3 bake-in (cut into 4 x 3-sec segments)
+- SFX: Shonen SFX pack (heltonyan.itch.io) — apply in Descript after stitching
+- Slam soon.png end card over Shot 4 in post
+- See clients/Garlic-high/CLAUDE.md for full step-by-step
 
 ## What's next (OLD — superseded by wild anime pivot above)
 - Cal to choose: add physical action to Shot 2 / move eye-lock to Shot 3 / cut Shot 2 entirely

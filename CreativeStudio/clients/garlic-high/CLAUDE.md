@@ -150,12 +150,13 @@ Target: ramen shop owner. Working toward a paid ads + social media campaign deal
 
 **Why v3:** v1 (cozy) and v2 (savage stares) both failed the same way — too much girl-staring, not enough food. Cal feedback: Shot 1 (bowl slam) was the only thing that hit because the FOOD was the hero. Rebuild every shot around impossible food physics. Her face is a reaction beat, not the subject.
 
-**Shot structure (v3):**
-1. **Bowl SLAM ✓** — ramen bowl crashes down, steam erupts, garlic pile shudders. (KEEP — approved.)
-2. **Garlic NUKE** — chef SLAMS a massive garlic clove with a cleaver. Whole shop shakes. Garlic flakes blast outward slow-motion. Lights flicker. Anime impact frame.
-3. **Noodle WHIRLWIND** — extreme close-up. Chopsticks rip noodles up so violently they form a swirling vortex. Broth droplets freeze mid-air. Anime speed lines around the bowl.
-4. **First bite POWER-UP** — she bites in. Eyes flash white. Aura erupts behind her. Steam shoots out her ears like a dragon. Hair lifts. Background goes red.
-5. End card: NOTICE badge slams in — "MORE GARLIC POR FAVOR."
+**Shot structure (v3 — final order, May 12 2026):**
+1. **Garlic NUKE** — chef SLAMS a massive garlic clove with a cleaver. Whole shop shakes. Garlic flakes blast outward slow-motion. Lights flicker. Anime impact frame. (Chef prep — sets up the food.)
+2. **Bowl SLAM ✓** — ramen bowl crashes down, steam erupts, garlic pile shudders. (Delivery — bowl arrives at her counter. APPROVED.)
+3. **Noodle WHIRLWIND** — extreme close-up. Chopsticks rip noodles up so violently they form a swirling vortex. Broth droplets freeze mid-air. Anime speed lines around the bowl. (She grabs.)
+4. **First bite POWER-UP** — she bites in. Eyes flash white. Aura erupts behind her. Steam shoots out her ears like a dragon. Hair lifts. Background goes red. **"MORE GARLIC POR FAVOR" text slams in over the aura moment.** (She eats + tagline lands.)
+
+**Narrative arc:** prep → delivery → grab → eat. No separate end-card clip — text overlay handles the tagline.
 
 **Format:** 9:16, 480p test, 4-5s per clip, Seedance 2.0.
 **Music:** Split-track. Garlic High.mp3 cut into 4 segments, one per shot.
@@ -177,13 +178,20 @@ All assets live in `C:\Users\Aesth\Desktop\Images\`
 | GHsuit at shop (NEW) | `clients/Garlic-high/assets/GH_shop_seated.png` | Side profile, brown hair, black blazer, seated at counter. GARLIC HIGH · JIRO RAMEN sign + chef visible. Warm light. ✓ Shots 2, 3, 4 start-image. |
 | Brand poster | `Images/MoreGarlic.png` | "MORE GARLIC POR FAVOR" — red/yellow/green. Reference for text overlays and end card. |
 | Shop exterior (landscape) | `Images/RAMEN SHOP ASSET.png` | Dark moody exterior. Chef visible. Background ref. |
+| Shot 1 Garlic NUKE start-image | `Images/hgshot1.png` | Chef raised cleaver over oversized garlic head, low angle, 9:16. ✓ Locked. |
+| Shot 3 Noodle WHIRLWIND start-image | `Images/hgshot3_noodle.png.png` | Chopsticks pulling noodles up out of bowl, side angle, steam. ✓ Locked. |
+| Shot 4 Power-up start-image | `Images/hgshot3.png` | Girl mid-bite at counter, brown hair + pink headband, GARLIC HIGH sign visible behind. ✓ Locked. |
+| End card text image | `Images/soon.png` | "MORE GARLIC POR FAVOR" + Sunnyvale · Yorba Linda · Torrance Coming Soon + garlichigh.com — red/yellow/green chunky block letters, manga ink chaos. ✓ Locked. Slams over Shot 4 in post. |
 
 ---
 
 ## Music
 
-**Locked track:** `C:\Users\Aesth\Desktop\Audio\Garlic High.mp3` (Suno, May 11 2026).
-**Method:** Split-track. FFmpeg cut into 4-second segments, one per clip. Upload each to its Seedance generation via @Audio1.
+**Locked track:** `C:\Users\Aesth\Desktop\Audio\Garlic High.mp3` (Suno, May 11 2026). Track length: 82.6 seconds.
+**Method (UNDECIDED — May 12 2026):** Two options on the table:
+- **Bake-in (Zephr method):** Cut track into 4 segments matching each clip duration, upload each as audio reference inside Seedance. Music gets baked into the generation. Better sync, costs 2 extra credits (regen of Shot 1 + Shot 2 with music).
+- **Music-on-top (post):** Generate all clips silent, stitch, lay full track on top with FFmpeg, nudge clip timing to align impacts with beats. Cheaper, less precise sync.
+**Studio playbook leans bake-in for narrative pieces. For impact-driven reel like this, music-on-top is acceptable and saves credits.**
 **Old track (cozy — do NOT use):** Static Sunlight — `C:\Users\Aesth\Desktop\Static Sunlight (1).mp3`
 
 ---
@@ -208,6 +216,57 @@ Rule: for character close-ups with intense expressions, swap aggressive verbs ("
 
 ---
 
+## Anime Prompt Grammar (90s anime style — for Seedance + Nano Banana)
+
+Adapted from the `cinema-worldbuilder` skill. The skill is built for live-action photoreal (ARRI/Kodak/anamorphic specs) — none of that applies to illustrated anime. But the **structure and rules** translate cleanly. Use this on every prompt for this client.
+
+### Three-block paragraph structure
+
+Every prompt is one continuous paragraph with three inline sections:
+
+1. **Style & Mood** — one sentence on the emotional/visual register ("90s anime illustrated style, late-night ramen shop energy, one emotion: detonation")
+2. **Dynamic Description** — what HAPPENS across the shot: action, physics, camera moves, slow-motion beats. Energy and forces, not positions.
+3. **Static Description** — what does NOT change: locked character details, environment, props, lighting. Extracted from the start-image only — never invented.
+
+Followed by a diegetic audio line (see below).
+
+### Anime "mode" grammar (replaces cinema-worldbuilder's five cinema modes)
+
+| Shot type | Grammar to use |
+|---|---|
+| **Impact shots** (bowl slam, cleaver hit) | "anime impact frame, radial speed lines from contact point, ground crack hairline forming, dust burst, slow-motion debris suspension, single bright flash on contact" |
+| **Motion shots** (noodle whirlwind, fight choreography) | "anime motion lines, blur streaks behind movement, frozen droplet suspension mid-air, hold-on-action pose, radial speed lines from the subject" |
+| **Power-up / aura shots** | "anime power-up burst, radial light explosion from the body, hair lift from energy, eye flash white, dragon steam from the mouth/ears, aura erupting behind the subject, background blown out to single color" |
+| **Establishing / mood shots** | "90s anime illustrated establishing shot, warm interior light, painted background detail, hand-drawn cel shading, gentle film grain overlay" |
+
+### Diegetic audio rule (universal)
+
+Audio line at the end of every prompt — describes only physical sounds in the scene. Never music, never lyrics.
+
+Allowed: cleaver-on-garlic thunk, ceramic bowl ring, broth bubble, steam hiss, fabric rustle, chopstick clink, ambient shop chatter, sizzle from the pots.
+Not allowed: any music descriptor, any song reference, any score language.
+
+Music gets uploaded separately into Seedance as a media reference. The prompt is text-only.
+
+### Universal rules (apply to every anime prompt)
+
+1. **Style & Mood + Dynamic + Static + Audio** — same structure every time, one continuous paragraph.
+2. **Energy over position** — write what FORCE does to a body. "Body folds with impact" beats "she gets hit."
+3. **One emotion per clip** — name it explicitly at the end ("one emotion: detonation"). Don't stack emotions.
+4. **No-invention rule** — only describe what's visible in the start-image. Don't add details that aren't there.
+5. **No real brand names** — use generic descriptors ("Japanese ramen shop" not "GARLIC HIGH").
+6. **Camera direction, not action description** — "camera holds tight, slight shake from impact" beats "we see her hit it."
+7. **Physics over actions** — "the counter shakes, dust rises" beats "the cleaver slams down."
+8. **Anchor characters with 1-2 specific details from the reference** (pink headband, brown hair, black blazer) — never invent.
+9. **Always include the style anchor phrase** — "90s anime illustrated style" goes in every prompt.
+10. **Single bright flash on impact** — anime cliché but lands every time for impact frames.
+
+### Example structure applied
+
+> **Style & Mood:** 90s anime illustrated style, late-night ramen shop energy, one emotion: detonation. **Dynamic Description:** The chef drives a cleaver straight down onto a giant whole garlic head on the counter. Blade contacts — garlic detonates, skin peeling back, cloves blasting outward in slow motion. The whole shop shudders, lights flicker once. Steam from the broth pots jets sideways from the shockwave. Chef's face stays calm. Camera holds tight on the garlic, slight shake from impact, single bright flash at contact. Anime impact frame with radial speed lines from the blade and ground crack hairline forming under the cutting board. **Static Description:** Young Japanese chef in white coat and cap behind a wooden counter. Oversized whole garlic head, larger than a fist, sitting on a cutting board centered in the frame. Background: warm ramen shop interior, hanging paper lanterns, stainless steel pots steaming on the back wall. Warm golden interior light. **Audio:** diegetic only — sharp cleaver-on-garlic thunk, ceramic clatter on the counter, low broth bubble from the back, brief fabric rustle on the chef's coat, no music.
+
+---
+
 ## Locked Seedance Prompts (v2 — Savage Concept)
 
 **Settings for all shots:** seedance_2_0, 480p, 9:16, 4-5 sec, mode std, no music (bake music in only after shot is approved).
@@ -224,16 +283,16 @@ Rule: for character close-ups with intense expressions, swap aggressive verbs ("
 The chef slams a cleaver down onto a giant whole garlic head on the counter. The blade hits — instant impact. Garlic flakes blast outward in every direction in slow motion. The whole shop shudders, lights flicker once. Steam from the broth pots shoots upward. Chef's face stays calm. 90s anime illustrated style with anime impact frame — radial speed lines from the blade, ground crack hairline forming. Warm interior light cut by a single flash. Camera holds tight on the garlic head, slight shake from impact. One emotion: detonation.
 
 ### Shot 3 — Noodle WHIRLWIND (5 sec)
-**Images:** `clients/Garlic-high/assets/shot3_start.png` (start-image) + `Images/GHsuit.png` (character reference)
+**Images:** `Images/hgshot3_noodle.png.png` (start-image)
 **Format:** 9:16 vertical
 **Prompt:**
-Extreme close-up on the bowl. Chopsticks rip a thick mound of glossy noodles straight upward — so violently the strands form a swirling vortex above the bowl. Broth droplets freeze mid-air around the spiral. Anime speed lines radiate from the bowl outward. The bowl rim trembles. Steam bends sideways from the pull. 90s anime illustrated style. Warm interior light, golden tones. Camera holds static, dead-on bowl angle. One emotion: violence.
+90s anime illustrated style, extreme close-up food action, one emotion: violence. Chopsticks rip a thick mound of glossy noodles straight upward — strands form a swirling vortex above the bowl. Broth droplets freeze mid-air around the spiral. Bowl rim trembles from the force. Steam bends sideways from the pull. Anime motion lines — radial speed lines from the bowl outward, blur streaks behind the noodle strands, frozen droplet suspension mid-air. Ramen bowl on wooden counter, chopsticks gripping thick noodle bundle, steam rising. Warm golden interior light. Diegetic audio only: chopstick clink, wet noodle pull, broth droplets hitting the counter, ambient shop chatter behind.
 
-### Shot 4 — First bite POWER-UP (5 sec)
-**Images:** `clients/Garlic-high/assets/shot4_start.png` (start-image) + `Images/GHsuit.png` (character reference)
+### Shot 4 — First Bite POWER-UP (5 sec)
+**Images:** `Images/hgshot3.png` (start-image)
 **Format:** 9:16 vertical
 **Prompt:**
-Same young woman, brown hair, black blazer, seated at the counter. She bites down on a mouthful of noodles. The instant her teeth close — her eyes flash bright white. A red and gold aura erupts behind her, filling the frame. Steam shoots from her ears like a dragon. Her hair lifts upward from the energy. The background blows out into pure red. Anime power-up moment — radial light lines exploding from her head. 90s anime illustrated style. Camera holds static, medium close-up. One emotion: ascension.
+90s anime illustrated style, mid-bite power moment, one emotion: ascension. Young woman bites down on a mouthful of noodles — the instant her teeth close, her eyes flash bright white. Red and gold aura erupts behind her, filling the frame. Steam shoots from her ears like a dragon. Her hair lifts upward from the energy. Background blows out to pure red. Anime power-up burst — radial light lines exploding from her head, hair lift from energy, aura erupting behind her. Young woman, brown hair, pink headband, black blazer, seated at counter. Japanese ramen shop sign visible behind her. Warm interior light. Diegetic audio only: chopstick clink, bite sound, then silence — then steam hiss like pressure releasing.
 
 ---
 
@@ -253,18 +312,28 @@ Same young woman, brown hair, black blazer, seated at the counter. She bites dow
 
 ## Status
 
-May 12 2026:
-- Shot 1 v2 (slam): ✓ APPROVED
-- Shot 2 v2 (stare): killed — too quiet, no impact
-- **Direction reset → v3 WILD ANIME locked.** Food is the hero in every shot. Impossible physics, anime impact frames, aura/power-up moments. No more psychological beats.
-- New prompts written for Shot 2 (Garlic NUKE), Shot 3 (Noodle WHIRLWIND), Shot 4 (Power-up).
+May 12 2026 (session 2):
+- Tracker fixed — credentials.json, config.json, token.json all copied to CreativeStudio root. Logging works.
+- End card updated — `soon.png` replaces `logoendcard.png`. Now includes: "MORE GARLIC POR FAVOR" + Sunnyvale · Yorba Linda · Torrance Coming Soon + garlichigh.com
+- Shot order changed — Bowl SLAM opens (proven food hook), Garlic NUKE moves to Shot 2
+- Clip length locked — generate at 4 sec (minimum), trim to 3 sec in FFmpeg
+- Music locked — `Garlic High.mp3`, bake-in method (cut into 4 x 3-sec segments, one per shot)
+- SFX plan — Old-School Shonen SFX pack downloaded from heltonyan.itch.io. Apply in Descript after stitching.
+- All 3 video prompts updated with full 3-block anime grammar structure + pace lines
 
-**Next steps:**
-1. Generate start-image for Shot 2 (chef + cleaver + giant garlic head)
-2. Generate Shot 2 — Garlic NUKE
-3. Generate Shot 3 — Noodle WHIRLWIND (start-image already locked)
-4. Generate Shot 4 — First Bite POWER-UP (start-image already locked)
-5. Trim each to 2-3s sweet spot in FFmpeg
-6. Stitch + text overlay + NOTICE end card
+**Final shot order:**
+1. Bowl SLAM ✓ DONE — `outputs/shot1_bowl_v2_slam.mp4` (needs trim to 3 sec)
+2. Garlic NUKE — start-image: `Images/hgshot1.png` (not generated yet)
+3. Noodle WHIRLWIND — start-image: `Images/hgshot3_noodle.png.png` (not generated yet)
+4. First Bite POWER-UP — start-image: `Images/hgshot3.png` (not generated yet)
 
-**Tracker note:** `tracker/log.js` still broken — missing `credentials.json` in CreativeStudio root. No generations this session were logged to Sheet. Fix before campaign work.
+**Next steps (pick up here):**
+1. Generate Shot 2 (Garlic NUKE) via Seedance CLI
+2. Generate Shot 3 (Noodle WHIRLWIND) via Seedance CLI
+3. Generate Shot 4 (First Bite POWER-UP) via Seedance CLI
+4. Trim all 4 clips to 3 sec in FFmpeg
+5. Cut Garlic High.mp3 into 4 x 3-sec segments
+6. Stitch in order: Bowl SLAM → Garlic NUKE → Noodle WHIRLWIND → Power-UP
+7. Add SFX + music in Descript
+8. Slam soon.png end card over Shot 4 power-up moment
+9. Export
