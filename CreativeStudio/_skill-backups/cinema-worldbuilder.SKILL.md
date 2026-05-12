@@ -27,12 +27,11 @@ This skill is installed inside Cal's CreativeStudio project. The default workflo
 - `--generate_audio` is NOT supported on Seedance 2.0. Strip audio post-gen if needed: `ffmpeg -i input.mp4 -an output.mp4`.
 - `--start-image` always locks the first frame. Pass it when you want a specific reference at the start; omit for lifestyle scenes.
 
-**Canonical CLI execution pattern (after the prompt code block is approved):**
+**Canonical CLI execution pattern (after the prompt code block is approved). The model name is the FIRST positional argument after `create` — NOT a `--model` flag, that will fail:**
 
 ```bash
-cd "C:/Users/Aesth/Desktop/Zentara/Projects/CreativeStudio" && higgsfield generate create \
+cd "C:/Users/Aesth/Desktop/Zentara/Projects/CreativeStudio" && higgsfield generate create seedance_2_0 \
   --prompt "<full Seedance prompt text>" \
-  --model seedance_2_0 \
   --duration <runtime_in_seconds, min 4> \
   --resolution 480p \
   --aspect_ratio 1:1 \

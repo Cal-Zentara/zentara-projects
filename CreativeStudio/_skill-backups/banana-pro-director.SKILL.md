@@ -34,7 +34,7 @@ This skill is installed inside Cal's CreativeStudio project. The default workflo
 - After every generation, open the result file with `start "" "<path>"` so Cal can see it immediately.
 - Image model rule: `soul_cinematic` for character faces and outfits, `nano_banana_2` for fusing and everything else (products, creatures, environments), `gpt_image_2` only when text rendering is needed.
 
-**Model name → CLI `--model` value:**
+**Model name → CLI positional argument value (the model name is the FIRST positional argument after `create` — it is NOT a `--model` flag, that will fail):**
 
 | Skill mode | CLI model value |
 |---|---|
@@ -48,9 +48,8 @@ This skill is installed inside Cal's CreativeStudio project. The default workflo
 **Canonical CLI execution pattern (after the prompt code block is approved):**
 
 ```bash
-cd "C:/Users/Aesth/Desktop/Zentara/Projects/CreativeStudio" && higgsfield generate create \
+cd "C:/Users/Aesth/Desktop/Zentara/Projects/CreativeStudio" && higgsfield generate create <model_value_from_table_above> \
   --prompt "<full prompt text>" \
-  --model <model_value_from_table_above> \
   --wait \
   --json | node tracker/log-from-json.js "<short summary, ~10 words>" "<model_value>" "<client_name>"
 ```
