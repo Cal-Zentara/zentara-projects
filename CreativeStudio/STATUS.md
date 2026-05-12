@@ -2,6 +2,15 @@
 
 *Last updated: 2026-05-11*
 
+## Completed this session (2026-05-11, late evening — discovery skill)
+- Built new skill `creative-discovery-client` — video-first 6-question intake interview that scaffolds the full client folder (brief.md, CLAUDE.md, assets/, outputs/) and adds a row to STATUS.md. Triggers on "new client", "client discovery", "starting a new client".
+- Two optional extras after lock: background niche research (subagent) + 3 cheap exploration images. Both opt-in.
+- Retired stale `client-creative` skill — Salvia-Lion-era product-photo workflow superseded by current video-first flow.
+- Skill backup saved to `_skill-backups/creative-discovery-client.SKILL.md` (since `.claude/` is gitignored).
+- Committed global `.claude/` snapshot at `C:/Users/Aesth/.claude` — 91 pending changes resolved in one snapshot commit (new global skills, expanded impeccable references, research-to-connect API docs).
+- Committed tracker fix (`log-from-json.js` handles `result_url` / `result_urls[0]` JSON shapes) + first Lucy test image from the banana-pro-director skill validation.
+- Date corrections: STATUS.md + JOURNEY.md entries flipped from 2026-05-12 → 2026-05-11.
+
 ## Completed this session (2026-05-11, evening)
 - Installed Joey's two new free Claude skills — `banana-pro-director` (image prompts) and `cinema-worldbuilder` (Seedance video prompts) at `.claude/skills/`
 - Added a "CreativeStudio CLI Integration" section to both skills so they run via Higgsfield CLI with auto-log to Google Sheet (overrides Joey's default "paste into web UI" workflow)
