@@ -140,7 +140,7 @@ Then I clicked around the dashboard and found a "pause" button right there. Does
 
 ---
 
-## May 12, 2026 — I Was Using Anime AI Like a Regular Ad
+## May 11, 2026 — I Was Using Anime AI Like a Regular Ad
 
 I've been making this ramen ad and I kept trying to make it look like a normal commercial. Girl sits down. Girl looks at her food. Girl looks at the camera. Every shot I made was boring. Only one shot hit — the one where a bowl crashed down. Everything else felt flat.
 
@@ -154,7 +154,7 @@ I scrapped the whole storyboard. New direction: every shot is impossible. Every 
 
 ---
 
-## May 12, 2026 — The AI Thought My Anime Girl Was Too Aggressive
+## May 11, 2026 — The AI Thought My Anime Girl Was Too Aggressive
 
 Building a ramen ad for a client. The shot was simple — a girl sitting at the counter, looking at her bowl, then looking at the camera. That's it. No fighting. No violence. Just a stare.
 

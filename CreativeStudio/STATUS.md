@@ -1,6 +1,6 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-12*
+*Last updated: 2026-05-11*
 
 ## Completed this session (2026-05-11, evening)
 - Installed Joey's two new free Claude skills — `banana-pro-director` (image prompts) and `cinema-worldbuilder` (Seedance video prompts) at `.claude/skills/`
@@ -11,7 +11,7 @@
 - Updated Quick Nav to point to the new Zephr file
 - **All untested — first real client gen is the validation moment**
 
-## Completed this session (2026-05-12)
+## Completed this session (2026-05-11, Garlic High demo work)
 - Shot 1 (bowl slam) v2 generated and APPROVED for Garlic High demo
 - All Shot 2/3/4 start-images regenerated for stronger anime motion (mid-action poses, 3/4 angles)
 - B-roll concept pivoted: cozy noodle macro → feral mouth close-up (matches "Savage & Happy" brand)
@@ -22,7 +22,7 @@
 - B-roll mood word locked: "feral" instead of "demolition" (warmer, matches Savage & Happy)
 - Tracker still broken — credentials.json missing — pushed through without logging
 
-## Completed this session (2026-05-12, late — wild anime pivot)
+## Completed this session (2026-05-11, late — wild anime pivot)
 - **Concept reset → v3 WILD ANIME locked.** Two earlier passes (cozy v1, savage stares v2) confirmed: every shot needs food-as-hero + impossible physics. No psychological beats. Shot 1 was the only one that hit because the food was the star.
 - New 4-shot structure: Bowl SLAM ✓ / Garlic NUKE (chef cleaver, lights flicker) / Noodle WHIRLWIND (chopsticks vortex, frozen broth droplets) / First Bite POWER-UP (eyes flash white, aura, dragon steam from ears).
 - Garlic High CLAUDE.md updated: new Locked Video Concept v3 + new Shot 2/3/4 prompts written.
