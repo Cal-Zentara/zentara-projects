@@ -28,7 +28,10 @@ try {
 }
 
 // Extract URL — handle different Higgsfield output shapes
+const firstJob = Array.isArray(data) ? data[0] : data;
 const outputUrl =
+  firstJob?.result_url ||
+  (Array.isArray(firstJob?.result_urls) && firstJob.result_urls[0]) ||
   (Array.isArray(data.output) && data.output[0]) ||
   data.url ||
   data.video_url ||
