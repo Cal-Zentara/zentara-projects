@@ -1,6 +1,6 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-11*
+*Last updated: 2026-05-12*
 
 ## Completed this session (2026-05-11, evening)
 - Installed Joey's two new free Claude skills — `banana-pro-director` (image prompts) and `cinema-worldbuilder` (Seedance video prompts) at `.claude/skills/`
@@ -22,7 +22,23 @@
 - B-roll mood word locked: "feral" instead of "demolition" (warmer, matches Savage & Happy)
 - Tracker still broken — credentials.json missing — pushed through without logging
 
-## What's next (Garlic High, paused mid-session)
+## Completed this session (2026-05-12, late — wild anime pivot)
+- **Concept reset → v3 WILD ANIME locked.** Two earlier passes (cozy v1, savage stares v2) confirmed: every shot needs food-as-hero + impossible physics. No psychological beats. Shot 1 was the only one that hit because the food was the star.
+- New 4-shot structure: Bowl SLAM ✓ / Garlic NUKE (chef cleaver, lights flicker) / Noodle WHIRLWIND (chopsticks vortex, frozen broth droplets) / First Bite POWER-UP (eyes flash white, aura, dragon steam from ears).
+- Garlic High CLAUDE.md updated: new Locked Video Concept v3 + new Shot 2/3/4 prompts written.
+- Three new start-image prompts written for Cal to generate (Shot 2/3/4 setups, all "half-second before impact" framing).
+- B-roll cut from plan — 4 shots only, every shot is its own impact.
+- Saved feedback memory: "Push AI video to the wild version, not the safe one" — for future creative work, lead with the impossible version first.
+
+## What's next (Garlic High — paused for fresh session)
+- Cal generates 3 new start-images via Higgsfield web (nano_banana_2): Shot 2 cleaver setup, Shot 3 noodle pull setup, Shot 4 mid-bite setup
+- Drop favorites into `clients/Garlic-high/assets/`
+- Claude generates Shots 2, 3, 4 via Seedance 2.0 (480p, 9:16, 5s each, std mode)
+- Trim each to 2-3s sweet spot
+- Stitch with FFmpeg + NOTICE end card + text overlay
+- Tracker still broken — credentials.json missing — fix before next campaign
+
+## What's next (OLD — superseded by wild anime pivot above)
 - Cal to choose: add physical action to Shot 2 / move eye-lock to Shot 3 / cut Shot 2 entirely
 - Generate Shots 3, 4, B-roll
 - Trim + stitch in FFmpeg → 10-12s final reel

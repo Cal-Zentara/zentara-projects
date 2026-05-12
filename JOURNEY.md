@@ -140,6 +140,20 @@ Then I clicked around the dashboard and found a "pause" button right there. Does
 
 ---
 
+## May 12, 2026 — I Was Using Anime AI Like a Regular Ad
+
+I've been making this ramen ad and I kept trying to make it look like a normal commercial. Girl sits down. Girl looks at her food. Girl looks at the camera. Every shot I made was boring. Only one shot hit — the one where a bowl crashed down. Everything else felt flat.
+
+Then it clicked. The AI tool I'm using can do impossible stuff. Things you can't film in real life. Cleavers slamming and the whole shop shaking. Noodles spinning in the air like a tornado. A girl biting in and a red aura blasting out behind her like she leveled up. I was filming a real-life ad with a tool built to break reality.
+
+I scrapped the whole storyboard. New direction: every shot is impossible. Every shot has to hit like the bowl slam did. No quiet stares. No psychological beats. Just impact after impact after impact.
+
+**What I learned:** If the tool can do impossible things, don't use it to make normal things. Push it to the wall.
+
+**Content idea:** "I was using the most powerful AI video tool on the planet to make a boring ad. Then I realized I could make anime physics. Cleaver slams. Tornado noodles. Power-up auras. Same tool. Whole different game."
+
+---
+
 ## May 12, 2026 — The AI Thought My Anime Girl Was Too Aggressive
 
 Building a ramen ad for a client. The shot was simple — a girl sitting at the counter, looking at her bowl, then looking at the camera. That's it. No fighting. No violence. Just a stare.

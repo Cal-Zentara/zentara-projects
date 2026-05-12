@@ -144,22 +144,21 @@ Target: ramen shop owner. Working toward a paid ads + social media campaign deal
 
 ---
 
-## Locked Video Concept (Demo Reel — One Video to Close the Deal)
+## Locked Video Concept (Demo Reel — v3 WILD ANIME)
 
-**Emotion:** Savage. Shameless. Doesn't flinch.
-**Not:** Cozy, quiet, tired office worker finding comfort.
-**Yes:** She knows it'll wreck her. She orders more garlic anyway.
+**Direction (locked May 12 2026):** Stop filming this like a regular ad. Use Seedance to do impossible physics. 90s anime / Food Wars / Shonen energy. Impact frames, aura shots, dragon breath, speed lines. Nothing safe, nothing quiet, no psychological beats.
 
-**Shot structure:**
-1. Bowl slams down — garlic piled on top. Close-up. Steam rising. (Hook — sensory first.)
-2. GHsuit girl stares at it. Dead serious. Looks at camera.
-3. She goes in — no hesitation. Full send.
-4. Comes up. Garlic breath. Doesn't flinch. Slight grin.
-5. Text slams on screen: **MORE GARLIC POR FAVOR.**
-6. End card: NOTICE badge — "THE BOWL YOU CAN'T FORGET. THE GARLIC YOU WILL SMELL. THE EXPERIENCE YOU'LL CRAVE."
+**Why v3:** v1 (cozy) and v2 (savage stares) both failed the same way — too much girl-staring, not enough food. Cal feedback: Shot 1 (bowl slam) was the only thing that hit because the FOOD was the hero. Rebuild every shot around impossible food physics. Her face is a reaction beat, not the subject.
 
-**Format:** 9:16, 480p for test, 4s per clip, Seedance 2.0.
-**Music:** Split-track method. Generate on Suno first — high energy, not cozy.
+**Shot structure (v3):**
+1. **Bowl SLAM ✓** — ramen bowl crashes down, steam erupts, garlic pile shudders. (KEEP — approved.)
+2. **Garlic NUKE** — chef SLAMS a massive garlic clove with a cleaver. Whole shop shakes. Garlic flakes blast outward slow-motion. Lights flicker. Anime impact frame.
+3. **Noodle WHIRLWIND** — extreme close-up. Chopsticks rip noodles up so violently they form a swirling vortex. Broth droplets freeze mid-air. Anime speed lines around the bowl.
+4. **First bite POWER-UP** — she bites in. Eyes flash white. Aura erupts behind her. Steam shoots out her ears like a dragon. Hair lifts. Background goes red.
+5. End card: NOTICE badge slams in — "MORE GARLIC POR FAVOR."
+
+**Format:** 9:16, 480p test, 4-5s per clip, Seedance 2.0.
+**Music:** Split-track. Garlic High.mp3 cut into 4 segments, one per shot.
 
 ---
 
@@ -218,25 +217,23 @@ Rule: for character close-ups with intense expressions, swap aggressive verbs ("
 **Prompt:**
 > A ramen bowl crashes down on a wooden counter. The moment of impact — ceramic rings against wood, steam bursts upward in a thick column, the heaped pile of raw minced garlic shudders and a single flake falls. The bowl settles. 90s anime illustrated style. Warm golden light from above. Camera holds tight on the bowl, slight shake from impact, then steady. One emotion: arrival.
 
-### Shot 2 — She stares (5 sec)
-**Images:** `clients/Garlic-high/assets/GH_shop_seated.png` (start-image) + `Images/GHsuit.png` (character reference)
-**Format:** 9:16 vertical (Reels / TikTok / Shorts)
+### Shot 2 — Garlic NUKE (5 sec)
+**Images:** TBD — likely regenerate a start-image of the chef raising a cleaver over a massive whole garlic head on the counter. Use `Images/RAMEN SHOP ASSET.png` for shop background reference.
+**Format:** 9:16 vertical
 **Prompt:**
-> Same young woman from the reference image — brown hair, black blazer — seated at the ramen counter inside the shop. Bowl in front of her, steam rising. Camera pushes in slowly from the wide shot to a medium close-up on her face. Her smile drops. Shoulders settle. Jaw sets. She raises her eyes from the bowl and looks directly into the camera. Holds there. 90s anime illustrated style. Warm interior light. One emotion: decision.
+The chef slams a cleaver down onto a giant whole garlic head on the counter. The blade hits — instant impact. Garlic flakes blast outward in every direction in slow motion. The whole shop shudders, lights flicker once. Steam from the broth pots shoots upward. Chef's face stays calm. 90s anime illustrated style with anime impact frame — radial speed lines from the blade, ground crack hairline forming. Warm interior light cut by a single flash. Camera holds tight on the garlic head, slight shake from impact. One emotion: detonation.
 
-### Shot 3 — She goes in (5 sec)
-**Images:** `clients/Garlic-high/assets/GH_shop_seated.png` (start-image) + `Images/GHsuit.png` (character reference)
-**Format:** 9:16 vertical (Reels / TikTok / Shorts)
+### Shot 3 — Noodle WHIRLWIND (5 sec)
+**Images:** `clients/Garlic-high/assets/shot3_start.png` (start-image) + `Images/GHsuit.png` (character reference)
+**Format:** 9:16 vertical
 **Prompt:**
-> Same young woman from the reference image — brown hair, black blazer — seated at the ramen counter. She leans forward without hesitation. Chopsticks drop into the bowl. Shoulders cave forward, whole upper body follows. Pulls a mound of noodles and drives it into her mouth — no pause, no ceremony. 90s anime illustrated style. Warm interior light, chef visible in background. Camera holds static, medium shot. One emotion: savage.
+Extreme close-up on the bowl. Chopsticks rip a thick mound of glossy noodles straight upward — so violently the strands form a swirling vortex above the bowl. Broth droplets freeze mid-air around the spiral. Anime speed lines radiate from the bowl outward. The bowl rim trembles. Steam bends sideways from the pull. 90s anime illustrated style. Warm interior light, golden tones. Camera holds static, dead-on bowl angle. One emotion: violence.
 
-### Shot 4 — Comes up shameless (5 sec)
-**Images:** `clients/Garlic-high/assets/GH_shop_seated.png` (start-image) + `Images/GHsuit.png` (character reference)
-**Format:** 9:16 vertical (Reels / TikTok / Shorts)
+### Shot 4 — First bite POWER-UP (5 sec)
+**Images:** `clients/Garlic-high/assets/shot4_start.png` (start-image) + `Images/GHsuit.png` (character reference)
+**Format:** 9:16 vertical
 **Prompt:**
-> Same young woman from the reference image — brown hair, black blazer — seated at the ramen counter. She pulls back from the bowl. Slow. Shoulders still rolled forward. A long exhale. Eyes slightly unfocused. Then the corner of her mouth pulls up — just barely. A single garlic flake stuck to her lower lip. She doesn't wipe her mouth. She doesn't look away. 90s anime illustrated style. Warm interior light. Camera holds static, medium close-up. One emotion: shameless.
-
-**Optional anchor detail for Shot 4:** add "single garlic flake stuck to her lower lip" for shameless beat.
+Same young woman, brown hair, black blazer, seated at the counter. She bites down on a mouthful of noodles. The instant her teeth close — her eyes flash bright white. A red and gold aura erupts behind her, filling the frame. Steam shoots from her ears like a dragon. Her hair lifts upward from the energy. The background blows out into pure red. Anime power-up moment — radial light lines exploding from her head. 90s anime illustrated style. Camera holds static, medium close-up. One emotion: ascension.
 
 ---
 
@@ -258,15 +255,16 @@ Rule: for character close-ups with intense expressions, swap aggressive verbs ("
 
 May 12 2026:
 - Shot 1 v2 (slam): ✓ APPROVED
-- Shot 2 v1: NSFW blocked → v2 softened generated → Cal says too quiet
-- All start-images approved: `shot2_start.png`, `shot3_start.png`, `shot4_start.png`, `broll_noodles_pull.png`
-- B-roll prompt locked (mood: feral)
+- Shot 2 v2 (stare): killed — too quiet, no impact
+- **Direction reset → v3 WILD ANIME locked.** Food is the hero in every shot. Impossible physics, anime impact frames, aura/power-up moments. No more psychological beats.
+- New prompts written for Shot 2 (Garlic NUKE), Shot 3 (Noodle WHIRLWIND), Shot 4 (Power-up).
 
-**Next decision (waiting on Cal):**
-1. Add physical action to Shot 2 (sleeves up, knuckles crack), OR
-2. Move eye-lock to end of Shot 3, OR
-3. Cut Shot 2 entirely — go bowl → savage → smug
-
-**Then:** generate Shots 3, 4, B-roll → trim to ~10-12s in FFmpeg → text overlay + NOTICE end card → final stitch.
+**Next steps:**
+1. Generate start-image for Shot 2 (chef + cleaver + giant garlic head)
+2. Generate Shot 2 — Garlic NUKE
+3. Generate Shot 3 — Noodle WHIRLWIND (start-image already locked)
+4. Generate Shot 4 — First Bite POWER-UP (start-image already locked)
+5. Trim each to 2-3s sweet spot in FFmpeg
+6. Stitch + text overlay + NOTICE end card
 
 **Tracker note:** `tracker/log.js` still broken — missing `credentials.json` in CreativeStudio root. No generations this session were logged to Sheet. Fix before campaign work.
