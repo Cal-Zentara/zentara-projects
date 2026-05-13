@@ -119,7 +119,7 @@ One image → one Seedance gen → FFmpeg post. Cohesive output, fewer credits, 
 4. **Post (FFmpeg).** Trim 1.5-2s off the end (Seedance appends the storyboard frame). Add music. Append end card.
 
 **Storyboard-first gotchas:**
-- **Never pass `--audio` to Seedance CLI.** It silently fails — the CLI auto-sets `generate_audio: true` which Seedance 2.0 doesn't support. Result is status `failed` with no error message. Bake music in via FFmpeg post-gen.
+- **Never pass `--generate_audio` to Seedance CLI.** That flag doesn't exist on Seedance 2.0 — it only exists on `marketing_studio_video`. Using it silently fails with no error message. To bake music in, use `--audio ./track.mp3` — that is the correct flag and works on Seedance 2.0.
 - **`-c copy` trim doesn't cut on non-keyframes.** When trimming the storyboard frame off the end, re-encode: `-c:v libx264 -pix_fmt yuv420p -r 24`. Otherwise the unwanted frame stays.
 - **Seedance appends source storyboard at end** (~13.5s on a 15s gen). Always trim before adding end card.
 - Aggressive verbs (violently, detonates, rip, blast, glare, lock) trigger NSFW filter and fail the gen silently. Soften: lands hard, lift sharply, rushing, looks, lifts.
@@ -187,6 +187,11 @@ CreativeStudio/
 ├── STATUS.md
 ├── CLAUDE.md                  ← universal rules (this file)
 ├── tracker/                   ← Google Sheets logging scripts
+├── system-prompts/            ← locked system prompts for the creative-pipeline skill
+│   ├── storyboard-architect.md     ← Joey's free version, image gen prompt writer
+│   └── video-prompt-architect.md   ← custom, Seedance video prompt writer (reads storyboard)
+├── docs/superpowers/specs/    ← design docs for skills/tools built here
+├── _skill-backups/            ← git-tracked copies of skills (since .claude/ is gitignored)
 └── clients/
     └── [client-name]/
         ├── CLAUDE.md          ← locked formulas, NSFW words, prompt templates
@@ -194,6 +199,10 @@ CreativeStudio/
         ├── assets/            ← logos, product photos, brand colors
         └── outputs/           ← generated videos/images, ready to deliver
 ```
+
+**Available skills:**
+- `creative-pipeline` — full storyboard-first ad pipeline (brief → storyboard → approval → video → music + end card). Trigger: `/creative-pipeline` or "run the pipeline" or "let's make a video for [client]". Reads `system-prompts/` and auto-loads `clients/[name]/` if a client is named.
+- `creative-discovery-client` — onboards a new client (6-question intake, scaffolds folder). Trigger: "new client" or "client discovery". Run this BEFORE `creative-pipeline` if the client doesn't have a folder yet.
 
 **Adding a new client:**
 1. Create folder under `clients/`

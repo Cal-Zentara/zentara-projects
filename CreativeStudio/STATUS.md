@@ -2,6 +2,23 @@
 
 *Last updated: 2026-05-13*
 
+## Completed this session (2026-05-13 — creative-pipeline skill build)
+- Researched Higgsfield CLI capabilities in depth. **Major finding:** `--audio` IS a real flag for Seedance 2.0 CLI. What silently fails is `--generate_audio` (doesn't exist on Seedance 2.0, only exists on `marketing_studio_video`). Updated studio root CLAUDE.md and Garlic High CLAUDE.md to fix the wrong gotcha.
+- Built **`creative-pipeline` skill** at `.claude/skills/creative-pipeline/SKILL.md`. Walks Claude through full storyboard-first pipeline: setup → storyboard prompt → image gen → approval gate (regen full / edit panel / approve) → video prompt → video gen → FFmpeg post (trim + music + end card) → log + save. Babysit mode — pauses for user approval at every step.
+- Wrote two locked system prompts:
+  - `system-prompts/storyboard-architect.md` — Joey's free version, verbatim (turns brief + product image into 12-panel storyboard prompt)
+  - `system-prompts/video-prompt-architect.md` — custom Seedance video prompt architect (the "secret" from Joey's paid community). Reads storyboard + brief → writes Seedance 2.0 video prompt with all Garlic High lessons baked in (NSFW trap words + soft replacements, energy/physics language, diegetic audio rule, character anchor rule, 2000-char cap).
+- Saved design doc at `docs/superpowers/specs/2026-05-13-creative-pipeline-skill-design.md` with v1 (Cal's version) / v2 (shareable friend version) build phases.
+- Saved skill backup at `_skill-backups/creative-pipeline.SKILL.md` for git.
+- Decided: NO web app, NO Higgsfield Canvas clone, NO node graph. Skill-based pipeline that runs through Claude Code. Cal + friend each install on their own machines, each use their own Higgsfield CLI credits + Claude API. Same recipe, identical output quality.
+
+**Build order locked (the build the user wants to repeat for future tools):**
+1. Write the locked system prompts FIRST (the magic is here, not in the plumbing)
+2. Write the skill file SECOND (just CLI commands + approval gates + file paths)
+3. Backup to git
+4. Test once on a real client
+5. Save session
+
 ## Completed this session (2026-05-13 — storyboard-first pivot)
 - Pivoted Garlic High to **storyboard-first workflow**. One 12-panel storyboard image → one Seedance gen animating across it → FFmpeg post for music + end card. Replaces shot-by-shot generation as primary.
 - Tried Higgsfield Canvas `1image2fullAD [lite-version]` template — works but the lite version's second LLM node doesn't generate proper Seedance video prompts (just describes the storyboard). Cal pasted manual prompt into Video Generation node to bypass.
@@ -53,6 +70,12 @@
 - Three new start-image prompts written for Cal to generate (Shot 2/3/4 setups, all "half-second before impact" framing).
 - B-roll cut from plan — 4 shots only, every shot is its own impact.
 - Saved feedback memory: "Push AI video to the wild version, not the safe one" — for future creative work, lead with the impossible version first.
+
+## What's next (creative-pipeline skill)
+- **First real test run:** Trigger `/creative-pipeline` on Garlic High. Use existing locked storyboard (`hf_20260513_053145_695db5f1-...png`) as input or generate fresh. Validate: storyboard prompt quality, video prompt quality, NSFW pass, FFmpeg post correctness, log to Sheet.
+- If first run passes → mark skill as production-ready. If not → tune whichever phase broke.
+- v2 (friend's generic mode): not yet started. Ship after v1 proves itself.
+- Skill backup committed to git in next commit.
 
 ## What's next (Garlic High — paused May 12 session 2)
 - All start-images locked. Tracker fixed. End card updated to soon.png (cities + franchise angle).

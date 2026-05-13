@@ -169,3 +169,31 @@ The picture didn't change. Just the way I described it.
 **Content idea:** "I tried to make an anime ad. The AI blocked it because my anime girl looked 'too serious.' Same girl, same bowl, same camera — I just had to change three words and it worked."
 
 ---
+
+## May 13, 2026 — I Had the Wrong Rule Written Down for Days
+
+I had a rule documented in my notes. Don't use this one feature on the AI video tool — it breaks the video every time. I'd been avoiding it for days. Telling Claude not to touch it. Treating it like a known bug.
+
+Today I checked it. Turns out the feature worked the whole time. The thing that actually breaks the video is a different word — one letter off from what I had written down. I'd been hiding from something that wasn't even broken.
+
+The annoying part is I never tested it. I just wrote down the rule and trusted it. Lost days of potential output because I was scared of a button that actually worked.
+
+**What I learned:** If you write down a rule about a tool, test it once. Otherwise you're just making up rules and following them.
+
+**Content idea:** "I wrote down a 'rule' about a tool I use every day. Avoid this feature, it breaks everything. Followed it for a week. Turns out the feature works fine. I had the wrong word written down the whole time."
+
+---
+
+## May 13, 2026 — A Guy Locked His "Secret AI Trick" Behind a Paid Community
+
+Watched a YouTube tutorial. Guy walks through his whole AI video workflow. Free, here it is, take everything. Then near the end he goes "and this last part is for my paid community only." Top secret node, his words.
+
+I went looking for what the secret actually was. Got a glimpse. It was literally a prompt that says "You are an expert video prompt writer." Same thing he gave away free for the first half of the video, just for a different step. Nothing magical. Nothing hidden. Just text in a box.
+
+People will gate the most ordinary thing if they think you'll pay for it.
+
+**What I learned:** Most "secrets" in this space are just confidence. The actual move is doing the work, not paying for the trick.
+
+**Content idea:** "Guy on YouTube has a paid community to access his 'top secret AI prompt.' The secret is a prompt that says 'You are an expert.' That's it. That's the secret. People will sell anything if you let them."
+
+---
