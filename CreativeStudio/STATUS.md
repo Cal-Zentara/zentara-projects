@@ -1,6 +1,21 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-11*
+*Last updated: 2026-05-13*
+
+## Completed this session (2026-05-13 — storyboard-first pivot)
+- Pivoted Garlic High to **storyboard-first workflow**. One 12-panel storyboard image → one Seedance gen animating across it → FFmpeg post for music + end card. Replaces shot-by-shot generation as primary.
+- Tried Higgsfield Canvas `1image2fullAD [lite-version]` template — works but the lite version's second LLM node doesn't generate proper Seedance video prompts (just describes the storyboard). Cal pasted manual prompt into Video Generation node to bypass.
+- Canvas first output: `C:\Users\Aesth\Downloads\hf_20260513_055126_5b50b4d1-e1a8-4be1-b0a6-08221fba692a.mp4` (silent, 15s).
+- CLI version: ran Seedance via CLI with the locked storyboard as `--image` and our anime grammar prompt. Output: `garlichigh_cli_v3.mp4`.
+- **Final reel: `C:\Users\Aesth\Downloads\GarlicHigh_CLI_final_v3.mp4`** — 16s, music baked in via FFmpeg, `soon.png` end card appended. Trimmed at 13.0s to cut Seedance's appended storyboard frame.
+- Workflow documented in studio root `CLAUDE.md` ("Workflow Options" section). Garlic High `CLAUDE.md` now lists storyboard-first as primary, shot-by-shot v3 WILD ANIME as fallback.
+- Saved project memory `project_garlichigh_workflow.md`.
+
+**Operational gotchas learned this session:**
+- `--audio` to Seedance CLI **silently breaks the gen** — auto-sets `generate_audio: true` which isn't supported. Status returns `failed` with no error. Always bake music in via FFmpeg post.
+- FFmpeg `-c copy` trim doesn't cut on non-keyframes — re-encode to get a clean cut.
+- Seedance appends source storyboard frame at ~13.5s of a 15s gen. Always trim before adding end card.
+- Aggressive verbs (violently, detonates, rip, blast, glare, lock) trigger NSFW filter. Soften to "lands hard, lift sharply, rushing, looks, lifts."
 
 ## Completed this session (2026-05-11, late evening — discovery skill)
 - Built new skill `creative-discovery-client` — video-first 6-question intake interview that scaffolds the full client folder (brief.md, CLAUDE.md, assets/, outputs/) and adds a row to STATUS.md. Triggers on "new client", "client discovery", "starting a new client".

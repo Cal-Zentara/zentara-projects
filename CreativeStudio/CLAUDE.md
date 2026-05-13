@@ -103,6 +103,33 @@ The principles above tell you what to do. These rules tell you how to do them wi
 
 ---
 
+## Workflow Options
+
+Two production approaches. Pick based on the project — both use the principles above.
+
+### Storyboard-First (default for short ads / demo reels)
+
+One image → one Seedance gen → FFmpeg post. Cohesive output, fewer credits, faster iteration.
+
+**Steps:**
+1. **Brief → storyboard prompt.** Cal gives the brand brief in plain English. Claude writes the 12-frame storyboard generation prompt directly in chat (no Canvas needed — same system prompt logic).
+2. **Storyboard image (first draft).** `higgsfield generate create gpt_image_2 --prompt "<storyboard prompt>" --aspect_ratio 16:9 --quality high --wait --json | node tracker/log-from-json.js "..."` — `gpt_image_2` is the first-draft model because it renders brand text correctly on the final panel ("MORE GARLIC POR FAVOR" etc.). Generate 2-3 variants, pick the best.
+2a. **Storyboard adjustments (rounds 2+).** Switch to `nano_banana_2` for any edits to the chosen storyboard — swap a panel, fix a face, change a pose, adjust the brand text panel. Nano Banana Pro is a fusion/editing tool, not a text-to-image model — it preserves the rest of the storyboard while modifying only what you ask. Pass the storyboard as `--image` plus a text prompt describing the change.
+3. **Video.** `higgsfield generate create seedance_2_0 --prompt "<animation prompt>" --image <storyboard.png> --duration 15 --aspect_ratio 9:16 --resolution 480p --wait --json | node tracker/log-from-json.js "..."` — animates panels sequentially.
+4. **Post (FFmpeg).** Trim 1.5-2s off the end (Seedance appends the storyboard frame). Add music. Append end card.
+
+**Storyboard-first gotchas:**
+- **Never pass `--audio` to Seedance CLI.** It silently fails — the CLI auto-sets `generate_audio: true` which Seedance 2.0 doesn't support. Result is status `failed` with no error message. Bake music in via FFmpeg post-gen.
+- **`-c copy` trim doesn't cut on non-keyframes.** When trimming the storyboard frame off the end, re-encode: `-c:v libx264 -pix_fmt yuv420p -r 24`. Otherwise the unwanted frame stays.
+- **Seedance appends source storyboard at end** (~13.5s on a 15s gen). Always trim before adding end card.
+- Aggressive verbs (violently, detonates, rip, blast, glare, lock) trigger NSFW filter and fail the gen silently. Soften: lands hard, lift sharply, rushing, looks, lifts.
+
+### Shot-by-Shot (use when precision per shot matters)
+
+Each shot generated separately with locked start/end images. More control, more credits, more setup time. Use for hero pieces or brand campaigns where every cut must be exact. See client-specific CLAUDE.md files for shot-by-shot prompts.
+
+---
+
 ## Data Schema
 
 **Google Sheets Tracker:** `https://docs.google.com/spreadsheets/d/1Z15ZahCI_woqABikf8unma054ayBfshDN70yqa3NB-0`

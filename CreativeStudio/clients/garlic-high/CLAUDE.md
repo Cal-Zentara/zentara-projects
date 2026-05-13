@@ -144,7 +144,35 @@ Target: ramen shop owner. Working toward a paid ads + social media campaign deal
 
 ---
 
-## Locked Video Concept (Demo Reel — v3 WILD ANIME)
+## Current Workflow (Primary — Storyboard-First)
+
+**Locked May 13 2026.** Replaces the shot-by-shot approach below as the primary production method. The shot-by-shot v3 WILD ANIME prompts are kept as fallback if storyboard-first fails.
+
+**How it works:**
+1. Generate a 12-panel storyboard image via Higgsfield Canvas `1image2fullAD` template OR via `gpt_image_2` CLI with a storyboard prompt.
+2. Pass storyboard to Seedance CLI as `--image` (auto-remaps to start_image role). Write a per-shot animation prompt directing Seedance to animate each panel sequentially.
+3. FFmpeg post: trim the source storyboard frame off the end (Seedance appends it ~13.5s), add `Garlic High.mp3` music, append `soon.png` end card.
+
+**Locked storyboard reference (v1, May 13 2026):**
+`c:\Users\Aesth\Downloads\hf_20260513_053145_695db5f1-581a-4d8e-839e-c5c777d3d4c5.png` — 10 panels: storefront → counter back-view → face close-up → bowl impact → food macro → garlic orbit → noodle vortex → bite → vortex shot → final brand frame.
+
+**Locked animation prompt (softened, NSFW-safe):** See "Storyboard Animation Prompt" section below. Uses "lands hard / lift sharply / rushing" instead of "detonates / violently / rip" to avoid the filter.
+
+**Latest output:** `C:\Users\Aesth\Downloads\GarlicHigh_CLI_final_v3.mp4` (16s, music + end card baked in).
+
+---
+
+## Storyboard Animation Prompt (locked, NSFW-safe)
+
+Used with `--image <storyboard.png> --duration 15 --resolution 480p --aspect_ratio 9:16` on Seedance 2.0. Never pass `--audio` — breaks the gen silently.
+
+```
+90s anime illustrated style, late-night ramen shop. Animate this storyboard as 10 sequential full-screen shots, left to right then top to bottom. Each cut is its own emotion, escalating from anticipation to a power moment. Shot 1: Slow push-in on the Garlic High neon storefront, a woman silhouette walks toward the door, wet pavement reflects red and gold. Arrival. Shot 2: Wide interior, back of her head as she settles onto a stool at the counter, steam drifting through the foreground. Anticipation. Shot 3: Tight close-up on her face, pink headband, slight smirk, neon rim light. Ready. Shot 4: Ramen bowl lands hard on the counter, ceramic shudders, broth ripples outward, garlic pile trembles, single bright flash on contact, anime impact frame with radial speed lines. Impact. Shot 5: Extreme macro of the bowl. Glossy noodles, garlic mountain, egg yolk glistening, steam jets upward in a thick golden column. Hunger. Shot 6: Medium shot, garlic flakes orbit around her in slow motion, hair lifting from the heat, she leans toward the bowl. Pull. Shot 7: Chopsticks lift noodles sharply upward, strands spiral into a vortex above the bowl, broth droplets float mid-air, anime motion lines radiate outward. Energy. Shot 8: She takes the first bite. Camera tight on mouth and noodles, steam rushing sideways, single bright flash at the bite. Power. Shot 9: Overhead shot, bowl glowing at center of a swirling garlic vortex, chopsticks anchor the spiral. Ascension. Shot 10: She raises her chopsticks triumphant, Garlic High neon glowing red behind her, MORE GARLIC POR FAVOR sign in frame. Hold longer on this final shot. Brand payoff. Hard cuts only. Edit rhythm builds from slow arrival to peak energy to a final hold. Food is the hero throughout. Foreground occlusion (steam, chopsticks, counter edge) for depth on close-ups. Diegetic audio only: ceramic ring, broth bubble, chopstick clink, noodle pull, ambient shop chatter.
+```
+
+---
+
+## Fallback Workflow (Shot-by-Shot — v3 WILD ANIME)
 
 **Direction (locked May 12 2026):** Stop filming this like a regular ad. Use Seedance to do impossible physics. 90s anime / Food Wars / Shonen energy. Impact frames, aura shots, dragon breath, speed lines. Nothing safe, nothing quiet, no psychological beats.
 
@@ -193,6 +221,14 @@ All assets live in `C:\Users\Aesth\Desktop\Images\`
 - **Music-on-top (post):** Generate all clips silent, stitch, lay full track on top with FFmpeg, nudge clip timing to align impacts with beats. Cheaper, less precise sync.
 **Studio playbook leans bake-in for narrative pieces. For impact-driven reel like this, music-on-top is acceptable and saves credits.**
 **Old track (cozy — do NOT use):** Static Sunlight — `C:\Users\Aesth\Desktop\Static Sunlight (1).mp3`
+
+---
+
+## Production Tips
+
+- **Slow-mo trick:** If a shot morphs or looks wrong at normal speed (cleaver swing, noodle pull, fast action), generate it slow-mo first, then speed it up in editing. Saves credits vs regenerating at normal speed.
+- **Word order:** AI prioritizes the first few words of the prompt above everything else. Most important subject goes first, always.
+- **Foreground occlusion:** Let something partially block the frame — a counter edge, steam, a doorframe in the foreground. Shots where everything is perfectly visible look staged. "Camera partially obscured by foreground steam" adds depth and realism instantly.
 
 ---
 
