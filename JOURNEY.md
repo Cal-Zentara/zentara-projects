@@ -210,6 +210,20 @@ People will gate the most ordinary thing if they think you'll pay for it.
 
 ---
 
+## May 14, 2026 — I Tried to Make AI Shoot Real Food for Weeks. Then I Just Took a Photo.
+
+Three sessions. Three completely different attempts. Every time I asked AI to generate a premium bowl of ramen it looked like something out of a bad stock photo site. Tried better prompts. Added reference images. Added cinematography vocab. Nothing. Still looked fake.
+
+Then today I just used a photo I took on my phone at the actual restaurant. One real photo. Dropped it in as a reference. The storyboard came back looking 10x better than anything we'd spent weeks trying to generate.
+
+The thing I was fighting to get AI to create — I already had it in my camera roll.
+
+**What I learned:** If you have a real photo, use the real photo. Don't spend a week trying to get AI to fake something you can shoot in 30 seconds.
+
+**Content idea:** "I spent weeks trying to get AI to generate a realistic bowl of ramen. Nothing worked. Then I used a photo I took on my phone at the restaurant. That was it. The thing I was chasing was in my camera roll the whole time."
+
+---
+
 ## May 13, 2026 — I Was Putting AI In A Turtleneck
 
 Spent the whole day trying to make AI generate a McDonald's-style ramen commercial. Calm, premium, real-looking food. Every version looked like garbage. AI slop on AI slop on AI slop. I kept tightening it. Better prompts. Real photos as references. Fancy text overlays. Nothing worked. Felt the floor dropping out.

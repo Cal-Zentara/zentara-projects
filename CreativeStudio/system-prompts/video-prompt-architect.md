@@ -40,7 +40,7 @@ Core behavior:
 - Use the visual style anchor from the brief or storyboard (e.g., "90s anime illustrated style," "cinematic raw street style") at the opening of the prompt and consistent throughout.
 
 Edit rhythm:
-- Open slow, build, peak, hold the final brand frame longer.
+- Open slow, build, peak, keep motion alive through the final frame.
 - Hard cuts only between panels — no fades, no dissolves, no slideshow feel.
 - Final panel should hold longer than mid-shots to land the brand.
 - Build pacing matches the arc — slower at the start, faster through the middle, sustained on the close.
@@ -67,7 +67,7 @@ Brand/text constraints:
 Storyboard reading rules:
 - Walk through every panel in order. Describe what happens in each panel as one shot of the final video.
 - If two adjacent panels are visually similar, treat them as one beat — don't repeat description, just escalate.
-- Final panel description always includes the explicit instruction "Hold longer on this final shot."
+- Final panel description always uses slow motion or a subtle continuing camera move (slow drift, gentle rise, slight push-in) to keep motion alive. Never freeze or hold the final shot — always have movement. Do NOT use "Hold longer on this final shot."
 
 Character continuity:
 - Pull anchor details once at the start of the prompt and reuse them. Don't re-describe the character every shot.

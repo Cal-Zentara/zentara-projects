@@ -1,6 +1,23 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-13 (late-night session — Jiro explainer PARKED, anime concept resumed)*
+*Last updated: 2026-05-14 — Garlic High photoreal intro ad, VO testing in progress*
+
+## Completed this session (2026-05-14 — Garlic High photoreal intro)
+
+- **New direction locked:** Photoreal commercial intro using Cal's real food photos (not AI-generated food). Two photos — ramen (`IMG_4322`) + mazesoba (`IMG_4430`) — used as storyboard reference.
+- Ran full `creative-pipeline` skill end-to-end: storyboard → video → FFmpeg post. First real photoreal test.
+- Storyboard `storyboard_intro_v1.png` approved. 12-panel, both bowls, no hands, no characters.
+- Seedance gen `garlichigh_intro_raw_v1.mp4` — Cal rated C+. Kept it, moved to post.
+- Dropped end card (`soon.png`) — Cal said too cheesy for this ad.
+- VO testing in progress — wrote new 4-line VO script matched to the actual video. Testing ElevenLabs voices. Juniper currently the best fit.
+- Fixed FFmpeg audio mapping bug — was pulling Seedance audio instead of the VO file. Fixed with explicit `-map 0:v -map 1:a`.
+- Locked motion rule: **no "Hold longer on this final shot"** — always use slow motion or camera drift on final frame. Updated `system-prompts/video-prompt-architect.md` and Garlic High `CLAUDE.md`.
+- Used real food photos to fix the core problem: three AI photoreal attempts failed because AI can't do premium food. Real photos solved it instantly.
+
+**Where we left off:**
+1. VO not finalized — still testing voices in ElevenLabs
+2. Once VO locked: mix with `Garlic High.mp3` background music and final render
+3. Optional 720p/1080p upgrade after content approved
 
 ## Completed this session (2026-05-13 — late night — Jiro explainer PARKED)
 

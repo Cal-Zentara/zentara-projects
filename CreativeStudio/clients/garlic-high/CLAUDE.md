@@ -314,6 +314,14 @@ All assets live in `C:\Users\Aesth\Desktop\Images\`
 
 ---
 
+## Video Motion Rules
+
+- **Never use "Hold longer on this final shot"** — it makes Seedance freeze the last frame. Always ends in static video.
+- **Final shot must always have motion** — use slow motion, subtle camera drift, gentle push-in, or steam/particle movement to keep it alive.
+- **When emphasizing a shot, use slow motion** — not a freeze or hold.
+
+---
+
 ## Garlic High NSFW Traps
 
 Words that triggered the NSFW filter (May 12 2026, Shot 2 v1):
@@ -420,28 +428,26 @@ The chef slams a cleaver down onto a giant whole garlic head on the counter. The
 
 ## Status
 
-May 12 2026 (session 2):
-- Tracker fixed — credentials.json, config.json, token.json all copied to CreativeStudio root. Logging works.
-- End card updated — `soon.png` replaces `logoendcard.png`. Now includes: "MORE GARLIC POR FAVOR" + Sunnyvale · Yorba Linda · Torrance Coming Soon + garlichigh.com
-- Shot order changed — Bowl SLAM opens (proven food hook), Garlic NUKE moves to Shot 2
-- Clip length locked — generate at 4 sec (minimum), trim to 3 sec in FFmpeg
-- Music locked — `Garlic High.mp3`, bake-in method (cut into 4 x 3-sec segments, one per shot)
-- SFX plan — Old-School Shonen SFX pack downloaded from heltonyan.itch.io. Apply in Descript after stitching.
-- All 3 video prompts updated with full 3-block anime grammar structure + pace lines
+May 14 2026 (session 3):
+- NEW DIRECTION: Pivoted to photoreal commercial intro using Cal's REAL food photos. No AI food gen — real photos as storyboard reference.
+- Real photos used: `Images/food/IMG_4322 - Copy.jpg` (ramen) + `Images/food/IMG_4430 - Copy.jpg` (mazesoba)
+- Storyboard generated: `outputs/storyboard_intro_v1.png` (12-panel, 9:16 panels, both bowls, no hands/characters) — approved by Cal
+- Video generated: `outputs/garlichigh_intro_raw_v1.mp4` (15s, 480p, Seedance 2.0) — rated C+ by Cal
+- Post-production: trimmed to 13s (`garlichigh_intro_trimmed.mp4`), extended to 18s to match VO (`garlichigh_extended.mp4`)
+- VO testing in progress — testing ElevenLabs voices. Latest: Juniper at `garlichigh_juniper.mp4`
+- End card DROPPED — Cal said too cheesy. No end card on this ad.
+- Video motion rule locked: no "Hold longer on this final shot" — always use motion on final frame (slow motion, drift, push-in)
+- system-prompts/video-prompt-architect.md updated with motion rule
 
-**Final shot order:**
-1. Bowl SLAM ✓ DONE — `outputs/shot1_bowl_v2_slam.mp4` (needs trim to 3 sec)
-2. Garlic NUKE — start-image: `Images/hgshot1.png` (not generated yet)
-3. Noodle WHIRLWIND — start-image: `Images/hgshot3_noodle.png.png` (not generated yet)
-4. First Bite POWER-UP — start-image: `Images/hgshot3.png` (not generated yet)
+**Current output files:**
+- `outputs/garlichigh_intro_raw_v1.mp4` — raw Seedance gen (15s)
+- `outputs/garlichigh_intro_trimmed.mp4` — trimmed 13s clean cut
+- `outputs/garlichigh_extended.mp4` — 18s with frozen last frame (for longer VO files)
+- `outputs/garlichigh_juniper.mp4` — Juniper VO, 12.75s, best version so far
 
 **Next steps (pick up here):**
-1. Generate Shot 2 (Garlic NUKE) via Seedance CLI
-2. Generate Shot 3 (Noodle WHIRLWIND) via Seedance CLI
-3. Generate Shot 4 (First Bite POWER-UP) via Seedance CLI
-4. Trim all 4 clips to 3 sec in FFmpeg
-5. Cut Garlic High.mp3 into 4 x 3-sec segments
-6. Stitch in order: Bowl SLAM → Garlic NUKE → Noodle WHIRLWIND → Power-UP
-7. Add SFX + music in Descript
-8. Slam soon.png end card over Shot 4 power-up moment
-9. Export
+1. Lock the VO — keep testing ElevenLabs voices until one feels right
+2. Mix VO with background music (`Garlic High.mp3`) if needed
+3. Final render with locked VO + music
+4. Optional: regen video at 720p/1080p once content is approved
+5. Deliver to client
