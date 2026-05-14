@@ -4,6 +4,20 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 14, 2026 — I Kept Trying to Make the Food Look Good
+
+Spent four sessions trying to make a ramen ad. Tried anime. Tried photoreal. Tried a calm McDonald's-style explainer. Tried using real food photos. Every time something got rejected. Got stressed and stopped.
+
+Then realized: the problem wasn't the direction. The problem was I kept trying to make the food the star. AI is bad at making food look good. What if I stopped fighting that and just used an AI person who *loves* the food instead?
+
+That's UGC. You don't need perfect food shots. You need a real-seeming person having a real reaction. The food shows up in the background.
+
+**What I learned:** Stop trying to fix what AI is bad at. Find what AI is good at and go there instead.
+
+**Content idea:** "I tried to make a ramen ad 4 different ways. Every single one got rejected. Then I stopped trying to make the food look good — and made someone who loves it instead."
+
+---
+
 ## March 2026 — I Spent a Year Standing Still
 
 14 years in construction. No tech background. No coding. Never built a website in my life.

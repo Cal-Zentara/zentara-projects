@@ -151,6 +151,7 @@ These apply to every client. Client-specific NSFW words and prompt traps live in
 | **Higgsfield MCP image tools are text-to-image only** | No reference image input via MCP. CLI only. |
 | **Higgsfield app vs Cloud are separate** | higgsfield.ai (app subscription) and cloud.higgsfield.ai (developer API) have separate credit pools. CLI and MCP both use app subscription credits. |
 | **Seedance 2.0 minimum duration is 4 seconds** | `--duration 3` errors. Minimum is 4. |
+| **Never freeze-extend a video to match a longer VO** | `tpad` freeze frames always look bad. Fix: lock VO duration FIRST, then set `--duration` on the Seedance gen to match. Regenerate the video — never pad it. |
 | **`--generate_audio` not supported on Seedance 2.0** | No audio flag exists. Strip audio post-generation with FFmpeg: `ffmpeg -i input.mp4 -an output.mp4` |
 | **`--start-image` always locks first frame** | No "reference only" mode. When passed, the video starts from that exact image frame. Use it when you want a specific object/character to appear at the start; omit for lifestyle scenes. |
 | **Video text/spelling is unreliable** | AI garbles label text on generated assets. Accept it for now — resolved when real sticker product photos are used as reference. |

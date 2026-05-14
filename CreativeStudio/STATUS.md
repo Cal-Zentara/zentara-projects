@@ -1,6 +1,36 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-14 — Garlic High photoreal intro ad, VO testing in progress*
+*Last updated: 2026-05-14 (session 4) — Garlic High pivoted to UGC with AI influencer Lucy*
+
+## Completed this session (2026-05-14 session 4 — Garlic High UGC pivot)
+
+- Scrapped all previous Garlic High directions (photoreal intro, anime, Jiro explainer). Cal's call: "I'm going to stop the madness."
+- New direction locked: UGC-style social content with AI influencer persona introducing Jiro ramen to Gen Z.
+- AI influencer skill used — wrote 3 content pillars (Discovery / The Order / The First Bite) and 3 full Seedance 2.0 prompts.
+- Previous AI character (auburn hair, pink headband) retired. New persona: **Lucy** — East Asian, early 20s, long black hair, freckles. Reference: `C:\Users\Aesth\Desktop\Images\Lucy.png`
+- Character reference build attempted (soul_cinematic + Nano Banana Pro reference sheet) — failed on Nano Banana Pro multi-panel request. Session ended before completing.
+- Blockers rule confirmed: Nano Banana Pro cannot do multi-panel reference sheets — use soul_cinematic one angle at a time.
+
+**Where we left off:**
+1. Generate Lucy full-body reference shots — soul_cinematic, 9:16, one angle per gen (front, 3/4, side, close-up)
+2. Dress her in black blazer + pencil skirt using dressed result as new reference
+3. Run the 3 UGC prompts in Seedance 2.0 using Lucy as subject
+4. Pick strongest for client
+
+*Last updated: 2026-05-14 (session 2) — Cinema Studio research, direction still open*
+
+## Completed this session (2026-05-14 session 2 — Cinema Studio research)
+
+- Researched Higgsfield Cinema Studio 3.5 — it's a web-based project workspace (not a CLI model). Gives character consistency via Cast system, per-shot camera controls, AI co-director (Mr. Higgs). Access to all models (Seedance, Kling, Veo, etc.) in one place.
+- Watched full Cinema Studio 2.5 tutorial. Key takeaway: simple prompts work better because Cinema Studio adds cinematic defaults automatically. Character consistency is the main unlock vs CLI.
+- Concluded: Cinema Studio won't fix the AI slop problem on the video — the underlying model is still Seedance/Kling. The real problem is food panels don't animate convincingly.
+- **Open direction question:** photoreal intro keeps producing mediocre video output (C+ at best). Anime/impossible-physics direction is where Seedance actually wins. Cal left this unresolved — needs a decision next session.
+- Wrote Kling 3.0 prompt for logo animation (slow push from black, logo materializes from darkness). Parked — Cal deprioritized it.
+
+**Where we left off:**
+1. Decide: push harder on photoreal direction OR go back to anime concept for the Garlic High ad
+2. VO still not finalized — keep testing ElevenLabs voices
+3. Once VO locked: regenerate Seedance video at correct duration, mix with Garlic High.mp3 at 25%
 
 ## Completed this session (2026-05-14 — Garlic High photoreal intro)
 

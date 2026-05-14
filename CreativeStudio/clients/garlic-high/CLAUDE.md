@@ -144,9 +144,14 @@ Target: ramen shop owner. Working toward a paid ads + social media campaign deal
 
 ---
 
-## Current Direction (May 13, 2026 — late night — ANIME CONCEPT RESUMED)
+## Current Direction (May 14, 2026 — session 4 — UGC WITH LUCY)
 
-**Locked direction:** Back to the 4-shot WILD ANIME plan. Bowl SLAM already approved. Three shots left to generate. Ship for May 20 grand opening.
+**Locked direction:** UGC-style social content. AI influencer Lucy introduces Jiro ramen to Gen Z. 3 content pillars + 3 Seedance prompts written. Character reference build in progress. See Status section for next steps.
+
+**Previous directions (parked):**
+- Photoreal intro (sessions 3-4) — C+ rating, Seedance doesn't animate still food
+- Anime 4-shot WILD plan (session 3) — Bowl SLAM approved but rest never generated
+- Jiro explainer (session 2-3) — Cal called it "very unprofessional"
 
 **Why the re-pivot (May 13, late night):** Tried building the Jiro explainer three times (v1 plain Ken Burns + VO, v2 always-on captions, v3 manga-poster outlined captions). All three rejected — Cal's words: "very unprofessional, no one is going to pay me for this." Real diagnosis surfaced: "I've been trying to make it perfect and not fun... that's the problem." Photoreal premium food is AI's WEAKEST category in May 2026. Anime/illustrated/impossible-physics is AI's STRONGEST. Going where the tool actually wins.
 
@@ -319,6 +324,8 @@ All assets live in `C:\Users\Aesth\Desktop\Images\`
 - **Never use "Hold longer on this final shot"** — it makes Seedance freeze the last frame. Always ends in static video.
 - **Final shot must always have motion** — use slow motion, subtle camera drift, gentle push-in, or steam/particle movement to keep it alive.
 - **When emphasizing a shot, use slow motion** — not a freeze or hold.
+- **NEVER freeze-extend a video to match a longer VO** — freeze frames always look bad. If the VO is longer than the video, the fix is to regenerate the video at the correct duration (match `--duration` to the VO length in seconds, rounded up), NOT to pad with `tpad`. Lock the VO duration FIRST, then generate the video to match.
+- **Steam must rise from the broth surface inside the bowl** — never write "steam rising" alone. Always write "steam rising vertically from the broth surface inside the bowl." Vague steam prompts cause Seedance to place steam off to the side, which looks unnatural.
 
 ---
 
@@ -426,28 +433,61 @@ The chef slams a cleaver down onto a giant whole garlic head on the counter. The
 
 ---
 
+## UGC Content Pillars + Prompts (May 14 2026 — ai-influencer skill)
+
+**Persona (every prompt):** Early-20s East Asian woman, long straight black hair, natural makeup, light freckles, black blazer, dark pencil skirt, seated at wooden counter.
+**Settings:** soul_cinematic for reference images. Seedance 2.0, 9:16, 480p for video.
+
+### Pillar 1 — "I Had No Idea This Existed" (discovery)
+2 shots, 18 seconds total.
+
+SHOT 1 (10s): Looks at camera → "Okay so — Jiro ramen is not what I thought it was." → pause → "Like I thought it was just... regular ramen." → head tilt → exhale → "It's not." Medium close-up, handheld micro-wobble, warm pendant light 3500K, phone-camera HDR. Wooden counter, GARLIC HIGH sign background, steam drifting, paper lanterns.
+
+SHOT 2 (8s): Eyes drop → bowl placed in front → mouth opens → "...okay." → slow blink → looks at camera → half-smile → "I was not ready." Medium shot pulling back to include bowl, static. Same light. Bowl with steam rising vertically from broth surface inside the bowl. Bowl thud audio.
+
+### Pillar 2 — "The Order" (relief — saves driver)
+Single shot, 15 seconds.
+
+Looks at camera → "So when they ask you —" → pause → "and they will ask you —" → "ninniku, yasai, karame, abura." → counts on fingers slowly → "Garlic. Vegetables. Soy. Fat." → lowers hand → "Just say how much of each you want." → half-shrug → small smile → "I went max garlic." → beat → "Obviously." Medium close-up, static, eye level, warm pendant light, phone-camera HDR.
+
+### Pillar 3 — "The First Bite" (quiet conviction — shares driver)
+Single shot, 12 seconds.
+
+Chopsticks lift thick noodle bundle slowly → brings to mouth → bites → chews → 2-second pause, nothing → closes eyes one beat → opens → looks directly at camera → slow exhale through nose → "Yeah." → holds contact 2 seconds. Medium close-up, slightly low angle to include bowl, static. No movement during silence beat. Wet noodle pull audio, near-silence during pause. No music — silence IS the pitch.
+
+---
+
 ## Status
+
+May 14 2026 (session 4):
+- DIRECTION RESET: Scrapped photoreal intro + anime directions entirely. Both kept producing mediocre output.
+- NEW DIRECTION: UGC-style social content with an AI influencer introducing Jiro ramen to Gen Z.
+- AI influencer persona locked: **Lucy** — East Asian woman, early 20s, long straight black hair, natural makeup, light freckles. Reference image: `C:\Users\Aesth\Desktop\Images\Lucy.png`
+- 3 content pillars written (ai-influencer skill): "I Had No Idea This Existed" / "The Order" / "The First Bite"
+- 3 full Seedance 2.0 UGC prompts written — 6-part format (Subject/Action/Environment/Camera/Style/Audio) — ready to generate
+- Character reference sheet build started but not completed — Cal stopped session due to stress
+- Next session: generate Lucy's full-body reference shots in soul_cinematic (9:16), then run UGC prompts in Seedance
+
+**Lucy persona anchor details (use in every prompt):**
+Early-20s East Asian woman, long straight black hair, natural makeup, light freckles, relaxed posture. For GH content: black blazer, dark pencil skirt.
+
+**Locked UGC prompts:** See "Content Pillars + Prompts" section above (written in session 4, not yet generated).
+
+**Previous output files (parked — not delivering):**
+- `outputs/garlichigh_intro_raw_v1.mp4` — photoreal Seedance gen, C+ rating, parked
+- `outputs/garlichigh_juniper.mp4` — Juniper VO test, parked with the direction
+
+**Next steps (pick up here):**
+1. Generate Lucy full-body reference in soul_cinematic — front, 3/4, side, close-up (separate 9:16 gens)
+2. Dress her in black blazer + pencil skirt using the dressed result as new reference
+3. Run the 3 UGC Seedance prompts using Lucy dressed as the subject
+4. Review — pick the strongest one to show the client
 
 May 14 2026 (session 3):
 - NEW DIRECTION: Pivoted to photoreal commercial intro using Cal's REAL food photos. No AI food gen — real photos as storyboard reference.
 - Real photos used: `Images/food/IMG_4322 - Copy.jpg` (ramen) + `Images/food/IMG_4430 - Copy.jpg` (mazesoba)
 - Storyboard generated: `outputs/storyboard_intro_v1.png` (12-panel, 9:16 panels, both bowls, no hands/characters) — approved by Cal
 - Video generated: `outputs/garlichigh_intro_raw_v1.mp4` (15s, 480p, Seedance 2.0) — rated C+ by Cal
-- Post-production: trimmed to 13s (`garlichigh_intro_trimmed.mp4`), extended to 18s to match VO (`garlichigh_extended.mp4`)
-- VO testing in progress — testing ElevenLabs voices. Latest: Juniper at `garlichigh_juniper.mp4`
-- End card DROPPED — Cal said too cheesy. No end card on this ad.
-- Video motion rule locked: no "Hold longer on this final shot" — always use motion on final frame (slow motion, drift, push-in)
-- system-prompts/video-prompt-architect.md updated with motion rule
-
-**Current output files:**
-- `outputs/garlichigh_intro_raw_v1.mp4` — raw Seedance gen (15s)
-- `outputs/garlichigh_intro_trimmed.mp4` — trimmed 13s clean cut
-- `outputs/garlichigh_extended.mp4` — 18s with frozen last frame (for longer VO files)
-- `outputs/garlichigh_juniper.mp4` — Juniper VO, 12.75s, best version so far
-
-**Next steps (pick up here):**
-1. Lock the VO — keep testing ElevenLabs voices until one feels right
-2. Mix VO with background music (`Garlic High.mp3`) if needed
-3. Final render with locked VO + music
-4. Optional: regen video at 720p/1080p once content is approved
-5. Deliver to client
+- VO testing: Juniper voice best so far at `garlichigh_juniper.mp4`
+- End card dropped — too cheesy
+- Video motion rule locked: no "Hold longer on this final shot"
