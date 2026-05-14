@@ -144,6 +144,78 @@ Target: ramen shop owner. Working toward a paid ads + social media campaign deal
 
 ---
 
+## Current Direction (May 13, 2026 — late night — ANIME CONCEPT RESUMED)
+
+**Locked direction:** Back to the 4-shot WILD ANIME plan. Bowl SLAM already approved. Three shots left to generate. Ship for May 20 grand opening.
+
+**Why the re-pivot (May 13, late night):** Tried building the Jiro explainer three times (v1 plain Ken Burns + VO, v2 always-on captions, v3 manga-poster outlined captions). All three rejected — Cal's words: "very unprofessional, no one is going to pay me for this." Real diagnosis surfaced: "I've been trying to make it perfect and not fun... that's the problem." Photoreal premium food is AI's WEAKEST category in May 2026. Anime/illustrated/impossible-physics is AI's STRONGEST. Going where the tool actually wins.
+
+**See feedback memory:** `feedback_ai_creative_fun_not_perfect.md` — applies to all future AI creative work, not just Garlic High.
+
+**Jiro explainer artifacts (parked, kept for reference):**
+- Build folder: `clients/Garlic-high/outputs/build_v1/`
+- Output v1 (no captions): `clients/Garlic-high/outputs/jiro_explainer_REAL_v1.mp4`
+- Output v2 (always-on captions, bland): `jiro_explainer_REAL_v2.mp4`
+- Output v3 (manga-poster captions, unprofessional): `jiro_explainer_REAL_v3.mp4`
+- VO file: `C:/Users/Aesth/Desktop/Audio/garlic_high_vo_FINAL_15s.mp3`
+- VO + music mixed: `C:/Users/Aesth/Desktop/Audio/garlic_high_FINAL_soundtrack_15s.mp3`
+- Real shop photos shot by Cal: `C:/Users/Aesth/Desktop/Images/food/` (16 photos, can be used for future static work, IG carousel, posters)
+- If the explainer ever resumes, it's a real shoot — not AI.
+
+**OLD Jiro explainer direction (parked — DO NOT BUILD):**
+
+~~Calm McDonald's-style 15-second explainer for May 20 grand opening of Torrance + Yorba Linda. Replaces the savage anime concept for this launch ad. Anime direction is parked as a fallback for future hype/teaser ads.~~
+
+**Why the pivot:** Most US viewers don't know what Jiro-style ramen IS. Selling like McDonald's sells a Big Mac (calm, premium, food does heavy lifting) explains the product before asking for the sale. Two-city launch (Torrance + Yorba Linda both open May 20) needs explainer energy, not hype.
+
+**Locked decisions:**
+- Visual style: photoreal premium TV commercial (NOT anime)
+- 7 panels, 15-second target, 9:16 final
+- NO characters, NO hands/arms/fingers anywhere in any shot
+- Panel 7 is candid documentary-style (bowl off-center, available light, in-world signage on back wall) — NEVER polished logo card
+- Voiceover delivers all info — no text overlays in panels
+- Music: warm acoustic + light koto pluck, 85 BPM (NOT the existing anime track) — Suno gen pending
+
+**Locked references (in `C:\Users\Aesth\Desktop\Images\`):**
+- `AdRamen.png` — hero ramen bowl photo (panels 2, 3, 4, 5)
+- `AdMazesoba.png` — Mazesoba bowl photo (panel 6)
+- `GHLogo.png` — clean brand wordmark (panel 7 in-world signage)
+
+**Production vocab:** `CreativeStudio/docs/fast-food-commercial-production-vocab.md` — full paste-ready vocab synthesized from 7 parallel research agents on May 13. Use this on every photoreal food panel.
+
+**LOCKED (May 13, 2026 — VO + Text Card layer plan):**
+
+Three layers stacked in post — clean video gen, no text or VO baked into Seedance.
+
+**Layer 1 — Clean video (Seedance gen, 15 sec, 9:16, no text on screen, food only).**
+
+**Layer 2 — Voiceover (deep male, calm, slight gravel — ElevenLabs). 4 lines only — text cards do the explaining, VO carries the mood:**
+1. "What is Jiro-style ramen?"
+2. "Thick noodles. Rich pork broth. Fresh garlic."
+3. "Or brothless. Mazesoba."
+4. "Garlic High. Open May twentieth."
+
+**Layer 3 — Animated text cards (keyframe overlays in post, matching the Garlic High website typography — chunky black/yellow/white):**
+- Panel 1 → "What is Jiro-Style?"
+- Panel 2 → "Born in Tokyo. 1968."
+- Panel 3 → "Thick noodles."
+- Panel 4 → "Rich pork broth."
+- Panel 5 → "Fresh garlic — zero restraint."
+- Panel 6 → "Or brothless. Mazesoba."
+- Panel 7 → "Garlic High. Torrance + Yorba Linda. May 20."
+
+**Tight sync rule:** when VO references a specific bowl/ingredient, that exact visual MUST be on screen at that moment. If a shot runs short, extend it 0.3–0.5 sec in FFmpeg so the VO line lands fully on the right visual.
+
+**Locked storyboard reference:** `clients/Garlic-high/outputs/storyboard_jiro_v6.png` (May 13, 2026) — full regen with no-hands rule and candid panel 7.
+
+**Working prompts:**
+- Storyboard: `clients/Garlic-high/outputs/storyboard_prompt_jiro_v3.txt`
+- Pending: video prompt (Phase 4), then Seedance video gen (Phase 5), then FFmpeg post
+
+**Where we left off (compact point):** v6 storyboard generated, awaiting approval. Next: Seedance video prompt with NO HANDS constraint, 480p test gen, FFmpeg post (no music yet — Suno gen pending).
+
+---
+
 ## Current Workflow (Primary — Storyboard-First)
 
 **Locked May 13 2026.** Replaces the shot-by-shot approach below as the primary production method. The shot-by-shot v3 WILD ANIME prompts are kept as fallback if storyboard-first fails.
