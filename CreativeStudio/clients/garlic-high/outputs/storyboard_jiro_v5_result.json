@@ -1,0 +1,38 @@
+[
+  {
+    "id": "229d1c6a-0fc9-45c5-ba6b-736e2e6f54f4",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260514_013026_229d1c6a-0fc9-45c5-ba6b-736e2e6f54f4.png",
+    "created_at": 1778722226.757628,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "308367c4-c0c2-4d52-b9ea-7ced522fceea",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/308367c4-c0c2-4d52-b9ea-7ced522fceea_resize.jpg",
+          "type": "media_input"
+        },
+        {
+          "id": "0bae5823-6ca3-49d0-957e-244e91f3dcd8",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/0bae5823-6ca3-49d0-957e-244e91f3dcd8.png",
+          "type": "media_input"
+        },
+        {
+          "id": "410411e7-3e6b-4ec5-9c70-f49f75939eb4",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/410411e7-3e6b-4ec5-9c70-f49f75939eb4.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "CRITICAL OUTPUT REQUIREMENT: The output image MUST be the entire 7-panel storyboard contact sheet. Preserve every panel of the input storyboard image. Do NOT return a single panel. Do NOT crop. The output must contain all 7 panels arranged exactly as they are in the input, in the same layout, same spacing, same positions.\n\nThe input image is a 7-panel storyboard contact sheet with 7 distinct 16:9 widescreen panels arranged in a grid. Your task is to modify ONLY the final panel (panel 7, the last one in reading order, bottom right of the sheet) while keeping every other panel (panels 1, 2, 3, 4, 5, 6) pixel-identical to the input.\n\nFor panel 7 only, replace its current content with this new scene:\n\nA photoreal cinematic medium-wide shot inside a warm Jiro-style ramen restaurant. A hand from off-frame is placing a Jiro ramen bowl down on the warm wood counter in the foreground — the bowl matches the second uploaded reference image exactly (blue and red traditional Chinese-pattern ceramic bowl with pork chashu, bean sprouts, egg yolk, garlic pile, thick yellow noodles, rich amber broth). Steam rising in slow motion from the bowl, sharp focus on the bowl and the steam plume.\n\nBackground of panel 7 (heavily out of focus, atmospheric, bokeh-rich): the interior of the Garlic High shop. Warm tungsten 3200K lighting, two or three red Japanese paper lanterns hanging from the ceiling, dark wood paneling on the walls. Mounted prominently on the back wall behind the counter, slightly out of focus but clearly readable, is the \"Garlic High\" wordmark — chunky yellow retro lettering matching the third uploaded reference logo, painted onto a wooden plaque or rendered as a warm-glowing sign. The wordmark sits in the upper-middle of the background and reads as in-world shop signage.\n\nColor grade: warm-warm, crushed blacks, golden midtones, Kodak Portra 400H emulation. Premium photoreal commercial style consistent with the other 6 panels.\n\nOUTPUT FORMAT REMINDER: The result image MUST be the complete contact sheet with all 7 panels, in the same arrangement as the input, with only panel 7 modified. Do NOT output a single-panel image. Do NOT crop. Preserve the entire storyboard layout exactly."
+    }
+  }
+]

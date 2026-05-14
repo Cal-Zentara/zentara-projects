@@ -1,0 +1,11 @@
+Edit this 7-panel storyboard contact sheet. Modify only panel 7 (the final brand close panel, bottom right). Keep all other panels (1, 2, 3, 4, 5, 6) exactly as they are — same art, same composition, same color, same style. Do not redesign or alter any other panel.
+
+New panel 7: A warm cinematic premium fast food brand close shot. In the foreground, centered and large, the Garlic High oval logo (yellow chunky retro lettering "Garlic High" with "Savage & Happy Ramen" tagline below, inside a black oval outline) — preserve the logo exactly as in the third uploaded reference image.
+
+The background is the interior of the Garlic High ramen shop, heavily out of focus and atmospheric — warm tungsten 3200K lighting, soft glowing red Japanese paper lanterns hanging in the back, blurred shapes of ceramic ramen bowls and warm wood counter visible, dark wood paneling, gentle steam haze drifting through the air, deep crushed shadows in the corners. Background entirely soft and bokeh-rich, shallow depth of field so the foreground logo sits sharp and unmistakable.
+
+A single thin wisp of warm steam drifts across the bottom-left corner of the frame in the foreground, catching the rim light. Soft hard rim light from camera-right grazing the edge of the logo's black oval outline, making it lift off the background slightly. Color grade: warm-warm, crushed blacks, golden midtones, Kodak Portra 400H film emulation.
+
+The logo is the hero. The shop background sells the brand's world. No additional text, no date, no city names — just the logo and the warm shop atmosphere behind it.
+
+Maintain the 16:9 widescreen panel format. Premium photoreal commercial style consistent with the other food panels in the storyboard.

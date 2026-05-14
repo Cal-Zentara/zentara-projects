@@ -184,6 +184,18 @@ The annoying part is I never tested it. I just wrote down the rule and trusted i
 
 ---
 
+## May 13, 2026 — Loud Ad For A Product Nobody Knows Yet
+
+Was building a hyped-up garlic ramen ad. Loud, savage, anime energy. Then I realized — most people in the US don't even know what Jiro-style ramen IS. I was screaming the punchline of a joke nobody heard.
+
+Scrapped the whole thing. Rebuilt it like a McDonald's commercial. Calm. Steam rising. Slow noodle pull. One line: "Born in Tokyo, 1968." Let the food do the work. McDonald's doesn't sell burgers — they sell the idea of a Big Mac. Had to do the same thing here.
+
+**What I learned:** If your audience doesn't know what the product is, you don't hype it — you explain it. Loud ads work for stuff people already crave. Calm ads work for stuff people are about to discover.
+
+**Content idea:** "I almost shipped a loud ad for a product nobody knows. Then I remembered — McDonald's doesn't sell burgers. They sell the idea of a burger. So I made the calmest ramen ad you've ever seen instead. Steam, broth, one sentence. That's it."
+
+---
+
 ## May 13, 2026 — A Guy Locked His "Secret AI Trick" Behind a Paid Community
 
 Watched a YouTube tutorial. Guy walks through his whole AI video workflow. Free, here it is, take everything. Then near the end he goes "and this last part is for my paid community only." Top secret node, his words.
@@ -195,5 +207,19 @@ People will gate the most ordinary thing if they think you'll pay for it.
 **What I learned:** Most "secrets" in this space are just confidence. The actual move is doing the work, not paying for the trick.
 
 **Content idea:** "Guy on YouTube has a paid community to access his 'top secret AI prompt.' The secret is a prompt that says 'You are an expert.' That's it. That's the secret. People will sell anything if you let them."
+
+---
+
+## May 13, 2026 — I Was Putting AI In A Turtleneck
+
+Spent the whole day trying to make AI generate a McDonald's-style ramen commercial. Calm, premium, real-looking food. Every version looked like garbage. AI slop on AI slop on AI slop. I kept tightening it. Better prompts. Real photos as references. Fancy text overlays. Nothing worked. Felt the floor dropping out.
+
+Then I pulled up the AI ads that actually went viral. Popeyes Veo 3 diss track. NBA Finals ad that ran for $2,000. Both wild. Both fun. Both clearly AI — and that was the POINT. People watched them because they were impossible, not because they were trying to look real.
+
+I'd been trying to put AI in a turtleneck. AI doesn't want to wear a turtleneck. It wants to wear a cape.
+
+**What I learned:** AI is at its best when it's doing stuff a real camera can't. Stop trying to make it look real. Make it look impossible.
+
+**Content idea:** "I spent 8 hours trying to make AI shoot a McDonald's commercial. Every version looked like garbage. Then I watched the AI ads that actually go viral — and every single one is WILD. AI doesn't want to wear a turtleneck. It wants a cape."
 
 ---

@@ -1,8 +1,58 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-13*
+*Last updated: 2026-05-13 (late-night session — Jiro explainer PARKED, anime concept resumed)*
 
-## Completed this session (2026-05-13 — creative-pipeline skill build)
+## Completed this session (2026-05-13 — late night — Jiro explainer PARKED)
+
+The Jiro explainer photoreal direction is officially scrapped. Cal pulled the plug after three iterations.
+
+- Cal shot 16 real photos at the Garlic High shop (in `C:\Users\Aesth\Desktop\Images\food\`) — hero bowls, Mazesoba top-downs, noodle lifts with "POR FAVOR" sign visible, brothless variants. Real food, real shop light, real chaos.
+- Built v1 of the Jiro explainer using FFmpeg Ken Burns push-ins on the real photos + existing VO + Soy Steam Symphony at 25% + soon.png end card. Saved at `clients/Garlic-high/outputs/jiro_explainer_REAL_v1.mp4`.
+- Cal vibe-checked v1 — wanted always-on captions with hero word emphasis. Rebuilt as v2 with full caption track (15 drawtext layers, GARLIC/JIRO-STYLE/MAZESOBA pumped to 200-240px). Saved at `jiro_explainer_REAL_v2.mp4`.
+- Cal called v2 "bland." Rebuilt as v3 with manga-poster styling — thick black outlines, red drop shadows, hero words slammed center-frame instead of bottom. Saved at `jiro_explainer_REAL_v3.mp4`.
+- Cal called v3 "very unprofessional. no one is going to pay me for this." Pushed back on the WHOLE approach — not just the captions.
+- Researched real AI food commercial campaigns (Popeyes Veo 3 diss track, Kalshi NBA Finals $2000 ad, Sora burger ad creators on TikTok/YouTube). Pattern that emerged: **AI-led ads that work LEAN INTO being AI — surreal, comedic, impossible. AI-led ads that try to fake photoreal food → small creators, low engagement. Major food brands using AI → packaging/copy/social, NOT hero food video.**
+- **The insight that ended the night:** Cal said "I've been trying to make it perfect and not fun... that's the problem." The McDonald's-explainer brief was chasing AI's weakest category (photoreal premium food cinematography). The original Garlic High anime direction is AI's STRONGEST category (impossible physics, illustrated chaos, exaggerated everything).
+- Saved feedback memory: `feedback_ai_creative_fun_not_perfect.md` — AI creative works when it's fun, not perfect. Trying to make AI photoreal/premium fights the tool.
+- Logged JOURNEY entry: "I Was Putting AI In A Turtleneck" — full lesson + scroll-stopping content idea ("AI doesn't want a turtleneck. It wants a cape.")
+
+**DECISION:** Park the Jiro explainer entirely. Pick up the anime concept (4-shot WILD ANIME plan, Bowl SLAM already approved) tomorrow morning. May 20 launch ships with the anime ad, not the explainer.
+
+**Where we left off (next session pickup):**
+1. Drop the Jiro explainer — it's done. Build artifacts can stay in `outputs/build_v1/` as reference but no more work on this direction.
+2. Resume the anime ad: 3 shots left to generate (Garlic NUKE / Noodle WHIRLWIND / Power-UP). Bowl SLAM (`outputs/shot1_bowl_v2_slam.mp4`) is already approved.
+3. Use existing locked start-images: `Images/hgshot1.png` (Garlic NUKE), `Images/hgshot3_noodle.png.png` (Noodle WHIRLWIND), `Images/hgshot3.png` (Power-UP).
+4. Music + end card already locked (Garlic High.mp3, soon.png).
+5. Final order: Bowl SLAM → Garlic NUKE → Noodle WHIRLWIND → Power-UP.
+6. Generate at 4 sec each (Seedance min), trim to 3 sec, stitch, slam end card. SFX layer in Descript.
+
+## Completed this session (2026-05-13 — Garlic High Jiro explainer pivot)
+- Ran the `creative-pipeline` skill for the first time on Garlic High. Started with 7-day Torrance teaser direction, mid-session Cal added that Yorba Linda also opens May 20 → two-city grand opening → pivoted entirely to McDonald's-style calm explainer ad. New direction sells the product to a US audience that doesn't know what Jiro ramen IS.
+- Pulled brand voice from Cal's website: https://cal-zentara.github.io/garlic-high-demo/. Locked phrases: "Thick. Garlicky. No Mercy." / "Savage & Happy Ramen" / "Born Tokyo, 1968." / "Extra-thick noodles, rich pork broth, fresh garlic with zero restraint."
+- Locked three product references in `C:\Users\Aesth\Desktop\Images\`: `AdRamen.png` (hero ramen photo), `AdMazesoba.png` (Mazesoba photo), `GHLogo.png` (clean brand wordmark).
+- **Research:** Ran 7 parallel Haiku agents on fast food commercial production. Synthesized output into `docs/fast-food-commercial-production-vocab.md` — reusable paste-ready vocab for any premium photoreal food ad. Covers cinematography (85mm macro, 3200K key, 3500K rim), food styling (glycerin noodles, dry-ice steam, droplet suspension), color grade (Kodak Portra 400H, crushed blacks), Japanese ramen ad signatures, money shots, AI prompt anti-defaults, and audio direction.
+- Locked the new direction: photoreal premium TV commercial, 7 panels, no characters, no hands/arms anywhere, voiceover-driven (no text overlays), panel 7 candid documentary-style (NOT polished logo card).
+- Iterated through 6 storyboard versions:
+  - v1 — anime Torrance teaser (scrapped after pivot)
+  - v2 — first McDonald's-style draft (too basic, low quality)
+  - v3 — fixed brand close with logo + shop interior (logo too dominant)
+  - v4 — bowl-being-placed scene (returned single panel only, not full sheet)
+  - v5 — re-ran panel edit with full-sheet preservation (worked but duplicated panels on bottom-left)
+  - v5 manually composited → `storyboard_jiro_FINAL.png` (FFmpeg crop + vstack — clean 6-panel grid + wide hero close)
+  - v6 — full regen with NO HANDS rule and candid documentary panel 7 — awaiting Cal's approval
+- Updated Garlic High `CLAUDE.md` with new direction section. Anime direction parked as fallback.
+- Saved memories: `project_garlichigh_jiro_explainer.md` + `feedback_brand_close_no_ai_slop.md`.
+
+**Where we left off (next session pickup):**
+1. Cal to approve v6 storyboard at `clients/Garlic-high/outputs/storyboard_jiro_v6.png`
+2. If approved → Phase 4 (Seedance video prompt with NO HANDS constraint)
+3. Phase 5 (Seedance video gen, 480p test, --duration 15)
+4. Generate music in Suno: "Warm acoustic + light koto pluck, 85 BPM, dreamy looped melody, no vocals" — NOT the existing anime track
+5. FFmpeg post: trim 13s, layer music, no end card (panel 7 IS the brand close)
+
+**Key gotcha confirmed this session:** `nano_banana_2` sometimes returns just the edited panel as a single image instead of the full contact sheet. Fix: include explicit "OUTPUT MUST BE THE COMPLETE CONTACT SHEET" language. Fallback: manually composite via FFmpeg crop + vstack.
+
+## Completed earlier this session (2026-05-13 — creative-pipeline skill build)
 - Researched Higgsfield CLI capabilities in depth. **Major finding:** `--audio` IS a real flag for Seedance 2.0 CLI. What silently fails is `--generate_audio` (doesn't exist on Seedance 2.0, only exists on `marketing_studio_video`). Updated studio root CLAUDE.md and Garlic High CLAUDE.md to fix the wrong gotcha.
 - Built **`creative-pipeline` skill** at `.claude/skills/creative-pipeline/SKILL.md`. Walks Claude through full storyboard-first pipeline: setup → storyboard prompt → image gen → approval gate (regen full / edit panel / approve) → video prompt → video gen → FFmpeg post (trim + music + end card) → log + save. Babysit mode — pauses for user approval at every step.
 - Wrote two locked system prompts:

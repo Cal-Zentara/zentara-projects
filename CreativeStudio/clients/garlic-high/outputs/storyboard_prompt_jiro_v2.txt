@@ -1,0 +1,57 @@
+Create a 7-frame storyboard contact sheet for a short product advertisement, designed as a clean visual overview for video development.
+
+Use the uploaded product images as the exact product references. The first uploaded image is the Jiro-style ramen bowl (blue and red traditional Chinese-pattern ceramic bowl, thick yellow noodles, pork chashu slice, bean sprout pile, raw egg yolk, chopped fresh garlic pile, rich amber pork broth, warm wooden table). The second uploaded image is the Mazesoba bowl (same blue and red ceramic bowl, no broth, thick noodles, pork chashu, egg yolk, crispy fried garlic crumbs, chopped cooked garlic). The third uploaded image is the Garlic High brand logo (yellow chunky retro lettering "Garlic High" with "Savage & Happy Ramen" tagline below, inside a black oval outline on white background).
+
+Preserve product identity exactly in every food frame — same bowl, same wood table, same warm rim lighting, same ingredient composition. Do not invent or alter packaging, bowl design, or ingredient details.
+
+Brand concept:
+Garlic High is a Jiro-style ramen restaurant launching its first US locations in California. This is a calm, voiceover-driven premium fast food TV commercial in the style of McDonald's, Pepper Lunch, or Marugame Udon. The ad explains what Jiro-style ramen is by letting the food do every bit of the heavy lifting — slow-motion broth pours, glycerin-glossed noodle lifts, dry-ice steam plumes, fresh garlic drops, hero overhead bowl shots. The brand reveal closes with the logo only — voiceover delivers the grand opening news.
+
+Visual style (paste-ready production direction):
+Photoreal premium TV-commercial food cinematography. Shot like David Loftus. Shot on a Sony Venice with an 85mm f/2.8 macro lens, shallow depth of field, focus locked on the brightest detail (egg yolk, garlic mountain, glossy noodle strand). Warm tungsten key light at 3200K, 45 degrees above and camera-left, soft falloff into shadow. Hard rim light at 3500K from camera-right and behind, skimming the surface of broth, steam, and ingredients, catching texture and gloss. Negative fill on the shadow side, no spill. Single overhead hair light grazing top edges only. Food styling: glycerin-coated noodles for permanent gloss, dry-ice vapor steam plume rising thick from the broth surface, droplet suspension freeze-frame at every impact moment, concentrated amber pork broth (opaque, not clear), soft-boiled egg yolk with intact glossy membrane, minced raw garlic pile catching rim light, bloomed gelatin in the broth surface micro-particles. Color grade: warm-warm color treatment, crushed blacks at 0-5% luminance, lifted yellow-orange midtones, golden highlights peaking around 85-90% before rolloff, reds and yellows +20% saturation, greens slightly desaturated, slight orange in shadows and subtle cyan in highlights, Kodak Portra 400H film emulation with high-contrast S-curve. 3200K-3500K baseline temperature throughout. Subsurface scattering on the translucent egg yolk, specular highlights on the glossy broth surface, micro-texture visible on noodles. Subtle steam-induced atmospheric haze in macro shots. Polish level: high-end commercial production, NOT stock food photography, NOT flat-lit, NOT evenly exposed.
+
+Video intent:
+Each panel must read as a plausible hero shot from a 15-second cinematic premium fast food TV commercial. The intended edit rhythm is calm, slow, voiceover-driven — a moody anticipation hook, a slow visual answer through three macro food-build beats, a clean overhead hero shot of each bowl, and a final brand logo reveal. Each frame should be liftable directly into a Seedance video generation as a sequential animated shot.
+
+Storyboard format:
+Generate one clean 7-panel storyboard contact sheet presented as a horizontal visual overview. Arrange the panels in a clear contact-sheet layout with consistent spacing and subtle visual separation. Do not include frame numbers, captions, arrows, callouts, written shot labels, annotation marks, or any text overlays on the food panels.
+
+Panel aspect-ratio rule:
+Every individual panel within the storyboard must itself be framed as a distinct 16:9 widescreen shot. Each panel should clearly appear as a cinematic widescreen frame suitable for video. Do not generate square, near-square, or vertically ambiguous panels.
+
+Story arc:
+A moody anticipation shot of an empty bowl invites the question. The food itself answers — broth pours, garlic mountain drops, noodles lift, the hero ramen bowl appears, the brothless Mazesoba is revealed. The final frame is the clean Garlic High logo. Voiceover carries the brand story.
+
+Frame-by-frame direction:
+
+01 — Moody anticipation shot. Empty blue and red ceramic bowl on the warm wood table, dark moody background, single chopstick resting across the rim, single thin wisp of steam rising slowly from the bowl center as if something is about to be placed inside. Low-key warm tungsten key light at 3200K from 45 degrees above and camera-left, hard rim light from behind catching the steam wisp, deep crushed shadows around the bowl. Three-quarter angle on the bowl, shallow depth of field with the front rim of the bowl in sharp focus and the background falling soft. NO TEXT. 16:9 widescreen.
+
+02 — Slow-motion broth pour. Macro close-up at 35-degree angle on the bowl. Rich opaque amber Jiro pork broth pouring in a sharp focused stream from a small white ladle into the empty blue and red ceramic bowl, surface ripple expanding outward in concentric rings, dry-ice vapor plume rising thick from the broth surface, single oil-shimmer droplet visible on the broth surface. Warm tungsten key at 3200K from 45 above camera-left, hard 3500K rim light from camera-right behind catching the steam column. Shallow depth of field, focus locked on the broth stream where it hits the surface. Kodak Portra 400H grade, crushed blacks, golden highlights on the broth. NO TEXT. 16:9 widescreen.
+
+03 — Garlic mountain drop, overhead macro. 90-degree overhead view of the blue and red ceramic bowl filled with broth. A generous mountain of bright white minced fresh garlic falls vertically from the top of the frame and freezes mid-air two inches above the broth surface — droplet suspension freeze-frame, individual garlic flakes catching hard rim light from camera-right, broth droplets suspended mid-air around the impact zone, single bright specular flash where contact will happen. Slight motion blur on the falling garnish, sharp focus on the suspended particles. Warm rim light catches every flake. Crushed blacks in the bowl shadow. NO TEXT. 16:9 widescreen.
+
+04 — Noodle lift macro at 15-degree low angle. Wooden chopsticks lifting a thick bundle of glycerin-coated glossy yellow Jiro noodles vertically out of the bowl, individual noodle strands separating mid-lift catching rim light, broth droplets dripping back into the bowl in slow-motion suspension, single thick steam plume rising vertically behind the noodle pull. Backlighting from camera-right rim light catches the gloss on every strand. Extreme shallow depth of field, focus locked on the brightest noodle in the foreground, background falls soft. Specular highlights on the noodle surface, subsurface translucency in the gloss. NO TEXT. 16:9 widescreen.
+
+05 — Hero overhead Jiro ramen bowl. Pure 90-degree overhead shot of the full Jiro-style ramen bowl exactly matching the first uploaded reference image. Same blue and red ceramic bowl, pork chashu slice on the left, bean sprout pile on top, soft-boiled egg yolk with intact glossy membrane centered, chopped fresh garlic pile on the right, thick yellow noodles, warm amber broth visible between ingredients. Warm wood table around the bowl. Soft overhead key at 3200K, hard rim at 3500K from camera-right catching the steam plume rising vertically. Focus locked on the egg yolk dead-center. Shallow depth of field, slight rack-focus blur on the outer rim of the bowl. Subsurface scattering visible in the egg yolk. NO TEXT. 16:9 widescreen.
+
+06 — Hero overhead Mazesoba bowl. Pure 90-degree overhead shot of the Mazesoba bowl exactly matching the second uploaded reference image. Same blue and red ceramic bowl, no broth, pork chashu, soft-boiled egg yolk centered, crispy fried garlic crumbs pile, chopped cooked garlic pile, thick glossy noodles. Same warm wood table. Same lighting setup as panel 5 — soft overhead key at 3200K, hard rim from camera-right. Focus locked on the egg yolk centered. Crisper shadows than the broth shot (no liquid reflection). Subsurface scattering visible in the egg yolk and garlic pile. NO TEXT. 16:9 widescreen.
+
+07 — Clean brand close. Solid clean off-white background, NO food, NO wood table, NO bowls. The Garlic High oval logo (yellow chunky retro lettering "Garlic High" with "Savage & Happy Ramen" tagline beneath, inside a black oval outline) centered in the frame, large, matching the third uploaded reference image exactly. Soft even premium lighting on the logo only. Restrained, clean, McDonald's-style brand close. NO additional text, NO date, NO city names, NO grand opening copy — just the logo. 16:9 widescreen.
+
+Composition rules:
+Vary shot sizes and angles throughout — moody three-quarter anticipation (01), 35-degree macro pour (02), 90-degree overhead drop with suspension (03), 15-degree low-angle macro lift (04), 90-degree overhead hero ramen (05), 90-degree overhead hero Mazesoba (06), centered clean logo (07). Keep food product identity consistent — same bowl, same wood, same warm lighting. Make sure each panel feels like a real commercial frame, not a stock food photo.
+
+Framing rules:
+- Every panel must be composed as a believable 16:9 video shot.
+- Subject placement, headroom, negative space, and motion direction designed for video.
+- Avoid compositions that feel cropped from square images.
+- Preserve clear widescreen composition even in macro and detail shots.
+
+Continuity rules:
+Photoreal premium TV-commercial food cinematography across every food panel (01-06). Same bowl pattern, same wood table, same warm tungsten key + hard rim lighting setup, same Kodak Portra grade. Panel 07 is a pure brand-close frame, soft even lighting on the logo only.
+
+Quality rules:
+Believable photoreal food anatomy, realistic glossy noodle texture, accurate egg yolk gloss with intact membrane, fresh raw garlic appearance, opaque rich amber broth (not clear or thin), correct ceramic bowl pattern, realistic steam behavior, coherent shadow direction, strong cinematic compositions, premium commercial lighting, production-ready storyboard clarity. Photoreal, NOT illustrated, NOT anime, NOT cartoon, NOT stock food photography.
+
+Negative constraints:
+No frame numbers, no captions, no arrows, no callouts, no annotation marks, no written shot labels, no text overlays on any food panel, no warped food, no broken anatomy, no extra fingers, no human characters or people, no duplicated objects, no random untargeted text, no inconsistent bowl design, no fake-looking food, no anime illustration, no cartoon style, no flat even lighting, no stock food photo aesthetic, no daylight color temperature, no panels that are not clearly composed as 16:9 widescreen shots.
