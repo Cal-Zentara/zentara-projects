@@ -6,3 +6,8 @@ config.json
 token.json
 *.mp4
 *.mov
+*.mp3
+outputs/frames/
+outputs/frames_gen1/
+outputs/juniper_frames/
+outputs/concat.txt
