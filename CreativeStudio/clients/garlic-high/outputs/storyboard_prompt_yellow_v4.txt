@@ -1,0 +1,40 @@
+Create an 8-frame storyboard contact sheet for a short product advertisement, designed as a clean visual overview for video development.
+
+Use the uploaded product images as the exact product references — one is a Jiro-style ramen bowl, one is a Mazesoba bowl. Preserve each bowl's proportions, toppings, broth color, noodle texture, and visual identity exactly in every frame where it appears. Do not recolor, redesign, or simplify either bowl.
+
+Brand concept:
+Garlic High serves Jiro-style ramen — a Tokyo-born bowl built on extra-thick noodles, rich all-day pork broth, and fresh garlic piled on with zero restraint. This ad introduces the concept to a Gen Z audience in bold fast-food commercial energy: bright yellow, low-angle hero shots, food as the star, punchy and confident.
+
+Visual style:
+Primary background is flat saturated yellow — consistent across every panel, no gradients, no environments. Product lighting is warm and appetite-forward: soft front key light, slight warm rim. Camera angles are LOW — most shots look up at the food, making it feel massive and powerful like a real fast-food commercial. Bold black 3D block typography appears in panels 01, 02, and 08. "MORE GARLIC POR FAVOR" appears as bold oversized text overlay in panel 04 only.
+
+Video intent:
+Each panel suggests a distinct shot in a 14-second vertical commercial split into two 7-second halves. Panels 1-4 are the intro and energy section. Panels 5-8 are the ingredients and brand close. Fast-food pacing — each frame is a distinct visual punch.
+
+Storyboard format:
+One clean 8-panel contact sheet arranged in 2 rows of 4 panels. Consistent spacing, subtle separation between panels. No frame numbers, captions, arrows, or annotation marks. Reads left to right, then top to bottom.
+
+Panel aspect-ratio rule:
+Every individual panel must be framed as a distinct 9:16 vertical shot. Tall, mobile-first. No horizontal, square, or landscape panels inside the grid.
+
+Story arc:
+Opens with a clean brand title card, reveals the bowl from a powerful low angle, delivers the money shot, hits the garlic tagline over the cascade, then breaks down the ingredients and closes on the brand stamp.
+
+Frame-by-frame direction:
+01 — Bold yellow background. Clean title card only: "WHAT IS JIRO-STYLE?" in massive black 3D block letters filling two-thirds of the vertical frame. "GARLIC HIGH · JIRO RAMEN" in bold black caps below. Nothing else — no food, pure brand confidence.
+02 — Ramen bowl shot from a LOW ANGLE, camera looking up at the bowl from below counter level. The bowl looms large and powerful in the frame. Steam rises tall above it. "JIRO RAMEN" in bold black 3D text anchors behind the bowl in the upper half. Yellow background. The bowl feels massive.
+03 — THE MONEY SHOT. Ramen bowl at a low 3/4 angle, camera slightly below and to the side, looking up at the bowl. Garlic mountain front and center, chashu visible behind it, steam rising in thick ribbons above. Yellow background. This is the single most appetizing frame in the storyboard — every detail of the bowl is visible and glowing under warm light. No text.
+04 — Chopped garlic raining down from above in slow motion onto the bowl below. Individual cloves tumbling through yellow air. "MORE GARLIC POR FAVOR" in massive bold black caps slammed across the upper portion of the frame as a graphic text overlay. Yellow background. The tagline lands hard over the food drama.
+05 — Close-up on thick pork chashu slices fanned across the bowl from a slightly low angle. Seared surface, fat edge glistening, faint steam curling from the edges. Camera looks up slightly at the slices. Yellow background. No text.
+06 — Mazesoba bowl entering frame from the right at low angle, settling centered on yellow. Dry surface, layered toppings richly visible, no steam. Camera looks up slightly at the bowl. "MAZESOBA" in bold black 3D text anchors behind the bowl in the upper half. Yellow background. Same reveal treatment as the ramen bowl in panel 02.
+07 — Extreme close-up on Mazesoba toppings from a low angle. Dry noodles coiled densely, toppings layered, oils catching warm light. Camera looks up at the surface. Yellow background. No text.
+08 — Final brand frame: ramen bowl hero-centered on pure yellow from a low angle, the bowl large and commanding. "GARLIC HIGH" in massive black 3D text dominates the upper third. "JIRO RAMEN" slightly smaller directly below it. Steam rising from the broth. Clean brand close.
+
+Composition rules:
+Every panel is 9:16 vertical. LOW ANGLE is the consistent camera language — panels 02, 03, 05, 06, 07, and 08 all look up at the food. This makes every bowl feel large, powerful, and commanding — fast-food commercial energy. 3D black text appears in panels 01, 02, 06, and 08 only. "MORE GARLIC POR FAVOR" appears in panel 04 only as a graphic overlay. No text in panels 03, 05, 07. No human hands, arms, or faces anywhere.
+
+Continuity rules:
+Yellow background is the visual constant across all 8 panels. Warm front key lighting throughout. Low angle camera language throughout. Ramen bowl maintains exact appearance in all ramen panels. Mazesoba bowl maintains exact appearance in its panels. Photoreal food photography quality — not illustrated or stylized.
+
+Negative constraints:
+No frame numbers, captions, labels, or annotation marks. No hands, arms, or people. No dark or moody backgrounds — yellow flat field only. No horizontal or square panels. No illustration — photoreal only. No blurry product. No garbled text. No eye-level or overhead shots — camera must always look up at the food. No 3D text in panels 03, 05, 07.

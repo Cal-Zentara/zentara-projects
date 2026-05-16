@@ -1,6 +1,33 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-14 (session 4) — Garlic High pivoted to UGC with AI influencer Lucy*
+*Last updated: 2026-05-15 (session 6) — Garlic High project organized, two final deliverables locked*
+
+## Completed this session (2026-05-15 session 6 — Garlic High file organization)
+
+- Extended yellow commercial ending 2 seconds (freeze last frame) → `GarlicHigh_yellow_v7.mp4` → copied to desktop as `GarlicHigh_FINAL.mp4` (15.5s, approved).
+- Replaced anime video music with "Garlic High.mp3" (cropped to 15s) → `GarlicHigh_ANIME_v2.mp4` (15s, approved).
+- Created `clients/Garlic-high/FINAL/` folder structure — separated approved deliverables from WIP.
+- FINAL/ contains: 2 approved videos, 2 audio tracks, 2 approved storyboards, 3 final prompts.
+
+**Two final deliverables ready to send to client:**
+- `FINAL/videos/GarlicHigh_FINAL.mp4` — yellow commercial, 15.5s
+- `FINAL/videos/GarlicHigh_ANIME_v2.mp4` — anime girl, 15s
+
+**Where we left off:**
+- Both videos approved. Ready to send to client.
+- Upgrade to 1080p if client wants broadcast-quality final.
+
+## Completed this session (2026-05-15 session 5 — Garlic High yellow commercial)
+
+- Reset direction again — UGC/Lucy parked, pivoted to yellow fast-food commercial concept.
+- Built 8-panel storyboard iteratively: yellow background, low-angle hero food shots, bold 3D text, "MORE GARLIC POR FAVOR" overlay.
+- Landed on hybrid approach: AI yellow storyboard clips + real food footage (juniper B clip) as bridge between Gen 1 and Gen 2.
+- Final output `GarlicHigh_yellow_v6.mp4` — 13.5 seconds, music baked in. Cal: "looks perfect."
+- Key lesson: mixing AI-generated storyboard animation with real food footage is the actual answer — AI for branding/text, real footage for food close-ups.
+
+**Where we left off:**
+- `GarlicHigh_yellow_v6.mp4` is approved. Ready to send to client.
+- Upgrade to 1080p before final delivery if needed.
 
 ## Completed this session (2026-05-14 session 4 — Garlic High UGC pivot)
 

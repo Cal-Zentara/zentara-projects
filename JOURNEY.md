@@ -4,6 +4,20 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 15, 2026 — The AI Shots Were Covering For the Food Shots
+
+Spent a whole session trying to get the AI-generated ramen shots to look right. The yellow commercial concept was working — bold text, low angles, clean. But every time the food actually showed up in the video, it looked plastic.
+
+Then pulled a 2.5-second clip from an old video we'd already shot — real ramen, real food, real steam. Dropped it between the two AI-generated clips as a bridge. Cal said "looks perfect."
+
+Turns out the answer wasn't to make AI food look better. It was to use real food for the food part, and use AI for everything else (branding, text, motion, vibe).
+
+**What I learned:** AI is great at style and energy. Real footage is great at making food look like food. Use both.
+
+**Content idea:** "Spent hours trying to make AI-generated ramen look real. Then dropped in one clip of actual ramen. That's the one that worked."
+
+---
+
 ## May 14, 2026 — I Kept Trying to Make the Food Look Good
 
 Spent four sessions trying to make a ramen ad. Tried anime. Tried photoreal. Tried a calm McDonald's-style explainer. Tried using real food photos. Every time something got rejected. Got stressed and stopped.

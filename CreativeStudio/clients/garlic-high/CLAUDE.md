@@ -144,11 +144,22 @@ Target: ramen shop owner. Working toward a paid ads + social media campaign deal
 
 ---
 
-## Current Direction (May 14, 2026 — session 4 — UGC WITH LUCY)
+## Current Direction (May 15, 2026 — session 5 — YELLOW COMMERCIAL)
 
-**Locked direction:** UGC-style social content. AI influencer Lucy introduces Jiro ramen to Gen Z. 3 content pillars + 3 Seedance prompts written. Character reference build in progress. See Status section for next steps.
+**Locked direction:** Yellow fast-food commercial. Flat yellow background, low-angle food shots, bold 3D text, McDonald's pacing. 13-second final video. Three-clip structure: Gen 1 (yellow storyboard) → Juniper B (real food footage bridge) → Gen 2 (yellow storyboard close).
+
+**Current best output:** `clients/Garlic-high/outputs/GarlicHigh_yellow_v6.mp4` — Cal approved: "looks perfect"
+
+**Locked assets for this direction:**
+- Top storyboard (panels 1-4): `outputs/storyboard_gen1_916.png` (9:16, 2x2 grid)
+- Bottom storyboard (panels 5-8): `outputs/storyboard_v4b_bottom.png`
+- Gen 1 trimmed (5s): `outputs/gen1_final_trimmed.mp4`
+- Juniper B bridge (2.5s, silent): `outputs/juniper_B_silent.mp4`
+- Gen 2 trimmed: `outputs/gen2_trimmed.mp4`
+- Music: `C:\Users\Aesth\Desktop\Audio\gh_first16.mp3`
 
 **Previous directions (parked):**
+- UGC with Lucy (session 4) — character build never completed, direction reset
 - Photoreal intro (sessions 3-4) — C+ rating, Seedance doesn't animate still food
 - Anime 4-shot WILD plan (session 3) — Bowl SLAM approved but rest never generated
 - Jiro explainer (session 2-3) — Cal called it "very unprofessional"
@@ -459,29 +470,30 @@ Chopsticks lift thick noodle bundle slowly → brings to mouth → bites → che
 
 ## Status
 
-May 14 2026 (session 4):
-- DIRECTION RESET: Scrapped photoreal intro + anime directions entirely. Both kept producing mediocre output.
-- NEW DIRECTION: UGC-style social content with an AI influencer introducing Jiro ramen to Gen Z.
-- AI influencer persona locked: **Lucy** — East Asian woman, early 20s, long straight black hair, natural makeup, light freckles. Reference image: `C:\Users\Aesth\Desktop\Images\Lucy.png`
-- 3 content pillars written (ai-influencer skill): "I Had No Idea This Existed" / "The Order" / "The First Bite"
-- 3 full Seedance 2.0 UGC prompts written — 6-part format (Subject/Action/Environment/Camera/Style/Audio) — ready to generate
-- Character reference sheet build started but not completed — Cal stopped session due to stress
-- Next session: generate Lucy's full-body reference shots in soul_cinematic (9:16), then run UGC prompts in Seedance
+May 15 2026 (session 6):
+- Two final deliverables locked and organized.
+- `FINAL/videos/GarlicHigh_FINAL.mp4` — yellow commercial, 15.5s (approved).
+- `FINAL/videos/GarlicHigh_ANIME_v2.mp4` — anime girl, 15s, new music (approved).
+- All approved assets organized into `FINAL/` (videos, audio, storyboards, prompts).
+- WIP files remain in `outputs/` untouched.
 
-**Lucy persona anchor details (use in every prompt):**
-Early-20s East Asian woman, long straight black hair, natural makeup, light freckles, relaxed posture. For GH content: black blazer, dark pencil skirt.
+**Next steps:**
+- Send both videos to client.
+- Upgrade to 1080p if client wants broadcast quality.
 
-**Locked UGC prompts:** See "Content Pillars + Prompts" section above (written in session 4, not yet generated).
+May 15 2026 (session 5):
+- DIRECTION RESET again: Scrapped UGC/Lucy direction. Pivoted to yellow fast-food commercial.
+- Yellow background concept: flat saturated yellow, low-angle food shots, bold 3D text, McDonald's pacing.
+- 8-panel storyboard built iteratively — panels 1-4 at 9:16 (`storyboard_gen1_916.png`), panels 5-8 kept from v4b.
+- KEY DISCOVERY: Hybrid approach works — AI yellow storyboard for branded shots + real food footage (juniper B clip) as bridge = "looks perfect" (Cal's words).
+- Final video: `GarlicHigh_yellow_v6.mp4` — 13.5s, Gen 1 (5s) → Juniper B (2.5s silent) → Gen 2 (6s), gh_first16.mp3 music.
+- Storyboard iteration lesson: gpt_image_2 generates text well when prompt is focused and simple. Nano Banana fails at text fixes consistently.
+- Video motion rule confirmed: all slow motion language required — "long glide", "extreme slow motion", "drift" — no snapping.
 
-**Previous output files (parked — not delivering):**
-- `outputs/garlichigh_intro_raw_v1.mp4` — photoreal Seedance gen, C+ rating, parked
-- `outputs/garlichigh_juniper.mp4` — Juniper VO test, parked with the direction
-
-**Next steps (pick up here):**
-1. Generate Lucy full-body reference in soul_cinematic — front, 3/4, side, close-up (separate 9:16 gens)
-2. Dress her in black blazer + pencil skirt using the dressed result as new reference
-3. Run the 3 UGC Seedance prompts using Lucy dressed as the subject
-4. Review — pick the strongest one to show the client
+**Next steps:**
+1. Upgrade to 1080p when ready to deliver
+2. Optional: add more juniper clips from other sections (C, D, E) for a longer cut
+3. Optional: generate Gen 1 again at higher quality if client wants the yellow shots sharper
 
 May 14 2026 (session 3):
 - NEW DIRECTION: Pivoted to photoreal commercial intro using Cal's REAL food photos. No AI food gen — real photos as storyboard reference.
