@@ -1,6 +1,22 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-15 (session 6) — Garlic High project organized, two final deliverables locked*
+*Last updated: 2026-05-16 (session 7) — NaildItSpa ad production started, storyboard phase parked*
+
+## Completed this session (2026-05-16 session 7 — NaildItSpa ad production)
+
+- Created `clients/NaildItSpa/` client folder — CLAUDE.md + brief.md built from SpiritSisters project files + live website scrape.
+- Brainstormed ad concept — pivoted from nail photos to pure origin story: Vietnamese mother teaches daughter the craft at a kitchen table. No products. Just the story.
+- Generated 3 locked character portraits (soul_cinematic): mother V3, young daughter V1, adult Dalena V3.
+- Generated Part 1 storyboard (frames 1–6, kitchen memory) — approved on second attempt after making nail work more visually clear.
+- Generated Part 2 storyboard (frames 7–12, present-day salon) — v2 improved (modern salon, professional Dalena outfit) but Cal parked it. Salon and Dalena's look still need work.
+- Music locked: `Cracked Teacup.mp3` — soft piano slow build.
+- **Session parked.** Resume at Part 2 storyboard iteration before moving to video generation.
+
+**Where we left off:**
+- Part 1 storyboard: `clients/NaildItSpa/outputs/storyboard_part1_v2.png` ✅ approved
+- Part 2 storyboard: `clients/NaildItSpa/outputs/storyboard_part2_v2.png` — parked, needs another pass
+- Next: regenerate Part 2 with more premium modern salon + sharper professional Dalena look
+- After Part 2 approved: write Seedance video prompts → generate both parts → stitch → final 30–45s film
 
 ## Completed this session (2026-05-15 session 6 — Garlic High file organization)
 

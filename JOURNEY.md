@@ -4,6 +4,32 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 16, 2026 — AI Can't Fake Real Life. We Kept Trying Anyway.
+
+Spent a full session trying to make a polished nail salon commercial with AI tools. Went through three different concepts. Every time we tried to make AI look like a real person living a real day, it looked obviously fake. Every time we used Dalena's real nail photos, it wasn't polished enough. We hit the same wall twice from different directions.
+
+The honest answer was there the whole time: real footage. Six clips shot on Dalena's phone at the salon is worth more than anything we can generate. That's the thing we kept trying to skip.
+
+**What I learned:** There's no AI shortcut for "a real commercial." AI is great at style, energy, and things that can't be real. But the moment you try to fake real life, people can tell.
+
+**Content idea:** "Spent a whole session trying to make an AI commercial for a nail salon. Looked fake every single time. A 5-second phone clip would have beaten all of it."
+
+---
+
+## May 16, 2026 — Every Nail Salon Ad Shows the Nails. We Didn't.
+
+Started today trying to make an ad for Dalena's nail salon. First instinct was to show the nail sets — close-ups, beautiful art, scroll-stopping sets. That's what every nail salon does.
+
+Then realized: that's also exactly why every nail salon ad looks the same. Nobody stops for another nail reveal. But they might stop for a mother teaching her daughter at a kitchen table at night.
+
+Dalena literally learned nails from her mom. That's the actual story. So we made that the ad — no nails, no products, just the origin story. The nails are implied. The care is shown.
+
+**What I learned:** The thing that makes a brand different is almost never the product. It's the story behind it.
+
+**Content idea:** "Every nail salon ad looks the same. We made one that doesn't show nails at all — and it's a better ad."
+
+---
+
 ## May 15, 2026 — The AI Shots Were Covering For the Food Shots
 
 Spent a whole session trying to get the AI-generated ramen shots to look right. The yellow commercial concept was working — bold text, low angles, clean. But every time the food actually showed up in the video, it looked plastic.
