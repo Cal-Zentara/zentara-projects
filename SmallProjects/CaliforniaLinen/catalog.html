@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog — California Linen Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #122f4a;
+      --yellow: #FFDE0A;
+      --blue:   #1a5276;
+      --light:  #f8f9fa;
+      --border: #dee2e6;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .topbar-logo {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--navy);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .topbar-logo span { color: #888; }
+    .topbar-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #888;
+    }
+    .topbar-back {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--navy);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ── BOOK STAGE ── */
+    .stage {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 3rem 1rem;
+      width: 100%;
+    }
+
+    .book-stage {
+      position: relative;
+      display: inline-block;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 50;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #FFDE0A;
+      border: none;
+      color: #122f4a;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, transform 0.15s;
+      user-select: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    }
+    #prevBtn { left: -24px; }
+    #nextBtn { right: -24px; }
+    .nav-btn:hover { background: #ffe633; transform: translateY(-50%) scale(1.1); }
+    .nav-btn:active { transform: translateY(-50%) scale(0.95); }
+    .nav-btn:disabled { opacity: 0.25; cursor: not-allowed; transform: translateY(-50%); }
+
+    /* ── BOOK ── */
+    #book {
+      box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+    }
+
+    /* StPageFlip renders pages as .page divs — fill the page area */
+    .page {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    /* ── PAGE CONTENT STYLES ── */
+    .page-content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Cover */
+    .cover {
+      background: var(--navy);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 2.5rem;
+      height: 100%;
+    }
+    .cover-state { font-size: 3.5rem; margin-bottom: 1rem; }
+    .cover h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 0.3rem;
+    }
+    .cover h1 span { color: var(--yellow); }
+    .cover-sub {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 2rem;
+    }
+    .cover-rule {
+      width: 40px;
+      height: 2px;
+      background: var(--yellow);
+      margin: 0 auto 2rem;
+    }
+    .cover-tag {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.6;
+    }
+    .cover-phone {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--yellow);
+      letter-spacing: 0.05em;
+    }
+    .cover-badge {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1.5rem auto 0;
+    }
+    .cover-badge-inner {
+      text-align: center;
+    }
+    .cover-badge-num {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--yellow);
+      line-height: 1;
+    }
+    .cover-badge-label {
+      font-size: 0.48rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* Standard page layout */
+    .pg {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+    }
+    .pg-header {
+      background: var(--navy);
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .pg-chapter {
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+    .pg-section {
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+    .pg-body {
+      flex: 1;
+      padding: 1.5rem;
+      overflow: hidden;
+    }
+    .pg-footer {
+      padding: 0.5rem 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .pg-num {
+      font-size: 0.65rem;
+      color: #aaa;
+      font-weight: 600;
+    }
+    .pg-brand {
+      font-size: 0.6rem;
+      color: #bbb;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* Section opener */
+    .section-opener {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .section-opener-color {
+      height: 55%;
+    }
+    .section-opener-photo {
+      height: 55%;
+      overflow: hidden;
+    }
+    .section-opener-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .section-opener-body {
+      flex: 1;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .section-opener-num {
+      font-size: 4rem;
+      font-weight: 900;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 0.2rem;
+    }
+    .section-opener-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .section-opener-footer {
+      padding: 0.5rem 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* TOC */
+    .toc { height: 100%; padding: 1.5rem; }
+    .toc h2 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .toc-cat {
+      margin-bottom: 1rem;
+    }
+    .toc-cat-title {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: #fff;
+      background: var(--navy);
+      padding: 0.25rem 0.5rem;
+      margin-bottom: 0.3rem;
+      display: inline-block;
+    }
+    .toc-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.72rem;
+      color: #555;
+      padding: 0.15rem 0.5rem;
+    }
+    .toc-item-name { font-weight: 500; }
+    .toc-item-dots {
+      flex: 1;
+      margin: 0 0.4rem;
+      border-bottom: 1px dotted #ccc;
+      height: 0.8em;
+    }
+    .toc-item-pg { font-weight: 700; color: var(--navy); }
+    .toc-sub {
+      font-size: 0.66rem;
+      color: #888;
+      padding: 0.1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .toc-sub-dots {
+      flex: 1;
+      margin: 0 0.4rem;
+      border-bottom: 1px dotted #ddd;
+      height: 0.8em;
+    }
+
+    /* Product listing */
+    .product-list { display: flex; flex-direction: column; gap: 1rem; }
+    .product-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .product-item:last-child { border-bottom: none; }
+    .product-item-img {
+      width: 100px;
+      height: 110px;
+      background: #f5f5f5;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .product-item-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .product-item-info h3 {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.3rem;
+    }
+    .product-item-info p {
+      font-size: 0.68rem;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 0.3rem;
+    }
+    .product-item-info .spec {
+      font-size: 0.62rem;
+      color: #888;
+      line-height: 1.4;
+    }
+
+    /* 2-col product grid on a page */
+    .product-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      height: 100%;
+    }
+    .product-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .product-cell:last-child { border-bottom: none; }
+    .product-cell-img {
+      width: 100%;
+      height: 130px;
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .product-cell-img img {
+      max-width: 85%;
+      max-height: 85%;
+      object-fit: contain;
+    }
+    .product-cell h3 {
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .product-cell p {
+      font-size: 0.63rem;
+      color: #666;
+      line-height: 1.45;
+    }
+
+    /* Colors page */
+    .colors-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 0.2rem;
+    }
+    .colors-sub {
+      font-size: 0.68rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+    .colors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.4rem;
+    }
+    .color-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.2rem 0;
+    }
+    .color-swatch {
+      width: 28px;
+      height: 20px;
+      border: 1px solid rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    .color-name {
+      font-size: 0.65rem;
+      color: #444;
+      font-weight: 500;
+    }
+
+    /* Specs table */
+    .specs-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 0.8rem;
+    }
+    .specs-intro {
+      font-size: 0.68rem;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .specs-intro strong { color: var(--blue); }
+    .size-grid { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+    .size-row {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .size-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #333;
+      width: 80px;
+    }
+    .size-box {
+      border: 1px solid #999;
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Blank page (back of cover etc.) */
+    .blank { height: 100%; background: #fff; }
+
+    /* Company page */
+    .company-pg {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .company-img {
+      height: 220px;
+      overflow: hidden;
+    }
+    .company-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .company-body {
+      flex: 1;
+      padding: 1.2rem 1.5rem;
+    }
+    .company-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 0.6rem;
+    }
+    .company-body p {
+      font-size: 0.68rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 0.6rem;
+    }
+    .company-footer {
+      padding: 0.5rem 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.6rem;
+      color: #aaa;
+    }
+
+    /* Page counter UI */
+    .page-indicator {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 1rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* Responsive */
+    @media (max-width: 760px) {
+      .stage { gap: 0.5rem; padding: 1.5rem 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="index.html" class="topbar-logo">California<span>Linen</span></a>
+  <div class="topbar-title">Product Catalog</div>
+  <a href="index.html" class="topbar-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    Back to Site
+  </a>
+</div>
+
+<!-- BOOK STAGE -->
+<div class="stage">
+  <div class="book-stage">
+    <button class="nav-btn" id="prevBtn" disabled>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div id="book"></div>
+    <div class="page-indicator" id="pageIndicator"></div>
+    <button class="nav-btn" id="nextBtn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+</div>
+
+<script>
+// ── PAGE DEFINITIONS ──────────────────────────────────────────────────
+
+const PAGES = [
+
+  // PAGE 0: COVER
+  `<div class="cover">
+    <div style="font-size:2.5rem;margin-bottom:1rem;">🗺️</div>
+    <div style="width:50px;height:3px;background:var(--yellow);margin:0 auto 1.2rem;"></div>
+    <h1>CALIFORNIA<br><span>LINEN SERVICES</span></h1>
+    <div class="cover-sub" style="margin-top:0.5rem;">Product Catalog</div>
+    <div class="cover-rule"></div>
+    <div class="cover-tag">Your local, independently owned<br>and operated textile rental company.<br>Family owned and operated since 1938.</div>
+    <div class="cover-phone">(800) 286-0526</div>
+    <div class="cover-badge">
+      <div class="cover-badge-inner">
+        <div class="cover-badge-num">85+</div>
+        <div class="cover-badge-label">Years</div>
+      </div>
+    </div>
+  </div>`,
+
+  // PAGE 1: BLANK (back of cover)
+  `<div class="blank"></div>`,
+
+  // PAGE 2: OUR STORY
+  `<div class="company-pg">
+    <div class="company-img"><img src="assets/linens.jpg" alt="California Linen Team"></div>
+    <div class="company-body">
+      <h3>Family Owned Since 1938</h3>
+      <p>California Linen Services is family owned and has been laundering textiles in Los Angeles County for over 85 years. We know every company's greatest asset is their employees.</p>
+      <p>Of our approximately 95 employees, one group of 21 has been here between 10 and 24 years — and a select group has been a member of our family between 25 and 39 years.</p>
+      <p>We specialize in providing quality linens to restaurants throughout Los Angeles and Orange County.</p>
+    </div>
+    <div class="company-footer">
+      <span>800-286-0526 | 626-564-4576</span>
+      <span>CALIFORNIA LINEN SERVICES</span>
+      <span>www.calinen.com</span>
+    </div>
+  </div>`,
+
+  // PAGE 3: DELIVERY & GREEN
+  `<div class="company-pg">
+    <div class="company-img"><img src="assets/facility.jpg" alt="Delivery Fleet"></div>
+    <div class="company-body">
+      <h3>Natural Gas Fleet Since 1973</h3>
+      <p>Since 1973 our entire fleet of delivery and sales vehicles has been powered by Natural Gas — the cleanest burning alternative transportation fuel commercially available.</p>
+      <p>Per unit of energy, natural gas contains less carbon than any other fossil fuel. The bottom line: our vehicles are dramatically better for the environment than gasoline-powered vehicles.</p>
+      <p>We are constantly looking at new ways to improve how we do what we have been doing for 3 generations.</p>
+    </div>
+    <div class="company-footer">
+      <span>800-286-0526 | 626-564-4576</span>
+      <span>CALIFORNIA LINEN SERVICES</span>
+      <span>www.calinen.com</span>
+    </div>
+  </div>`,
+
+  // PAGE 4: TABLE OF CONTENTS (left)
+  `<div class="toc">
+    <h2>Table of Contents</h2>
+    <div class="toc-cat">
+      <div class="toc-cat-title">Table Linens</div>
+      <div class="toc-item"><span class="toc-item-name">Table Cloths</span><span class="toc-item-dots"></span><span class="toc-item-pg">6</span></div>
+      <div class="toc-item"><span class="toc-item-name">Napkins</span><span class="toc-item-dots"></span><span class="toc-item-pg">8</span></div>
+    </div>
+    <div class="toc-cat">
+      <div class="toc-cat-title">Apparel</div>
+      <div class="toc-item"><span class="toc-item-name">Chef Coats</span><span class="toc-item-dots"></span><span class="toc-item-pg">12</span></div>
+      <div class="toc-item"><span class="toc-item-name">Cook Shirts</span><span class="toc-item-dots"></span><span class="toc-item-pg">15</span></div>
+      <div class="toc-item"><span class="toc-item-name">Pants</span><span class="toc-item-dots"></span><span class="toc-item-pg">16</span></div>
+      <div class="toc-item"><span class="toc-item-name">Butcher Coat</span><span class="toc-item-dots"></span><span class="toc-item-pg">17</span></div>
+      <div class="toc-item"><span class="toc-item-name">Work Uniform</span><span class="toc-item-dots"></span><span class="toc-item-pg">19</span></div>
+      <div class="toc-item"><span class="toc-item-name">Lab Coats</span><span class="toc-item-dots"></span><span class="toc-item-pg">20</span></div>
+    </div>
+    <div class="toc-cat">
+      <div class="toc-cat-title">Textiles</div>
+      <div class="toc-item"><span class="toc-item-name">Aprons</span><span class="toc-item-dots"></span><span class="toc-item-pg">24</span></div>
+      <div class="toc-item"><span class="toc-item-name">Towels</span><span class="toc-item-dots"></span><span class="toc-item-pg">26</span></div>
+      <div class="toc-sub"><span>Microfiber Towels</span><span class="toc-sub-dots"></span><span>26</span></div>
+      <div class="toc-sub"><span>Bar Towels</span><span class="toc-sub-dots"></span><span>26</span></div>
+      <div class="toc-sub"><span>Kitchen Towels</span><span class="toc-sub-dots"></span><span>27</span></div>
+      <div class="toc-sub"><span>Bath Towels</span><span class="toc-sub-dots"></span><span>29</span></div>
+      <div class="toc-item"><span class="toc-item-name">Sheets</span><span class="toc-item-dots"></span><span class="toc-item-pg">30</span></div>
+    </div>
+    <div class="toc-cat">
+      <div class="toc-cat-title">Floor and Restroom Supplies</div>
+      <div class="toc-item"><span class="toc-item-name">Floor Mats</span><span class="toc-item-dots"></span><span class="toc-item-pg">32</span></div>
+      <div class="toc-sub"><span>Carpet Mats</span><span class="toc-sub-dots"></span><span>32</span></div>
+      <div class="toc-sub"><span>Logo Mats</span><span class="toc-sub-dots"></span><span>34</span></div>
+      <div class="toc-sub"><span>Kitchen Mats</span><span class="toc-sub-dots"></span><span>36</span></div>
+      <div class="toc-sub"><span>Anti-Fatigue Mats</span><span class="toc-sub-dots"></span><span>38</span></div>
+      <div class="toc-item"><span class="toc-item-name">Wet &amp; Dust Mops</span><span class="toc-item-dots"></span><span class="toc-item-pg">39</span></div>
+      <div class="toc-item"><span class="toc-item-name">Restroom Supplies</span><span class="toc-item-dots"></span><span class="toc-item-pg">40</span></div>
+    </div>
+  </div>`,
+
+  // PAGE 5: TABLE LINENS CHAPTER OPENER
+  `<div class="section-opener">
+    <div class="section-opener-photo"><img src="assets/linens.jpg" alt="Table Linens"></div>
+    <div class="section-opener-body">
+      <div class="section-opener-num">01</div>
+      <div class="section-opener-title">Table<br>Linens</div>
+    </div>
+    <div class="section-opener-footer">
+      <span style="font-size:0.6rem;color:#aaa;">800-286-0526</span>
+      <span style="font-size:0.6rem;color:#bbb;text-transform:uppercase;letter-spacing:0.05em;">California Linen Services</span>
+      <span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span>
+    </div>
+  </div>`,
+
+  // PAGE 6: TABLECLOTHS SPECS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Table Linens</span><span class="pg-section">Napkins &amp; Tablecloths</span></div>
+    <div class="pg-body">
+      <div class="specs-title">California Linen buys 100% Signature napkins and tablecloths.</div>
+      <div class="specs-intro">
+        <strong>Milliken's innovative Signature Plus</strong> fabric outperforms all others in terms of elegance, performance, quality, durability and value.<br><br>
+        <strong>Signature Plus</strong> fabrics have some of the most consistent color quality on the market, and the softest, most natural touch and feel.<br><br>
+        <strong>Signature Plus</strong> also keeps its shape and doesn't fray the way some imports do.<br><br>
+        <strong>Signature Plus</strong> is made in the USA from a company that holds environmental awareness and sustainability as a core value, including maintaining a certified carbon negative status.
+      </div>
+      <div style="font-size:0.7rem;font-weight:700;color:#333;margin-bottom:0.5rem;">What size do you need?</div>
+      <div class="size-grid">
+        <div class="size-row">
+          <div class="size-label" style="font-size:0.62rem;">42×42" / 52×52"<br>62×62" / 72×72"<br>85×85"</div>
+          <div class="size-box" style="width:60px;height:60px;"></div>
+        </div>
+        <div class="size-row">
+          <div class="size-label" style="font-size:0.62rem;">52×114"<br>52×69"</div>
+          <div class="size-box" style="width:90px;height:45px;"></div>
+        </div>
+        <div class="size-row">
+          <div class="size-label" style="font-size:0.62rem;">120" Round</div>
+          <div class="size-box" style="width:55px;height:55px;border-radius:50%;"></div>
+        </div>
+      </div>
+      <div style="font-size:0.6rem;color:#888;font-style:italic;">Contact your California Linen sales representative for color and size availability.</div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">6</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 7: TABLECLOTH COLORS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Table Linens</span><span class="pg-section">Table Cloths — Signature</span></div>
+    <div class="pg-body">
+      <div class="colors-title">Colors</div>
+      <div class="colors-sub">Available in tablecloths and napkins. Not all colors in all sizes.</div>
+      <div class="colors-grid">
+        <div class="color-row"><div class="color-swatch" style="background:#f4a58a;"></div><span class="color-name">Peach</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#f0b8c0;"></div><span class="color-name">Pink</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#c9a0a0;"></div><span class="color-name">Dusty Rose</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#c0304a;"></div><span class="color-name">Red</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#7a1a2e;"></div><span class="color-name">Maroon</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#e8c84a;"></div><span class="color-name">Gold</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#a0c8a8;"></div><span class="color-name">Seafoam Green</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#2a6040;"></div><span class="color-name">Forest Green</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#2a7a70;"></div><span class="color-name">Teal</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#40b0a8;"></div><span class="color-name">Turquoise</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#122f4a;"></div><span class="color-name">Navy</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#111111;"></div><span class="color-name">Black</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#2858a0;"></div><span class="color-name">Royal Blue</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#c8a8d8;"></div><span class="color-name">Lavender</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#5a3020;"></div><span class="color-name">Chocolate</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#f5f0e8;border:1px solid #ddd;"></div><span class="color-name">Ivory</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#c9b18a;"></div><span class="color-name">Sandalwood</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#ffffff;border:1px solid #ddd;"></div><span class="color-name">White</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#f0f0f0;border:1px solid #aaa;"></div><span class="color-name">White Satin Band</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:linear-gradient(180deg,#fff 70%,#111 100%);border:1px solid #ddd;"></div><span class="color-name">White w/ Black Stripe</span></div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">7</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 8: NAPKINS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Table Linens</span><span class="pg-section">Napkins &amp; Tablecloths</span></div>
+    <div class="pg-body">
+      <div class="specs-title" style="margin-bottom:0.3rem;">Napkins</div>
+      <div style="font-size:0.68rem;color:#888;margin-bottom:0.8rem;">21 × 21" Signature</div>
+      <div class="colors-grid">
+        <div class="color-row"><div class="color-swatch" style="background:#111;"></div><span class="color-name">Black</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#2858a0;"></div><span class="color-name">Blue</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#b8c8a0;"></div><span class="color-name">Celery</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#5a3020;"></div><span class="color-name">Chocolate</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#2a6040;"></div><span class="color-name">Forest Green</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#e8c84a;"></div><span class="color-name">Gold</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#f5f0e8;border:1px solid #ddd;"></div><span class="color-name">Ivory</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#c8a8d8;"></div><span class="color-name">Lavender</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#7a1a2e;"></div><span class="color-name">Maroon</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#122f4a;"></div><span class="color-name">Navy</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#e86820;"></div><span class="color-name">Orange</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#f4a58a;"></div><span class="color-name">Peach</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#f0b8c0;"></div><span class="color-name">Pink</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#8a5090;"></div><span class="color-name">Purple</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#c0304a;"></div><span class="color-name">Red</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#e0a0a8;"></div><span class="color-name">Rose</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#c9b18a;"></div><span class="color-name">Sandalwood</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#a0c8a8;"></div><span class="color-name">Seafoam Green</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#f0f0f0;border:1px solid #aaa;"></div><span class="color-name">Satin Band White</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#2a7a70;"></div><span class="color-name">Teal</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#40b0a8;"></div><span class="color-name">Turquoise</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#ffffff;border:1px solid #ddd;"></div><span class="color-name">White</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#cc2060;"></div><span class="color-name">Wild Raspberry</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#5878b8;"></div><span class="color-name">Wedgewood Blue</span></div>
+        <div class="color-row"><div class="color-swatch" style="background:#e8d840;"></div><span class="color-name">Yellow</span></div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">8</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 9: NAPKIN STYLES
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Table Linens</span><span class="pg-section">Napkins &amp; Tablecloths</span></div>
+    <div class="pg-body">
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-item-img" style="background:#f8f8f8;"><img src="assets/linens.jpg" alt="Cotton Napkin"></div>
+          <div class="product-item-info">
+            <h3>Cotton Napkin</h3>
+            <p>White | 20 × 21"<br>Cotton mercerized</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img" style="background:#f8f8f8;"><img src="assets/bar.jpg" alt="Bistro Napkin"></div>
+          <div class="product-item-info">
+            <h3>Bistro Napkin</h3>
+            <p>15 × 24"</p>
+            <div class="spec">White with blue stripes<br>White with red stripes<br>White with black stripes</div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img" style="background:#f8f8f8;"><img src="assets/bar.jpg" alt="Bistro Chambray Napkin"></div>
+          <div class="product-item-info">
+            <h3>Bistro Chambray Napkin</h3>
+            <p>18 × 22"<br>Gray with white stripe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">9</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 10: APPAREL SECTION OPENER
+  `<div class="section-opener">
+    <div class="section-opener-photo"><img src="assets/chef.jpg" alt="Apparel"></div>
+    <div class="section-opener-body">
+      <div class="section-opener-num">02</div>
+      <div class="section-opener-title">Apparel</div>
+    </div>
+    <div class="section-opener-footer">
+      <span style="font-size:0.6rem;color:#aaa;">800-286-0526</span>
+      <span style="font-size:0.6rem;color:#bbb;text-transform:uppercase;letter-spacing:0.05em;">California Linen Services</span>
+      <span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span>
+    </div>
+  </div>`,
+
+  // PAGE 11: CHEF COATS PAGE 1
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Apparel</span><span class="pg-section">Chef Coats</span></div>
+    <div class="pg-body">
+      <div class="product-grid-2">
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Pearl Button Chef Coat"></div>
+          <h3>Pearl Button Chef Coat</h3>
+          <p>Stand-up collar<br>Double-breasted with ten non-yellowing pearl buttons<br>Left chest pocket<br>Thermometer pocket on left sleeve<br><strong>White | Sizes: XS–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Knot Button Chef Coat"></div>
+          <h3>Knot Button Chef Coat</h3>
+          <p>Stand-up collar<br>Double-breasted with ten pass-through cloth knot buttons<br>Left chest pocket<br>Thermometer pocket on left sleeve<br><strong>White | Sizes: XS–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img" style="background:#111;"><img src="assets/chef.jpg" alt="Black Chef Coat" style="opacity:0.8;"></div>
+          <h3>Black Chef Coat</h3>
+          <p>Stand-up collar<br>Double-breasted with ten black buttons<br>Left chest pocket<br>Thermometer pocket on left sleeve<br><strong>Black | Sizes: XS–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Black Trim Chef Coat"></div>
+          <h3>Black Trim Chef Coat</h3>
+          <p>Stand-up collar<br>Double-breasted with black trim and ten black buttons<br>Thermometer pocket on left sleeve<br>Rounded cuffs<br><strong>Sizes: XS–5XL</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">12</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 12: CHEF COATS + COOK SHIRTS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Apparel</span><span class="pg-section">Chef Coats | Cook Shirts</span></div>
+    <div class="pg-body">
+      <div class="product-grid-2">
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Executive Chef Coat"></div>
+          <h3>Executive Chef Coat</h3>
+          <p>Stand-up collar<br>Double-breasted with ten cloth knot buttons<br>Left chest pocket<br>Thermometer pocket on left sleeve<br>Underarm ventilation<br><strong>White | Sizes: XS–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Cook Shirt"></div>
+          <h3>Cook Shirt</h3>
+          <p>Five-gripper front<br>Left chest pocket<br>Squared bottom to tuck in or wear out<br><strong>White | Sizes: S–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img" style="background:#f5f5f5;padding:0.5rem;"><div style="width:40px;height:35px;border-radius:50% 50% 40% 40%;border:2px solid #aaa;margin:auto;margin-top:0.5rem;"></div><div style="font-size:0.6rem;text-align:center;color:#888;margin-top:0.3rem;">Cook Hat</div></div>
+          <h3>Cook Hat</h3>
+          <p>One size fits all<br><strong>White</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img" style="background:#111;"><img src="assets/chef.jpg" alt="Black Cook Shirt" style="opacity:0.75;"></div>
+          <h3>Black Cook Shirt</h3>
+          <p>Five-gripper front<br>Left chest pocket<br>Squared bottom to tuck in or wear out<br><strong>Black | Sizes: S–5XL</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">14</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 13: PANTS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Apparel</span><span class="pg-section">Pants</span></div>
+    <div class="pg-body">
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/chef.jpg" alt="Baggy Chef Pant"></div>
+          <div class="product-item-info">
+            <h3>Baggy Chef Pant</h3>
+            <p>Full-elastic waist with drawstring<br>Zipper fly<br>Two side seam pockets<br>Two back patch pockets</p>
+            <div class="spec">Black | Sizes: S–5XL</div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/chef.jpg" alt="Cook Pant"></div>
+          <div class="product-item-info">
+            <h3>Cook Pant</h3>
+            <p>Snap closure and zipper fly<br>Two side seam pockets<br>Two back patch pockets</p>
+            <div class="spec">Checked | Black | White<br>Sizes: 28–50</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">16</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 14: BUTCHER COAT + WORK APPAREL
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Apparel</span><span class="pg-section">Butcher Coat | Work Apparel</span></div>
+    <div class="pg-body">
+      <div class="product-grid-2">
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Butcher Coat"></div>
+          <h3>Butcher Coat</h3>
+          <p>Left chest pocket<br>Two lower pockets<br>Reversible self-tie closure<br>Side vent openings<br><strong>White | Sizes: XS–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Work Shirt"></div>
+          <h3>Men's Short Sleeve Work Shirt</h3>
+          <p>Two chest pockets<br>Six buttons<br><strong>Grey | Sizes: XS–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Patient Gown"></div>
+          <h3>Patient Gown</h3>
+          <p>3.3 oz/Sq Yd<br>55% Polyester / 45% Cotton<br>Square Weave<br>White with Blue Snowflake<br><strong>One Size Fits All</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Men's Work Pant"></div>
+          <h3>Men's Work Pant</h3>
+          <p>Button closure and zipper fly<br>Two frontier style front pockets<br>Two back patch hip pockets<br><strong>Grey | Sizes: S–5XL</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">18</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 15: LAB COATS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Apparel</span><span class="pg-section">Lab Coats</span></div>
+    <div class="pg-body">
+      <div class="product-grid-2">
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Lapel Coat"></div>
+          <h3>Lapel Coat</h3>
+          <p>One-piece collar with notched lapel<br>Three non-yellowing pearl buttons<br>Left chest pocket with pencil stall<br>Two lower pockets | Rounded hemmed front<br><strong>5 oz., 80% Poly/20% Cotton | White | XS–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Lab Coat with Gripper Closure"></div>
+          <h3>Lab Coat — Gripper Closure</h3>
+          <p>One-piece lined collar with notched lapel<br>Hand slit openings | Five gripper closure<br>Interior chest pocket with pencil stall<br><strong>5 oz., 80% Poly/20% Cotton | White | S–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Lab Coat Button Closure"></div>
+          <h3>Lab Coat — Button Closure</h3>
+          <p>One-piece lined collar with notched lapel<br>Hand slit openings<br>Five non-yellowing pearl buttons<br>Left chest pocket with pencil stall<br><strong>5 oz., 80% Poly/20% Cotton | White | S–5XL</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/chef.jpg" alt="Pocketless Lab Coat"></div>
+          <h3>Pocketless Lab Coat</h3>
+          <p>One-piece lined collar with notched lapel<br>Hand slit openings | Five gripper closure<br>Pocketless<br><strong>5 oz., 80% Poly/20% Cotton | White | S–5XL</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">20</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 16: TEXTILES SECTION OPENER
+  `<div class="section-opener">
+    <div class="section-opener-photo"><img src="assets/bar.jpg" alt="Textiles"></div>
+    <div class="section-opener-body">
+      <div class="section-opener-num">03</div>
+      <div class="section-opener-title">Textiles</div>
+    </div>
+    <div class="section-opener-footer">
+      <span style="font-size:0.6rem;color:#aaa;">800-286-0526</span>
+      <span style="font-size:0.6rem;color:#bbb;text-transform:uppercase;letter-spacing:0.05em;">California Linen Services</span>
+      <span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span>
+    </div>
+  </div>`,
+
+  // PAGE 17: APRONS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Textiles</span><span class="pg-section">Aprons</span></div>
+    <div class="pg-body">
+      <div class="product-grid-2">
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/bar.jpg" alt="Four-Way Bar Apron"></div>
+          <h3>Four-Way Bar Apron</h3>
+          <p>White | Size: 30 × 36"</p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/bar.jpg" alt="Bib Apron No Pockets"></div>
+          <h3>Bib Apron — No Pockets</h3>
+          <p>Filament Polyester — resists dirt, oil and grime<br>Strong colored polyester ties<br>6.1 oz., 100% Polyester | Cut Size: 30 × 36"<br><strong>White | Black</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/bar.jpg" alt="Bistro Apron"></div>
+          <h3>Bistro Apron</h3>
+          <p>Available with no pockets or two pockets<br>Size: 30 × 38"<br><strong>White | Black</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/bar.jpg" alt="Bib Apron 3 Pockets"></div>
+          <h3>Bib Apron — 3 Pockets</h3>
+          <p>Chest pocket and two lower pockets<br>6.1 oz., 100% Polyester | Cut Size: 30 × 36"<br><strong>White | Black | Royal Blue | Brown | Forest Green | Maroon | Red</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">24</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 18: WAIST APRON + TOWELS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Textiles</span><span class="pg-section">Aprons | Towels</span></div>
+    <div class="pg-body">
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/bar.jpg" alt="Waist Apron"></div>
+          <div class="product-item-info">
+            <h3>Waist Apron — 2 Pockets</h3>
+            <p>Half Bistro Waist apron with two split pockets<br>Size: 30 × 38"</p>
+            <div class="spec">Black | Forest Green</div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/bar.jpg" alt="Microfiber Bar Towel"></div>
+          <div class="product-item-info">
+            <h3>Microfiber Bar Towel</h3>
+            <p>Chemically split for super absorbency and durability. Makes your facility shine on stainless steel, glass, table tops or bars.</p>
+            <div class="spec">White with orange trim | Size: 14 × 18"<br>Ultra Efficient · Ultra Green · Ultra Bright</div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/bar.jpg" alt="Bar Towel"></div>
+          <div class="product-item-info">
+            <h3>Bar Towel</h3>
+            <p>100% cotton | 32 oz.</p>
+            <div class="spec">White with gold stripe | 16 × 16"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">26</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 19: KITCHEN TOWELS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Textiles</span><span class="pg-section">Kitchen Towels</span></div>
+    <div class="pg-body">
+      <div class="product-grid-2">
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/bar.jpg" alt="Huck Towel"></div>
+          <h3>Huck Towel</h3>
+          <p>White | 100% cotton<br><strong>15 × 30"</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/bar.jpg" alt="Glass Towel"></div>
+          <h3>Glass Towel</h3>
+          <p>White with red pin stripes | 100% cotton<br><strong>16 × 28"</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/bar.jpg" alt="Dish Towel"></div>
+          <h3>Dish Towel</h3>
+          <p>White with green stripe | 100% cotton<br><strong>24 × 36"</strong></p>
+        </div>
+        <div class="product-cell">
+          <div class="product-cell-img"><img src="assets/bar.jpg" alt="Massage Bar Towel"></div>
+          <h3>Massage Bar Towel</h3>
+          <p>Bigger than the typical size bar towel<br>White | 100% cotton<br><strong>16 × 27"</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">27</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 20: SPECIALTY TOWELS + BATH
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Textiles</span><span class="pg-section">Kitchen Towels | Bath Towels</span></div>
+    <div class="pg-body">
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/bar.jpg" alt="Black #2 Towel"></div>
+          <div class="product-item-info">
+            <h3>Black #2 Towel</h3>
+            <p>All purpose cleaning towel</p>
+            <div class="spec">Black | 100% cotton | 16 × 27"</div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/bar.jpg" alt="Sushi Towel"></div>
+          <div class="product-item-info">
+            <h3>Sushi Towel</h3>
+            <p>White | 100% cotton | Hemmed</p>
+            <div class="spec">12 × 12"</div>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/bar.jpg" alt="Bath Towels"></div>
+          <div class="product-item-info">
+            <h3>Bath Towels</h3>
+            <p>Premium quality | White | 100% cotton | 1.5 lb/doz</p>
+            <div class="spec">
+              Bath Towel, 5.5 lbs/doz ............. 20 × 40"<br>
+              Bath Towel, 10.5 lbs/doz ........... 24 × 50"<br>
+              Bath Towel, 17.0 lbs/doz<br>
+              Wash Cloth<br>
+              Bath Mat
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">28</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 21: SHEETS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Textiles</span><span class="pg-section">Sheets</span></div>
+    <div class="pg-body">
+      <div class="product-item" style="border:none;padding-bottom:0;">
+        <div class="product-item-img" style="width:140px;height:160px;"><img src="assets/linens.jpg" alt="Sheets"></div>
+        <div class="product-item-info">
+          <h3>Sheets</h3>
+          <p>White | T180 Blend</p>
+          <div class="spec" style="line-height:1.8;font-size:0.68rem;color:#444;">
+            Fitted Twin Sheet .......... 36 × 84"<br>
+            Flat Twin Sheet ............. 42 × 104"<br>
+            Fitted Queen Sheet ...... 60 × 84"<br>
+            Flat Queen Sheet .......... 90 × 110"<br>
+            Pillow Case ................... 42 × 35"
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;padding:1rem;background:var(--light);border-radius:8px;">
+        <div style="font-size:0.7rem;font-weight:700;color:var(--navy);margin-bottom:0.3rem;">Laundry Bag</div>
+        <div style="font-size:0.65rem;color:#555;line-height:1.5;">This laundry bag "breathes" thus helping to prevent mildew from growing inside the laundry bag. A very professional look that fits our bag stands perfectly.</div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">30</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 22: FLOOR & SUPPLY SECTION OPENER
+  `<div class="section-opener">
+    <div class="section-opener-photo"><img src="assets/facility.jpg" alt="Floor and Supply Room"></div>
+    <div class="section-opener-body">
+      <div class="section-opener-num">04</div>
+      <div class="section-opener-title">Floor &amp;<br>Supply Room</div>
+    </div>
+    <div class="section-opener-footer">
+      <span style="font-size:0.6rem;color:#aaa;">800-286-0526</span>
+      <span style="font-size:0.6rem;color:#bbb;text-transform:uppercase;letter-spacing:0.05em;">California Linen Services</span>
+      <span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span>
+    </div>
+  </div>`,
+
+  // PAGE 23: FLOOR MATS
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Floor &amp; Supply Room</span><span class="pg-section">Floor Mats</span></div>
+    <div class="pg-body">
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/facility.jpg" alt="Carpet Mat"></div>
+          <div class="product-item-info">
+            <h3>Carpet Mats</h3>
+            <p>Standard entrance mats — clean, professional appearance at every entry point.</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/facility.jpg" alt="Logo Mat"></div>
+          <div class="product-item-info">
+            <h3>Logo Mats</h3>
+            <p>Custom logo mats — brand your entrance and reinforce your identity from the first step.</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/facility.jpg" alt="Kitchen Mat"></div>
+          <div class="product-item-info">
+            <h3>Kitchen Mats</h3>
+            <p>Anti-fatigue and anti-slip mats built for commercial kitchen environments.</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/facility.jpg" alt="Scraper Mat"></div>
+          <div class="product-item-info">
+            <h3>Scraper &amp; Anti-Fatigue Mats</h3>
+            <p>Heavy-duty scraper mats for high-traffic entries. Anti-fatigue mats for standing workstations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">32</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 24: MOPS + RESTROOM
+  `<div class="pg">
+    <div class="pg-header"><span class="pg-chapter">Floor &amp; Supply Room</span><span class="pg-section">Mops | Restroom Supplies</span></div>
+    <div class="pg-body">
+      <div class="product-list">
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/facility.jpg" alt="Wet & Dust Mops"></div>
+          <div class="product-item-info">
+            <h3>Wet &amp; Dust Mops</h3>
+            <p>Commercial-grade cotton mop heads for wet and dry use. Always fresh from our facility — picked up, laundered, and returned on schedule.</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/facility.jpg" alt="Air Freshener"></div>
+          <div class="product-item-info">
+            <h3>Air Freshener</h3>
+            <p>Consistent fragrance control for restrooms and entryways. Refilled on every service visit.</p>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img"><img src="assets/facility.jpg" alt="Restroom Supply"></div>
+          <div class="product-item-info">
+            <h3>Restroom Supplies</h3>
+            <p>Soap dispensers, paper towels, and all essential restroom supplies — stocked and maintained as part of your regular service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pg-footer"><span class="pg-num">40</span><span class="pg-brand">California Linen Services</span><span style="font-size:0.6rem;color:#aaa;">www.calinen.com</span></div>
+  </div>`,
+
+  // PAGE 25: BACK COVER
+  `<div class="cover" style="justify-content:space-between;padding:2.5rem;">
+    <div style="text-align:center;">
+      <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.8rem;">Quality Service — Every Time</div>
+      <div style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:800;color:#fff;line-height:1.1;">California<br><span style="color:var(--yellow);">Linen Services</span></div>
+    </div>
+    <div style="text-align:center;">
+      <div style="width:40px;height:2px;background:var(--yellow);margin:0 auto 1.5rem;"></div>
+      <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);line-height:2;">
+        (800) 286-0526<br>
+        626-564-4576<br>
+        www.calinen.com<br>
+        info@calinen.com
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:0.62rem;color:rgba(255,255,255,0.3);line-height:1.7;">
+        Serving Los Angeles &amp; Orange County<br>
+        Anaheim · Beverly Hills · Long Beach · Hollywood<br>
+        Huntington Beach · Newport Beach · Pasadena<br>
+        Pomona · Santa Monica
+      </div>
+    </div>
+  </div>`,
+
+];
+
+// ── STPAGEFLIP ENGINE ─────────────────────────────────────────────────
+
+// Build page elements from PAGES array and inject into #book
+const bookEl = document.getElementById('book');
+PAGES.forEach(html => {
+  const div = document.createElement('div');
+  div.className = 'page';
+  div.innerHTML = html;
+  bookEl.appendChild(div);
+});
+
+// Init StPageFlip
+const pageFlip = new St.PageFlip(bookEl, {
+  width: 450,
+  height: 600,
+  size: 'fixed',
+  drawShadow: true,
+  flippingTime: 1000,
+  showCover: false,
+  usePortrait: false,
+  useMouseEvents: true,
+  swipeDistance: 30,
+  mobileScrollSupport: false,
+  maxShadowOpacity: 0.6,
+  startZIndex: 0,
+  autoSize: false,
+});
+
+pageFlip.loadFromHTML(bookEl.querySelectorAll('.page'));
+
+// Controls
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const indicator = document.getElementById('pageIndicator');
+
+prevBtn.addEventListener('click', () => pageFlip.flipPrev('bottom'));
+nextBtn.addEventListener('click', () => pageFlip.flipNext('bottom'));
+
+function updateControls() {
+  const cur   = pageFlip.getCurrentPageIndex();
+  const total = pageFlip.getPageCount();
+  prevBtn.disabled = cur === 0;
+  nextBtn.disabled = cur >= total - 2;
+  if (cur === 0) {
+    indicator.textContent = 'Cover  ·  1 / ' + Math.ceil(total / 2);
+  } else if (cur >= total - 1) {
+    indicator.textContent = 'Back Cover  ·  ' + Math.ceil(total / 2) + ' / ' + Math.ceil(total / 2);
+  } else {
+    indicator.textContent = `Pages ${cur}–${cur + 1}  ·  ${Math.ceil(cur / 2) + 1} / ${Math.ceil(total / 2)}`;
+  }
+}
+
+pageFlip.on('flip', updateControls);
+pageFlip.on('init', updateControls);
+
+// Keyboard nav
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') pageFlip.flipNext('bottom');
+  if (e.key === 'ArrowLeft')  pageFlip.flipPrev('bottom');
+});
+</script>
+
+</body>
+</html>
