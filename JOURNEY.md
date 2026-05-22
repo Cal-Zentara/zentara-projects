@@ -4,6 +4,18 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 21, 2026 — We Used the $100/Month AI Tool to Write Us a Free Brief and Then Cancelled
+
+Tested Higgsfield's new Supercomputer tool — basically an AI that runs your whole ad production automatically. It asked us a few questions, built a character, designed a salon, and wrote two full ad concepts. Then asked if we wanted to generate the video for 270 credits. We cancelled.
+
+Turns out the best part of Supercomputer is the planning, not the generating. We got a real creative brief for free and walked away. Then realized our own pipeline does the rest better — because it actually knows Dalena's brand, her voice, what not to say, and what the salon feels like. Gemini doesn't know any of that.
+
+**What I learned:** The most expensive AI tool isn't always the best one. Sometimes you just use it for the idea and build the thing yourself.
+
+**Content idea:** "Paid $99/month for an AI that does everything automatically. Used it to write a brief, then cancelled before it spent the credits. Did it myself for a fraction of the cost."
+
+---
+
 ## May 16, 2026 — AI Can't Fake Real Life. We Kept Trying Anyway.
 
 Spent a full session trying to make a polished nail salon commercial with AI tools. Went through three different concepts. Every time we tried to make AI look like a real person living a real day, it looked obviously fake. Every time we used Dalena's real nail photos, it wasn't polished enough. We hit the same wall twice from different directions.

@@ -99,34 +99,25 @@ These have gotten flagged before — avoid in Seedance/Higgsfield prompts:
 
 ---
 
-## Ad Production — "Started at a Kitchen Table" (PARKED May 16, 2026)
+## Next Ad Direction — Real Salon Photos Needed (May 21, 2026)
 
-**Concept:** Pure origin story brand film. No nail photos. Vietnamese mother teaches young daughter the craft at a kitchen table. Daughter grows up to be Dalena. Salon is the payoff. 30–45 seconds. 9:16 vertical. Hyperrealistic.
+Tested Higgsfield Marketing Studio (TV Spot) and Supercomputer this session. Both produced AI slop for a service business — Marketing Studio is built for physical products, not salons. Supercomputer generated a free creative brief before we cancelled the expensive video gen.
 
-**Status:** Storyboard phase. Part 1 approved. Part 2 needs work — salon aesthetic not right yet, Dalena's professional look needs more 2026 energy.
+**Decision:** Build ads ourselves using our own pipeline. Real salon photos first, then Seedance.
 
-**Locked characters:**
-- Mother → `outputs/mother_v3.png` (Vietnamese, mid-40s, composed, dark hair pulled back)
-- Young daughter → `outputs/daughter_young_v1.png` (8–10 years old, wide eyes, dark hair, curious expression)
-- Adult Dalena → `outputs/dalena_v3.png` (late 20s, dark hair, confident — closest facial match to mother)
+**Shot list for Dalena (shoot on phone, 1-2 minutes):**
+1. Front door / entrance — outside, natural light
+2. Reception desk — clean, wide shot
+3. Nail station — close, tools laid out, warm light
+4. Client in the chair — candid, not posed
+5. Window light shot — any corner with good natural light
 
-**Locked music:** `c:\Users\Aesth\Desktop\Audio\Cracked Teacup.mp3` — soft piano, slow build
+**Supercomputer creative brief (free — use this as direction):**
+- Concept: "The Detail Focus" — snap-zoom onto hero's hand, slow-motion macro shots of nail art
+- Dialogue: *"The smallest details say the most. Come see us — walk-ins always welcome."*
+- Sign-off: *"Nail'd It Spa. Stanton's home for the perfectly polished. Walk-ins welcome."*
 
-**Approved storyboards:**
-- Part 1 (frames 1–6, kitchen memory) → `outputs/storyboard_part1_v2.png` ✅
-- Part 2 (frames 7–12, present-day salon) → `outputs/storyboard_part2_v2.png` — PARKED, needs work
-
-**What's wrong with Part 2 v2:**
-- Salon doesn't look modern enough — Cal wants more premium 2026 feel
-- Dalena's professional look needs refinement — sharp but warm, not just black apron
-- Keep iterating Part 2 until Cal approves before moving to Seedance video prompts
-
-**Next steps when resuming:**
-1. Regenerate Part 2 storyboard with more premium modern salon and sharper Dalena look
-2. Once Part 2 approved → write Seedance video prompts for both parts
-3. Generate Part 1 video (Seedance, 480p, 9:16, ~20s)
-4. Generate Part 2 video (Seedance, 480p, 9:16, ~20s)
-5. FFmpeg stitch Part 1 + Part 2 → add Cracked Teacup.mp3 → end card → final 40s film
+**Note:** Supercomputer uses Gemini and doesn't know Dalena's brand. Our pipeline (soul_cinematic → nano_banana_2 → seedance_2_0) is cheaper and produces better brand-aware output.
 
 ---
 

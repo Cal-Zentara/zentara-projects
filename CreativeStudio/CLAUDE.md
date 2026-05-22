@@ -215,6 +215,9 @@ CreativeStudio/
 
 ## Higgsfield
 
+**Plan:** Ultra — 3,000 credits/month, access to all models, parallel gen up to 8 videos + 8 images
+**Renewal:** Annual. Next renewal May 7, 2027 (renews every May 7)
+**Rollover:** None — unused credits expire each month
 **CLI installed:** `npm install -g @higgsfield/cli`
 **Auth:** `higgsfield auth login` (browser OAuth — one time per machine)
 **Skills installed:** `npx skills add higgsfield-ai/skills --yes`
