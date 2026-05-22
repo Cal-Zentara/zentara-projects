@@ -4,6 +4,28 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 22, 2026 — Built a Full Website Demo and Walked In the Same Day
+
+Found a local linen company with a website that looked like it hadn't been touched since 2008. Built them a full redesign in one session — AI-generated photos, a cinematic video hero, scroll animations, the whole thing. Then walked in to pitch it the same day.
+
+**What I learned:** You don't need a client to build the demo. Build it first, walk in with something they can see and feel, and let the site do the selling.
+
+**Content idea:** "I built a full website for a business that didn't hire me yet. Then I walked in and showed them."
+
+---
+
+## May 22, 2026 — The Photos Broke Because of Uppercase
+
+Updated a client's website with new product photos. Worked fine on my computer. Pushed it live and every image was broken — white boxes everywhere.
+
+Spent time troubleshooting. Turns out the photos were in a folder called "Webpage" but my code was looking for "webpage" with a lowercase W. On my computer, it doesn't matter. On the server where the site actually lives, the capital letter is invisible — it just doesn't find the file.
+
+**What I learned:** What works on your computer and what works on a live server aren't always the same thing. One letter off and everything breaks.
+
+**Content idea:** "Updated a client's website. Pushed it live. Every photo was gone. The folder name had a capital letter."
+
+---
+
 ## May 22, 2026 — Stopped Writing Ads. Started Stealing From Real People.
 
 Was trying to write a script for a ramen ad. Kept coming up with lines like "every bowl hits hard" and "the garlic you will smell." Classic ad copy. Sounded like a billboard.
