@@ -144,7 +144,37 @@ Target: ramen shop owner. Working toward a paid ads + social media campaign deal
 
 ---
 
-## Current Direction (May 15, 2026 — session 5 — YELLOW COMMERCIAL)
+## Current Direction (May 22, 2026 — session 8 — UGC JIRO EXPLAINER)
+
+**Active direction:** UGC "What is Jiro Style Ramen" — real girl, real Yorba Linda location, natural speech.
+
+**Locked assets:**
+- Girl reference: `c:\Users\Aesth\Desktop\Images\HG girl.png`
+- Shop location: Yorba Linda interior photo (image-cache at session start)
+- Real bowl: `c:\Users\Aesth\Desktop\Images\food\Ramen.jpg`
+- Girl-in-shop composite: `c:\Users\Aesth\Desktop\Images\HG location shop.png`
+- Storyboard (9:16 vertical, 3-panel stacked): `clients/Garlic-high/outputs/ugc_storyboard_v4.png` ✅ LOCKED
+- Video Clip 1 (15s, 480p): `clients/Garlic-high/outputs/ugc_jiro_v1.mp4` ✅ APPROVED — Cal: "damn it was so good"
+
+**Locked script:**
+- Beat 1: "Okay so — Jiro style ramen. Thick noodles, really rich savory broth. Add a little spice and it just levels up. Every bite hits."
+- Beat 2: "You get chashu, bean sprouts, cabbage, garlic — and you customize everything. Unlimited toppings. I said yes to all of it. After 10 minutes I was sweating. After 15 I was questioning my life."
+
+**Structure:** She holds bowl up (Beat 1) → interacts with ingredients/chopsticks (Beat 2) → reaction. Bowl and Jiro banner visible throughout.
+
+**Why 2 clips:** Seedance hard fails at duration 20. Max working duration is 15. Full script is ~20 seconds → 2 clips of 15s stitched via FFmpeg.
+
+**Where we left off:** Clip 1 approved. Clip 2 (Beat 2 script) not yet generated. Same storyboard (`ugc_storyboard_v4.png`) as start-image, same prompt structure, duration 15.
+
+**Next steps:**
+1. Run Clip 2 with Beat 2 script, `ugc_storyboard_v4.png` as start-image, duration 15
+2. FFmpeg stitch Clip 1 + Clip 2
+3. Add `Garlic High.mp3` music
+4. Optional: add end card
+
+---
+
+## Previous Direction (May 15, 2026 — session 5 — YELLOW COMMERCIAL)
 
 **Locked direction:** Yellow fast-food commercial. Flat yellow background, low-angle food shots, bold 3D text, McDonald's pacing. 13-second final video. Three-clip structure: Gen 1 (yellow storyboard) → Juniper B (real food footage bridge) → Gen 2 (yellow storyboard close).
 
@@ -327,6 +357,8 @@ All assets live in `C:\Users\Aesth\Desktop\Images\`
 | Shop image — all seats full | Regenerate with one clearly empty stool on the right end |
 | Shot 1 (old concept) — wrong direction | Old prompt had her walking away from camera. New concept starts with bowl close-up instead. |
 | Chef hat — white in new shots, should be yellow | Future image regen pass |
+| Seedance fails silently at duration 20 | Max working duration is 15. Always use `--duration 15`. Stitch clips for content longer than 15s. |
+| 16:9 storyboard + 9:16 Seedance gen = silent failure | Storyboard must be generated at 9:16 vertical to match the video output. Never pass a landscape storyboard as start-image for a portrait video. |
 
 ---
 
@@ -469,6 +501,19 @@ Chopsticks lift thick noodle bundle slowly → brings to mouth → bites → che
 ---
 
 ## Status
+
+May 22 2026 (session 8):
+- New UGC direction: "What is Jiro Style Ramen" for Yorba Linda location.
+- Real assets: HG girl photo + Yorba Linda shop photo + real bowl photo all locked.
+- Script developed from scratch — researchd real Jiro fan reviews to find natural language. "After 10 minutes I was sweating. After 15 I was questioning my life." is the closing line.
+- 3-panel 9:16 storyboard generated and locked (`ugc_storyboard_v4.png`).
+- Clip 1 generated and approved: `ugc_jiro_v1.mp4` (15s, 480p).
+- KEY GOTCHA: Seedance fails silently at duration 20. Max working duration is 15.
+- KEY GOTCHA: Storyboard must match video output aspect ratio. 16:9 storyboard + 9:16 video gen = failure.
+
+**Next steps:**
+- Generate Clip 2 (Beat 2 script, same storyboard, duration 15)
+- FFmpeg stitch + music + optional end card
 
 May 15 2026 (session 6):
 - Two final deliverables locked and organized.

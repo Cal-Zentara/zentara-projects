@@ -1,6 +1,22 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-16 (session 7) — NaildItSpa ad production started, storyboard phase parked*
+*Last updated: 2026-05-22 (session 8) — Garlic High UGC Jiro explainer, Clip 1 approved*
+
+## Completed this session (2026-05-22 session 8 — Garlic High UGC)
+
+- New direction: UGC "What is Jiro Style Ramen" for Yorba Linda location using real girl + real shop photo.
+- Script written from scratch — used real Jiro ramen fan reviews to find natural language instead of ad copy. Closing line locked: "After 10 minutes I was sweating. After 15 I was questioning my life."
+- 3-panel 9:16 vertical storyboard generated and locked: `ugc_storyboard_v4.png`.
+- Clip 1 generated (15s, 480p) and approved by Cal: "damn it was so good" → `ugc_jiro_v1.mp4`.
+- Discovered: Seedance hard-fails at duration 20 (no error). Max working duration is 15.
+- Discovered: Storyboard aspect ratio must match video output. 16:9 storyboard + 9:16 Seedance = failure.
+- New global rule locked: always generate at lowest quality until Cal says upgrade.
+
+**Where we left off:**
+- Clip 1 approved. Clip 2 (Beat 2 script) not yet generated.
+- Resume: run Clip 2 with Beat 2 script, same storyboard, duration 15 → stitch → music → deliver.
+
+---
 
 ## Completed this session (2026-05-16 session 7 — NaildItSpa ad production)
 

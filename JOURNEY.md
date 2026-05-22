@@ -4,6 +4,18 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 22, 2026 — Stopped Writing Ads. Started Stealing From Real People.
+
+Was trying to write a script for a ramen ad. Kept coming up with lines like "every bowl hits hard" and "the garlic you will smell." Classic ad copy. Sounded like a billboard.
+
+Then researched what real people actually say about Jiro ramen online — Reddit, Yelp, TikTok comments. Found this: "After 10 minutes I was sweating. After 15 I was questioning my life." Some random person wrote that in a review. That's the closing line of the ad now.
+
+**What I learned:** Real people's words beat anything you can write. The best script isn't written — it's found.
+
+**Content idea:** "I spent 20 minutes writing a ramen script. Then spent 5 minutes reading actual reviews. The review won. Every time."
+
+---
+
 ## May 21, 2026 — We Used the $100/Month AI Tool to Write Us a Free Brief and Then Cancelled
 
 Tested Higgsfield's new Supercomputer tool — basically an AI that runs your whole ad production automatically. It asked us a few questions, built a character, designed a salon, and wrote two full ad concepts. Then asked if we wanted to generate the video for 270 credits. We cancelled.
