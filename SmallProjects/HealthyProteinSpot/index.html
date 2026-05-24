@@ -300,7 +300,7 @@ a{color:inherit;text-decoration:none}
 /* ============== SIZES PRICING BAR ============== */
 .sizes{
   display:grid;
-  grid-template-columns:repeat(5,1fr);
+  grid-template-columns:repeat(4,1fr);
   gap:8px;
   margin-bottom:24px;
   padding:24px 16px;
@@ -338,9 +338,8 @@ a{color:inherit;text-decoration:none}
 @media (max-width:560px){
   .sizes{grid-template-columns:repeat(2,1fr);gap:0}
   .size{padding:14px 8px;border:none !important}
-  .size:not(:last-child){border-bottom:2px dashed var(--ink-soft) !important}
-  .size:nth-child(odd):not(:last-child){border-right:2px dashed var(--ink-soft) !important}
-  .size:last-child{grid-column:1 / -1}
+  .size:nth-child(1),.size:nth-child(2){border-bottom:2px dashed var(--ink-soft) !important}
+  .size:nth-child(odd){border-right:2px dashed var(--ink-soft) !important}
 }
 .sizes-note{
   font-family:'Anton',sans-serif;
@@ -398,13 +397,13 @@ a{color:inherit;text-decoration:none}
 .menu-cat__head{
   display:flex;
   justify-content:space-between;
-  align-items:baseline;
-  flex-wrap:wrap;
+  align-items:flex-end;
   gap:16px;
   margin-bottom:32px;
   padding-bottom:16px;
   border-bottom:3px solid currentColor;
 }
+.menu-cat__info{flex:1;min-width:0}
 .menu-cat__name{
   font-family:'Anton',sans-serif;
   font-size:clamp(36px,5.5vw,72px);
@@ -423,11 +422,41 @@ a{color:inherit;text-decoration:none}
 .section--pink .menu-cat__sub,
 .section--lime .menu-cat__sub{color:var(--ink)}
 
+/* accordion */
+.menu-cat__head{cursor:pointer;user-select:none}
+.menu-cat__toggle{
+  flex-shrink:0;
+  margin-left:auto;
+  font-family:'Anton',sans-serif;
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  padding:12px 20px;
+  background:var(--pink);
+  color:var(--cream);
+  border:2px solid var(--ink);
+  border-radius:999px;
+  box-shadow:4px 4px 0 var(--ink);
+  white-space:nowrap;
+  transition:background .2s ease,color .2s ease,transform .15s ease,box-shadow .15s ease;
+}
+.menu-cat__toggle:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.menu-cat.open > .menu-cat__head .menu-cat__toggle{background:var(--lime);color:var(--ink)}
+.menu-cat__body{
+  overflow:hidden;
+  max-height:0;
+  transition:max-height .6s cubic-bezier(.16,1,.3,1);
+}
+.menu-cat.open > .menu-cat__body{max-height:3000px}
+
 .items{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  grid-template-columns:repeat(2,1fr);
   gap:0;
   border-top:1px solid currentColor;
+}
+.items--2col{
+  grid-template-columns:1fr 1fr;
 }
 .item{
   padding:20px 4px;
@@ -510,6 +539,133 @@ a{color:inherit;text-decoration:none}
   border-radius:999px;
   border:1.5px solid var(--ink);
 }
+
+/* ============== TEA BOMB LINEUP ============== */
+.tblineup{margin-bottom:48px}
+.tblineup__img{
+  width:100%;
+  border:2.5px solid var(--ink);
+  border-radius:20px;
+  box-shadow:6px 6px 0 var(--ink);
+  display:block;
+}
+.tblineup__labels{
+  display:grid;
+  grid-template-columns:repeat(8,1fr);
+  gap:4px;
+  margin-top:12px;
+}
+.tblineup__labels span{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(9px,1.1vw,13px);
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  text-align:center;
+  color:var(--ink);
+  line-height:1.2;
+}
+.tblineup__labels--row2{margin-top:4px}
+.tblineup__special{
+  font-family:'Anton',sans-serif;
+  font-size:14px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  text-align:center;
+  margin-top:20px;
+  padding:12px 24px;
+  background:var(--pink);
+  color:var(--cream);
+  border:2px solid var(--ink);
+  border-radius:999px;
+  box-shadow:4px 4px 0 var(--ink);
+  display:inline-block;
+}
+.tblineup{text-align:center}
+.tblineup__labels{text-align:left}
+@media(max-width:640px){
+  .tblineup__labels{grid-template-columns:repeat(4,1fr);gap:8px}
+  .tblineup__labels span{font-size:10px}
+}
+
+/* ============== WORKS STEPS ============== */
+.works-steps{display:flex;flex-direction:column;gap:14px;margin-top:16px}
+.works-step{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+}
+.works-step__num{
+  flex-shrink:0;
+  width:28px;height:28px;
+  background:var(--pink);
+  color:var(--cream);
+  border:2px solid var(--ink);
+  border-radius:50%;
+  font-family:'Anton',sans-serif;
+  font-size:13px;
+  display:flex;align-items:center;justify-content:center;
+  margin-top:2px;
+}
+.works-step__info{display:flex;flex-direction:column;gap:2px}
+.works-step__info strong{font-family:'Anton',sans-serif;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
+.works-step__info span{font-family:'Outfit',sans-serif;font-size:13px;color:var(--grey);font-weight:500}
+
+/* ============== MACROS TABLE ============== */
+.macros-note{
+  font-family:'Outfit',sans-serif;
+  font-size:clamp(15px,1.4vw,17px);
+  font-weight:500;
+  color:var(--ink-soft);
+  max-width:640px;
+  margin-bottom:40px;
+}
+.macros-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+@media(max-width:880px){.macros-grid{grid-template-columns:1fr}}
+.macros-table{
+  background:var(--cream);
+  border:2.5px solid var(--ink);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:6px 6px 0 var(--ink);
+}
+.macros-table__head{
+  background:var(--ink);
+  color:var(--cream);
+  font-family:'Anton',sans-serif;
+  font-size:16px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  padding:16px 20px;
+}
+.macros-table table{width:100%;border-collapse:collapse}
+.macros-table th{
+  font-family:'Anton',sans-serif;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--grey);
+  padding:10px 14px;
+  text-align:left;
+  border-bottom:1.5px solid rgba(26,26,26,.15);
+}
+.macros-table td{
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  font-weight:600;
+  padding:12px 14px;
+  border-bottom:1px dashed rgba(26,26,26,.12);
+  color:var(--ink);
+}
+.macros-table td:first-child{
+  font-family:'Anton',sans-serif;
+  font-size:16px;
+  color:var(--pink);
+}
+.macros-table tr:last-child td{border-bottom:none}
 
 /* ============== ORDER BLOCK ============== */
 .order{
@@ -857,6 +1013,10 @@ a{color:inherit;text-decoration:none}
   border-radius:999px;
 }
 
+/* story inline highlights */
+.story__hi{color:var(--pink);font-weight:700}
+.story__hi--lime{color:var(--lime-deep);font-weight:700}
+
 /* ============== TESTIMONIALS ============== */
 .reviews{
   display:grid;
@@ -1065,8 +1225,6 @@ a{color:inherit;text-decoration:none}
     <span class="marquee__dot"></span>
     <span>Family Owned</span>
     <span class="marquee__dot"></span>
-    <span>60+ Shake Flavors</span>
-    <span class="marquee__dot"></span>
     <span>Follow @healthyproteinspot</span>
     <span class="marquee__dot"></span>
     <!-- duplicate for seamless loop -->
@@ -1077,8 +1235,6 @@ a{color:inherit;text-decoration:none}
     <span>9856 Katella · Anaheim CA</span>
     <span class="marquee__dot"></span>
     <span>Family Owned</span>
-    <span class="marquee__dot"></span>
-    <span>60+ Shake Flavors</span>
     <span class="marquee__dot"></span>
     <span>Follow @healthyproteinspot</span>
     <span class="marquee__dot"></span>
@@ -1094,7 +1250,7 @@ a{color:inherit;text-decoration:none}
       <span class="hero__protein">Protein</span>
       <span class="hero__spot">Spot</span>
     </div>
-    <p class="hero__tagline">Best Protein Shakes in OC · Fueling Your Goals Since '21</p>
+    <p class="hero__tagline">Fueling Your Goals Since 2021 · Anaheim, CA</p>
     <div class="hero__cta-row">
       <a href="tel:+17145948162" class="cta">Tap to Call <span class="cta__arrow">→</span></a>
       <a href="#menu" class="cta cta--lime">See the Menu <span class="cta__arrow">↓</span></a>
@@ -1159,19 +1315,14 @@ a{color:inherit;text-decoration:none}
         <div class="size__price">$10</div>
       </div>
       <div class="size">
-        <div class="size__protein" data-target="30">0g</div>
-        <div class="size__label">Protein</div>
-        <div class="size__price">$11</div>
-      </div>
-      <div class="size">
         <div class="size__protein" data-target="36">0g</div>
         <div class="size__label">Protein</div>
-        <div class="size__price">$12</div>
+        <div class="size__price">$13</div>
       </div>
       <div class="size">
         <div class="size__protein" data-target="48">0g</div>
         <div class="size__label">Protein</div>
-        <div class="size__price">$14</div>
+        <div class="size__price">$16</div>
       </div>
       <div class="size">
         <div class="size__protein" data-target="60">0g</div>
@@ -1181,83 +1332,103 @@ a{color:inherit;text-decoration:none}
     </div>
 
     <div class="sizes-note__wrap">
-      <p class="sizes-note">For large shakes (48g+) — indicate plant-based or whey</p>
+      <p class="sizes-note">For large shakes (48g+) — indicate plant-based, whey or casein</p>
     </div>
 
     <!-- FRUITY -->
-    <div class="menu-cat" style="margin-top:32px">
+    <div class="menu-cat open" style="margin-top:32px">
       <div class="menu-cat__head">
-        <h3 class="menu-cat__name">Fruity &amp; Fresh</h3>
-        <span class="menu-cat__sub">light · bright · vitamin-packed</span>
+        <div class="menu-cat__info">
+          <h3 class="menu-cat__name">Fruity &amp; Fresh</h3>
+          <span class="menu-cat__sub"></span>
+        </div>
+        <span class="menu-cat__toggle" aria-hidden="true">CLOSE ✕</span>
       </div>
+      <div class="menu-cat__body">
       <div class="items reveal-stagger">
-        <div class="item"><div class="item__row"><div class="item__name">Berry Cheesecake</div><span class="item__cal">225 cal</span></div><div class="item__desc">strawberry cheesecake, graham crackers</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Berry Oats</div><span class="item__cal">250 cal</span></div><div class="item__desc">wild berry, cranberries &amp; oats</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Blueberry Pancake</div><span class="item__cal">230 cal</span></div><div class="item__desc">blueberry &amp; vanilla, cranberries</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Coconut Pie</div><span class="item__cal">220 cal</span></div><div class="item__desc">creamy coconut, coconut shavings</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Fresh Berry</div><span class="item__cal">220 cal</span></div><div class="item__desc">vanilla, strawberry</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Strawberry Banana</div><span class="item__cal">220 cal</span></div><div class="item__desc">strawberry &amp; banana</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Strawberry Mango</div><span class="item__cal">220 cal</span></div><div class="item__desc">strawberry &amp; mango</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Lean Green <small style="font-size:.7em;color:var(--grey)">+$4</small></div><span class="item__cal">230 cal</span></div><div class="item__desc">mango pineapple, organic greens</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Berry Cheesecake</div><span class="item__cal">225 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Berry Oats</div><span class="item__cal">250 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Blueberry Pancake</div><span class="item__cal">230 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Coconut Pie</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Fresh Berry</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Strawberry Banana</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Strawberry Mango</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Lean Green <small style="font-size:.7em;color:var(--grey)">+$4</small></div><span class="item__cal">230 cal</span></div></div>
       </div>
+      </div><!-- /menu-cat__body -->
     </div>
 
     <!-- NUTTY -->
     <div class="menu-cat">
       <div class="menu-cat__head">
-        <h3 class="menu-cat__name">Nutty Flavors</h3>
-        <span class="menu-cat__sub">creamy · rich · cozy</span>
+        <div class="menu-cat__info">
+          <h3 class="menu-cat__name">Nutty Flavors</h3>
+          <span class="menu-cat__sub"></span>
+        </div>
+        <span class="menu-cat__toggle" aria-hidden="true">TAP TO EXPLORE →</span>
       </div>
+      <div class="menu-cat__body">
       <div class="items reveal-stagger">
-        <div class="item"><div class="item__row"><div class="item__name">Almond Joy</div><span class="item__cal">225 cal</span></div><div class="item__desc">coconut and almonds</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Captain Crunch</div><span class="item__cal">225 cal</span></div><div class="item__desc">PB, vanilla, cinnamon</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Chunky Monkey</div><span class="item__cal">230 cal</span></div><div class="item__desc">chocolate, banana, PB</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Dolce Gabbana</div><span class="item__cal">230 cal</span></div><div class="item__desc">dulce de leche, almonds</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Mazapán</div><span class="item__cal">235 cal</span></div><div class="item__desc">peanut, cinnamon, almonds</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Reese's PB</div><span class="item__cal">220 cal</span></div><div class="item__desc">peanut, chocolate, caramel</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Pistachio</div><span class="item__cal">220 cal</span></div><div class="item__desc">creamy pistachio &amp; walnuts</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Peanut Espresso</div><span class="item__cal">220 cal</span></div><div class="item__desc">peanut, café espresso (decaf)</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Almond Joy</div><span class="item__cal">225 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Captain Crunch</div><span class="item__cal">225 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Chunky Monkey</div><span class="item__cal">230 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Dolce Gabbana</div><span class="item__cal">230 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Mazapán</div><span class="item__cal">235 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Reese's PB</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Pistachio</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Peanut Espresso</div><span class="item__cal">220 cal</span></div></div>
       </div>
+      </div><!-- /menu-cat__body -->
     </div>
 
     <!-- CHOCOLATE -->
     <div class="menu-cat">
       <div class="menu-cat__head">
-        <h3 class="menu-cat__name">Chocolate</h3>
-        <span class="menu-cat__sub">dessert energy · for the sweet tooth</span>
+        <div class="menu-cat__info">
+          <h3 class="menu-cat__name">Chocolate</h3>
+          <span class="menu-cat__sub"></span>
+        </div>
+        <span class="menu-cat__toggle" aria-hidden="true">TAP TO EXPLORE →</span>
       </div>
+      <div class="menu-cat__body">
       <div class="items reveal-stagger">
-        <div class="item"><div class="item__row"><div class="item__name">Matcha Monster <small style="font-size:.7em;color:var(--grey)">+$1</small></div><span class="item__cal">230 cal</span></div><div class="item__desc">chocolate &amp; premium grade matcha</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Mint Chip</div><span class="item__cal">225 cal</span></div><div class="item__desc">mint chocolate chip, oreos</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Cookie Monster</div><span class="item__cal">225 cal</span></div><div class="item__desc">chocolate cookie and oreos</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Chocolate Abuelita</div><span class="item__cal">235 cal</span></div><div class="item__desc">chocolate, oats &amp; cinnamon</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Gansito</div><span class="item__cal">220 cal</span></div><div class="item__desc">strawberry &amp; chocolate</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Brownie Batter</div><span class="item__cal">220 cal</span></div><div class="item__desc">chocolate, chocolate, chocolate</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Oreo Cookie</div><span class="item__cal">220 cal</span></div><div class="item__desc">cookies 'n cream, oreos</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Matcha Monster <small style="font-size:.7em;color:var(--grey)">+$1</small></div><span class="item__cal">230 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Mint Chip</div><span class="item__cal">225 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Cookie Monster</div><span class="item__cal">225 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Chocolate Abuelita</div><span class="item__cal">235 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Gansito</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Brownie Batter</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Oreo Cookie</div><span class="item__cal">220 cal</span></div></div>
       </div>
+      </div><!-- /menu-cat__body -->
     </div>
 
     <!-- COFFEE & DESSERT -->
     <div class="menu-cat">
       <div class="menu-cat__head">
-        <h3 class="menu-cat__name">Coffee &amp; Dessert</h3>
-        <span class="menu-cat__sub">caffeine meets cake</span>
+        <div class="menu-cat__info">
+          <h3 class="menu-cat__name">Coffee &amp; Dessert</h3>
+          <span class="menu-cat__sub"></span>
+        </div>
+        <span class="menu-cat__toggle" aria-hidden="true">TAP TO EXPLORE →</span>
       </div>
+      <div class="menu-cat__body">
       <div class="items reveal-stagger">
-        <div class="item"><div class="item__row"><div class="item__name">Banana Bread</div><span class="item__cal">220 cal</span></div><div class="item__desc">banana caramel, cinnamon</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Café con Leche</div><span class="item__cal">220 cal</span></div><div class="item__desc">café latte &amp; dulce de leche</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Caramel Latte</div><span class="item__cal">220 cal</span></div><div class="item__desc">café latte &amp; caramel</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Caramel Mocha Latte</div><span class="item__cal">220 cal</span></div><div class="item__desc">mocha, café latte &amp; caramel</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Carrot Cake</div><span class="item__cal">250 cal</span></div><div class="item__desc">vanilla, oats, raisins, cinnamon</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Strawberry Oreo</div><span class="item__cal">240 cal</span></div><div class="item__desc">strawberry &amp; cookies 'n cream, oreos</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">NY Cheesecake</div><span class="item__cal">220 cal</span></div><div class="item__desc">pralines &amp; caramel, cinnamon</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Oatmeal Cookie</div><span class="item__cal">250 cal</span></div><div class="item__desc">cookies, oats, raisins, cinnamon</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">Banana Oatmeal Cookie</div><span class="item__cal">250 cal</span></div><div class="item__desc">banana, oats, raisin, cinnamon</div></div>
-        <div class="item"><div class="item__row"><div class="item__name">PB Banana Oatmeal Cookie</div><span class="item__cal">250 cal</span></div><div class="item__desc">peanut, banana, oats, raisin, cinnamon</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Banana Bread</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Café con Leche</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Caramel Latte</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Caramel Mocha Latte</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Carrot Cake</div><span class="item__cal">250 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Strawberry Oreo</div><span class="item__cal">240 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">NY Cheesecake</div><span class="item__cal">220 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Oatmeal Cookie</div><span class="item__cal">250 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Banana Oatmeal Cookie</div><span class="item__cal">250 cal</span></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">PB Banana Oatmeal Cookie</div><span class="item__cal">250 cal</span></div></div>
       </div>
+      </div><!-- /menu-cat__body -->
     </div>
 
-    <p class="menu-disclaimer">All shakes are dairy-free. Some items contain nuts or common allergens — please let us know if you have dietary concerns.</p>
+    <p class="menu-disclaimer">Please be aware that foods made here may have contact with common allergens such as gluten, nuts, soy, and dairy. Let us know about any dietary concerns.</p>
   </div>
 </section>
 
@@ -1291,10 +1462,9 @@ a{color:inherit;text-decoration:none}
         <div class="price-card__name">Iced Protein Coffee</div>
         <div class="price-card__desc">House blend · Mocha · Caramel Macchiato</div>
         <div class="price-card__tiers">
-          <span class="tier">5g Protein · 10oz</span>
-          <span class="tier">5g Protein · 20oz · +$2</span>
-          <span class="tier">Add Matcha +$2</span>
-          <span class="tier">Decaf +$1</span>
+          <span class="tier">22g Protein · 3g Sugar</span>
+          <span class="tier">20oz</span>
+          <span class="tier">Add sweetener +$1</span>
         </div>
         <div class="price-card__price">$7</div>
       </div>
@@ -1312,30 +1482,27 @@ a{color:inherit;text-decoration:none}
     <div class="flank">
       <figure class="photo-card photo-card--tilt-r">
         <img src="images/donuts.jpg" alt="Sprinkled protein donuts">
-        <figcaption class="photo-card__cap">Protein Donuts · 5 for $15</figcaption>
+        <figcaption class="photo-card__cap">Protein Donuts · 1 for $4</figcaption>
       </figure>
       <div class="price-stack" style="grid-template-columns:1fr">
       <div class="price-card">
         <div class="price-card__name">Protein Waffle</div>
-        <div class="price-card__desc">Customize your toppings: granola, walnut, peanut, pistachio, almond, coconut, cinnamon, brownie, syrup, chocolate.</div>
         <div class="price-card__price">$10</div>
       </div>
 
       <div class="price-card">
         <div class="price-card__name">Protein Oats</div>
-        <div class="price-card__desc">Custom toppings, same as the waffle. Hot or cold.</div>
         <div class="price-card__price">$13</div>
       </div>
 
       <div class="price-card">
         <div class="price-card__name">Protein Donuts</div>
-        <div class="price-card__desc">Light, fluffy, made fresh. Call ahead for flavor availability.</div>
+        <div class="price-card__desc">Call us for daily flavors &amp; availability.</div>
         <div class="price-card__tiers">
           <span class="tier">1 for $4</span>
           <span class="tier">2 for $7</span>
-          <span class="tier">3 for $10</span>
-          <span class="tier">5 for $15</span>
-          <span class="tier">10 for $25</span>
+          <span class="tier">5 for $10</span>
+          <span class="tier">10 for $15</span>
         </div>
       </div>
       </div>
@@ -1344,66 +1511,76 @@ a{color:inherit;text-decoration:none}
 </section>
 
 <!-- ============== TEA BOMBS ============== -->
-<section class="section">
+<section class="section section--lime">
   <div class="section__inner">
     <div class="eyebrow">Fuel &amp; Function</div>
     <h2 class="section__title reveal">Tea <br><span class="script">bombs</span></h2>
 
-    <div class="menu-cat">
+    <div class="tblineup reveal">
+      <img src="images/tea-bombs-lineup.png" alt="16 tea bomb flavors" class="tblineup__img">
+    </div>
+
+    <div class="menu-cat open">
       <div class="menu-cat__head">
-        <h3 class="menu-cat__name">Wellness · $7</h3>
-        <span class="menu-cat__sub">function-first sips</span>
+        <div class="menu-cat__info">
+          <h3 class="menu-cat__name">All Flavors · $7</h3>
+          <span class="menu-cat__sub">16 flavors</span>
+        </div>
+        <span class="menu-cat__toggle" aria-hidden="true">CLOSE ✕</span>
       </div>
-      <div class="items reveal-stagger">
-        <div class="item"><div class="item__name">Lyma Bomb</div><div class="item__desc">$7 · wild berry protein &amp; lyma greens</div></div>
-        <div class="item"><div class="item__name">3 Green Giants</div><div class="item__desc">$7 · matcha, spirulina, chlorophyll</div></div>
-        <div class="item"><div class="item__name">5 Greens Goat Tea</div><div class="item__desc">$7 · gut + collagen support</div></div>
-        <div class="item"><div class="item__name">Cal Bloom</div><div class="item__desc">$7 · hibiscus, rose, cranberry</div></div>
-        <div class="item"><div class="item__name">Glow</div><div class="item__desc">$7 · collagen, biotin, vitamin C</div></div>
-        <div class="item"><div class="item__name">Mermaid Tonic</div><div class="item__desc">$7 · blue spirulina, coconut, lime</div></div>
-        <div class="item"><div class="item__name">Strawberry Bloom</div><div class="item__desc">$7 · strawberry, hibiscus, citrus</div></div>
+      <div class="menu-cat__body">
+      <div class="items items--2col reveal-stagger">
+        <div class="item"><div class="item__row"><div class="item__name">Piña Bomb</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Green Giant</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Immuni-Tea</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Very Berry</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Cali Sunset</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Cali Gurl</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Bikini Bomb</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Mangoneada</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Mojito Lime</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Nite Nite Juice</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Pica Sandía</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Guava Bomb</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Sunset on the Beach</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Mermaid Tail</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Pink Lady</div></div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Ruby Red</div></div></div>
       </div>
+      </div><!-- /menu-cat__body -->
     </div>
 
     <div class="menu-cat">
       <div class="menu-cat__head">
-        <h3 class="menu-cat__name">Energy · $7</h3>
-        <span class="menu-cat__sub">caffeinated · zero crash</span>
+        <div class="menu-cat__info">
+          <h3 class="menu-cat__name">Pre-Workouts · $2–$5</h3>
+          <span class="menu-cat__sub">200mg · 300mg caffeine</span>
+        </div>
+        <span class="menu-cat__toggle" aria-hidden="true">TAP TO EXPLORE →</span>
       </div>
+      <div class="menu-cat__body">
       <div class="items reveal-stagger">
-        <div class="item"><div class="item__name">Bumblebee Bomb</div><div class="item__desc">honey, lemon, ginger</div></div>
-        <div class="item"><div class="item__name">Buzz Lightyear</div><div class="item__desc">guarana, lemon, raspberry</div></div>
-        <div class="item"><div class="item__name">All-Nighter Tea</div><div class="item__desc">double caffeine + B-vitamin stack</div></div>
-        <div class="item"><div class="item__name">Almost Famous</div><div class="item__desc">passionfruit, hibiscus, mango</div></div>
-        <div class="item"><div class="item__name">Bombshell Tea</div><div class="item__desc">pomegranate, peach, raspberry</div></div>
-        <div class="item"><div class="item__name">Peanut Brain Bomb</div><div class="item__desc">cacao, peanut, coffee bean</div></div>
+        <div class="item"><div class="item__name">Orange</div></div>
+        <div class="item"><div class="item__name">Tropical Flavors</div></div>
+        <div class="item"><div class="item__name">Pineapple</div></div>
       </div>
+      </div><!-- /menu-cat__body -->
     </div>
 
     <div class="menu-cat">
       <div class="menu-cat__head">
-        <h3 class="menu-cat__name">Pre-Workouts · $10</h3>
-        <span class="menu-cat__sub">200mg · 300mg caffeine</span>
+        <div class="menu-cat__info">
+          <h3 class="menu-cat__name">Mini Refreshers · $2–$4</h3>
+          <span class="menu-cat__sub">ask about sizes &amp; flavors</span>
+        </div>
+        <span class="menu-cat__toggle" aria-hidden="true">TAP TO EXPLORE →</span>
       </div>
+      <div class="menu-cat__body">
       <div class="items reveal-stagger">
-        <div class="item"><div class="item__name">Orange Lemon Lime</div><div class="item__desc">classic citrus stack</div></div>
-        <div class="item"><div class="item__name">Tropical Fruits</div><div class="item__desc">mango, passionfruit, guava</div></div>
-        <div class="item"><div class="item__name">Pomegranate</div><div class="item__desc">tart + bright</div></div>
-        <div class="item"><div class="item__name">Blueberry</div><div class="item__desc">antioxidant pump</div></div>
+        <div class="item"><div class="item__name">Tamarindo</div></div>
+        <div class="item"><div class="item__name">Sandía</div></div>
       </div>
-    </div>
-
-    <div class="menu-cat">
-      <div class="menu-cat__head">
-        <h3 class="menu-cat__name">Mini Refreshers · $4 / $6</h3>
-        <span class="menu-cat__sub">10oz mini · 20oz refresh</span>
-      </div>
-      <div class="items reveal-stagger">
-        <div class="item"><div class="item__name">Tamarindo</div><div class="item__desc">tart + sweet</div></div>
-        <div class="item"><div class="item__name">Jamaica</div><div class="item__desc">hibiscus classic</div></div>
-        <div class="item"><div class="item__name">Mango Peach</div><div class="item__desc">sunny + soft</div></div>
-        <div class="item"><div class="item__name">Cactus Bomb</div><div class="item__desc">prickly pear, lime</div></div>
-      </div>
+      </div><!-- /menu-cat__body -->
     </div>
   </div>
 </section>
@@ -1417,179 +1594,93 @@ a{color:inherit;text-decoration:none}
     <div class="price-stack reveal-stagger">
       <div class="price-card">
         <div class="price-card__name">Works Combo</div>
-        <div class="price-card__desc">Aloe Vera shot · Herbal Tea or Refresher · Protein Shake · NRG pre-workout. Build your own stack.</div>
         <div class="price-card__price">$13</div>
+        <div class="works-steps">
+          <div class="works-step"><span class="works-step__num">1</span><div class="works-step__info"><strong>Aloe Vera</strong><span>Cranberry · Mandarin · Mango</span></div></div>
+          <div class="works-step"><span class="works-step__num">2</span><div class="works-step__info"><strong>Herbal Tea &amp; Fiber</strong><span>Peach · Raspberry · Ginger · Lemon · Chai · Cinnamon · Green Tea · Mint (decaf)</span></div></div>
+          <div class="works-step"><span class="works-step__num">3</span><div class="works-step__info"><strong>Protein Shake</strong><span>24g included · any flavor on the shake menu</span></div></div>
+          <div class="works-step"><span class="works-step__num">4</span><div class="works-step__info"><strong>NRG</strong><span>Passionfruit Hibiscus · Unflavored</span></div></div>
+        </div>
+      </div>
+
+      <div class="price-card">
+        <div class="price-card__name">Athlete Combo</div>
+        <div class="price-card__tiers">
+          <span class="tier">36g · $13</span>
+          <span class="tier">48g · $17</span>
+        </div>
       </div>
 
       <div class="price-card">
         <div class="price-card__name">Add-Ons</div>
-        <div class="price-card__desc">Customize any drink. Pricing varies — call ahead.</div>
         <div class="price-card__tiers">
           <span class="tier">Collagen</span>
-          <span class="tier">Greens Booster</span>
-          <span class="tier">Immunity Booster</span>
-          <span class="tier">Mushroom Blend</span>
-          <span class="tier">Pre-Workout Shot</span>
-          <span class="tier">Espresso Shot</span>
-          <span class="tier">Extra Protein +10g</span>
+          <span class="tier">CLA · Active Fiber</span>
+          <span class="tier">Green Booster</span>
+          <span class="tier">Immunity Boost</span>
+          <span class="tier">Probiotic</span>
+          <span class="tier">Creatine</span>
+          <span class="tier">Electrolytes</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============== GALLERY ============== -->
-<section class="section">
+<!-- ============== SHAKE MACROS ============== -->
+<section class="section section--lime">
   <div class="section__inner">
-    <div class="eyebrow">What's pouring</div>
-    <h2 class="section__title reveal">Sample <br><span class="script">the menu</span></h2>
+    <div class="eyebrow">Know What You're Drinking</div>
+    <h2 class="section__title reveal">Shake <br><span class="script">macros</span></h2>
+    <p class="macros-note reveal">All shakes start at 24g protein. Add scoops to go higher. Pick your protein source — plant-based, whey, or casein.</p>
 
-    <div class="gallery reveal-stagger">
-      <figure class="photo-card photo-card--tilt-l">
-        <img src="images/strawberry-shake.jpg" alt="Strawberry Banana protein shake">
-        <figcaption class="photo-card__cap">Strawberry Banana · 48g</figcaption>
-      </figure>
-      <figure class="photo-card photo-card--tilt-r2">
-        <img src="images/chocolate-shake.jpg" alt="Chocolate protein shake with toppings">
-        <figcaption class="photo-card__cap">Chocolate Abuelita · 60g</figcaption>
-      </figure>
-      <figure class="photo-card photo-card--tilt-l2">
-        <img src="images/fruity-bowl.jpg" alt="Protein oats bowl with fruit toppings">
-        <figcaption class="photo-card__cap">Protein Oats · $13</figcaption>
-      </figure>
-      <figure class="photo-card photo-card--tilt-r">
-        <img src="images/iced-tea.jpg" alt="Iced tea bomb refresher">
-        <figcaption class="photo-card__cap">Mermaid Tonic · $7</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
+    <div class="macros-grid reveal-stagger">
 
-<!-- ============== OUR STORY ============== -->
-<section class="section">
-  <div class="section__inner">
-    <div class="eyebrow">Our Story</div>
-
-    <div class="story">
-      <div>
-        <h2 class="story__lead reveal">
-          A <span class="accent">20-year</span><br>
-          <span class="script">dream,</span><br>
-          one shake at a time.
-        </h2>
-        <p class="story__quote reveal">"Thousands of lives. One protein shake at a time. Started by Mama Flor in 2000. Carried forward by her kids today."</p>
+      <div class="macros-table">
+        <div class="macros-table__head">Plant-Based</div>
+        <table>
+          <thead><tr><th>Protein</th><th>Cal</th><th>Carbs</th><th>Sugar</th><th>Fat</th></tr></thead>
+          <tbody>
+            <tr><td>24g</td><td>130</td><td>13g</td><td>8g</td><td>1.5g</td></tr>
+            <tr><td>36g</td><td>155</td><td>14g</td><td>9g</td><td>2g</td></tr>
+            <tr><td>48g</td><td>180</td><td>15g</td><td>10g</td><td>2g</td></tr>
+            <tr><td>60g</td><td>200</td><td>16g</td><td>10g</td><td>3g</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="story__body reveal">
-        <p>It started back in 2000, when <strong>Mama Flor</strong>—a young immigrant mother of three—was looking for a way to work from home, care for her kids, and make a positive impact on her community. With little more than determination and heart, she set out to share good nutrition with anyone who needed it.</p>
-
-        <p>What began as one mom's vision quietly grew into something bigger than she ever imagined. Thousands of lives touched, one shake at a time. In 2021, her children—once the kids watching the dream unfold—opened <strong>Healthy Protein Spot</strong> in Anaheim to carry her legacy forward.</p>
-
-        <p>We're not your average shake bar. Every drink is made with intention: dairy-free, clean, and powered by high-quality blends—plant-based, whey, or casein. No nonsense, no fluff. Just real nutrition that tastes amazing and fuels the way you want to live.</p>
-
-        <p style="margin-top:24px;font-family:'Caveat',cursive;font-weight:700;font-size:clamp(22px,2.6vw,30px);color:var(--pink);">Thank you for supporting our family. — The Healthy Protein Spot Team</p>
-
-        <div class="story__badges">
-          <span class="story__badge">Family Owned</span>
-          <span class="story__badge">Made with Intention</span>
-          <span class="story__badge">Dairy Free</span>
-          <span class="story__badge">No Fluff</span>
-          <span class="story__badge">Plant-Based · Whey · Casein</span>
-        </div>
+      <div class="macros-table">
+        <div class="macros-table__head">Whey Protein</div>
+        <table>
+          <thead><tr><th>Protein</th><th>Cal</th><th>Carbs</th><th>Sugar</th><th>Fat</th></tr></thead>
+          <tbody>
+            <tr><td>24g</td><td>130</td><td>5g</td><td>4g</td><td>3g</td></tr>
+            <tr><td>36g</td><td>160</td><td>7g</td><td>5g</td><td>4g</td></tr>
+            <tr><td>48g</td><td>185</td><td>8g</td><td>6g</td><td>5g</td></tr>
+            <tr><td>60g</td><td>210</td><td>9g</td><td>7g</td><td>6g</td></tr>
+          </tbody>
+        </table>
       </div>
+
+      <div class="macros-table">
+        <div class="macros-table__head">Lowcarb Casein</div>
+        <table>
+          <thead><tr><th>Protein</th><th>Cal</th><th>Carbs</th><th>Sugar</th><th>Fat</th></tr></thead>
+          <tbody>
+            <tr><td>24g</td><td>120</td><td>4g</td><td>1g</td><td>2g</td></tr>
+            <tr><td>36g</td><td>150</td><td>6g</td><td>2g</td><td>3g</td></tr>
+            <tr><td>48g</td><td>175</td><td>7g</td><td>2g</td><td>3.5g</td></tr>
+            <tr><td>60g</td><td>195</td><td>8g</td><td>3g</td><td>4g</td></tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
+    <p class="menu-disclaimer" style="color:var(--ink-soft)">Numbers are approximate. Verify with staff for exact macros on your specific shake.</p>
   </div>
 </section>
 
-<!-- ============== TESTIMONIALS ============== -->
-<section class="section">
-  <div class="section__inner">
-    <div class="eyebrow">From real customers</div>
-    <h2 class="section__title reveal">Locals are <br><span class="script">hooked</span></h2>
 
-    <div class="reviews reveal-stagger">
-      <article class="review review--hero">
-        <span class="review__badge">via Yelp</span>
-        <div class="review__stars" aria-label="5 stars">★★★★★</div>
-        <p class="review__quote">I think I found my new obsession. Hooked on their protein shakes.</p>
-        <div class="review__author">
-          <span class="review__name">Alejandra B.</span>
-          <span class="review__location">Stanton, CA · Yelp Elite</span>
-        </div>
-      </article>
-
-      <article class="review review--small review--lime">
-        <span class="review__badge">via Yelp</span>
-        <div class="review__stars" aria-label="5 stars">★★★★★</div>
-        <p class="review__quote">So creamy and foamy idk how to better describe it. And low calorie.</p>
-        <div class="review__author">
-          <span class="review__name">Anna R.</span>
-          <span class="review__location">Orange, CA · Yelp Elite</span>
-        </div>
-      </article>
-
-      <article class="review review--small">
-        <span class="review__badge">via Yelp</span>
-        <div class="review__stars" aria-label="5 stars">★★★★★</div>
-        <p class="review__quote">This place is the bomb. I look forward to the warm welcome every time.</p>
-        <div class="review__author">
-          <span class="review__name">Darin W.</span>
-          <span class="review__location">Seal Beach, CA</span>
-        </div>
-      </article>
-
-      <article class="review review--small review--ink">
-        <span class="review__badge">via Yelp</span>
-        <div class="review__stars" aria-label="5 stars">★★★★★</div>
-        <p class="review__quote">Worth every penny. Over 30g protein, under 400 cal, easy on digestion.</p>
-        <div class="review__author">
-          <span class="review__name">Maria N.</span>
-          <span class="review__location">Anaheim, CA</span>
-        </div>
-      </article>
-
-      <article class="review review--small">
-        <span class="review__badge">via Yelp</span>
-        <div class="review__stars" aria-label="4 stars">★★★★</div>
-        <p class="review__quote">Mint chocolate chip for the WINN. Friendly atmosphere, even my toddler loved it.</p>
-        <div class="review__author">
-          <span class="review__name">Megan B.</span>
-          <span class="review__location">Aliso Viejo, CA</span>
-        </div>
-      </article>
-
-      <article class="review review--wide review--lime">
-        <span class="review__badge">via Yelp</span>
-        <div class="review__stars" aria-label="5 stars">★★★★★</div>
-        <p class="review__quote">Absolutely delicious and super filling. Super sad that this place isn't local to me.</p>
-        <div class="review__author">
-          <span class="review__name">Cyn F.</span>
-          <span class="review__location">Los Angeles, CA</span>
-        </div>
-      </article>
-
-      <article class="review review--small">
-        <span class="review__badge">via Yelp</span>
-        <div class="review__stars" aria-label="5 stars">★★★★★</div>
-        <p class="review__quote">Came right before closing and was amazed by their menu. Got the pistachio — so yummy.</p>
-        <div class="review__author">
-          <span class="review__name">Kaylie L.</span>
-          <span class="review__location">Santa Ana, CA</span>
-        </div>
-      </article>
-
-      <article class="review review--small">
-        <span class="review__badge">via Yelp</span>
-        <div class="review__stars" aria-label="4 stars">★★★★</div>
-        <p class="review__quote">Finished a Deka race nearby — so many options. Recommend the Cookie Monster.</p>
-        <div class="review__author">
-          <span class="review__name">Jennifer G.</span>
-          <span class="review__location">Los Angeles, CA</span>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
 
 <!-- ============== ORDER CTA ============== -->
 <section class="section section--lime order">
@@ -1597,7 +1688,7 @@ a{color:inherit;text-decoration:none}
     <div class="eyebrow" style="justify-content:center">Ready when you are</div>
     <h2 class="section__title reveal" style="margin-bottom:0">Call or text <br><span class="script">to order</span></h2>
     <a href="tel:+17145948162" class="order__phone">714-594-8162</a>
-    <p class="order__note">Last call for phone orders is 15 minutes before closing. We'll have it ready when you walk in.</p>
+    <p class="order__note">Last call for phone orders is 15 minutes before closing.</p>
     <a href="tel:+17145948162" class="cta">Tap to Call <span class="cta__arrow">→</span></a>
   </div>
 </section>
@@ -1656,10 +1747,9 @@ a{color:inherit;text-decoration:none}
 <!-- ============== FOLLOW ALONG (Instagram) ============== -->
 <section class="section section--pink follow">
   <div class="section__inner" style="text-align:center">
-    <div class="eyebrow" style="justify-content:center">3,798 followers &amp; counting</div>
+    <div class="eyebrow" style="justify-content:center">Find us on Instagram</div>
     <h2 class="section__title reveal" style="margin-bottom:24px">Follow <br><span class="script">along</span></h2>
     <a href="https://instagram.com/healthyproteinspot" target="_blank" rel="noopener" class="follow__handle">@healthyproteinspot</a>
-    <p class="follow__note">New flavors, daily deals, behind-the-counter chaos. Tag us when you visit.</p>
     <a href="https://instagram.com/healthyproteinspot" target="_blank" rel="noopener" class="cta cta--white">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -1746,6 +1836,23 @@ a{color:inherit;text-decoration:none}
   }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
 
   document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => reveal.observe(el));
+
+  // Accordion
+  document.querySelectorAll('.menu-cat__head').forEach(head => {
+    head.addEventListener('click', () => {
+      const cat = head.closest('.menu-cat');
+      cat.classList.toggle('open');
+      const pill = head.querySelector('.menu-cat__toggle');
+      if (cat.classList.contains('open')) {
+        pill.textContent = 'CLOSE ✕';
+        cat.querySelectorAll('.reveal-stagger').forEach(el => el.classList.add('in'));
+      } else {
+        pill.textContent = 'TAP TO EXPLORE →';
+      }
+    });
+  });
+  // Force reveal items inside initially-open categories
+  document.querySelectorAll('.menu-cat.open .reveal-stagger').forEach(el => el.classList.add('in'));
 })();
 </script>
 
