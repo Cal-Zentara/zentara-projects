@@ -37,6 +37,7 @@ One-line index of every project. Read a project's STATUS.md first — always.
 | Project | Status | STATUS.md path |
 |---|---|---|
 | SalviasApp | demo | `SmallProjects/SalviasApp/STATUS.md` |
+| HealthyProteinSpot | demo — prospect pitch site, v1 built 2026-05-23 | `SmallProjects/HealthyProteinSpot/STATUS.md` |
 
 ## Archived — not active (moved 2026-04-23)
 

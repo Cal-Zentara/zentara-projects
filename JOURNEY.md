@@ -4,6 +4,18 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 23, 2026 — A Linktree Was Their "Website." So I Built Them a Real One.
+
+Walked past a protein shake spot in Anaheim. Looked them up. Their whole website was a Linktree — lime green background, four pink buttons, no menu, nothing. From the outside, this is a real spot with 60+ shake flavors, family-owned since '21. But online, they looked like a hobby.
+
+So I rebuilt it. Pulled their menu off the PDF, kept their hot pink + lime green colors, gave them a real scrolling site — big bold "PROTEIN" headline, the shake names treated like magazine titles, a sticky "Call to Order" button that follows you down the page. Done in one session.
+
+**What I learned:** Most small businesses don't have a bad website. They have NO website. A Linktree isn't a site — it's a list of links. The bar to look 10x more legit is way lower than you think.
+
+**Content idea:** "Their entire website was 4 pink buttons on a Linktree. I built them a real site in one afternoon. Pulled it straight from their menu PDF."
+
+---
+
 ## May 22, 2026 — Built a Full Website Demo and Walked In the Same Day
 
 Found a local linen company with a website that looked like it hadn't been touched since 2008. Built them a full redesign in one session — AI-generated photos, a cinematic video hero, scroll animations, the whole thing. Then walked in to pitch it the same day.

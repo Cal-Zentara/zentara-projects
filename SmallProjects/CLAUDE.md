@@ -10,6 +10,7 @@ Cal's main workspace for demo projects, experiments, and client work.
 |---|---|---|
 | PhillipLoans | `PhillipLoans/STATUS.md` | `PhillipLoans/CLAUDE.md` |
 | MyTa | `MyTa/STATUS.md` | `MyTa/CLAUDE.md` |
+| HealthyProteinSpot | `HealthyProteinSpot/STATUS.md` | `HealthyProteinSpot/CLAUDE.md` |
 
 **Do not explore.** Read the sub-project STATUS.md first.
 
@@ -22,6 +23,7 @@ Cal's main workspace for demo projects, experiments, and client work.
 | PhillipLoans | Client site — Phillip La, Mortgage Loan Officer, Loan Factory CA. Live at philliplaloans.com | `PhillipLoans/CLAUDE.md` |
 | MyTa | Bilingual SoCal real estate agent — discovery phase | `MyTa/CLAUDE.md` |
 | ByronCampaign | Possible new client — early stage | `ByronCampaign/` |
+| HealthyProteinSpot | Prospect demo — family-owned protein shake spot in Anaheim. Built one-page site to replace their Linktree | `HealthyProteinSpot/CLAUDE.md` |
 
 ---
 
