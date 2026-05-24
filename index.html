@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Healthy Protein Spot — Fueling Your Goals Since 2021 · Anaheim, CA</title>
+<meta name="description" content="Family-owned protein shake spot in Anaheim, CA. 60+ shake flavors, tea bombs, protein donuts, iced coffee. Call 714-594-8162 to order.">
+<meta name="theme-color" content="#FF1A8D">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --pink:#FF1A8D;
+  --pink-deep:#E60E78;
+  --lime:#C8E834;
+  --lime-deep:#A4C217;
+  --cream:#FFFEF7;
+  --ink:#1A1A1A;
+  --ink-soft:#3A3A3A;
+  --grey:#6B6B6B;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Outfit',system-ui,-apple-system,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  font-weight:500;
+  line-height:1.5;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ============== KINETIC MARQUEE ============== */
+.marquee{
+  background:var(--pink);
+  color:var(--cream);
+  overflow:hidden;
+  padding:14px 0;
+  border-top:2px solid var(--ink);
+  border-bottom:2px solid var(--ink);
+  position:relative;
+  z-index:5;
+}
+.marquee--lime{background:var(--lime);color:var(--ink)}
+.marquee__track{
+  display:flex;
+  white-space:nowrap;
+  font-family:'Anton',sans-serif;
+  font-size:clamp(18px,2.4vw,28px);
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  animation:scroll 28s linear infinite;
+  width:max-content;
+  will-change:transform;
+}
+.marquee--lime .marquee__track{animation-duration:35s}
+.marquee__track > span{
+  display:inline-block;
+  margin-right:36px;
+  align-self:center;
+}
+.marquee__dot{
+  display:inline-block;width:10px;height:10px;border-radius:50%;
+  background:currentColor;align-self:center;
+}
+@keyframes scroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+/* ============== HERO ============== */
+.hero{
+  position:relative;
+  min-height:100dvh;
+  padding:32px 24px 64px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  overflow:hidden;
+  background:var(--cream);
+}
+.hero__photo{
+  position:absolute;
+  top:0;right:-8%;
+  width:62%;
+  height:100%;
+  object-fit:cover;
+  opacity:.92;
+  -webkit-mask-image:linear-gradient(to left,rgba(0,0,0,1) 30%,rgba(0,0,0,0) 100%);
+          mask-image:linear-gradient(to left,rgba(0,0,0,1) 30%,rgba(0,0,0,0) 100%);
+  z-index:0;
+}
+.hero__inner{
+  position:relative;
+  z-index:2;
+  max-width:1400px;
+  margin:0 auto;
+  width:100%;
+}
+.hero__brand{
+  position:relative;
+  display:inline-block;
+  line-height:.85;
+  margin-bottom:24px;
+}
+.hero__healthy{
+  display:block;
+  position:relative;
+  z-index:3;
+  font-family:'Caveat',cursive;
+  font-weight:700;
+  font-size:clamp(48px,7.5vw,112px);
+  color:var(--lime-deep);
+  transform:rotate(-4deg);
+  margin-left:6%;
+  margin-bottom:4px;
+}
+.hero__protein{
+  display:block;
+  position:relative;
+  z-index:1;
+  font-family:'Anton',sans-serif;
+  font-size:clamp(82px,18vw,260px);
+  color:var(--pink);
+  letter-spacing:-.02em;
+  line-height:.85;
+  text-transform:uppercase;
+}
+.hero__spot{
+  display:block;
+  position:relative;
+  z-index:2;
+  font-family:'Caveat',cursive;
+  font-weight:700;
+  font-size:clamp(64px,11vw,168px);
+  color:var(--lime-deep);
+  transform:rotate(-4deg);
+  margin-left:40%;
+  margin-top:-32px;
+}
+.hero__tagline{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(14px,1.8vw,20px);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink);
+  margin-top:32px;
+  margin-bottom:24px;
+}
+.hero__cta-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  align-items:center;
+  margin-top:8px;
+}
+.cta{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:20px 28px;
+  background:var(--pink);
+  color:var(--cream);
+  font-family:'Anton',sans-serif;
+  font-size:clamp(16px,2vw,22px);
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  border:2.5px solid var(--ink);
+  border-radius:999px;
+  box-shadow:6px 6px 0 var(--ink);
+  transition:transform .15s ease,box-shadow .15s ease;
+  white-space:nowrap;
+}
+.cta:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink)}
+.cta:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.cta--lime{background:var(--lime);color:var(--ink)}
+.cta--white{background:var(--cream);color:var(--ink)}
+.cta--icon{
+  background:var(--cream);
+  color:var(--ink);
+  padding:18px;
+  width:64px;height:64px;
+  justify-content:center;
+  border-radius:50%;
+}
+.cta--icon:hover{background:var(--lime)}
+.cta__arrow{
+  display:inline-block;
+  font-weight:900;
+  transition:transform .2s ease;
+}
+.cta:hover .cta__arrow{transform:translateX(4px)}
+.hero__meta{
+  position:absolute;
+  bottom:32px;left:24px;right:24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:24px;
+  z-index:2;
+  font-family:'Anton',sans-serif;
+  font-size:clamp(11px,1.2vw,14px);
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+}
+.hero__meta-block{max-width:240px}
+.hero__meta strong{color:var(--ink);display:block;font-size:1.15em}
+
+@media (max-width:768px){
+  .hero__photo{
+    width:100%;
+    right:0;top:auto;bottom:0;
+    height:55%;
+    opacity:.35;
+    -webkit-mask-image:linear-gradient(to top,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+            mask-image:linear-gradient(to top,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+  }
+  .hero__meta{position:static;margin-top:48px;flex-direction:column;align-items:flex-start}
+}
+
+/* ============== STICKY CALL BUTTON ============== */
+.sticky-call{
+  position:fixed;
+  bottom:20px;right:20px;
+  z-index:50;
+  padding:16px 22px;
+  background:var(--pink);
+  color:var(--cream);
+  font-family:'Anton',sans-serif;
+  font-size:15px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  border:2.5px solid var(--ink);
+  border-radius:999px;
+  box-shadow:5px 5px 0 var(--ink);
+  display:inline-flex;align-items:center;gap:8px;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.sticky-call:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.sticky-call:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+@media (max-width:480px){
+  .sticky-call{bottom:14px;right:14px;left:14px;justify-content:center;padding:18px 22px}
+}
+
+/* ============== SECTION BASE ============== */
+.section{
+  padding:96px 24px;
+  position:relative;
+  overflow:hidden;
+}
+.section--lime{background:var(--lime);color:var(--ink)}
+.section--pink{background:var(--pink);color:var(--cream)}
+.section--ink{background:var(--ink);color:var(--cream)}
+.section__inner{max-width:1400px;margin:0 auto}
+
+.eyebrow{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(13px,1.4vw,16px);
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  margin-bottom:24px;
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+}
+.eyebrow::before{
+  content:"";
+  display:inline-block;
+  width:32px;height:2px;
+  background:currentColor;
+}
+.section__title{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(52px,9vw,140px);
+  line-height:.9;
+  letter-spacing:-.015em;
+  text-transform:uppercase;
+  margin-bottom:48px;
+}
+.section__title .accent{color:var(--pink)}
+.section--pink .section__title .accent,
+.section--lime .section__title .accent{color:var(--ink)}
+.section__title .script{
+  font-family:'Caveat',cursive;
+  font-weight:700;
+  text-transform:none;
+  font-size:.85em;
+  letter-spacing:0;
+  color:var(--lime-deep);
+}
+.section--lime .section__title .script{color:var(--pink)}
+
+/* ============== SIZES PRICING BAR ============== */
+.sizes{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+  margin-bottom:24px;
+  padding:24px 16px;
+  background:var(--cream);
+  border:2.5px solid var(--ink);
+  border-radius:24px;
+  box-shadow:8px 8px 0 var(--ink);
+}
+.size{
+  text-align:center;
+  padding:8px 4px;
+}
+.size + .size{border-left:2px dashed var(--ink-soft)}
+.size__protein{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(24px,3.6vw,44px);
+  line-height:1;
+  color:var(--pink);
+  letter-spacing:-.01em;
+}
+.size__label{
+  font-family:'Outfit',sans-serif;
+  font-weight:600;
+  font-size:10px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--grey);
+  margin:6px 0 4px;
+}
+.size__price{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(18px,2.2vw,26px);
+  color:var(--ink);
+}
+@media (max-width:560px){
+  .sizes{grid-template-columns:repeat(2,1fr);gap:0}
+  .size{padding:14px 8px;border:none !important}
+  .size:not(:last-child){border-bottom:2px dashed var(--ink-soft) !important}
+  .size:nth-child(odd):not(:last-child){border-right:2px dashed var(--ink-soft) !important}
+  .size:last-child{grid-column:1 / -1}
+}
+.sizes-note{
+  font-family:'Anton',sans-serif;
+  font-size:13px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  text-align:center;
+  margin:0 0 56px;
+  padding:14px 20px;
+  background:var(--lime);
+  border:1.5px solid var(--ink);
+  border-radius:999px;
+  display:inline-block;
+}
+.sizes-note__wrap{text-align:center}
+.menu-disclaimer{
+  margin-top:32px;
+  font-family:'Outfit',sans-serif;
+  font-size:13px;
+  color:var(--grey);
+  font-style:italic;
+  text-align:center;
+}
+
+/* Menu item with calorie badge */
+.item__row{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.item__cal{
+  font-family:'Anton',sans-serif;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:3px 10px;
+  background:var(--lime);
+  color:var(--ink);
+  border-radius:999px;
+  border:1.5px solid var(--ink);
+  white-space:nowrap;
+  flex-shrink:0;
+}
+.section--pink .item__cal{background:var(--cream);color:var(--ink)}
+.section--lime .item__cal{background:var(--ink);color:var(--lime)}
+.section--ink .item__cal{background:var(--lime);color:var(--ink)}
+
+/* ============== MENU CATEGORY ============== */
+.menu-cat{
+  margin-bottom:80px;
+}
+.menu-cat__head{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-bottom:32px;
+  padding-bottom:16px;
+  border-bottom:3px solid currentColor;
+}
+.menu-cat__name{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(36px,5.5vw,72px);
+  line-height:.9;
+  letter-spacing:-.01em;
+  text-transform:uppercase;
+}
+.menu-cat__sub{
+  font-family:'Caveat',cursive;
+  font-weight:700;
+  font-size:clamp(22px,3vw,40px);
+  color:var(--pink);
+  transform:rotate(-2deg);
+  display:inline-block;
+}
+.section--pink .menu-cat__sub,
+.section--lime .menu-cat__sub{color:var(--ink)}
+
+.items{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:0;
+  border-top:1px solid currentColor;
+}
+.item{
+  padding:20px 4px;
+  border-bottom:1px solid currentColor;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.item__name{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(20px,2.4vw,28px);
+  letter-spacing:.01em;
+  text-transform:uppercase;
+  line-height:1;
+}
+.item__desc{
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  color:var(--ink-soft);
+  font-weight:400;
+}
+.section--pink .item__desc{color:rgba(255,254,247,.85)}
+.section--ink .item__desc{color:rgba(255,254,247,.75)}
+.item__price{
+  font-family:'Anton',sans-serif;
+  font-size:18px;
+  color:var(--pink);
+  margin-top:4px;
+}
+.section--pink .item__price{color:var(--lime)}
+.section--lime .item__price{color:var(--pink-deep)}
+
+/* ============== SIMPLE PRICE BLOCK ============== */
+.price-stack{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:24px;
+}
+.price-card{
+  background:var(--cream);
+  color:var(--ink);
+  padding:32px 28px;
+  border:2.5px solid var(--ink);
+  border-radius:24px;
+  box-shadow:6px 6px 0 var(--ink);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.price-card__name{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(28px,3.4vw,40px);
+  line-height:1;
+  text-transform:uppercase;
+}
+.price-card__desc{
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  color:var(--grey);
+  flex:1;
+}
+.price-card__price{
+  font-family:'Anton',sans-serif;
+  font-size:36px;
+  color:var(--pink);
+}
+.price-card__tiers{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:8px;
+}
+.tier{
+  font-family:'Anton',sans-serif;
+  font-size:13px;
+  letter-spacing:.06em;
+  padding:6px 12px;
+  background:var(--lime);
+  color:var(--ink);
+  border-radius:999px;
+  border:1.5px solid var(--ink);
+}
+
+/* ============== ORDER BLOCK ============== */
+.order{
+  text-align:center;
+  padding:120px 24px;
+}
+.order__phone{
+  display:block;
+  font-family:'Anton',sans-serif;
+  font-size:clamp(64px,12vw,180px);
+  line-height:1;
+  letter-spacing:-.02em;
+  margin:24px 0 32px;
+}
+.order__note{
+  font-family:'Outfit',sans-serif;
+  font-size:clamp(16px,1.8vw,20px);
+  font-weight:500;
+  max-width:520px;
+  margin:0 auto 40px;
+}
+
+/* ============== FIND US ============== */
+.find{
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:48px;
+  align-items:stretch;
+}
+@media (max-width:880px){
+  .find{grid-template-columns:1fr;gap:32px}
+}
+.find__info{
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+}
+.hours{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  border:2.5px solid var(--ink);
+  border-radius:24px;
+  overflow:hidden;
+  background:var(--cream);
+  color:var(--ink);
+  box-shadow:6px 6px 0 var(--ink);
+}
+.hours__cell{
+  padding:24px 20px;
+  border-bottom:1.5px dashed rgba(26,26,26,.3);
+  border-right:1.5px dashed rgba(26,26,26,.3);
+}
+.hours__cell:nth-child(2n){border-right:none}
+.hours__cell:nth-last-child(-n+2){border-bottom:none}
+.hours__days{
+  font-family:'Anton',sans-serif;
+  font-size:14px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--pink);
+  margin-bottom:6px;
+}
+.hours__time{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(22px,2.6vw,30px);
+  letter-spacing:-.01em;
+  color:var(--ink);
+}
+.address{
+  background:var(--lime);
+  color:var(--ink);
+  padding:32px;
+  border:2.5px solid var(--ink);
+  border-radius:24px;
+  box-shadow:6px 6px 0 var(--ink);
+}
+.address__label{
+  font-family:'Anton',sans-serif;
+  font-size:14px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin-bottom:12px;
+  color:var(--ink-soft);
+}
+.address__line{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(22px,3vw,34px);
+  line-height:1.05;
+  margin-bottom:16px;
+}
+.address__note{
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  color:var(--ink-soft);
+  font-weight:500;
+}
+.address__btns{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:20px;
+}
+.btn-small{
+  font-family:'Anton',sans-serif;
+  font-size:13px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  padding:12px 18px;
+  background:var(--cream);
+  color:var(--ink);
+  border:2px solid var(--ink);
+  border-radius:999px;
+  transition:transform .12s ease;
+}
+.btn-small:hover{transform:translateY(-2px)}
+.find__map{
+  border:2.5px solid var(--ink);
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:6px 6px 0 var(--ink);
+  min-height:480px;
+  background:var(--cream);
+}
+.find__map iframe{width:100%;height:100%;border:0;display:block;min-height:480px}
+
+/* ============== FOOTER ============== */
+.footer{
+  padding:64px 24px 32px;
+  background:var(--ink);
+  color:var(--cream);
+  text-align:center;
+}
+.footer__brand{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(40px,6vw,72px);
+  letter-spacing:-.01em;
+  text-transform:uppercase;
+  line-height:1;
+  margin-bottom:8px;
+}
+.footer__brand .accent{color:var(--pink)}
+.footer__brand .script{
+  font-family:'Caveat',cursive;
+  font-weight:700;
+  text-transform:none;
+  color:var(--lime);
+  font-size:.7em;
+  letter-spacing:0;
+}
+.footer__line{
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  color:rgba(255,254,247,.6);
+  margin-top:24px;
+}
+.footer__line a{text-decoration:underline}
+
+/* ============== UTIL ============== */
+.section--pink .eyebrow,
+.section--ink .eyebrow{color:var(--lime)}
+.section--lime .eyebrow{color:var(--pink-deep)}
+
+/* Star burst badge */
+.burst{
+  position:absolute;
+  font-family:'Anton',sans-serif;
+  font-size:clamp(12px,1.4vw,16px);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  padding:14px 18px;
+  background:var(--lime);
+  color:var(--ink);
+  border:2px solid var(--ink);
+  border-radius:999px;
+  box-shadow:4px 4px 0 var(--ink);
+  transform:rotate(-6deg);
+  z-index:3;
+}
+.burst--pink{background:var(--pink);color:var(--cream)}
+
+/* ============== GALLERY ============== */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:28px;
+  margin-top:24px;
+}
+.photo-card{
+  position:relative;
+  border:2.5px solid var(--ink);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:6px 6px 0 var(--ink);
+  background:var(--cream);
+  aspect-ratio:4/5;
+  margin:0;
+  transition:transform .3s cubic-bezier(.16,1,.3,1);
+}
+.photo-card img{
+  width:100%;height:100%;object-fit:cover;display:block;
+}
+.photo-card__cap{
+  position:absolute;
+  bottom:14px;left:14px;
+  padding:8px 14px;
+  background:var(--cream);
+  border:2px solid var(--ink);
+  border-radius:999px;
+  font-family:'Anton',sans-serif;
+  font-size:12px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink);
+}
+.photo-card--tilt-l{transform:rotate(-1.8deg)}
+.photo-card--tilt-r{transform:rotate(1.8deg)}
+.photo-card--tilt-l2{transform:rotate(-1deg)}
+.photo-card--tilt-r2{transform:rotate(1deg)}
+.photo-card:hover{transform:rotate(0deg) scale(1.04);z-index:3}
+
+@media (max-width:880px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:20px}
+}
+@media (max-width:480px){
+  .gallery{gap:18px}
+}
+
+/* Story section accent photo */
+.story__photo{
+  margin-top:32px;
+  max-width:280px;
+  aspect-ratio:4/5;
+  position:relative;
+  border:2.5px solid var(--ink);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:6px 6px 0 var(--ink);
+  transform:rotate(2deg);
+}
+.story__photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* Section flank with photo (Coffee + Snacks) */
+.flank{
+  display:grid;
+  grid-template-columns:1fr 1.4fr;
+  gap:40px;
+  align-items:start;
+}
+.flank > .photo-card{aspect-ratio:4/5}
+@media (max-width:880px){
+  .flank{grid-template-columns:1fr;gap:32px}
+  .flank > .photo-card{max-width:420px;margin:0 auto}
+}
+
+/* ============== FOLLOW ALONG ============== */
+.follow{
+  text-align:center;
+  padding:120px 24px;
+}
+.follow__handle{
+  display:block;
+  font-family:'Anton',sans-serif;
+  font-size:clamp(40px,8vw,128px);
+  line-height:1;
+  letter-spacing:-.015em;
+  margin:8px 0 24px;
+  color:var(--cream);
+  text-decoration:none;
+  transition:color .2s ease,transform .2s ease;
+}
+.follow__handle:hover{color:var(--lime);transform:translateY(-2px)}
+.follow__note{
+  font-family:'Outfit',sans-serif;
+  font-size:clamp(16px,1.6vw,18px);
+  font-weight:500;
+  max-width:520px;
+  margin:0 auto 36px;
+  color:rgba(255,254,247,.85);
+}
+
+/* ============== OUR STORY ============== */
+.story{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:start;
+}
+@media (max-width:880px){
+  .story{grid-template-columns:1fr;gap:48px}
+}
+.story__lead{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(48px,7vw,108px);
+  line-height:.92;
+  letter-spacing:-.015em;
+  text-transform:uppercase;
+}
+.story__lead .script{
+  font-family:'Caveat',cursive;
+  font-weight:700;
+  text-transform:none;
+  color:var(--pink);
+  font-size:.85em;
+  letter-spacing:0;
+  display:inline-block;
+  transform:rotate(-3deg);
+}
+.story__lead .accent{color:var(--pink)}
+.story__quote{
+  margin-top:32px;
+  padding:24px 0;
+  border-top:3px solid var(--ink);
+  border-bottom:3px solid var(--ink);
+  font-family:'Outfit',sans-serif;
+  font-size:clamp(18px,2vw,22px);
+  font-weight:600;
+  font-style:italic;
+  color:var(--ink-soft);
+}
+.story__body{
+  font-family:'Outfit',sans-serif;
+  font-size:clamp(15px,1.4vw,17px);
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.story__body p+p{margin-top:18px}
+.story__badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:36px;
+  padding-top:36px;
+  border-top:1.5px dashed var(--ink-soft);
+}
+.story__badge{
+  font-family:'Anton',sans-serif;
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  padding:8px 14px;
+  background:var(--lime);
+  color:var(--ink);
+  border:1.5px solid var(--ink);
+  border-radius:999px;
+}
+
+/* ============== TESTIMONIALS ============== */
+.reviews{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:24px;
+  margin-top:32px;
+}
+.review{
+  background:var(--cream);
+  border:2.5px solid var(--ink);
+  border-radius:24px;
+  padding:32px;
+  box-shadow:6px 6px 0 var(--ink);
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  position:relative;
+}
+.review--hero{
+  grid-column:span 4;
+  grid-row:span 2;
+  background:var(--pink);
+  color:var(--cream);
+  padding:48px;
+}
+.review--wide{grid-column:span 4}
+.review--small{grid-column:span 2}
+.review--lime{background:var(--lime);color:var(--ink)}
+.review--ink{background:var(--ink);color:var(--cream)}
+.review__stars{
+  font-family:'Anton',sans-serif;
+  letter-spacing:.1em;
+  color:var(--pink-deep);
+  font-size:18px;
+  line-height:1;
+}
+.review--hero .review__stars,
+.review--ink .review__stars{color:var(--lime)}
+.review--lime .review__stars{color:var(--pink-deep)}
+.review__quote{
+  font-family:'Outfit',sans-serif;
+  font-weight:700;
+  font-size:clamp(18px,2.2vw,26px);
+  line-height:1.25;
+  letter-spacing:-.01em;
+  flex:1;
+}
+.review--hero .review__quote{
+  font-family:'Anton',sans-serif;
+  font-size:clamp(34px,4.4vw,64px);
+  line-height:1.05;
+  letter-spacing:-.01em;
+  text-transform:uppercase;
+  font-weight:400;
+}
+.review__quote::before{
+  content:"\201C";
+  font-family:'Caveat',cursive;
+  font-size:1.6em;
+  line-height:.3;
+  display:block;
+  margin-bottom:8px;
+  opacity:.4;
+}
+.review--hero .review__quote::before{
+  font-size:2em;
+  opacity:.55;
+}
+.review__author{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  margin-top:auto;
+}
+.review__name{
+  font-family:'Anton',sans-serif;
+  font-size:16px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.review--hero .review__name{font-size:20px}
+.review__location{
+  font-family:'Outfit',sans-serif;
+  font-size:13px;
+  font-weight:500;
+  opacity:.7;
+}
+.review__badge{
+  position:absolute;
+  top:20px;right:20px;
+  font-family:'Anton',sans-serif;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  padding:6px 10px;
+  background:var(--ink);
+  color:var(--cream);
+  border-radius:999px;
+}
+.review--hero .review__badge,
+.review--ink .review__badge{background:var(--cream);color:var(--ink)}
+.review--lime .review__badge{background:var(--ink);color:var(--cream)}
+
+@media (max-width:1000px){
+  .reviews{grid-template-columns:repeat(2,1fr)}
+  .review--hero{grid-column:span 2;grid-row:auto}
+  .review--wide{grid-column:span 2}
+  .review--small{grid-column:span 1}
+}
+@media (max-width:560px){
+  .reviews{grid-template-columns:1fr;gap:20px}
+  .review,.review--hero,.review--wide,.review--small{grid-column:span 1 !important;padding:28px}
+  .review--hero{padding:36px}
+}
+
+/* MOBILE NUDGE */
+@media (max-width:560px){
+  .section{padding:64px 20px}
+  .menu-cat{margin-bottom:56px}
+  .menu-cat__head{flex-direction:column;align-items:flex-start;gap:8px}
+  .order{padding:80px 20px}
+}
+
+/* ============== ANIMATIONS ============== */
+@media (prefers-reduced-motion: no-preference){
+
+/* Hero entrance */
+@keyframes hpFlyDown{from{transform:translateY(-100%)}to{transform:translateY(0)}}
+@keyframes hpPunch{from{transform:scale(.86);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes hpScriptIn{from{transform:rotate(-15deg) translateY(20px);opacity:0}to{transform:rotate(-4deg) translateY(0);opacity:1}}
+@keyframes hpFadeUp{from{transform:translateY(18px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+.marquee--top:first-of-type{animation:hpFlyDown .7s cubic-bezier(.16,1,.3,1) both}
+.hero__healthy{animation:hpScriptIn .9s cubic-bezier(.16,1,.3,1) .15s both}
+.hero__protein{animation:hpPunch .8s cubic-bezier(.16,1,.3,1) .35s both}
+.hero__spot{animation:hpScriptIn .9s cubic-bezier(.16,1,.3,1) .65s both}
+.hero__tagline{animation:hpFadeUp .7s cubic-bezier(.16,1,.3,1) .9s both}
+.hero__cta-row > *{animation:hpFadeUp .6s cubic-bezier(.16,1,.3,1) both}
+.hero__cta-row > *:nth-child(1){animation-delay:1.0s}
+.hero__cta-row > *:nth-child(2){animation-delay:1.12s}
+.hero__cta-row > *:nth-child(3){animation-delay:1.24s}
+
+/* Sticky call attention pulse */
+@keyframes hpCtaPulse{
+  0%,100%{transform:translate(0,0);box-shadow:5px 5px 0 var(--ink)}
+  50%{transform:translate(-1px,-2px);box-shadow:6px 7px 0 var(--ink)}
+}
+.sticky-call{animation:hpCtaPulse 3.2s ease-in-out 2s infinite}
+.sticky-call:hover{animation:none}
+
+/* Gallery float */
+@keyframes hpFloat{
+  0%,100%{translate:0 0}
+  50%{translate:0 -6px}
+}
+.gallery .photo-card{animation:hpFloat 6s ease-in-out infinite}
+.gallery .photo-card:nth-child(2){animation-delay:-1.5s}
+.gallery .photo-card:nth-child(3){animation-delay:-3s}
+.gallery .photo-card:nth-child(4){animation-delay:-4.5s}
+
+/* Scroll reveal — base state */
+.reveal{
+  opacity:0;
+  transform:translateY(28px);
+  transition:opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1);
+}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+.reveal-stagger > *{
+  opacity:0;
+  transform:translateY(16px);
+  transition:opacity .55s ease, transform .55s cubic-bezier(.16,1,.3,1);
+  transition-delay:calc(var(--i, 0) * 50ms);
+}
+.reveal-stagger.in > *{opacity:1;transform:translateY(0)}
+
+/* Menu item hover tactile */
+.item{
+  transition:padding-left .25s cubic-bezier(.16,1,.3,1), color .2s ease;
+  cursor:default;
+}
+.item:hover{padding-left:14px}
+.item:hover .item__name{color:var(--pink)}
+.section--pink .item:hover .item__name{color:var(--lime)}
+.section--lime .item:hover .item__name{color:var(--pink-deep)}
+.section--ink .item:hover .item__name{color:var(--lime)}
+
+/* Tier badge wiggle on hover */
+.tier{transition:transform .2s cubic-bezier(.16,1,.3,1)}
+.tier:hover{transform:translateY(-2px) rotate(-2deg)}
+
+
+} /* end prefers-reduced-motion */
+</style>
+</head>
+<body>
+
+<!-- ============== TOP MARQUEE ============== -->
+<div class="marquee marquee--top" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Fueling Your Goals Since 2021</span>
+    <span class="marquee__dot"></span>
+    <span>Call 714-594-8162</span>
+    <span class="marquee__dot"></span>
+    <span>9856 Katella · Anaheim CA</span>
+    <span class="marquee__dot"></span>
+    <span>Family Owned</span>
+    <span class="marquee__dot"></span>
+    <span>60+ Shake Flavors</span>
+    <span class="marquee__dot"></span>
+    <span>Follow @healthyproteinspot</span>
+    <span class="marquee__dot"></span>
+    <!-- duplicate for seamless loop -->
+    <span>Fueling Your Goals Since 2021</span>
+    <span class="marquee__dot"></span>
+    <span>Call 714-594-8162</span>
+    <span class="marquee__dot"></span>
+    <span>9856 Katella · Anaheim CA</span>
+    <span class="marquee__dot"></span>
+    <span>Family Owned</span>
+    <span class="marquee__dot"></span>
+    <span>60+ Shake Flavors</span>
+    <span class="marquee__dot"></span>
+    <span>Follow @healthyproteinspot</span>
+    <span class="marquee__dot"></span>
+  </div>
+</div>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <img src="images/hero-pink-shake.jpg" alt="" class="hero__photo">
+  <div class="hero__inner">
+    <div class="hero__brand">
+      <span class="hero__healthy">Healthy</span>
+      <span class="hero__protein">Protein</span>
+      <span class="hero__spot">Spot</span>
+    </div>
+    <p class="hero__tagline">Best Protein Shakes in OC · Fueling Your Goals Since '21</p>
+    <div class="hero__cta-row">
+      <a href="tel:+17145948162" class="cta">Tap to Call <span class="cta__arrow">→</span></a>
+      <a href="#menu" class="cta cta--lime">See the Menu <span class="cta__arrow">↓</span></a>
+      <a href="https://instagram.com/healthyproteinspot" target="_blank" rel="noopener" class="cta cta--white">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+        @healthyproteinspot
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== STICKY CALL BUTTON ============== -->
+<a href="tel:+17145948162" class="sticky-call" aria-label="Tap to call Healthy Protein Spot">
+  Call to Order <span aria-hidden="true">→</span>
+</a>
+
+<!-- ============== MARQUEE ============== -->
+<div class="marquee marquee--lime" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Protein Shakes</span>
+    <span class="marquee__dot"></span>
+    <span>Tea Bombs</span>
+    <span class="marquee__dot"></span>
+    <span>Iced Protein Coffee</span>
+    <span class="marquee__dot"></span>
+    <span>Protein Donuts</span>
+    <span class="marquee__dot"></span>
+    <span>Works Combo</span>
+    <span class="marquee__dot"></span>
+    <span>Add-Ons</span>
+    <span class="marquee__dot"></span>
+    <!-- dup -->
+    <span>Protein Shakes</span>
+    <span class="marquee__dot"></span>
+    <span>Tea Bombs</span>
+    <span class="marquee__dot"></span>
+    <span>Iced Protein Coffee</span>
+    <span class="marquee__dot"></span>
+    <span>Protein Donuts</span>
+    <span class="marquee__dot"></span>
+    <span>Works Combo</span>
+    <span class="marquee__dot"></span>
+    <span>Add-Ons</span>
+    <span class="marquee__dot"></span>
+  </div>
+</div>
+
+<!-- ============== MENU — PROTEIN SHAKES ============== -->
+<section id="menu" class="section">
+  <div class="section__inner">
+    <div class="eyebrow">The Main Event</div>
+    <h2 class="section__title reveal">Protein <br><span class="script">Shakes</span></h2>
+
+    <div class="sizes reveal-stagger" id="sizes-ribbon">
+      <div class="size">
+        <div class="size__protein" data-target="24">0g</div>
+        <div class="size__label">Protein</div>
+        <div class="size__price">$10</div>
+      </div>
+      <div class="size">
+        <div class="size__protein" data-target="30">0g</div>
+        <div class="size__label">Protein</div>
+        <div class="size__price">$11</div>
+      </div>
+      <div class="size">
+        <div class="size__protein" data-target="36">0g</div>
+        <div class="size__label">Protein</div>
+        <div class="size__price">$12</div>
+      </div>
+      <div class="size">
+        <div class="size__protein" data-target="48">0g</div>
+        <div class="size__label">Protein</div>
+        <div class="size__price">$14</div>
+      </div>
+      <div class="size">
+        <div class="size__protein" data-target="60">0g</div>
+        <div class="size__label">Protein</div>
+        <div class="size__price">$16</div>
+      </div>
+    </div>
+
+    <div class="sizes-note__wrap">
+      <p class="sizes-note">For large shakes (48g+) — indicate plant-based or whey</p>
+    </div>
+
+    <!-- FRUITY -->
+    <div class="menu-cat" style="margin-top:32px">
+      <div class="menu-cat__head">
+        <h3 class="menu-cat__name">Fruity &amp; Fresh</h3>
+        <span class="menu-cat__sub">light · bright · vitamin-packed</span>
+      </div>
+      <div class="items reveal-stagger">
+        <div class="item"><div class="item__row"><div class="item__name">Berry Cheesecake</div><span class="item__cal">225 cal</span></div><div class="item__desc">strawberry cheesecake, graham crackers</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Berry Oats</div><span class="item__cal">250 cal</span></div><div class="item__desc">wild berry, cranberries &amp; oats</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Blueberry Pancake</div><span class="item__cal">230 cal</span></div><div class="item__desc">blueberry &amp; vanilla, cranberries</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Coconut Pie</div><span class="item__cal">220 cal</span></div><div class="item__desc">creamy coconut, coconut shavings</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Fresh Berry</div><span class="item__cal">220 cal</span></div><div class="item__desc">vanilla, strawberry</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Strawberry Banana</div><span class="item__cal">220 cal</span></div><div class="item__desc">strawberry &amp; banana</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Strawberry Mango</div><span class="item__cal">220 cal</span></div><div class="item__desc">strawberry &amp; mango</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Lean Green <small style="font-size:.7em;color:var(--grey)">+$4</small></div><span class="item__cal">230 cal</span></div><div class="item__desc">mango pineapple, organic greens</div></div>
+      </div>
+    </div>
+
+    <!-- NUTTY -->
+    <div class="menu-cat">
+      <div class="menu-cat__head">
+        <h3 class="menu-cat__name">Nutty Flavors</h3>
+        <span class="menu-cat__sub">creamy · rich · cozy</span>
+      </div>
+      <div class="items reveal-stagger">
+        <div class="item"><div class="item__row"><div class="item__name">Almond Joy</div><span class="item__cal">225 cal</span></div><div class="item__desc">coconut and almonds</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Captain Crunch</div><span class="item__cal">225 cal</span></div><div class="item__desc">PB, vanilla, cinnamon</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Chunky Monkey</div><span class="item__cal">230 cal</span></div><div class="item__desc">chocolate, banana, PB</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Dolce Gabbana</div><span class="item__cal">230 cal</span></div><div class="item__desc">dulce de leche, almonds</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Mazapán</div><span class="item__cal">235 cal</span></div><div class="item__desc">peanut, cinnamon, almonds</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Reese's PB</div><span class="item__cal">220 cal</span></div><div class="item__desc">peanut, chocolate, caramel</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Pistachio</div><span class="item__cal">220 cal</span></div><div class="item__desc">creamy pistachio &amp; walnuts</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Peanut Espresso</div><span class="item__cal">220 cal</span></div><div class="item__desc">peanut, café espresso (decaf)</div></div>
+      </div>
+    </div>
+
+    <!-- CHOCOLATE -->
+    <div class="menu-cat">
+      <div class="menu-cat__head">
+        <h3 class="menu-cat__name">Chocolate</h3>
+        <span class="menu-cat__sub">dessert energy · for the sweet tooth</span>
+      </div>
+      <div class="items reveal-stagger">
+        <div class="item"><div class="item__row"><div class="item__name">Matcha Monster <small style="font-size:.7em;color:var(--grey)">+$1</small></div><span class="item__cal">230 cal</span></div><div class="item__desc">chocolate &amp; premium grade matcha</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Mint Chip</div><span class="item__cal">225 cal</span></div><div class="item__desc">mint chocolate chip, oreos</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Cookie Monster</div><span class="item__cal">225 cal</span></div><div class="item__desc">chocolate cookie and oreos</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Chocolate Abuelita</div><span class="item__cal">235 cal</span></div><div class="item__desc">chocolate, oats &amp; cinnamon</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Gansito</div><span class="item__cal">220 cal</span></div><div class="item__desc">strawberry &amp; chocolate</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Brownie Batter</div><span class="item__cal">220 cal</span></div><div class="item__desc">chocolate, chocolate, chocolate</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Oreo Cookie</div><span class="item__cal">220 cal</span></div><div class="item__desc">cookies 'n cream, oreos</div></div>
+      </div>
+    </div>
+
+    <!-- COFFEE & DESSERT -->
+    <div class="menu-cat">
+      <div class="menu-cat__head">
+        <h3 class="menu-cat__name">Coffee &amp; Dessert</h3>
+        <span class="menu-cat__sub">caffeine meets cake</span>
+      </div>
+      <div class="items reveal-stagger">
+        <div class="item"><div class="item__row"><div class="item__name">Banana Bread</div><span class="item__cal">220 cal</span></div><div class="item__desc">banana caramel, cinnamon</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Café con Leche</div><span class="item__cal">220 cal</span></div><div class="item__desc">café latte &amp; dulce de leche</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Caramel Latte</div><span class="item__cal">220 cal</span></div><div class="item__desc">café latte &amp; caramel</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Caramel Mocha Latte</div><span class="item__cal">220 cal</span></div><div class="item__desc">mocha, café latte &amp; caramel</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Carrot Cake</div><span class="item__cal">250 cal</span></div><div class="item__desc">vanilla, oats, raisins, cinnamon</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Strawberry Oreo</div><span class="item__cal">240 cal</span></div><div class="item__desc">strawberry &amp; cookies 'n cream, oreos</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">NY Cheesecake</div><span class="item__cal">220 cal</span></div><div class="item__desc">pralines &amp; caramel, cinnamon</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Oatmeal Cookie</div><span class="item__cal">250 cal</span></div><div class="item__desc">cookies, oats, raisins, cinnamon</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">Banana Oatmeal Cookie</div><span class="item__cal">250 cal</span></div><div class="item__desc">banana, oats, raisin, cinnamon</div></div>
+        <div class="item"><div class="item__row"><div class="item__name">PB Banana Oatmeal Cookie</div><span class="item__cal">250 cal</span></div><div class="item__desc">peanut, banana, oats, raisin, cinnamon</div></div>
+      </div>
+    </div>
+
+    <p class="menu-disclaimer">All shakes are dairy-free. Some items contain nuts or common allergens — please let us know if you have dietary concerns.</p>
+  </div>
+</section>
+
+<!-- ============== CHANEL + ICED COFFEE ============== -->
+<section class="section section--lime">
+  <div class="section__inner">
+    <div class="eyebrow">Coffee Lineup</div>
+    <h2 class="section__title reveal">Chanel <br><span class="script">&amp; iced coffee</span></h2>
+
+    <div class="flank">
+      <figure class="photo-card photo-card--tilt-l">
+        <img src="images/iced-coffee.jpg" alt="Iced protein coffee on a cafe counter">
+        <figcaption class="photo-card__cap">Iced Protein Coffee · $7</figcaption>
+      </figure>
+      <div class="price-stack" style="grid-template-columns:1fr">
+        <div class="price-card">
+        <div class="price-card__name">Chanel Coffee &amp; Shake</div>
+        <div class="price-card__desc">Pair with your choice of protein coffee.</div>
+        <div class="price-card__tiers">
+          <span class="tier">Vanilla</span>
+          <span class="tier">Dulce de Leche</span>
+          <span class="tier">Mocha</span>
+          <span class="tier">Pistachio Espresso</span>
+          <span class="tier">Salted Caramel</span>
+          <span class="tier">Matcha</span>
+        </div>
+        <div class="price-card__price">$14</div>
+      </div>
+
+      <div class="price-card">
+        <div class="price-card__name">Iced Protein Coffee</div>
+        <div class="price-card__desc">House blend · Mocha · Caramel Macchiato</div>
+        <div class="price-card__tiers">
+          <span class="tier">5g Protein · 10oz</span>
+          <span class="tier">5g Protein · 20oz · +$2</span>
+          <span class="tier">Add Matcha +$2</span>
+          <span class="tier">Decaf +$1</span>
+        </div>
+        <div class="price-card__price">$7</div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROTEIN SNACKS + DONUTS ============== -->
+<section class="section section--pink">
+  <div class="section__inner">
+    <div class="eyebrow">Protein Snacks</div>
+    <h2 class="section__title reveal">Waffles, Oats &amp; <br><span class="script">donuts</span></h2>
+
+    <div class="flank">
+      <figure class="photo-card photo-card--tilt-r">
+        <img src="images/donuts.jpg" alt="Sprinkled protein donuts">
+        <figcaption class="photo-card__cap">Protein Donuts · 5 for $15</figcaption>
+      </figure>
+      <div class="price-stack" style="grid-template-columns:1fr">
+      <div class="price-card">
+        <div class="price-card__name">Protein Waffle</div>
+        <div class="price-card__desc">Customize your toppings: granola, walnut, peanut, pistachio, almond, coconut, cinnamon, brownie, syrup, chocolate.</div>
+        <div class="price-card__price">$10</div>
+      </div>
+
+      <div class="price-card">
+        <div class="price-card__name">Protein Oats</div>
+        <div class="price-card__desc">Custom toppings, same as the waffle. Hot or cold.</div>
+        <div class="price-card__price">$13</div>
+      </div>
+
+      <div class="price-card">
+        <div class="price-card__name">Protein Donuts</div>
+        <div class="price-card__desc">Light, fluffy, made fresh. Call ahead for flavor availability.</div>
+        <div class="price-card__tiers">
+          <span class="tier">1 for $4</span>
+          <span class="tier">2 for $7</span>
+          <span class="tier">3 for $10</span>
+          <span class="tier">5 for $15</span>
+          <span class="tier">10 for $25</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TEA BOMBS ============== -->
+<section class="section">
+  <div class="section__inner">
+    <div class="eyebrow">Fuel &amp; Function</div>
+    <h2 class="section__title reveal">Tea <br><span class="script">bombs</span></h2>
+
+    <div class="menu-cat">
+      <div class="menu-cat__head">
+        <h3 class="menu-cat__name">Wellness · $7</h3>
+        <span class="menu-cat__sub">function-first sips</span>
+      </div>
+      <div class="items reveal-stagger">
+        <div class="item"><div class="item__name">Lyma Bomb</div><div class="item__desc">$7 · wild berry protein &amp; lyma greens</div></div>
+        <div class="item"><div class="item__name">3 Green Giants</div><div class="item__desc">$7 · matcha, spirulina, chlorophyll</div></div>
+        <div class="item"><div class="item__name">5 Greens Goat Tea</div><div class="item__desc">$7 · gut + collagen support</div></div>
+        <div class="item"><div class="item__name">Cal Bloom</div><div class="item__desc">$7 · hibiscus, rose, cranberry</div></div>
+        <div class="item"><div class="item__name">Glow</div><div class="item__desc">$7 · collagen, biotin, vitamin C</div></div>
+        <div class="item"><div class="item__name">Mermaid Tonic</div><div class="item__desc">$7 · blue spirulina, coconut, lime</div></div>
+        <div class="item"><div class="item__name">Strawberry Bloom</div><div class="item__desc">$7 · strawberry, hibiscus, citrus</div></div>
+      </div>
+    </div>
+
+    <div class="menu-cat">
+      <div class="menu-cat__head">
+        <h3 class="menu-cat__name">Energy · $7</h3>
+        <span class="menu-cat__sub">caffeinated · zero crash</span>
+      </div>
+      <div class="items reveal-stagger">
+        <div class="item"><div class="item__name">Bumblebee Bomb</div><div class="item__desc">honey, lemon, ginger</div></div>
+        <div class="item"><div class="item__name">Buzz Lightyear</div><div class="item__desc">guarana, lemon, raspberry</div></div>
+        <div class="item"><div class="item__name">All-Nighter Tea</div><div class="item__desc">double caffeine + B-vitamin stack</div></div>
+        <div class="item"><div class="item__name">Almost Famous</div><div class="item__desc">passionfruit, hibiscus, mango</div></div>
+        <div class="item"><div class="item__name">Bombshell Tea</div><div class="item__desc">pomegranate, peach, raspberry</div></div>
+        <div class="item"><div class="item__name">Peanut Brain Bomb</div><div class="item__desc">cacao, peanut, coffee bean</div></div>
+      </div>
+    </div>
+
+    <div class="menu-cat">
+      <div class="menu-cat__head">
+        <h3 class="menu-cat__name">Pre-Workouts · $10</h3>
+        <span class="menu-cat__sub">200mg · 300mg caffeine</span>
+      </div>
+      <div class="items reveal-stagger">
+        <div class="item"><div class="item__name">Orange Lemon Lime</div><div class="item__desc">classic citrus stack</div></div>
+        <div class="item"><div class="item__name">Tropical Fruits</div><div class="item__desc">mango, passionfruit, guava</div></div>
+        <div class="item"><div class="item__name">Pomegranate</div><div class="item__desc">tart + bright</div></div>
+        <div class="item"><div class="item__name">Blueberry</div><div class="item__desc">antioxidant pump</div></div>
+      </div>
+    </div>
+
+    <div class="menu-cat">
+      <div class="menu-cat__head">
+        <h3 class="menu-cat__name">Mini Refreshers · $4 / $6</h3>
+        <span class="menu-cat__sub">10oz mini · 20oz refresh</span>
+      </div>
+      <div class="items reveal-stagger">
+        <div class="item"><div class="item__name">Tamarindo</div><div class="item__desc">tart + sweet</div></div>
+        <div class="item"><div class="item__name">Jamaica</div><div class="item__desc">hibiscus classic</div></div>
+        <div class="item"><div class="item__name">Mango Peach</div><div class="item__desc">sunny + soft</div></div>
+        <div class="item"><div class="item__name">Cactus Bomb</div><div class="item__desc">prickly pear, lime</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== WORKS COMBO + ADD-ONS ============== -->
+<section class="section section--ink">
+  <div class="section__inner">
+    <div class="eyebrow">Customize</div>
+    <h2 class="section__title reveal">Works Combo <br><span class="script">+ add-ons</span></h2>
+
+    <div class="price-stack reveal-stagger">
+      <div class="price-card">
+        <div class="price-card__name">Works Combo</div>
+        <div class="price-card__desc">Aloe Vera shot · Herbal Tea or Refresher · Protein Shake · NRG pre-workout. Build your own stack.</div>
+        <div class="price-card__price">$13</div>
+      </div>
+
+      <div class="price-card">
+        <div class="price-card__name">Add-Ons</div>
+        <div class="price-card__desc">Customize any drink. Pricing varies — call ahead.</div>
+        <div class="price-card__tiers">
+          <span class="tier">Collagen</span>
+          <span class="tier">Greens Booster</span>
+          <span class="tier">Immunity Booster</span>
+          <span class="tier">Mushroom Blend</span>
+          <span class="tier">Pre-Workout Shot</span>
+          <span class="tier">Espresso Shot</span>
+          <span class="tier">Extra Protein +10g</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== GALLERY ============== -->
+<section class="section">
+  <div class="section__inner">
+    <div class="eyebrow">What's pouring</div>
+    <h2 class="section__title reveal">Sample <br><span class="script">the menu</span></h2>
+
+    <div class="gallery reveal-stagger">
+      <figure class="photo-card photo-card--tilt-l">
+        <img src="images/strawberry-shake.jpg" alt="Strawberry Banana protein shake">
+        <figcaption class="photo-card__cap">Strawberry Banana · 48g</figcaption>
+      </figure>
+      <figure class="photo-card photo-card--tilt-r2">
+        <img src="images/chocolate-shake.jpg" alt="Chocolate protein shake with toppings">
+        <figcaption class="photo-card__cap">Chocolate Abuelita · 60g</figcaption>
+      </figure>
+      <figure class="photo-card photo-card--tilt-l2">
+        <img src="images/fruity-bowl.jpg" alt="Protein oats bowl with fruit toppings">
+        <figcaption class="photo-card__cap">Protein Oats · $13</figcaption>
+      </figure>
+      <figure class="photo-card photo-card--tilt-r">
+        <img src="images/iced-tea.jpg" alt="Iced tea bomb refresher">
+        <figcaption class="photo-card__cap">Mermaid Tonic · $7</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============== OUR STORY ============== -->
+<section class="section">
+  <div class="section__inner">
+    <div class="eyebrow">Our Story</div>
+
+    <div class="story">
+      <div>
+        <h2 class="story__lead reveal">
+          A <span class="accent">20-year</span><br>
+          <span class="script">dream,</span><br>
+          one shake at a time.
+        </h2>
+        <p class="story__quote reveal">"Thousands of lives. One protein shake at a time. Started by Mama Flor in 2000. Carried forward by her kids today."</p>
+      </div>
+
+      <div class="story__body reveal">
+        <p>It started back in 2000, when <strong>Mama Flor</strong>—a young immigrant mother of three—was looking for a way to work from home, care for her kids, and make a positive impact on her community. With little more than determination and heart, she set out to share good nutrition with anyone who needed it.</p>
+
+        <p>What began as one mom's vision quietly grew into something bigger than she ever imagined. Thousands of lives touched, one shake at a time. In 2021, her children—once the kids watching the dream unfold—opened <strong>Healthy Protein Spot</strong> in Anaheim to carry her legacy forward.</p>
+
+        <p>We're not your average shake bar. Every drink is made with intention: dairy-free, clean, and powered by high-quality blends—plant-based, whey, or casein. No nonsense, no fluff. Just real nutrition that tastes amazing and fuels the way you want to live.</p>
+
+        <p style="margin-top:24px;font-family:'Caveat',cursive;font-weight:700;font-size:clamp(22px,2.6vw,30px);color:var(--pink);">Thank you for supporting our family. — The Healthy Protein Spot Team</p>
+
+        <div class="story__badges">
+          <span class="story__badge">Family Owned</span>
+          <span class="story__badge">Made with Intention</span>
+          <span class="story__badge">Dairy Free</span>
+          <span class="story__badge">No Fluff</span>
+          <span class="story__badge">Plant-Based · Whey · Casein</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TESTIMONIALS ============== -->
+<section class="section">
+  <div class="section__inner">
+    <div class="eyebrow">From real customers</div>
+    <h2 class="section__title reveal">Locals are <br><span class="script">hooked</span></h2>
+
+    <div class="reviews reveal-stagger">
+      <article class="review review--hero">
+        <span class="review__badge">via Yelp</span>
+        <div class="review__stars" aria-label="5 stars">★★★★★</div>
+        <p class="review__quote">I think I found my new obsession. Hooked on their protein shakes.</p>
+        <div class="review__author">
+          <span class="review__name">Alejandra B.</span>
+          <span class="review__location">Stanton, CA · Yelp Elite</span>
+        </div>
+      </article>
+
+      <article class="review review--small review--lime">
+        <span class="review__badge">via Yelp</span>
+        <div class="review__stars" aria-label="5 stars">★★★★★</div>
+        <p class="review__quote">So creamy and foamy idk how to better describe it. And low calorie.</p>
+        <div class="review__author">
+          <span class="review__name">Anna R.</span>
+          <span class="review__location">Orange, CA · Yelp Elite</span>
+        </div>
+      </article>
+
+      <article class="review review--small">
+        <span class="review__badge">via Yelp</span>
+        <div class="review__stars" aria-label="5 stars">★★★★★</div>
+        <p class="review__quote">This place is the bomb. I look forward to the warm welcome every time.</p>
+        <div class="review__author">
+          <span class="review__name">Darin W.</span>
+          <span class="review__location">Seal Beach, CA</span>
+        </div>
+      </article>
+
+      <article class="review review--small review--ink">
+        <span class="review__badge">via Yelp</span>
+        <div class="review__stars" aria-label="5 stars">★★★★★</div>
+        <p class="review__quote">Worth every penny. Over 30g protein, under 400 cal, easy on digestion.</p>
+        <div class="review__author">
+          <span class="review__name">Maria N.</span>
+          <span class="review__location">Anaheim, CA</span>
+        </div>
+      </article>
+
+      <article class="review review--small">
+        <span class="review__badge">via Yelp</span>
+        <div class="review__stars" aria-label="4 stars">★★★★</div>
+        <p class="review__quote">Mint chocolate chip for the WINN. Friendly atmosphere, even my toddler loved it.</p>
+        <div class="review__author">
+          <span class="review__name">Megan B.</span>
+          <span class="review__location">Aliso Viejo, CA</span>
+        </div>
+      </article>
+
+      <article class="review review--wide review--lime">
+        <span class="review__badge">via Yelp</span>
+        <div class="review__stars" aria-label="5 stars">★★★★★</div>
+        <p class="review__quote">Absolutely delicious and super filling. Super sad that this place isn't local to me.</p>
+        <div class="review__author">
+          <span class="review__name">Cyn F.</span>
+          <span class="review__location">Los Angeles, CA</span>
+        </div>
+      </article>
+
+      <article class="review review--small">
+        <span class="review__badge">via Yelp</span>
+        <div class="review__stars" aria-label="5 stars">★★★★★</div>
+        <p class="review__quote">Came right before closing and was amazed by their menu. Got the pistachio — so yummy.</p>
+        <div class="review__author">
+          <span class="review__name">Kaylie L.</span>
+          <span class="review__location">Santa Ana, CA</span>
+        </div>
+      </article>
+
+      <article class="review review--small">
+        <span class="review__badge">via Yelp</span>
+        <div class="review__stars" aria-label="4 stars">★★★★</div>
+        <p class="review__quote">Finished a Deka race nearby — so many options. Recommend the Cookie Monster.</p>
+        <div class="review__author">
+          <span class="review__name">Jennifer G.</span>
+          <span class="review__location">Los Angeles, CA</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ORDER CTA ============== -->
+<section class="section section--lime order">
+  <div class="section__inner">
+    <div class="eyebrow" style="justify-content:center">Ready when you are</div>
+    <h2 class="section__title reveal" style="margin-bottom:0">Call or text <br><span class="script">to order</span></h2>
+    <a href="tel:+17145948162" class="order__phone">714-594-8162</a>
+    <p class="order__note">Last call for phone orders is 15 minutes before closing. We'll have it ready when you walk in.</p>
+    <a href="tel:+17145948162" class="cta">Tap to Call <span class="cta__arrow">→</span></a>
+  </div>
+</section>
+
+<!-- ============== FIND US ============== -->
+<section class="section">
+  <div class="section__inner">
+    <div class="eyebrow">Come See Us</div>
+    <h2 class="section__title reveal">Find <br><span class="script">the spot</span></h2>
+
+    <div class="find">
+      <div class="find__info">
+        <div class="hours reveal-stagger">
+          <div class="hours__cell">
+            <div class="hours__days">Mon – Thu</div>
+            <div class="hours__time">6am – 11pm</div>
+          </div>
+          <div class="hours__cell">
+            <div class="hours__days">Friday</div>
+            <div class="hours__time">6am – 9pm</div>
+          </div>
+          <div class="hours__cell">
+            <div class="hours__days">Saturday</div>
+            <div class="hours__time">7am – 8pm</div>
+          </div>
+          <div class="hours__cell">
+            <div class="hours__days">Sunday</div>
+            <div class="hours__time">7am – 6pm</div>
+          </div>
+        </div>
+
+        <div class="address">
+          <div class="address__label">Address</div>
+          <div class="address__line">9856 Katella Ave<br>Anaheim, CA 92801</div>
+          <p class="address__note">Same plaza as Crunch Garden Grove. Cross streets: Brookhurst &amp; Katella.</p>
+          <div class="address__btns">
+            <a href="https://www.google.com/maps/place/9856+Katella+Ave,+Anaheim,+CA+92801" target="_blank" rel="noopener" class="btn-small">Google Maps →</a>
+            <a href="https://maps.apple.com/?address=9856%20Katella%20Ave,%20Anaheim,%20CA%2092801" target="_blank" rel="noopener" class="btn-small">Apple Maps →</a>
+            <a href="https://www.yelp.com/biz/healthy-protein-spot-anaheim" target="_blank" rel="noopener" class="btn-small">Yelp →</a>
+            <a href="https://instagram.com/healthyproteinspot" target="_blank" rel="noopener" class="btn-small">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="find__map">
+        <iframe
+          src="https://www.google.com/maps?q=9856+Katella+Ave,+Anaheim,+CA+92801&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map to Healthy Protein Spot"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOLLOW ALONG (Instagram) ============== -->
+<section class="section section--pink follow">
+  <div class="section__inner" style="text-align:center">
+    <div class="eyebrow" style="justify-content:center">3,798 followers &amp; counting</div>
+    <h2 class="section__title reveal" style="margin-bottom:24px">Follow <br><span class="script">along</span></h2>
+    <a href="https://instagram.com/healthyproteinspot" target="_blank" rel="noopener" class="follow__handle">@healthyproteinspot</a>
+    <p class="follow__note">New flavors, daily deals, behind-the-counter chaos. Tag us when you visit.</p>
+    <a href="https://instagram.com/healthyproteinspot" target="_blank" rel="noopener" class="cta cta--white">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </svg>
+      Follow on Instagram <span class="cta__arrow">↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============== BOTTOM MARQUEE ============== -->
+<div class="marquee marquee--top" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Open Today</span>
+    <span class="marquee__dot"></span>
+    <span>Call 714-594-8162</span>
+    <span class="marquee__dot"></span>
+    <span>9856 Katella · Anaheim</span>
+    <span class="marquee__dot"></span>
+    <span>Family Owned · Since 2021</span>
+    <span class="marquee__dot"></span>
+    <span>Open Today</span>
+    <span class="marquee__dot"></span>
+    <span>Call 714-594-8162</span>
+    <span class="marquee__dot"></span>
+    <span>9856 Katella · Anaheim</span>
+    <span class="marquee__dot"></span>
+    <span>Family Owned · Since 2021</span>
+    <span class="marquee__dot"></span>
+  </div>
+</div>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="footer__brand">
+    <span class="script">Healthy</span> <span class="accent">Protein</span> <span class="script">Spot</span>
+  </div>
+  <p class="footer__line">Fueling Your Goals Since 2021 · Anaheim, CA</p>
+  <p class="footer__line">714-594-8162 · 9856 Katella Ave, Anaheim, CA 92801</p>
+  <p class="footer__line">Photography credit: Unsplash · © 2026 Healthy Protein Spot</p>
+</footer>
+
+<script>
+(function(){
+  // Respect user reduced motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => el.classList.add('in'));
+    document.querySelectorAll('.size__protein[data-target]').forEach(el => {
+      el.textContent = el.dataset.target + 'g';
+    });
+    return;
+  }
+
+  // Set CSS variable index for stagger children
+  document.querySelectorAll('.reveal-stagger').forEach(group => {
+    [...group.children].forEach((child, i) => child.style.setProperty('--i', i));
+  });
+
+  // IntersectionObserver for scroll reveals
+  const reveal = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('in');
+        // Trigger number counters inside the size ribbon when it reveals
+        if (entry.target.id === 'sizes-ribbon'){
+          entry.target.querySelectorAll('.size__protein[data-target]').forEach(el => {
+            const target = parseInt(el.dataset.target, 10);
+            const start = performance.now();
+            const duration = 900;
+            function tick(now){
+              const t = Math.min(1, (now - start) / duration);
+              // ease out cubic
+              const eased = 1 - Math.pow(1 - t, 3);
+              el.textContent = Math.round(target * eased) + 'g';
+              if (t < 1) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+          });
+        }
+        reveal.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => reveal.observe(el));
+})();
+</script>
+
+</body>
+</html>
