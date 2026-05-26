@@ -1,5 +1,23 @@
 # STATUS — CreativeStudio
 
+*Last updated: 2026-05-25 (session 9) — Salvia Lion pre-launch content*
+
+## Completed this session (2026-05-25 session 9 — Salvia Lion pre-launch content)
+
+- Wrote 3-post Reiki education series for Salvia Lion pre-launch. Post 1 (ELI5 Reiki) approved and locked in full.
+- Posts 2 (surgery/chemo for humans + pets) and 3 (when/why to use) drafted.
+- Video format decided: atmospheric b-roll + text on screen (no talking heads, no characters).
+- Music direction locked: Suno — ambient, soft piano, reiki/meditation, no vocals.
+- Posts saved: `SpiritSisters/SpiritNancy/Marketing/content/salvialion/2026-05-25/posts-2026-05-25.md`
+
+**Where we left off:**
+- Generate Suno music track (ambient reiki/meditation, no vocals).
+- Generate Seedance atmospheric clip (candles, botanicals, steam, dark surface — no product).
+- Assemble Post 1 video in CapCut: clip + music + text overlay.
+- Posts 2 + 3 still need visuals and final approval.
+
+---
+
 *Last updated: 2026-05-22 (session 8) — Garlic High UGC Jiro explainer, Clip 1 approved*
 
 ## Completed this session (2026-05-22 session 8 — Garlic High UGC)

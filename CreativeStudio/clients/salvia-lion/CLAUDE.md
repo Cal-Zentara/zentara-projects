@@ -112,3 +112,8 @@ These trigger Higgsfield NSFW filters specifically on Salvia Lion prompts.
 ## Status
 
 Locked formulas validated 2026-05-05. Hero product shot + 3-clip video collection complete.
+
+**Pre-launch content in progress (2026-05-25):**
+- 3-post Reiki education series written. Post 1 approved and locked. Posts 2 + 3 drafted.
+- Post 1 video plan: atmospheric b-roll (Seedance) + text on screen + Suno ambient music. Clip pending.
+- Content saved: `../../../SpiritSisters/SpiritNancy/Marketing/content/salvialion/2026-05-25/posts-2026-05-25.md`
