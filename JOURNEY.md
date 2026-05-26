@@ -4,6 +4,18 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 25, 2026 — My Cousins Have Been in Business 20 Years and Nobody Knows Who They Are Online
+
+Went to help my cousins figure out their clothing business. They've been selling kids uniforms and dresses out of downtown LA for over 20 years. Real products, great reviews, loyal customers. But their Instagram has 483 followers. After two decades.
+
+Looked deeper — they're spending $6,000 a month on Amazon ads and competing against French Toast, Nautica, and Amazon's own brand. That's not a fight they can win. Meanwhile, nobody in the entire school uniform market is talking to Latina moms directly — and 40% of kids who wear uniforms are Hispanic. That's the whole market and it's sitting wide open.
+
+**What I learned:** A business can be real, successful, and 20 years deep — and still be invisible online. That's not a failure. That's just an opportunity nobody showed them yet.
+
+**Content idea:** "My cousins have been selling kids' clothing in LA for 20 years. 483 Instagram followers. I spent one afternoon researching their business and found a $2.6 trillion market nobody was talking to."
+
+---
+
 ## May 23, 2026 — A Linktree Was Their "Website." So I Built Them a Real One.
 
 Walked past a protein shake spot in Anaheim. Looked them up. Their whole website was a Linktree — lime green background, four pink buttons, no menu, nothing. From the outside, this is a real spot with 60+ shake flavors, family-owned since '21. But online, they looked like a hobby.

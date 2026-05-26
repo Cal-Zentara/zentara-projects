@@ -38,6 +38,7 @@ One-line index of every project. Read a project's STATUS.md first — always.
 |---|---|---|
 | SalviasApp | demo | `SmallProjects/SalviasApp/STATUS.md` |
 | HealthyProteinSpot | demo — prospect pitch site, v1 built 2026-05-23 | `SmallProjects/HealthyProteinSpot/STATUS.md` |
+| Unik | discovery — Cal's cousins, children's apparel brand, LA Fashion District. Initial meeting 2026-05-25 | `SmallProjects/Unik/STATUS.md` |
 
 ## Archived — not active (moved 2026-04-23)
 
