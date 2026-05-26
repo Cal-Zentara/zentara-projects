@@ -4,15 +4,29 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
-## May 25, 2026 — My Cousins Have Been in Business 20 Years and Nobody Knows Who They Are Online
+## May 26, 2026 — Built a Full Ramen Website and Connected a Real Domain. Still Not Getting Paid Yet.
 
-Went to help my cousins figure out their clothing business. They've been selling kids uniforms and dresses out of downtown LA for over 20 years. Real products, great reviews, loyal customers. But their Instagram has 483 followers. After two decades.
+Spent several sessions building a complete demo website for a local Jiro-style ramen spot in Sunnyvale. They had a broken Weebly site. We rebuilt everything — custom logo, gallery, menu, hours, merch section, mobile version — and connected it to their actual domain (garlichigh.com). The whole thing looks like something a $5,000 agency would charge for.
 
-Looked deeper — they're spending $6,000 a month on Amazon ads and competing against French Toast, Nautica, and Amazon's own brand. That's not a fight they can win. Meanwhile, nobody in the entire school uniform market is talking to Latina moms directly — and 40% of kids who wear uniforms are Hispanic. That's the whole market and it's sitting wide open.
+The plan: show up with a live, working site and pitch a $300–500 build fee plus $50–100/month maintenance. Nothing theoretical. They can click the link right now.
 
-**What I learned:** A business can be real, successful, and 20 years deep — and still be invisible online. That's not a failure. That's just an opportunity nobody showed them yet.
+Hit one weird wall along the way: we couldn't push the demo to GitHub from our main workspace because old passwords from a different project were buried deep in the commit history. GitHub's security system flagged it and blocked the push. Had to create a separate clean copy of just the demo files and deploy from there.
 
-**Content idea:** "My cousins have been selling kids' clothing in LA for 20 years. 483 Instagram followers. I spent one afternoon researching their business and found a $2.6 trillion market nobody was talking to."
+**What I learned:** Old mistakes in your code history can block you months later. And the best pitch is one that's already live before you walk in.
+
+**Content idea:** "Built a full restaurant website before they hired me. Connected their real domain. It's live right now. They don't know it yet."
+
+---
+
+## May 26, 2026 — I Asked the Wrong Question About My Own Tool
+
+Was working on the protein shake demo site and kept showing screenshots to get content added. Turned out the PDFs with all their menu prices and descriptions were sitting right in the project folder the whole time. I just had to ask the tool to read them directly instead of screenshotting each page myself.
+
+When you build a demo from someone's real PDFs, you don't have to relay the information — hand the files over and let it read them. The tool can see images.
+
+**What I learned:** Stop being the middleman for your own tool. If the files are already there, point to them — don't screenshot and re-explain what's already written down.
+
+**Content idea:** "I kept screenshotting the menu to show the AI what was on it. The files were sitting right there the whole time. It could just read them."
 
 ---
 
