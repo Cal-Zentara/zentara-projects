@@ -491,48 +491,27 @@ a{color:inherit;text-decoration:none}
 .section--pink .item__price{color:var(--lime)}
 .section--lime .item__price{color:var(--pink-deep)}
 
-/* ============== Z'S PRE WORKOUT STARBURST ============== */
-.zs-star-wrap{display:flex;justify-content:center;padding:1.5rem 0 .5rem}
-.zs-star{
-  position:relative;
-  width:220px;height:220px;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  text-align:center;
-}
-.zs-star::before,.zs-star::after{
-  content:'';
-  position:absolute;inset:0;
+/* ============== Z'S PRE WORKOUT UPGRADE ROW ============== */
+.item--upgrade{
+  grid-column:1/-1;
   background:var(--lime);
-  border-radius:6px;
-  z-index:0;
+  border:2.5px solid var(--ink);
+  border-radius:10px;
+  padding:12px 16px;
+  margin-top:6px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
 }
-.zs-star::before{transform:rotate(0deg)}
-.zs-star::after{transform:rotate(22.5deg)}
-.zs-star__inner{
-  position:relative;z-index:1;
-  display:flex;flex-direction:column;
-  align-items:center;gap:2px;
-}
-.zs-star__bolt{font-size:1.6rem;line-height:1}
-.zs-star__name{
+.item--upgrade .item__name{color:var(--ink);font-size:1em}
+.item--upgrade .item__desc{color:var(--ink);opacity:.75;font-size:.7rem;flex:1}
+.item--upgrade .item__price{
   font-family:'Anton',sans-serif;
-  font-size:1.05rem;line-height:1.1;
-  color:var(--ink);letter-spacing:.04em;
-}
-.zs-star__desc{
-  font-size:.65rem;color:var(--ink);
-  opacity:.75;line-height:1.3;
-  max-width:110px;
-}
-.zs-star__price{
-  font-family:'Anton',sans-serif;
-  font-size:1.8rem;color:var(--ink);line-height:1;
-}
-.zs-star__upgrade{
-  font-size:.55rem;font-weight:700;
-  letter-spacing:.1em;text-transform:uppercase;
-  color:var(--ink);opacity:.6;
+  font-size:1.5rem;
+  color:var(--ink);
+  white-space:nowrap;
+  margin:0;
 }
 
 /* ============== SIMPLE PRICE BLOCK ============== */
@@ -1649,19 +1628,12 @@ a{color:inherit;text-decoration:none}
         <div class="item"><div class="item__name">Pomegranate</div></div>
         <div class="item"><div class="item__name">Blackberry</div></div>
         <div class="item"><div class="item__name">Pineapple</div></div>
-      </div>
-      </div>
-    </div>
-
-    <div class="zs-star-wrap reveal">
-      <div class="zs-star">
-        <div class="zs-star__inner">
-          <div class="zs-star__bolt">⚡</div>
-          <div class="zs-star__name">Z'S PRE<br>WORKOUT</div>
-          <div class="zs-star__desc">350mg energy &amp; nitric oxide</div>
-          <div class="zs-star__price">$14</div>
-          <div class="zs-star__upgrade">Premium Upgrade</div>
+        <div class="item item--upgrade">
+          <div class="item__name">⚡ Z's Pre Workout</div>
+          <div class="item__desc">350mg energy &amp; nitric oxide · premium upgrade</div>
+          <div class="item__price">$14</div>
         </div>
+      </div>
       </div>
     </div>
 
