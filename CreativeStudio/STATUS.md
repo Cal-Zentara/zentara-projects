@@ -1,5 +1,20 @@
 # STATUS — CreativeStudio
 
+*Last updated: 2026-05-27 (session 10) — video prompt architect tweaks*
+
+## Completed this session (2026-05-27 session 10 — video prompt architect tweaks)
+
+- Compared a viral X cooking-video prompt (Japanese "Golden Fried Rice" storyboard + video prompt) against our two pipeline system prompts. Confirmed ours are stronger overall (camera-first, physics, NSFW list).
+- Took two useful things from the X example into `system-prompts/video-prompt-architect.md`:
+  - Added a one-line flow summary step ("Flow: Opening → prep → wok → hero shot") that captures the full arc before the shot-by-shot. Universal — works for any client.
+  - Sharpened the no-slideshow constraint to be more explicit ("no slideshow of still images — must feel animated and in motion throughout").
+- Decided NOT to make the storyboard architect prompt flexible (product → subject). Cal confirmed it's used for products most of the time, so Joey's product-focused version stays as-is.
+
+**Where we left off:**
+- Both system prompts current. No pending work — pipeline ready for next client run.
+
+---
+
 *Last updated: 2026-05-25 (session 9) — Salvia Lion pre-launch content*
 
 ## Completed this session (2026-05-25 session 9 — Salvia Lion pre-launch content)

@@ -4,6 +4,42 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 27, 2026 — 74% of LA School Kids Are Latino and No Big Brand Is Talking to Them
+
+Was building a back-to-school ad for a family uniform brand in the LA Fashion District. Did the research to figure out who actually buys school uniforms. Turns out 74% of LA Unified kids are Latino — and the neighborhoods with the most uniform requirements are East LA, South LA, Pacoima. The exact neighborhoods this brand has been serving for 20 years.
+
+Looked at every major competitor — French Toast, Lands' End, Old Navy, Children's Place. None of them run a single ad in Spanish. Not one targets Latina moms directly. The biggest buyers of school uniforms are being handed the same generic English ads as everyone else.
+
+**What I learned:** The market gap isn't always about product. Sometimes the product is already right and the people just haven't been spoken to yet.
+
+**Content idea:** "The biggest school uniform brands spend millions on ads. None of them speak Spanish. 74% of LA school kids are Latino. Someone's leaving money on the table."
+
+---
+
+## May 27, 2026 — AI Couldn't Draw a Calendar for 45 Minutes
+
+Spent almost an hour trying to get AI to generate a simple August calendar with dates crossed out and one date circled. Numbers came out wrong, grids looked broken, the whole thing looked fake. Tried five different prompts, two different models.
+
+Finally cracked it by zooming way in — just one row of dates, close-up, red marker in the foreground. Then put the calendar on a fridge instead of flat on a table. The fridge made it look like a real family's kitchen instantly.
+
+**What I learned:** AI can't draw grids and numbers reliably. The fix isn't a better prompt — it's a simpler ask.
+
+**Content idea:** "I spent 45 minutes trying to get AI to draw a calendar. The trick that finally worked took 10 seconds."
+
+---
+
+## May 26, 2026 — I Had Fake Reviews on a Real Client's Page and Didn't Catch It
+
+Was building a landing page for a real client — family-owned clothing brand, actual Amazon store, real customers. The AI wrote three made-up reviews and dropped them in like they were real. "Rosa M.", "Jennifer L.", "Adriana R." — none of them exist. I didn't catch it until the client would've seen the page.
+
+Had to go scrape real Amazon reviews, pull actual names and quotes from real verified buyers, and swap them all out. Not a big deal to fix — but it shouldn't have happened in the first place.
+
+**What I learned:** Any time you see a "review" or a "testimonial" in something the AI built, ask where it came from. If you didn't give it real ones, it made them up.
+
+**Content idea:** "The AI put fake customer reviews on a real client's website. Real names. Real-sounding quotes. All made up. I almost showed it to them."
+
+---
+
 ## May 26, 2026 — Built a Full Ramen Website and Connected a Real Domain. Still Not Getting Paid Yet.
 
 Spent several sessions building a complete demo website for a local Jiro-style ramen spot in Sunnyvale. They had a broken Weebly site. We rebuilt everything — custom logo, gallery, menu, hours, merch section, mobile version — and connected it to their actual domain (garlichigh.com). The whole thing looks like something a $5,000 agency would charge for.
