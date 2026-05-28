@@ -225,12 +225,9 @@
       animation-delay: 0.1s;
     }
 
-    @keyframes heroFade {
-      0%   { opacity: 0; transform: scale(1.06); }
-      6%   { opacity: 1; transform: scale(1.03); }
-      44%  { opacity: 1; transform: scale(1.0);  }
-      55%  { opacity: 0; transform: scale(1.0);  }
-      100% { opacity: 0; transform: scale(1.06); }
+    @keyframes heroZoom {
+      from { transform: scale(1.07); }
+      to   { transform: scale(1.0);  }
     }
 
     .hero-slide {
@@ -241,11 +238,13 @@
       object-fit: cover;
       object-position: center 20%;
       opacity: 0;
-      animation: heroFade 10s infinite;
+      transition: opacity 0.9s ease;
+      animation: heroZoom 6s ease-out forwards;
     }
 
-    .hero-slide:first-child { animation-delay: 0s; }
-    .hero-slide:nth-child(2) { animation-delay: 4.5s; }
+    .hero-slide.active {
+      opacity: 1;
+    }
 
     .hero-badge {
       position: absolute;
@@ -1464,6 +1463,41 @@
       stagger: 0.14,
       ease: 'power3.out'
     });
+
+    // ── HERO CROSSFADE ──
+    (function() {
+      const HOLD = 5000;
+      const leftSlides  = document.querySelectorAll('.hero-kid:first-child .hero-slide');
+      const rightSlides = document.querySelectorAll('.hero-kid:last-child .hero-slide');
+      if (!leftSlides.length) return;
+
+      let idx = 0;
+
+      function activate(i) {
+        leftSlides[i].classList.add('active');
+        rightSlides[i].classList.add('active');
+        // restart Ken Burns zoom
+        [leftSlides[i], rightSlides[i]].forEach(el => {
+          el.style.animation = 'none';
+          el.offsetHeight; // reflow
+          el.style.animation = 'heroZoom 6s ease-out forwards';
+        });
+      }
+
+      function deactivate(i) {
+        leftSlides[i].classList.remove('active');
+        rightSlides[i].classList.remove('active');
+      }
+
+      activate(0);
+
+      setInterval(() => {
+        const next = (idx + 1) % leftSlides.length;
+        activate(next);
+        setTimeout(() => deactivate(idx), 500);
+        idx = next;
+      }, HOLD);
+    })();
 
     // ── SCHOOL COUNTDOWN ──
     (function() {
