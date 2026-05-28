@@ -44,20 +44,16 @@ Discovery — initial meeting done 2026-05-25. Moving to plan phase. No paid eng
 
 ## What we built (2026-05-27)
 - `kids.html` — full kids landing page, back-to-school focused
-- Hero: dark announcement bar + blue nav (#29ABE2), left-aligned "Ready for the first day.", hero image BUF20 Navy polo pants, trust bar (free shipping, returns, 14k families), floating Amazon badge
-- **School Uniforms section** — 15 product cards, each linked to real product URL (scraped from unikusa.com)
-- **More for Boys section** — 9 product cards covering jackets, sets, hoodies, fleece
-- CSS hover swap: each card has primary + secondary image, secondary fades in on hover
-- GSAP 3.12.5 + ScrollTrigger: hero parallax, gallery scroll-fade-up
-- Lenis 1.1.14 smooth scroll connected to GSAP ticker
-- Real Amazon reviews replacing placeholder fake ones (Francie, Yiluan Chen, Ilse Perez — all verified purchases for BUF20 elastic waist pants)
-- Wrong items removed: BJ1988 letterman jacket (not a uniform), KBT65 California graphic hoodie (not a uniform)
-- BSU06 label corrected: was "Long Sleeve" — photo shows short sleeve Oxford shirt
-- Hero image updated to BUF20 Navy (1).png (was duplicating first gallery card)
-- Photos: all sourced from `C:\Users\Aesth\Desktop\Unik\` — relative path `../../../../Unik/`
-- Firecrawl MCP active (used for product URL + Amazon review scraping)
-- Dropbox MCP auth broken — accessed Dropbox locally at `C:\Users\Aesth\Dropbox\AI Model Picture\`
-- **Creative pipeline Phase 1 locked** — anchor image: BSU01 Royal (2).png, brief: testimonial-style back-to-school ad, 9:16, documentary style
+- **Hero** — 3-column layout: left kid | centered text | right kid. Crossfading loop: Black+Royal → Burgundy+LightGrey, 10s cycle, Ken Burns zoom, true crossfade overlap (no white flash). Urgency countdown in announcement bar.
+- **School Uniforms section** — boys gallery with model shots (Black, Royal, White, Burgundy, Light Grey polos + pants, jackets, shorts, sets). Model shots only — flat-lays removed for consistency.
+- **More for Boys section** — 9 cards covering jackets, hoodies, fleece, tracksuits, puffer
+- CSS hover swap on all gallery cards
+- GSAP count-up animation on proof stats (14,000+ / 4.2★ / 20+) triggered on scroll
+- GSAP ScrollTrigger: parallax on hero kids panels, scroll-fade-up on gallery
+- Lenis 1.1.14 smooth scroll
+- Hover bug fixed: Khaki + Hunter Green pants were showing size chart images — replaced with product flat-lays
+- Photos: Desktop `C:\Users\Aesth\Desktop\Unik\` + Dropbox `AI Model Picture\AI Uniform Tops\`
+- **Deployed to GitHub Pages:** https://cal-zentara.github.io/unik-kids/ (repo: `unik-kids`, images committed)
 
 ## Creative pipeline assets (2026-05-27)
 All files at `CreativeStudio/clients/Unik/`
@@ -122,17 +118,15 @@ Current bio targets wholesale buyers — needs to be swapped.
 Strategy: Gift 2–3 pieces per creator (~$15–25/piece). Budget $300–500 for 15–20 creators. Ask for honest post or reel if they love it. No upfront payment.
 
 ## What's next
-1. Generate music on Suno — upbeat hip hop, clean funk, beat drop, instrumental, no vocals, 30 seconds
-2. Generate fashion editorial start image with nano_banana_2 using locked prompt above
-3. Run Seedance Clip 1 against that single start image (NOT storyboard grid)
-4. If approved: Run Seedance Clip 2
-5. Stitch with FFmpeg + add music
-6. Girls section — need girls product photos from Cynthia
-7. Deploy kids.html to GitHub Pages
-8. Show Cynthia — get feedback, discuss paid engagement
-9. Cynthia to update Instagram bio
-10. Cynthia to finish TikTok Shop setup
-11. Verify creator profiles — confirm kids are elementary age before DMing
+1. Send Cynthia the link: https://cal-zentara.github.io/unik-kids/
+2. Girls section — need girls product photos from Cynthia
+3. Discuss paid engagement after Cynthia reviews the page
+4. Cynthia to update Instagram bio
+5. Cynthia to finish TikTok Shop setup
+6. Verify creator profiles — confirm kids are elementary age before DMing
+7. Send creator DMs — start with @jetplanemommy
+8. Generate single UGC start image (NOT storyboard grid) — run Seedance Clip 1
+9. If Clip 1 approved: Run Seedance Clip 2, stitch with FFmpeg
 
 ## Key contacts
 - **Owner:** Cynthia (Cal's cousin) + husband Ben — run it together
