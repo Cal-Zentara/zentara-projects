@@ -801,11 +801,6 @@
     </div>
     <div class="hero-image">
       <img src="../../../../Unik/BSU01 Black  (3).png" alt="Boy in UNIK school uniform polo">
-      <div class="hero-badge">
-        <div class="badge-label">Amazon Rating</div>
-        <div class="badge-value">4.2★</div>
-        <div class="badge-sub">14,000+ happy families</div>
-      </div>
     </div>
   </section>
 
@@ -813,15 +808,15 @@
   <div class="proof">
     <div class="proof-grid">
       <div class="proof-item">
-        <div class="proof-number">14,000<span>+</span></div>
+        <div class="proof-number" id="stat-reviews">0<span>+</span></div>
         <div class="proof-label">Amazon reviews from verified families</div>
       </div>
       <div class="proof-item">
-        <div class="proof-number">4.2<span>★</span></div>
+        <div class="proof-number" id="stat-rating">0.0<span>★</span></div>
         <div class="proof-label">Average rating across all products</div>
       </div>
       <div class="proof-item">
-        <div class="proof-number">20<span>+</span></div>
+        <div class="proof-number" id="stat-years">0<span>+</span></div>
         <div class="proof-label">Years in the LA Fashion District</div>
       </div>
     </div>
@@ -1333,6 +1328,54 @@
       duration: 0.9,
       stagger: 0.16,
       ease: 'power3.out'
+    });
+
+    // ── COUNT-UP ANIMATION ──
+    ScrollTrigger.create({
+      trigger: '.proof',
+      start: 'top 80%',
+      once: true,
+      onEnter: () => {
+        const elReviews = document.getElementById('stat-reviews');
+        const elRating  = document.getElementById('stat-rating');
+        const elYears   = document.getElementById('stat-years');
+
+        gsap.to({ val: 0 }, {
+          val: 14000,
+          duration: 2.8,
+          ease: 'power2.out',
+          onUpdate: function() {
+            elReviews.innerHTML = Math.floor(this.targets()[0].val).toLocaleString() + '<span>+</span>';
+          },
+          onComplete: function() {
+            elReviews.innerHTML = '14,000<span>+</span>';
+          }
+        });
+
+        gsap.to({ val: 0 }, {
+          val: 4.2,
+          duration: 2.8,
+          ease: 'power2.out',
+          onUpdate: function() {
+            elRating.innerHTML = this.targets()[0].val.toFixed(1) + '<span>★</span>';
+          },
+          onComplete: function() {
+            elRating.innerHTML = '4.2<span>★</span>';
+          }
+        });
+
+        gsap.to({ val: 0 }, {
+          val: 20,
+          duration: 2.8,
+          ease: 'power2.out',
+          onUpdate: function() {
+            elYears.innerHTML = Math.floor(this.targets()[0].val) + '<span>+</span>';
+          },
+          onComplete: function() {
+            elYears.innerHTML = '20<span>+</span>';
+          }
+        });
+      }
     });
 
     // ── GALLERY HEADER ──
