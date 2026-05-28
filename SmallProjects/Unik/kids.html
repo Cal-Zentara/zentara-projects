@@ -103,17 +103,17 @@
     /* ── HERO ── */
     .hero {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.3fr 1fr;
       min-height: calc(100dvh - 64px);
-      max-width: 1400px;
-      margin: 0 auto;
     }
 
     .hero-content {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 80px 64px 80px 80px;
+      align-items: center;
+      text-align: center;
+      padding: 80px 48px;
       animation: fadeInUp 0.8s cubic-bezier(0.32, 0.72, 0, 1) both;
     }
 
@@ -197,6 +197,7 @@
       margin-top: 52px;
       padding-top: 32px;
       border-top: 1px solid var(--border);
+      justify-content: center;
     }
 
     .trust-item { display: flex; flex-direction: column; gap: 4px; }
@@ -215,8 +216,8 @@
       color: var(--text-primary);
     }
 
-    /* ── IMAGE PANEL ── */
-    .hero-image {
+    /* ── IMAGE PANELS ── */
+    .hero-kid {
       background: #EBF6FC;
       position: relative;
       overflow: hidden;
@@ -224,12 +225,27 @@
       animation-delay: 0.1s;
     }
 
-    .hero-image img {
-      width: 100%;
-      height: 115%;
-      object-fit: cover;
-      object-position: top center;
+    @keyframes heroFade {
+      0%   { opacity: 0; transform: scale(1.06); }
+      6%   { opacity: 1; transform: scale(1.03); }
+      44%  { opacity: 1; transform: scale(1.0);  }
+      55%  { opacity: 0; transform: scale(1.0);  }
+      100% { opacity: 0; transform: scale(1.06); }
     }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      opacity: 0;
+      animation: heroFade 10s infinite;
+    }
+
+    .hero-slide:first-child { animation-delay: 0s; }
+    .hero-slide:nth-child(2) { animation-delay: 4.5s; }
 
     .hero-badge {
       position: absolute;
@@ -714,8 +730,10 @@
       nav { padding: 0 20px; }
       .nav-links { display: none; }
       .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-image { height: 440px; order: -1; }
-      .hero-image img { height: 100%; object-position: center 10%; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-kid:first-child { display: none; }
+      .hero-kid:last-child { height: 440px; order: -1; }
+      .hero-content { padding: 48px 24px; }
       .hero-content { padding: 44px 20px 60px; }
       .trust-row { flex-wrap: wrap; gap: 20px; }
       .hero-badge { bottom: 16px; left: 16px; padding: 16px 20px; }
@@ -772,6 +790,10 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-kid">
+      <img class="hero-slide" src="../../../../Unik/BSU01 Black  (3).png" alt="Boy in black UNIK polo">
+      <img class="hero-slide" src="../../../../../Dropbox/AI Model Picture/AI Uniform Tops/BSU01 Burgundy  (1).jpeg" alt="Boy in burgundy UNIK polo">
+    </div>
     <div class="hero-content">
       <span class="eyebrow"><span class="urgency-dot"></span>Don't wait · Back to School 2026</span>
       <h1>Ready for<br>the first<br>day.</h1>
@@ -799,8 +821,9 @@
         </div>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="../../../../Unik/BSU01 Black  (3).png" alt="Boy in UNIK school uniform polo">
+    <div class="hero-kid">
+      <img class="hero-slide" src="../../../../Unik/BSU01 Royal  (2).png" alt="Boy in royal blue UNIK polo">
+      <img class="hero-slide" src="../../../../../Dropbox/AI Model Picture/AI Uniform Tops/BSU01 Light Grey  (3).jpeg" alt="Boy in light grey UNIK polo">
     </div>
   </section>
 
@@ -1314,9 +1337,9 @@
     gsap.ticker.lagSmoothing(0);
 
     // ── HERO PARALLAX ──
-    gsap.to('.hero-image img', {
+    gsap.to('.hero-kid', {
       scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1.8 },
-      y: 90,
+      y: 40,
       ease: 'none'
     });
 
