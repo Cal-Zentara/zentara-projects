@@ -688,6 +688,25 @@
       to   { opacity: 1; transform: translateY(0) scale(1); }
     }
 
+    @keyframes urgencyPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.35; transform: scale(0.65); }
+    }
+
+    .urgency-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #FF5C35;
+      animation: urgencyPulse 1.8s ease-in-out infinite;
+      margin-right: 7px;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+      flex-shrink: 0;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       body { cursor: auto; }
@@ -695,7 +714,8 @@
       nav { padding: 0 20px; }
       .nav-links { display: none; }
       .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-image { height: 320px; order: -1; }
+      .hero-image { height: 440px; order: -1; }
+      .hero-image img { height: 100%; object-position: center 10%; }
       .hero-content { padding: 44px 20px 60px; }
       .trust-row { flex-wrap: wrap; gap: 20px; }
       .hero-badge { bottom: 16px; left: 16px; padding: 16px 20px; }
@@ -723,8 +743,11 @@
 <body>
 
   <!-- ANNOUNCEMENT BAR -->
-  <div style="background: var(--dark-bar); color: rgba(255,255,255,0.6); text-align: center; font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.02em; padding: 10px 20px;">
-    Wholesale orders: <a href="https://www.unikla.com" style="color: #fff; text-decoration: none; font-weight: 600; cursor: none;">UNIKLA.com</a> &nbsp;·&nbsp; (213) 748-3929
+  <div style="background: #1A1A1A; text-align: center; font-size: 0.875rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 13px 20px; display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;">
+    <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#FF5C35; animation: urgencyPulse 1.4s ease-in-out infinite; flex-shrink:0;"></span>
+    <span style="color:#fff;">Only&nbsp;<span id="school-days" style="color:#FF5C35; font-size:1.125rem;">—</span>&nbsp;days until school</span>
+    <span style="color:rgba(255,255,255,0.3);">·</span>
+    <a href="https://www.unikusa.com/collections/uniform" style="color:#fff; text-decoration: none; font-weight: 900; border-bottom: 2px solid #FF5C35; padding-bottom: 1px; letter-spacing: 0.06em;">Shop Now →</a>
   </div>
 
   <!-- NAV -->
@@ -750,9 +773,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <span class="eyebrow">Back to School 2026</span>
+      <span class="eyebrow"><span class="urgency-dot"></span>Don't wait · Back to School 2026</span>
       <h1>Ready for<br>the first<br>day.</h1>
-      <p class="hero-sub">School uniforms, everyday wear, and more — sizes 4–18. Built tough enough to last the whole year.</p>
+      <p class="hero-sub">School uniforms, everyday wear, and more — sizes 4–18. Popular sizes sell out early — don't get caught waiting.</p>
       <a href="https://www.unikusa.com/collections/uniform" class="cta-btn">
         Shop Uniforms
         <span class="btn-arrow">
@@ -777,7 +800,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="../../../../Unik/BUF20 Navy (1).png" alt="Boy in UNIK school uniform pants">
+      <img src="../../../../Unik/BSU01 Black  (3).png" alt="Boy in UNIK school uniform polo">
       <div class="hero-badge">
         <div class="badge-label">Amazon Rating</div>
         <div class="badge-value">4.2★</div>
@@ -849,6 +872,24 @@
         <div class="gallery-item-price">From $12.99 · Sizes 4–18</div>
       </a>
 
+      <a class="gallery-item" href="https://www.unikusa.com/collections/uniform">
+        <div class="gallery-item-wrap">
+          <img class="gallery-item-img primary" src="../../../../../Dropbox/AI Model Picture/AI Uniform Tops/BSU01 Burgundy  (1).jpeg" alt="Boys polo shirt burgundy">
+          <img class="gallery-item-img secondary" src="../../../../../Dropbox/AI Model Picture/AI Uniform Tops/BSU01 Burgundy  (3).jpeg" alt="Boys polo shirt burgundy alternate">
+        </div>
+        <div class="gallery-item-name">Polo Shirt · Burgundy</div>
+        <div class="gallery-item-price">From $10.99</div>
+      </a>
+
+      <a class="gallery-item" href="https://www.unikusa.com/collections/uniform">
+        <div class="gallery-item-wrap">
+          <img class="gallery-item-img primary" src="../../../../../Dropbox/AI Model Picture/AI Uniform Tops/BSU01 Light Grey  (3).jpeg" alt="Boys polo shirt light grey">
+          <img class="gallery-item-img secondary" src="../../../../../Dropbox/AI Model Picture/AI Uniform Tops/BSU01 Light Grey  (2).jpeg" alt="Boys polo shirt light grey alternate">
+        </div>
+        <div class="gallery-item-name">Polo Shirt · Light Grey</div>
+        <div class="gallery-item-price">From $10.99</div>
+      </a>
+
       <a class="gallery-item" href="https://www.unikusa.com/collections/uniform/products/boys-long-sleeve-uniform-shirt-2">
         <div class="gallery-item-wrap">
           <img class="gallery-item-img primary" src="../../../../Unik/BSU02 Navy 4.jpeg" alt="Boys long sleeve polo navy">
@@ -903,8 +944,35 @@
           <img class="gallery-item-img primary" src="../../../../Unik/BUF20 Navy (1).png" alt="Boys elastic waist uniform pants navy">
           <img class="gallery-item-img secondary" src="../../../../Unik/BUF20 Navy (2).png" alt="Boys elastic waist uniform pants navy alternate">
         </div>
-        <div class="gallery-item-name">Elastic Pull-On Pants</div>
-        <div class="gallery-item-price">From $15.99 · 1,210+ reviews</div>
+        <div class="gallery-item-name">Elastic Pull-On Pants · Navy</div>
+        <div class="gallery-item-price">$17.99 · 1,210+ reviews</div>
+      </a>
+
+      <a class="gallery-item" href="https://www.unikusa.com/collections/uniform/products/boys-uniform-all-elastic-waist-pull-on-pants-4">
+        <div class="gallery-item-wrap">
+          <img class="gallery-item-img primary" src="https://cdn.shopify.com/s/files/1/0089/6840/5073/products/BU-03_khaki_clipped_rev_1_copy_70c299f8-1df1-429b-9b07-051553d88b10.jpg?v=1572545644" alt="Boys elastic waist uniform pants khaki">
+          <img class="gallery-item-img secondary" src="https://cdn.shopify.com/s/files/1/0089/6840/5073/products/BU-03_khaki_clipped_rev_1_copy_70c299f8-1df1-429b-9b07-051553d88b10.jpg?v=1572545644" alt="Boys elastic waist uniform pants khaki alternate">
+        </div>
+        <div class="gallery-item-name">Elastic Pull-On Pants · Khaki</div>
+        <div class="gallery-item-price">$17.99</div>
+      </a>
+
+      <a class="gallery-item" href="https://www.unikusa.com/collections/uniform/products/boys-uniform-all-elastic-waist-pull-on-pants-3">
+        <div class="gallery-item-wrap">
+          <img class="gallery-item-img primary" src="https://cdn.shopify.com/s/files/1/0089/6840/5073/products/BU-03_Huntergreen_front_81c5629a-29f8-4891-8585-dee36632b9cb.jpg?v=1572545634" alt="Boys elastic waist uniform pants hunter green">
+          <img class="gallery-item-img secondary" src="https://cdn.shopify.com/s/files/1/0089/6840/5073/products/BU-03_Huntergreen_front_81c5629a-29f8-4891-8585-dee36632b9cb.jpg?v=1572545634" alt="Boys elastic waist uniform pants hunter green alternate">
+        </div>
+        <div class="gallery-item-name">Elastic Pull-On Pants · Hunter Green</div>
+        <div class="gallery-item-price">$17.99</div>
+      </a>
+
+      <a class="gallery-item" href="https://www.unikusa.com/collections/uniform/products/boys-uniform-all-elastic-waist-pull-on-pants">
+        <div class="gallery-item-wrap">
+          <img class="gallery-item-img primary" src="https://cdn.shopify.com/s/files/1/0089/6840/5073/files/IMG-2668_clipped_rev_1.jpg?v=1695495906" alt="Boys elastic waist uniform pants grey">
+          <img class="gallery-item-img secondary" src="https://cdn.shopify.com/s/files/1/0089/6840/5073/files/IMG-2669_clipped_rev_1.jpg?v=1695495906" alt="Boys elastic waist uniform pants grey alternate">
+        </div>
+        <div class="gallery-item-name">Elastic Pull-On Pants · Grey</div>
+        <div class="gallery-item-price">$17.99</div>
       </a>
 
       <a class="gallery-item" href="https://www.unikusa.com/collections/uniform/products/boys-uniform-twill-pants-flat-front-pants-2">
@@ -1330,6 +1398,16 @@
       stagger: 0.14,
       ease: 'power3.out'
     });
+
+    // ── SCHOOL COUNTDOWN ──
+    (function() {
+      const schoolDate = new Date('2026-08-18T00:00:00');
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const days = Math.ceil((schoolDate - today) / 86400000);
+      const el = document.getElementById('school-days');
+      if (el) el.textContent = days;
+    })();
 
     // ── DARK CTA ──
     gsap.from('.cta-dark-inner', {

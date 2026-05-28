@@ -1,6 +1,6 @@
 # STATUS — Unik
 
-*Last updated: 2026-05-26*
+*Last updated: 2026-05-27*
 
 ## What this is
 Family-owned LA clothing brand (Cal's cousins) — children's apparel, school uniforms, and Mexican cultural clothing. 20+ years in business. Transitioning from downtown LA wholesale to online/direct sales. Cal is helping with marketing, AI tools, and sales strategy.
@@ -69,14 +69,20 @@ All files at `CreativeStudio/clients/Unik/`
 - `unik_v1.mp4` — First Seedance attempt (failed — storyboard grid used as start image)
 - Calendar image: `C:\Users\Aesth\Downloads\hf_20260527_041640_f1ec300d...png` — fridge calendar, August 2026, 17 circled
 
-## Ad direction locked (2026-05-27)
-- **Format:** Meta paid ads, 9:16 vertical, 30 seconds (two 15s clips stitched)
+## Ad direction locked (2026-05-27) — UPDATED
+- **Format:** Meta paid ads, 9:16 vertical, 30 seconds
 - **Audience:** Latino parents, LA area, school-age kids
-- **Style:** UGC — phone-propped kitchen, mom and boy, documentary feel
-- **Hook:** "He's nervous. I'm more nervous. But at least I know he's going to look right."
-- **Turning point:** Mom fixes collar → boy straightens up → "You're ready."
-- **Closing:** "First day done right. Every year — Unik."
-- **Next step:** Generate single UGC start image (mom + boy in kitchen, phone-propped angle) → run Seedance Clip 1 properly
+- **Style:** Fashion editorial — Ray-Ban Meta energy. Boy walking toward camera, confident, not smiling. No story, no dialogue, no mom. Uniform is the hero.
+- **Visual:** Low angle (camera at knee height), early morning side light, Royal blue polo is the brightest thing in the frame
+- **Music:** Suno — upbeat hip hop, clean funk, punchy beat drop, instrumental, no vocals, 30 seconds
+- **Start image prompt (nano_banana_2):** "Latino boy, 7-8 years old. Royal blue polo shirt, khaki uniform pants. Shoulders back, chin level, weight forward — walking directly toward the camera. Low angle, camera at knee height looking up at him. Early morning side light. The polo is the brightest thing in the frame. Background soft, out of focus. He's not performing — he just knows he looks right."
+- **Reference:** `boy_uniform.png`
+
+### Dropped directions (explored and rejected 2026-05-27)
+- UGC kitchen / mom + boy / "You're ready." — not entertaining enough
+- Comedy flip (mom nervous, boy unbothered) — not strong enough hook
+- Swagger / transformation beat drop — not strong enough
+- Emotional mirror moment — not a scroll-stopper
 
 ## Marketing assets (2026-05-27)
 
@@ -116,17 +122,17 @@ Current bio targets wholesale buyers — needs to be swapped.
 Strategy: Gift 2–3 pieces per creator (~$15–25/piece). Budget $300–500 for 15–20 creators. Ask for honest post or reel if they love it. No upfront payment.
 
 ## What's next
-1. Cynthia to update Instagram bio
-2. Cynthia to finish TikTok Shop setup
-3. Verify creator profiles — confirm kids are elementary age before DMing
-4. Send creator DMs — start with @jetplanemommy
-5. Generate single UGC start image — do NOT use storyboard grid as start frame
-6. Run Seedance Clip 1 (0-15 sec) with UGC prompt
-7. Run Seedance Clip 2 (15-30 sec) if Clip 1 approved
-8. Stitch with FFmpeg
-9. Girls section — need girls product photos from Cynthia
-10. Deploy kids.html to GitHub Pages
-11. Show Cynthia — get feedback, discuss paid engagement
+1. Generate music on Suno — upbeat hip hop, clean funk, beat drop, instrumental, no vocals, 30 seconds
+2. Generate fashion editorial start image with nano_banana_2 using locked prompt above
+3. Run Seedance Clip 1 against that single start image (NOT storyboard grid)
+4. If approved: Run Seedance Clip 2
+5. Stitch with FFmpeg + add music
+6. Girls section — need girls product photos from Cynthia
+7. Deploy kids.html to GitHub Pages
+8. Show Cynthia — get feedback, discuss paid engagement
+9. Cynthia to update Instagram bio
+10. Cynthia to finish TikTok Shop setup
+11. Verify creator profiles — confirm kids are elementary age before DMing
 
 ## Key contacts
 - **Owner:** Cynthia (Cal's cousin) + husband Ben — run it together
