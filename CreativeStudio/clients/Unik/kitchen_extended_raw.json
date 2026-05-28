@@ -1,0 +1,27 @@
+[
+  {
+    "id": "acaca2ff-a460-44c3-93e0-54a154c93fc1",
+    "status": "completed",
+    "display_name": "Flux Kontext",
+    "job_set_type": "flux_kontext",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260527_042942_acaca2ff-a460-44c3-93e0-54a154c93fc1.png",
+    "created_at": 1779856182.875075,
+    "params": {
+      "prompt": "Widen the kitchen scene horizontally to show significantly more floor space and extended counter areas on both sides. Keep the same light gray fridge with the August 2026 calendar magnetized on it exactly as is. Preserve the warm morning natural light coming through the windows, the wooden cabinets, and the marble-style countertops with a lived-in look including kitchen appliances and small items. Ensure the open floor area is spacious enough for two people to stand comfortably. The scene remains photorealistic without any people in the frame.",
+      "seed": 929412,
+      "aspect_ratio": "16:9",
+      "input_images": [
+        {
+          "id": "7347542d-46da-4ea6-986f-9fa3344ebc08",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/7347542d-46da-4ea6-986f-9fa3344ebc08.png",
+          "type": "media_input"
+        }
+      ],
+      "width": 1392,
+      "height": 752,
+      "batch_size": 1,
+      "enhance_prompt": true,
+      "multi_ref": false
+    }
+  }
+]

@@ -4,6 +4,20 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 27, 2026 — We Built a Whole Marketing Strategy Around the Wrong Identity
+
+Was doing market research for a family clothing brand. Found out the biggest untapped audience was Latina moms — nobody in the school uniform space is speaking to them, even though 40% of uniform-wearing students are Hispanic. Built the whole brand positioning around "family-owned Latina brand." Felt right. Felt strong.
+
+Then found out the owner is Vietnamese.
+
+Had to rethink the angle on the spot. But here's the thing — the audience is still exactly right. The positioning just shifted from "we are this community" to "we've been serving this community for 20 years." Turned out to be a stronger, more honest story anyway.
+
+**What I learned:** Who you serve matters more than who you are. The best marketing angle isn't always your identity — sometimes it's your history with the people you've been showing up for.
+
+**Content idea:** "We built a whole brand strategy around the wrong thing. Then we found the real story — and it was better."
+
+---
+
 ## May 27, 2026 — 74% of LA School Kids Are Latino and No Big Brand Is Talking to Them
 
 Was building a back-to-school ad for a family uniform brand in the LA Fashion District. Did the research to figure out who actually buys school uniforms. Turns out 74% of LA Unified kids are Latino — and the neighborhoods with the most uniform requirements are East LA, South LA, Pacoima. The exact neighborhoods this brand has been serving for 20 years.

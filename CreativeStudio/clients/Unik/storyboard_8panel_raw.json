@@ -1,0 +1,46 @@
+[
+  {
+    "id": "836d30eb-e40d-41f8-a7bd-a3766270cf10",
+    "status": "completed",
+    "display_name": "GPT Image 2",
+    "job_set_type": "imagegen_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260527_041933_836d30eb-e40d-41f8-a7bd-a3766270cf10.png",
+    "created_at": 1779855573.27594,
+    "params": {
+      "width": 2688,
+      "height": 1520,
+      "prompt": "Create an 8-frame storyboard contact sheet for a school uniform advertisement. Use the uploaded images as references — first image is the calendar on the fridge, second is the boy in his Royal blue polo and khaki pants, third is the Latina mom. Preserve all characters and the calendar exactly throughout. Story arc: First day of school morning. Starts with the calendar. Mom gets her son ready with care. He walks out the door proud and sharp. Frame-by-frame: 01 — The August 2026 calendar on the fridge, 17 circled in red, X marks through previous dates. Same kitchen. Morning light. 02 — Mom stands behind boy at a mirror. Her hands smoothing his Royal blue polo shoulders. Boy looks at his reflection. 03 — Full body. Boy facing camera, Royal blue polo tucked into khaki pants. Standing straight, slight proud expression. Natural light. 04 — Mom kneels to boy level, both hands adjusting his collar. Her face warm and focused. Boy serious, slightly nervous. 05 — Close-up on boy face. Soft morning light. Serious, a little proud, a little nervous. 06 — Medium from behind. Mom hands zipping his backpack. He stands still, shoulders back, uniform sharp. 07 — Front door open, golden morning light flooding in. Mom in the doorway watching. Boy steps outside, backpack on, uniform sharp. 08 — Wide shot. Boy walks away down a residential LA sidewalk, head up, Royal blue polo visible from behind. Morning light. Continuity: Same boy, same uniform, same mom, same warm LA home throughout. Consistent soft morning light. Style: Candid documentary. Warm available light. No studio lighting. Feels like a real family, not a commercial. No frame numbers, captions, studio lighting, broken anatomy, altered uniform colors, stock photo expressions.",
+      "medias": [
+        {
+          "data": {
+            "id": "3a2f5187-e6ce-43b4-8543-63f9d91b11df",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/3a2f5187-e6ce-43b4-8543-63f9d91b11df.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "84baf948-14fa-4637-98ae-c328b29dfb34",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/84baf948-14fa-4637-98ae-c328b29dfb34_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "50d39b01-4efe-4a19-b30c-61274389e49e",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/50d39b01-4efe-4a19-b30c-61274389e49e_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "aspect_ratio": "16:9",
+      "quality": "low",
+      "resolution": "2k",
+      "model": "videotape-alpha",
+      "reference_elements": []
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "f78d8e61-2d1b-43fa-a5fe-a403eca0afa9",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260527_034116_f78d8e61-2d1b-43fa-a5fe-a403eca0afa9.png",
+    "created_at": 1779853276.949325,
+    "params": {
+      "width": 1536,
+      "height": 2752,
+      "aspect_ratio": "9:16",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "d41d05bb-582c-4dca-a487-c812a7cc9a4a",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/d41d05bb-582c-4dca-a487-c812a7cc9a4a.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Full body shot of the Latina woman from the reference image, wearing casual morning home clothes — simple blouse and jeans. Standing in a warm home interior, soft morning light through a window. Photorealistic. Documentary feel. Preserve her face exactly from the reference image. Natural relaxed posture, not posing."
+    }
+  }
+]

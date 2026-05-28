@@ -1,0 +1,46 @@
+[
+  {
+    "id": "e63754d2-d91c-4887-b0da-0e65b94dac9b",
+    "status": "completed",
+    "display_name": "GPT Image 2",
+    "job_set_type": "imagegen_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260527_045034_e63754d2-d91c-4887-b0da-0e65b94dac9b.png",
+    "created_at": 1779857434.44803,
+    "params": {
+      "width": 2688,
+      "height": 1520,
+      "prompt": "Create an 8-frame storyboard contact sheet for a school uniform advertisement. CRITICAL: Every indoor scene must be set in the EXACT kitchen from reference image 1 — the white refrigerator, wood cabinets, tile floor, and warm morning window light must be visible in every indoor frame. Do not invent a new setting. Use reference image 2 for the boy's exact face and Royal blue polo and khaki pants uniform. Use reference image 3 for the mom's exact face and casual clothes. Frame-by-frame: 01 — The exact kitchen from reference image 1. Camera shows the full white fridge with the August 2026 calendar, 17 circled in red. No people. Morning light. 02 — Same exact kitchen. Mom stands directly in front of the boy, hands on his shoulders smoothing his Royal blue polo. No mirror. White fridge and wood cabinets visible in background. 03 — Same exact kitchen. Boy facing camera, full uniform visible — Royal blue polo tucked into khaki pants. Standing straight, proud. Wood cabinets in background. 04 — Same exact kitchen. Mom kneels to boy level, adjusting his collar. Tile floor visible. Warm morning light. 05 — Close-up on boy face only. Soft warm morning light. Serious, proud, slightly nervous. 06 — Same exact kitchen. From behind — mom zipping boy backpack. White fridge visible in background. 07 — Front door of the same home. Golden morning light flooding in. Mom watching from doorway. Boy stepping outside in full uniform. 08 — Residential LA sidewalk. Boy walking away from camera, head up, Royal blue polo visible from behind. Morning light. Continuity: Same kitchen in every indoor frame. Same boy, same uniform, same mom throughout. Style: Candid documentary, warm available light, real family feel. No frame numbers, captions, mirrors, broken anatomy, studio lighting.",
+      "medias": [
+        {
+          "data": {
+            "id": "f530deb8-0add-4d63-8019-146afff3c3dd",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/f530deb8-0add-4d63-8019-146afff3c3dd.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "7dc2fdb8-91d6-4bc2-9bec-ab4c5d5959f9",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/7dc2fdb8-91d6-4bc2-9bec-ab4c5d5959f9_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "f2214b7b-d0ad-425b-b5bc-bc81d76de176",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/f2214b7b-d0ad-425b-b5bc-bc81d76de176_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "aspect_ratio": "16:9",
+      "quality": "low",
+      "resolution": "2k",
+      "model": "videotape-alpha",
+      "reference_elements": []
+    }
+  }
+]

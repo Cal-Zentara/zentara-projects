@@ -1,0 +1,33 @@
+[
+  {
+    "id": "eae293d8-5c62-4acc-aad3-35df49f2a852",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260527_044134_eae293d8-5c62-4acc-aad3-35df49f2a852.png",
+    "created_at": 1779856894.452646,
+    "params": {
+      "width": 2752,
+      "height": 1536,
+      "aspect_ratio": "16:9",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "6b1bf0af-3871-4872-aeee-db6d6a8be3bb",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/6b1bf0af-3871-4872-aeee-db6d6a8be3bb.png",
+          "type": "media_input"
+        },
+        {
+          "id": "36c08861-4668-4a98-9b07-4430554df86a",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/36c08861-4668-4a98-9b07-4430554df86a.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "A real family kitchen, warm and lived-in. Wood cabinets, tile floor, natural morning light through a window. The August 2026 calendar is pinned on the fridge with dates 1 through 16 crossed out in black marker and 17 circled in red with FIRST DAY OF SCHOOL written next to it. The calendar is clearly visible and readable. Enough open floor space for two people to stand comfortably. No people in the frame. Photorealistic, natural proportions, no distortion."
+    }
+  }
+]

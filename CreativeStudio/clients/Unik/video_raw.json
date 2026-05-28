@@ -1,0 +1,38 @@
+[
+  {
+    "id": "5392947f-bc65-4e28-8d83-2af80684df0c",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260527_050140_5392947f-bc65-4e28-8d83-2af80684df0c.mp4",
+    "created_at": 1779858100.597566,
+    "params": {
+      "width": 480,
+      "height": 854,
+      "prompt": "Warm handheld documentary style, soft morning kitchen light. Shot 1: Camera holds on a white refrigerator — an August 2026 calendar pinned to the door, dates 1 through 16 crossed out in black marker, the 17 circled in red. Camera drifts slightly, then settles. Shot 2: The boy — dark swept hair, Royal blue polo, khaki pants — stands in the kitchen, shoulders slightly forward, eyes down. Nervous. Shot 3: His mom steps in front of him, both hands smoothing his collar slowly and deliberately. Camera holds close, slight handheld breath. Shot 4: She steps back and looks at him. He pulls his shoulders back and stands straight. She says: You're ready. He believes it. Shot 5: Full body — boy facing camera, Royal blue polo tucked into khaki pants, black shoes. He meets the camera like he means it. Camera holds steady. Shot 6: Tight close-up on his face. Nervousness gone. Just pride. Soft warm light. Shot 7: From behind — mom's hands lift and zip his backpack closed. He holds still, shoulders back, uniform sharp. Shot 8: Front door opens wide to golden morning light. Mom stands at the threshold watching as he steps toward the door. Camera holds on her face. Shot 9: Exterior — boy walks away down a sidewalk, backpack on, Royal blue polo catching the morning light. Camera drifts forward slowly, following but never catching him. Hard cuts throughout. Audio: fabric rustle, collar adjust, zipper pull, footsteps on tile, screen door, footsteps on pavement, morning birds.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "bf086758-3bff-4a27-a631-67e7fad335fa",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/bf086758-3bff-4a27-a631-67e7fad335fa_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        }
+      ],
+      "duration": 15,
+      "resolution": "480p",
+      "aspect_ratio": "9:16",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "std",
+      "model": "seedance_2_0"
+    }
+  }
+]

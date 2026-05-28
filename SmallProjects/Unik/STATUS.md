@@ -78,14 +78,55 @@ All files at `CreativeStudio/clients/Unik/`
 - **Closing:** "First day done right. Every year — Unik."
 - **Next step:** Generate single UGC start image (mom + boy in kitchen, phone-propped angle) → run Seedance Clip 1 properly
 
+## Marketing assets (2026-05-27)
+
+### RSO Research — complete
+Full market research run using Sandy's RSO system (Research → Strategy → Outreach).
+
+Key findings:
+- No competitor speaks to Latina/Hispanic moms for school uniforms — gap is wide open
+- 40% of uniform-wearing students are Hispanic
+- Parents are already shopping NOW — peak is mid-June through mid-August
+- TikTok Shop nets ~16% profit vs Amazon's ~5% after fees
+- Mexican cultural clothing niche: active demand, no dominant player on social
+
+### Positioning statement
+"LA's family-owned kids' brand — uniforms, cultural pieces, and everything in between."
+
+Note: Cynthia is Vietnamese, not Latina. Positioning is "we serve this community" not "we are this community."
+
+### Instagram bio (rewrite — not yet live)
+"Family-owned kids' brand in LA. Uniforms, cultural pieces, and more. Retail + wholesale. unikusa.com"
+
+Current bio targets wholesale buyers — needs to be swapped.
+
+### Creator outreach DM
+"Hey [name]! Love your page. We're a family-owned kids' brand out of LA — uniforms, cultural pieces, the works. We'd love to send you some free pieces for your kids. All we ask is an honest post or reel if you love them. Would you be down?"
+
+### Creator shortlist (Instagram — elementary age kids, mom content)
+| Handle | Followers | Notes |
+|---|---|---|
+| @jetplanemommy | 55K | Latina, LA, daughter in cheer (confirmed school-age) — top pick |
+| @thelatinamom | 59K | Latina, San Fernando Valley, sports mom |
+| @cassikidzcrew | 89K | LA, multiple kids, kids activities focus |
+| @loveerickacastanos | 47K | Latina, LA, family content |
+| @lilbitsofpau | 19K | Latina, SD, working mom |
+| @ari_says | 36K | Latina, lifestyle + parenting |
+
+Strategy: Gift 2–3 pieces per creator (~$15–25/piece). Budget $300–500 for 15–20 creators. Ask for honest post or reel if they love it. No upfront payment.
+
 ## What's next
-1. Generate single UGC start image — do NOT use storyboard grid as start frame
-2. Run Seedance Clip 1 (0-15 sec) with UGC prompt
-3. Run Seedance Clip 2 (15-30 sec) if Clip 1 approved
-4. Stitch with FFmpeg
-5. Girls section — need girls product photos from Cynthia
-6. Deploy kids.html to GitHub Pages
-7. Show Cynthia — get feedback, discuss paid engagement
+1. Cynthia to update Instagram bio
+2. Cynthia to finish TikTok Shop setup
+3. Verify creator profiles — confirm kids are elementary age before DMing
+4. Send creator DMs — start with @jetplanemommy
+5. Generate single UGC start image — do NOT use storyboard grid as start frame
+6. Run Seedance Clip 1 (0-15 sec) with UGC prompt
+7. Run Seedance Clip 2 (15-30 sec) if Clip 1 approved
+8. Stitch with FFmpeg
+9. Girls section — need girls product photos from Cynthia
+10. Deploy kids.html to GitHub Pages
+11. Show Cynthia — get feedback, discuss paid engagement
 
 ## Key contacts
 - **Owner:** Cynthia (Cal's cousin) + husband Ben — run it together

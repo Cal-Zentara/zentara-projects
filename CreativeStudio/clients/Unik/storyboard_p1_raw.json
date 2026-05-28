@@ -1,0 +1,38 @@
+[
+  {
+    "id": "4cfd69fc-09e5-4d9a-87c1-01d656af8a62",
+    "status": "completed",
+    "display_name": "GPT Image 2",
+    "job_set_type": "imagegen_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260527_035422_4cfd69fc-09e5-4d9a-87c1-01d656af8a62.png",
+    "created_at": 1779854062.294906,
+    "params": {
+      "width": 2688,
+      "height": 1520,
+      "prompt": "Create a 6-frame storyboard contact sheet for the first half of a short school uniform advertisement, designed as a clean visual overview for video development. Use the uploaded images as references. First image: the boy character in his Royal blue polo and khaki pants — preserve his face, skin tone, and exact uniform throughout. Second image: the Latina mom character — preserve her face, skin tone, and casual home clothes throughout. Brand concept: UNIK school uniforms. Back-to-school ad for Latino families in LA. First day of school morning — a Latina mom gets her son ready. Emotional core: care and pride. Visual style: Candid documentary. Warm available morning light — soft, golden, through home windows. No studio lighting. Handheld camera feel. Warm palette, natural grain, real home environment. Intimate and honest — not polished, not a commercial look. Story arc: It's the first day of school. The morning begins with a calendar showing the date circled. Then we move inside — mom and son, getting ready together. She fixes his uniform with care. He stands proud. Frame-by-frame: 01 — Close-up on a wall calendar. A date in late August or September is circled in red marker. Morning light on the paper. No people yet — just the calendar and the weight of what day it is. 02 — Medium shot. Mom stands behind the boy, both facing a mirror. Her hands rest on his shoulders, smoothing the Royal blue polo. Boy looks at his own reflection. 03 — Full body medium shot. Boy stands straight facing the camera, full uniform visible — Royal blue polo tucked into khaki pants. Natural light. Slight proud expression. 04 — Extreme close-up. The polo collar folded neatly at his neck. Royal blue ribbed fabric, clean and crisp. Mom fingers just visible adjusting it. 05 — Low angle. Mom kneels to the boy level, both hands on his collar, eyes on him. Her expression warm and focused. Boy looks slightly ahead — serious, a little nervous, a little proud. 06 — Medium shot from behind. Mom hands zipping up his backpack on his back. He stands still, shoulders back, uniform sharp. Morning light from a nearby window. Continuity: Same boy throughout — Latino, 7-8 years old, Royal blue polo and khaki pants, identical in every frame. Same mom — Latina, early 30s, casual home clothes. Same warm LA home interior. Consistent soft morning light. Quality: Photorealistic. Real skin tones, real fabric. Looks like a real family, not models. Understated emotion. No frame numbers, captions, studio lighting, altered uniform colors, broken anatomy, stock photo expressions.",
+      "medias": [
+        {
+          "data": {
+            "id": "2b27d22e-0470-4c02-b5d7-bcf97239e736",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/2b27d22e-0470-4c02-b5d7-bcf97239e736_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "b80a1d28-bd79-4e58-bce0-23865c01526b",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/b80a1d28-bd79-4e58-bce0-23865c01526b_resize.jpg",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "aspect_ratio": "16:9",
+      "quality": "low",
+      "resolution": "2k",
+      "model": "videotape-alpha",
+      "reference_elements": []
+    }
+  }
+]

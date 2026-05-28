@@ -109,17 +109,35 @@ The downtown LA wholesale district is collapsing (ICE enforcement, boutique reta
 ### Symbol Map
 | Feature | File | Lines |
 |---|---|---|
-| N/A — no code yet | | |
+| Announcement bar | `kids.html` | ~292–296 |
+| Nav (blue) | `kids.html` | ~298–314 |
+| Hero section | `kids.html` | ~317–370 |
+| Boys gallery grid | `kids.html` | ~373–450 |
+| Gallery CSS | `kids.html` | ~240–340 |
 
 ### Data Schema
-No codebase yet. If/when building: Shopify storefront at unikusa.com.
+No backend. Static HTML landing page. All product links point to `unikusa.com/collections/uniform`.
+
+Product photos live at: `C:\Users\Aesth\Desktop\Unik\`
+Image path from `kids.html`: `../../../../Unik/[filename]`
 
 ### Known Gotchas
-None yet.
+- **Photo folder is NOT in the project directory** — photos live at `C:\Users\Aesth\Desktop\Unik\`, not inside `SmallProjects/Unik/`. Relative path from `kids.html` is `../../../../Unik/`.
+- **Outdoor/lifestyle photos clash** — `KP101B Black x.png` (baseball field) was removed because it clashed with clean white-background shots. Keep the gallery consistent: white/neutral backgrounds only.
+- **Firecrawl MCP installed** — added to `.claude/.mcp.json` with API key. Requires Claude Code restart to activate. 500 one-time credits.
+- **Dropbox MCP auth broken** — Dropbox's OAuth rejects the MCP client_id format. Don't attempt — it won't work until Dropbox fixes it on their end.
+- **Brand colors**: Primary blue `#29ABE2`, dark bar `#2D2D2D`, background white `#FFFFFF`.
 
 ---
 
 ## Current Version & Status
 
-**Version:** 0.1 — discovery phase
-**Status:** Active — initial meeting 2026-05-25
+**Version:** 0.2 — kids landing page in progress
+**Status:** Active — hero + boys gallery built 2026-05-26
+
+### Next Steps
+1. Girls section — need girls product photos from Cynthia
+2. Social proof bar — Amazon reviews, years in business
+3. Footer — address, phone, hours
+4. Deploy to GitHub Pages
+5. Show Cynthia for feedback

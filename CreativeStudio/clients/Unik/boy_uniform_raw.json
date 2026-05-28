@@ -1,0 +1,38 @@
+[
+  {
+    "id": "aebf3c0a-67cf-4989-b69b-1a55e702e4bc",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260527_033948_aebf3c0a-67cf-4989-b69b-1a55e702e4bc.png",
+    "created_at": 1779853188.055121,
+    "params": {
+      "width": 1536,
+      "height": 2752,
+      "aspect_ratio": "9:16",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "4bf6e541-231e-4a49-9fae-49645eeace03",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/4bf6e541-231e-4a49-9fae-49645eeace03.png",
+          "type": "media_input"
+        },
+        {
+          "id": "9a6c0cbf-cf41-43bc-929c-c925bbc4adf4",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/9a6c0cbf-cf41-43bc-929c-c925bbc4adf4.png",
+          "type": "media_input"
+        },
+        {
+          "id": "9180714d-01f6-4852-8bba-7faa01678e6d",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/9180714d-01f6-4852-8bba-7faa01678e6d.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Full body shot of the Latino boy from the first reference image, dressed in the exact Royal blue school uniform polo shirt and khaki uniform pants shown in the other reference images. Head to knees. Standing straight, slight proud expression. Natural soft morning indoor light. Photorealistic. Documentary feel. Preserve his face exactly. Preserve the exact color and style of the polo and pants."
+    }
+  }
+]
