@@ -24,7 +24,6 @@ Cal's main workspace for demo projects, experiments, and client work.
 | PhillipLoans | Client site — Phillip La, Mortgage Loan Officer, Loan Factory CA. Live at philliplaloans.com | `PhillipLoans/CLAUDE.md` |
 | MyTa | Bilingual SoCal real estate agent — discovery phase | `MyTa/CLAUDE.md` |
 | ByronCampaign | Possible new client — early stage | `ByronCampaign/` |
-| HealthyProteinSpot | Prospect demo — family-owned protein shake spot in Anaheim. Built one-page site to replace their Linktree | `HealthyProteinSpot/CLAUDE.md` |
 | Unik | Family client — children's apparel + school uniforms, LA Fashion District. Cal's cousins. Discovery phase, initial meeting 2026-05-25 | `Unik/CLAUDE.md` |
 
 ---
@@ -40,6 +39,7 @@ Moved to `../_archive/`. Do not read or edit unless Cal explicitly resumes.
 | FitTrackAI | Fitness tracking app — meals, workouts, AI coach, PWA |
 | GoldKeyLegacy | Client project — financial firm, retirement + life insurance (discovery phase) |
 | GarlicHigh | Demo site — Jiro-style ramen restaurant in Sunnyvale CA |
+| HealthyProteinSpot | Prospect demo — protein shake spot in Anaheim. Site built + deployed. Never responded. |
 
 ---
 
@@ -57,7 +57,6 @@ Moved to `../_archive/`. Do not read or edit unless Cal explicitly resumes.
 
 | Folder | What It Is |
 |---|---|
-| `cse-worker/` | Cloudflare Worker — proxies AI Vision API calls (OpenAI, Gemini, Claude) for PavementScan crack detection |
 | `shared/` | Reusable helpers — `base.css` and `utils.js` shared across projects |
 
 ---

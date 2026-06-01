@@ -117,3 +117,9 @@ Locked formulas validated 2026-05-05. Hero product shot + 3-clip video collectio
 - 3-post Reiki education series written. Post 1 approved and locked. Posts 2 + 3 drafted.
 - Post 1 video plan: atmospheric b-roll (Seedance) + text on screen + Suno ambient music. Clip pending.
 - Content saved: `../../../SpiritSisters/SpiritNancy/Marketing/content/salvialion/2026-05-25/posts-2026-05-25.md`
+
+**Where we left off (parked May 2026):**
+1. Generate Suno track: ambient, soft piano, reiki/meditation, no vocals
+2. Generate Seedance atmospheric clip: candles, botanicals, steam, dark surface — no product
+3. Assemble Post 1 video in CapCut: clip + music + text overlay
+4. Posts 2 + 3 still need visuals and final approval

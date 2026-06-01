@@ -4,6 +4,50 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## May 30, 2026 — I Made One 8-Second Clip and Stretched It Into a Full Video
+
+Tonight was a Blue Moon — the second full moon in a month, only happens every couple years. Perfect night to launch my client's healing business. I tried a bunch of video ideas and hated all of them. Photos with text on top — trash. Then I stopped forcing a story and just made one quiet shot of the desert at night under the moon. The trick to filling 30 seconds without paying for a long video: I made one 8-second clip, then played it forward, backward, forward, backward. Held the frame for a breath at each turn so it didn't feel jumpy. Loops forever, looks intentional, cost almost nothing. She loved it.
+
+**What I learned:** You don't need a long expensive clip. One short one, looped right, fills the whole thing — and stopping when you've got one good shot beats forcing a whole story.
+
+**Content idea:** "Everyone's paying for long AI videos. I made one 8-second clip and looped it forward and back to fill 30 seconds. Looks intentional. Costs almost nothing. Nobody can tell."
+
+---
+
+## May 30, 2026 — Built a Full Girls Clothing Catalog Without a Single Photo Shoot
+
+My cousin's clothing brand had hundreds of products but no clean way to show them. Instead of waiting for a photo shoot, I pulled the AI model photos they already had sitting in a Dropbox folder and built a full catalog — dresses, skirts, shorts, pants, polos, jackets — with color swatches and real pricing. Done in one session.
+
+**What I learned:** Most brands already have more than they think. The work isn't always creating new assets — sometimes it's just organizing what's already there.
+
+**Content idea:** "My cousin has run a clothing brand for 20 years. She had hundreds of product photos sitting in a Dropbox folder doing nothing. I turned them into a full online catalog in one afternoon. No photo shoot. No agency."
+
+---
+
+## May 30, 2026 — The AI Kept Making the Kids Look Fake
+
+Tried making a video ad of kids on a playground. Every version came out looking fake — stiff, robotic, kids smiling dead at the camera, hands melting into weird blobs. I kept fighting it for hours. Then it clicked: I was asking the AI to do the hard stuff — kids jumping, hands moving fast, swinging. The trick was the opposite. Give it easy stuff — kids just walking and standing — and let the camera moving around and the music do all the work. Soon as I did that, it looked real. Best one we've made.
+
+**What I learned:** AI looks fake when you ask it to do hard things, and real when you ask it to do easy things. Stop fighting the tool — work with what it's good at.
+
+**Content idea:** "I spent hours trying to make an AI video look real and it kept looking fake. Then I figured out the one rule nobody tells you: stop asking the AI to do hard stuff. The less the people move, the more real it looks. Sounds backwards. It works."
+
+---
+
+## May 28, 2026 — I Spent All Day Editing a 14-Second Video
+
+Ran the fancy AI ad tool — the one that's supposed to produce a branded video in one click. Came back completely wrong. Generic background, wrong vibe, looked nothing like the brand. Hours gone.
+
+So I went back to two old videos we already had and just cut them together. Took the first ten seconds of one, the last second and a half of the other, added the voiceover, dropped the music underneath. Fourteen and a half seconds. The client approved it.
+
+The shortcut wasn't the shortcut.
+
+**What I learned:** The tool that promises to do it all for you is rarely the one that actually finishes the job.
+
+**Content idea:** "The AI tool was supposed to make this in one click. It came back trash. So I went back to the old videos I already had. That's the one that worked."
+
+---
+
 ## May 27, 2026 — We Built a Whole Marketing Strategy Around the Wrong Identity
 
 Was doing market research for a family clothing brand. Found out the biggest untapped audience was Latina moms — nobody in the school uniform space is speaking to them, even though 40% of uniform-wearing students are Hispanic. Built the whole brand positioning around "family-owned Latina brand." Felt right. Felt strong.
@@ -102,17 +146,6 @@ Found a local linen company with a website that looked like it hadn't been touch
 
 ---
 
-## May 22, 2026 — The Photos Broke Because of Uppercase
-
-Updated a client's website with new product photos. Worked fine on my computer. Pushed it live and every image was broken — white boxes everywhere.
-
-Spent time troubleshooting. Turns out the photos were in a folder called "Webpage" but my code was looking for "webpage" with a lowercase W. On my computer, it doesn't matter. On the server where the site actually lives, the capital letter is invisible — it just doesn't find the file.
-
-**What I learned:** What works on your computer and what works on a live server aren't always the same thing. One letter off and everything breaks.
-
-**Content idea:** "Updated a client's website. Pushed it live. Every photo was gone. The folder name had a capital letter."
-
----
 
 ## May 22, 2026 — Stopped Writing Ads. Started Stealing From Real People.
 
@@ -342,21 +375,6 @@ I scrapped the whole storyboard. New direction: every shot is impossible. Every 
 
 ---
 
-## May 11, 2026 — The AI Thought My Anime Girl Was Too Aggressive
-
-Building a ramen ad for a client. The shot was simple — a girl sitting at the counter, looking at her bowl, then looking at the camera. That's it. No fighting. No violence. Just a stare.
-
-The AI blocked it. Said the prompt was too aggressive. The words it didn't like? "Glare." "Jaw tight." "Lock onto camera."
-
-I softened the words — "looks quietly focused," "lifts her eyes to meet the camera" — same exact scene. It passed. Generated fine.
-
-The picture didn't change. Just the way I described it.
-
-**What I learned:** AI tools have invisible word triggers. The fix is usually swapping one word, not rebuilding the idea.
-
-**Content idea:** "I tried to make an anime ad. The AI blocked it because my anime girl looked 'too serious.' Same girl, same bowl, same camera — I just had to change three words and it worked."
-
----
 
 ## May 13, 2026 — I Had the Wrong Rule Written Down for Days
 

@@ -146,3 +146,22 @@ Put any CreativeStudio-specific outputs in:
 ## Context
 
 Cal's first paid/friend client build. Full website live at nailditspa.com. Local SEO live. Instagram automation live. Review automation live. This client is warm — Dalena trusts Cal. Don't overthink the creative, just make it feel real and human.
+
+---
+
+## Current Creative Direction: "Detail Focus" Origin Story Ad (Parked May 2026)
+
+**Concept:** Vietnamese mother teaches daughter the craft at a kitchen table. No products. Just the story.
+
+**Locked characters:**
+- Mother: `outputs/mother_v3.png` (soul_cinematic)
+- Young daughter: `outputs/young_daughter_v1.png` (soul_cinematic)
+- Adult Dalena: `outputs/adult_dalena_v3.png` (soul_cinematic)
+
+**Music locked:** `Cracked Teacup.mp3` — soft piano slow build
+
+**Where we left off:**
+- Part 1 storyboard: `outputs/storyboard_part1_v2.png` ✅ approved
+- Part 2 storyboard: `outputs/storyboard_part2_v2.png` — needs regen with more premium modern salon + sharper professional Dalena look
+- **Blocked:** Waiting on 5 real salon photos from Dalena before next gen
+- After Part 2 approved: write Seedance prompts → generate both parts → stitch → 30–45s final film

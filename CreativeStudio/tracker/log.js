@@ -3,10 +3,14 @@
 // Rating: 1-5. Notes optional.
 import { google } from 'googleapis';
 import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-const CREDS = JSON.parse(readFileSync('./credentials.json', 'utf8')).installed;
-const { sheetId } = JSON.parse(readFileSync('./config.json', 'utf8'));
-const token = JSON.parse(readFileSync('./token.json', 'utf8'));
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const CREDS = JSON.parse(readFileSync(join(__dirname, 'credentials.json'), 'utf8')).installed;
+const { sheetId } = JSON.parse(readFileSync(join(__dirname, 'config.json'), 'utf8'));
+const token = JSON.parse(readFileSync(join(__dirname, 'token.json'), 'utf8'));
 
 const [, , prompt, model, outputUrl, client, rating, notes] = process.argv;
 

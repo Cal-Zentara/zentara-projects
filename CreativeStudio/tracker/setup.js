@@ -77,4 +77,11 @@ async function createSheet(auth) {
 
 const oauth2Client = new google.auth.OAuth2(CREDS.client_id, CREDS.client_secret, 'http://localhost:3000');
 await getToken(oauth2Client);
-await createSheet(oauth2Client);
+
+if (existsSync(CONFIG_PATH)) {
+  const { sheetId } = JSON.parse(readFileSync(CONFIG_PATH, 'utf8'));
+  console.log(`\nToken refreshed. Using existing sheet: https://docs.google.com/spreadsheets/d/${sheetId}`);
+  console.log('Setup complete — logger is ready.');
+} else {
+  await createSheet(oauth2Client);
+}

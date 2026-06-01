@@ -44,6 +44,12 @@ Read this before any design work. These rules are non-negotiable.
 
 ---
 
+## Tools
+
+**Rule:** Never suggest Canva. Ever.
+**Why:** Cal doesn't use it and doesn't want it recommended.
+**When:** Always — any design, graphic, banner, or visual task.
+
 ## Client-Specific Decisions
 
 <!-- Add rules here as you redirect Claude during builds. Format:

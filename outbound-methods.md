@@ -14,10 +14,6 @@ A reference for building outbound systems for any client. Same pipeline every ti
 8. **LinkedIn Jobs** — find companies actively hiring for a specific role = they have money and a real need right now
 9. **Custom scraping** — build your own scraper for niche platforms nobody else is targeting (can hit 11%+ reply rates)
 
-## What Nirvana Already Has
-
-- Method #5 (Google search scraper) — built into outbound-discovery.ts via Apify
-- Missing: actual contact email finding (AnyMailFinder or similar) — brands are found but no personal email
 
 ## The One Thing That Changes Per Industry
 
