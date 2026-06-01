@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNIK Premium Kids Uniforms · Under $20</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #FDFAF7;
+      --ink:      #1A1410;
+      --ink-2:    #7A6E64;
+      --blue:     #29ABE2;
+      --rule:     #E5DDD5;
+      --warm:     #F5EFE7;
+      --serif:    'Cormorant Garamond', Georgia, serif;
+      --sans:     'DM Sans', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 48px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .nav-logo {
+      display: block;
+      line-height: 0;
+      text-decoration: none;
+    }
+    .nav-logo img {
+      height: 30px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--blue); }
+
+    .nav-cta {
+      background: var(--blue);
+      color: #fff !important;
+      padding: 10px 22px;
+      border-radius: 2px;
+    }
+
+    .nav-cta:hover { opacity: 0.88; }
+
+    /* HERO */
+    .hero {
+      width: 100%;
+      height: 90vh;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 48px 56px;
+      background: linear-gradient(to top, rgba(0,0,0,0.42) 0%, transparent 100%);
+      color: #fff;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      opacity: 0.85;
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.8vw, 58px);
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 28px;
+      max-width: 680px;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: #fff;
+      color: #1A1410;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .hero-overlay {
+        padding: 32px 24px;
+        background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, transparent 100%);
+      }
+      .hero-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
+      .hero-eyebrow { margin-bottom: 10px; }
+    }
+
+    /* HEADLINE */
+    .headline-section {
+      padding: 88px 48px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .headline-inner {
+      display: grid;
+      grid-template-columns: 55% 1fr;
+      gap: 80px;
+      max-width: 1280px;
+      margin: 0 auto;
+      align-items: end;
+    }
+
+    .eyebrow {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(52px, 6.5vw, 90px);
+      font-weight: 600;
+      line-height: 1.0;
+      letter-spacing: -0.01em;
+    }
+
+    .headline-right { padding-bottom: 6px; }
+
+    .headline-right p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--ink-2);
+      max-width: 400px;
+      margin-bottom: 36px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 2px;
+      transition: opacity 0.2s;
+    }
+
+    .btn-primary:hover { opacity: 0.88; }
+
+    /* TRUST STRIP */
+    .trust-strip {
+      display: flex;
+      justify-content: center;
+      padding: 26px 48px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .trust-strip span {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      padding: 0 48px;
+    }
+
+    .trust-strip span + span {
+      border-left: 1px solid var(--rule);
+    }
+
+    /* CATEGORY TILES */
+    .category-section {
+      padding: 72px 0 0;
+    }
+
+    .category-label {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      margin-bottom: 32px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px;
+    }
+
+    .category-tile {
+      overflow: hidden;
+      height: 320px;
+      position: relative;
+    }
+
+    .category-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 0.5s ease;
+    }
+
+    .category-tile:hover img { transform: scale(1.03); }
+
+    .category-tile-name {
+      text-align: center;
+      padding: 18px 0 0;
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .category-tile-name a {
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .category-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* FEATURED PRODUCT */
+    .featured {
+      text-align: center;
+    }
+
+    .featured-photo {
+      width: 100%;
+      max-height: 90vh;
+      overflow: hidden;
+    }
+
+    .featured-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .featured-text {
+      padding: 48px 48px 80px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .featured h3 {
+      font-family: var(--serif);
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .featured-price {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--ink-2);
+      margin-bottom: 32px;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+      background: transparent;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      padding: 14px 36px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-outline:hover {
+      background: var(--ink);
+      color: var(--bg);
+    }
+
+    /* STORY */
+    .story {
+      background: var(--warm);
+      padding: 112px 48px;
+      margin-top: 80px;
+    }
+
+    .story-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .story-inner h2 {
+      font-family: var(--serif);
+      font-size: clamp(34px, 4vw, 54px);
+      font-weight: 600;
+      line-height: 1.12;
+      margin-bottom: 28px;
+    }
+
+    .story-inner p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--ink-2);
+      margin-bottom: 44px;
+    }
+
+    /* EDITORIAL */
+    .editorial-section {
+      padding: 96px 48px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .editorial-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .editorial-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .editorial-header h2 {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4vw, 54px);
+      font-weight: 600;
+    }
+
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .editorial-card img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      display: block;
+    }
+
+    .editorial-card-title {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+      padding: 18px 8px 0;
+      color: var(--ink);
+    }
+
+    @media (max-width: 900px) {
+      .editorial-section { padding: 72px 24px; }
+      .editorial-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    }
+
+    /* PILLARS */
+    .pillars-section {
+      padding: 96px 48px;
+      border-top: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    .pillars-headline {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3vw, 46px);
+      font-weight: 600;
+      line-height: 1.15;
+      max-width: 560px;
+      margin: 0 auto 72px;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .pillar-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 20px;
+      color: var(--ink);
+    }
+
+    .pillar-title {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .pillar-text {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--ink-2);
+      max-width: 240px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 600px) {
+      .pillars-section { padding: 72px 24px; }
+      .pillars-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+
+    /* REVIEWS */
+    .reviews-section {
+      padding: 96px 48px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .reviews-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .reviews-header {
+      margin-bottom: 56px;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background: var(--warm);
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .review-stars {
+      font-size: 13px;
+      color: #C9A84C;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    .review-text {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--ink);
+      flex: 1;
+      margin-bottom: 28px;
+    }
+
+    .review-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .review-source {
+      font-size: 11px;
+      color: var(--ink-2);
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 900px) {
+      .reviews-section { padding: 72px 24px; }
+      .reviews-grid { grid-template-columns: 1fr; gap: 16px; }
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--warm);
+      border-top: 1px solid var(--rule);
+      position: relative;
+      overflow: hidden;
+      padding: 72px 64px 40px;
+    }
+
+    .footer-doodle {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0.55;
+      pointer-events: none;
+    }
+
+    .footer-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 48px;
+      max-width: 1280px;
+      margin: 0 auto 56px;
+    }
+
+    .footer-signup h3 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .footer-email-row {
+      display: flex;
+      gap: 0;
+      max-width: 340px;
+    }
+
+    .footer-email-row input {
+      flex: 1;
+      border: 1px solid var(--ink);
+      border-right: none;
+      background: transparent;
+      padding: 11px 14px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .footer-email-row input::placeholder { color: var(--ink-2); }
+
+    .footer-email-row button {
+      background: var(--ink);
+      color: #fff;
+      border: 1px solid var(--ink);
+      padding: 11px 20px;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .footer-col h4 {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--ink-2);
+      text-decoration: none;
+      margin-bottom: 12px;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: var(--ink); }
+
+    .footer-bottom {
+      position: relative;
+      z-index: 1;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      display: block;
+      line-height: 0;
+      text-decoration: none;
+    }
+    .footer-logo img {
+      height: 34px;
+      width: auto;
+      display: block;
+    }
+
+    .footer-copy {
+      font-size: 11px;
+      color: var(--ink-2);
+    }
+
+    @media (max-width: 900px) {
+      footer { padding: 48px 24px 32px; }
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-bottom: 40px;
+      }
+      .footer-signup { margin-bottom: 36px; }
+      .footer-cols-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .footer-doodle { width: 100%; opacity: 0.3; }
+      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+      .footer-col h4 { margin-bottom: 12px; font-size: 14px; }
+      .footer-col a { margin-bottom: 8px; font-size: 12px; }
+    }
+
+    /* REVEAL */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      .nav { padding: 16px 24px; }
+      .nav-links { gap: 20px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+
+      .hero { height: auto; aspect-ratio: 4 / 3; }
+      .hero img { object-position: center center; }
+
+      .headline-section { padding: 56px 24px; }
+      .headline-inner { grid-template-columns: 1fr; gap: 36px; }
+
+      .trust-strip { flex-direction: column; gap: 14px; padding: 28px 24px; }
+      .trust-strip span { padding: 0; border: none !important; text-align: center; }
+
+      .category-section { padding: 48px 0 0; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .featured { padding: 48px 24px; }
+      .story { padding: 72px 24px; margin-top: 56px; }
+
+      footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 36px 24px;
+        text-align: center;
+      }
+
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-logo"><img src="photos/unik_wordmark.png" alt="unik"></a>
+    <div class="nav-links">
+      <a href="#">Girls</a>
+      <a href="#">Boys</a>
+      <a href="https://www.unikusa.com/collections/uniform/Uniforms-All" class="nav-cta">Shop Now →</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="position:relative;">
+    <img
+      src="photos/hero.jpeg"
+      alt="Four kids in UNIK school uniforms laughing in a sunny school hallway"
+    >
+    <div class="hero-overlay">
+<h2 class="hero-title">Dressing kids for 20 years. Premium uniforms for every kid, all under $20.</h2>
+      <a href="https://www.unikusa.com/collections/uniform/Uniforms-All" class="hero-cta">Shop Now →</a>
+    </div>
+  </section>
+
+  <!-- HEADLINE -->
+  <section class="headline-section">
+    <div class="headline-inner">
+      <div class="headline-left reveal">
+        <span class="eyebrow">Back to School 2026</span>
+        <h1>Premium uniforms,<br>built to last<br>the year.</h1>
+      </div>
+      <div class="headline-right reveal" style="transition-delay: 0.12s;">
+        <p>Premium quality polos, pants, and dresses in sizes 4 to 18. From an LA family that's been dressing this community's kids for 20 years, all under $20.</p>
+        <a href="https://www.unikusa.com/collections/uniform/Uniforms-All" class="btn-primary">Shop Back to School →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <div class="trust-strip">
+    <span>Family owned · 20 years</span>
+    <span>14,000+ reviews · 4.2&#9733;</span>
+    <span>Sizes 4 to 18 · All under $20</span>
+  </div>
+
+  <!-- CATEGORY TILES -->
+  <section class="category-section reveal">
+    <p class="category-label">Shop by category</p>
+    <div class="category-grid">
+
+      <div class="category-wrapper">
+        <a href="https://www.unikusa.com/collections/uniform/Girls-Uniform-Tops">
+          <div class="category-tile">
+            <img src="photos/girls_tile.jpeg" alt="Girls' Uniforms" loading="lazy">
+          </div>
+        </a>
+        <div class="category-tile-name">
+          <a href="https://www.unikusa.com/collections/uniform/Girls-Uniform-Tops">Girls</a>
+        </div>
+      </div>
+
+      <div class="category-wrapper">
+        <a href="https://www.unikusa.com/collections/uniform/boys-uniform-tops">
+          <div class="category-tile">
+            <img src="photos/boys_tile.jpeg" alt="Boys' Uniforms" loading="lazy">
+          </div>
+        </a>
+        <div class="category-tile-name">
+          <a href="https://www.unikusa.com/collections/uniform/boys-uniform-tops">Boys</a>
+        </div>
+      </div>
+
+      <div class="category-wrapper">
+        <a href="https://www.unikusa.com/collections/uniform/Uniforms-All">
+          <div class="category-tile">
+            <img src="photos/hero2.jpeg" alt="Uniform Dresses" loading="lazy">
+          </div>
+        </a>
+        <div class="category-tile-name">
+          <a href="https://www.unikusa.com/collections/uniform/Uniforms-All">Dresses</a>
+        </div>
+      </div>
+
+      <div class="category-wrapper">
+        <a href="https://www.unikusa.com/collections/uniform/Uniforms-All">
+          <div class="category-tile">
+            <img src="photos/bottoms_tile.jpeg" alt="Uniform Bottoms" loading="lazy">
+          </div>
+        </a>
+        <div class="category-tile-name">
+          <a href="https://www.unikusa.com/collections/uniform/Uniforms-All">Bottoms</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- VIDEO -->
+  <section class="reveal" style="width:100%;overflow:hidden;aspect-ratio:9/12.8;">
+    <video
+      src="photos/girls_playground_clip.mp4"
+      autoplay muted loop playsinline
+      style="width:100%;height:100%;object-fit:cover;object-position:center center;display:block;"
+    ></video>
+  </section>
+
+  <!-- STORY -->
+  <section class="story">
+    <div class="story-inner reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2>LA based and family owned<br>for over 20 years.</h2>
+      <p>We started in the LA Fashion District and never left. Every uniform we make is designed in house, sourced for real quality, and priced so families don't have to choose. Premium isn't a price tag, it's how something holds up after 50 washes.</p>
+      <a href="https://www.unikusa.com/collections/uniform/Uniforms-All" class="btn-primary">Shop the Collection →</a>
+    </div>
+  </section>
+
+  <!-- EDITORIAL -->
+  <section class="editorial-section">
+    <div class="editorial-inner">
+      <div class="editorial-header reveal">
+        <h2>Get Inspired</h2>
+      </div>
+      <div class="editorial-grid">
+        <div class="editorial-card reveal">
+          <img src="photos/edit_howmany.jpeg" alt="How many uniforms does your kid need" loading="lazy">
+          <p class="editorial-card-title">How Many Uniforms Does Your Kid Actually Need?</p>
+        </div>
+        <div class="editorial-card reveal" style="transition-delay:0.1s;">
+          <img src="photos/edit_cost.jpeg" alt="The real cost of school uniforms" loading="lazy">
+          <p class="editorial-card-title">The Real Cost of Back to School Uniforms</p>
+        </div>
+        <div class="editorial-card reveal" style="transition-delay:0.2s;">
+          <img src="photos/edit_comfort.jpeg" alt="Uniforms that don't itch" loading="lazy">
+          <p class="editorial-card-title">Uniforms That Don't Itch: What to Look For</p>
+        </div>
+        <div class="editorial-card reveal" style="transition-delay:0.3s;">
+          <img src="photos/edit_boy.jpeg" alt="How to make uniforms last all year" loading="lazy">
+          <p class="editorial-card-title">How to Make School Uniforms Last All Year</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="pillars-section reveal">
+    <h2 class="pillars-headline">There's something different about UNIK.</h2>
+    <div class="pillars-grid">
+      <div class="pillar">
+        <svg class="pillar-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M28 6 L50 20 L50 50 L6 50 L6 20 Z"/>
+          <path d="M20 50 L20 34 L28 34 L28 50"/>
+          <path d="M36 34 L44 34 L44 44 L36 44 Z"/>
+          <path d="M28 6 L6 20"/>
+        </svg>
+        <p class="pillar-title">Family Owned</p>
+        <p class="pillar-text">20 years in the LA Fashion District, still run by the same family.</p>
+      </div>
+      <div class="pillar">
+        <svg class="pillar-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="28" cy="28" r="22"/>
+          <path d="M28 14 L31.5 21.5 L40 22.5 L34 28.5 L35.5 37 L28 33 L20.5 37 L22 28.5 L16 22.5 L24.5 21.5 Z"/>
+        </svg>
+        <p class="pillar-title">Premium for Less</p>
+        <p class="pillar-text">Same price as the basics. Better fabric, better construction, all under $20.</p>
+      </div>
+      <div class="pillar">
+        <svg class="pillar-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 10 C18 10 14 14 14 22 C14 30 20 34 20 34 L20 46 L36 46 L36 34 C36 34 42 30 42 22 C42 14 38 10 38 10"/>
+          <path d="M18 10 L38 10"/>
+          <path d="M22 34 L34 34"/>
+          <path d="M22 40 L34 40"/>
+        </svg>
+        <p class="pillar-title">Every Kid</p>
+        <p class="pillar-text">Polos, pants, and dresses, everything your kid needs, all in one place.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="photos/footer_doodle.png" alt="" class="footer-doodle">
+    <div class="footer-inner">
+      <div class="footer-signup">
+        <h3>Be the first to know about new arrivals.</h3>
+        <div class="footer-email-row">
+          <input type="email" placeholder="Your email">
+          <button type="button">Sign Up</button>
+        </div>
+      </div>
+      <div class="footer-cols-row">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="https://www.unikusa.com/collections/uniform/Uniforms-All">Girls</a>
+          <a href="https://www.unikusa.com/collections/uniform/Uniforms-All">Boys</a>
+          <a href="https://www.unikusa.com/collections/uniform/Uniforms-All">Dresses</a>
+          <a href="https://www.unikusa.com/collections/uniform/Uniforms-All">Bottoms</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="https://www.unikusa.com">Our Story</a>
+          <a href="https://www.unikla.com">Wholesale</a>
+          <a href="https://www.instagram.com/unikusa">Instagram</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:info@unikusa.com">info@unikusa.com</a>
+          <a href="https://www.unikusa.com">unikusa.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#" class="footer-logo"><img src="photos/unik_wordmark.png" alt="unik"></a>
+      <span class="footer-copy">© 2026 UNIK Inc. Family owned in Los Angeles since 2004.</span>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const siblings = entry.target.closest('.products-grid')
+          ? Array.from(entry.target.closest('.products-grid').querySelectorAll('.reveal'))
+          : null;
+        const delay = siblings ? siblings.indexOf(entry.target) * 90 : 0;
+        setTimeout(() => entry.target.classList.add('in'), delay);
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

@@ -23,7 +23,11 @@ clients/Unik/
 Shareable finals are ALSO copied to the desktop `UNIK Ads/` folder for easy sharing.
 
 ## Who They Are
-UNIK Inc — Cal's cousins' family clothing brand. LA Fashion District, 20+ years in business. Products: kids apparel + school uniforms (polos, pants, backpacks). Price point: $12–20. Target audience: Latina moms buying back-to-school in LA, especially LAUSD families (74% Latino). No competitor is targeting them directly. That's the gap.
+UNIK Inc — Cal's cousins' family clothing brand. LA Fashion District, 20+ years in business. Products: kids apparel + school uniforms (polos, pants, dresses). Price point: $12–20. Target audience: Latina moms buying back-to-school in LA, especially LAUSD families (74% Latino). No competitor is targeting them directly. That's the gap.
+
+**⚠️ HARD FACT — UNIK does NOT sell backpacks.** Never show a backpack in any ad, carousel, photo, or landing page copy. Product range is: polos, pants, dresses. (Corrected June 1, 2026.)
+
+**⚠️ LOGO RULE — the UNIK wordmark is ALWAYS lowercase "unik" in brand blue (#29ABE2).** Never uppercase, never a different color, never restyled. Use this exact format on every end card, slide, carousel, footer, and graphic where the logo appears. Logo file: `assets/logo/unik_logo.png`. (Locked June 1, 2026.)
 
 **Website:** not yet built
 **Instagram:** not yet active for ads
