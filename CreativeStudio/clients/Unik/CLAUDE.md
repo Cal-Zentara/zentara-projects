@@ -25,6 +25,8 @@ Shareable finals are ALSO copied to the desktop `UNIK Ads/` folder for easy shar
 ## Who They Are
 UNIK Inc — Cal's cousins' family clothing brand. LA Fashion District, 20+ years in business. Products: kids apparel + school uniforms (polos, pants, dresses). Price point: $12–20. Target audience: Latina moms buying back-to-school in LA, especially LAUSD families (74% Latino). No competitor is targeting them directly. That's the gap.
 
+**⚠️ HARD FACT — the family is VIETNAMESE, not Latino/Spanish.** Cal's cousins who own UNIK are a Vietnamese family. The TARGET audience is Latina moms (a strategic bet, see above), but the OWNERS are Vietnamese. This means there is NO in-family Spanish speaker. Any Spanish content (captions, ads, the roadmap's weekly Spanish posts) MUST be checked by an outside native Spanish speaker before going live — never assume the family can vet it. (Corrected June 4, 2026.)
+
 **⚠️ HARD FACT — UNIK does NOT sell backpacks.** Never show a backpack in any ad, carousel, photo, or landing page copy. Product range is: polos, pants, dresses. (Corrected June 1, 2026.)
 
 **⚠️ LOGO RULE — the UNIK wordmark is ALWAYS lowercase "unik" in brand blue (#29ABE2).** Never uppercase, never a different color, never restyled. Use this exact format on every end card, slide, carousel, footer, and graphic where the logo appears. Logo file: `assets/logo/unik_logo.png`. (Locked June 1, 2026.)
@@ -130,6 +132,39 @@ School hallway setting. Real-feeling, not staged. Kids walking, lockers in backg
 - **Amazon URL used:** `https://www.amazon.com/dp/B085FYGGP6`
 - Cal approved May 29, 2026.
 
+### `unik_two_girls_locker_music.mp4` — FINAL FINAL (GU07 skirt, two girls)
+- Location: `clients/Unik/outputs/finals/unik_two_girls_locker_music.mp4` (also desktop: `UNIK Ads/unik_two_girls_locker_music.mp4`)
+- **15.6s total:** stuck-locker film (~13.6s) + 2s animated end card, music fades out over the card
+- **Model:** Seedance 2.0, 16:9 (wide for Amazon listing), 480p, 4 GU07 reference photos (khaki front+back, hunter green front+back)
+- **Concept:** Two best friends, first morning of school, both at one jammed top locker. The stuck locker is the whole trick — see lessons below.
+- **Audio:** `Backpack Morning.mp3` (Suno) as the music bed + the upbeat skirt VO from the v2 gen, mixed. NOTE: the VO is still the baked AI voice (mixed with v2's own music, slight bleed). Clean swap to a real recorded voice (ElevenLabs) is the one open step.
+- **VO script (locked):** in `build/GU07/two_girls_VO.txt` — "First day fits, and this pleated skirt is ready to go. / Built-in shorts underneath, comfy and ready for anything. / Four colors. Best friends, ready for the year."
+- Cal approved June 1, 2026. "that's my final final."
+
+**Lessons from the GU07 grind (all the hard-won stuff):**
+- **The held smile comes from the reference photos.** Seedance copies the expression off the photo and text cannot override it. The fix that worked: give the kids a real task to concentrate on (a jammed locker) so their attention leaves the camera. Task-focus killed the grin. (Complete fix = neutral-face reference photos.)
+- **Hands manipulating a small object (locker latch) warps.** Same trap as hands on fabric. Keep the action simple — a tug and a pull, not detailed gripping/jiggling of a latch — and keep the camera back off the hands.
+- **Action words in the VO get acted out.** "so she can run, climb, and play" made the girls physically run/play (frolic) because the baked VO leaks into the visuals. Reworded to "comfy and ready for anything."
+- **Baking VO into the gen burns the words on screen as captions** and gives a dead voice. Best practice: generate clean (no VO in prompt), add the voice in post. We baked it here only because Cal wanted to preview it together.
+- **Too many asks per 15s clip = drift.** Keep one clear moment per clip; get the prompt close, run a few times, keep the best roll instead of re-prompting after every gen.
+- These are now universal rules in `CreativeStudio/CLAUDE.md` (hard rules + writing discipline #9/#10).
+
+### `unik_girls_playground_skirt.mp4` — FINAL (GU07 skirt, playground, June 2 2026)
+- Location: `outputs/finals/unik_girls_playground_skirt.mp4` (also desktop `UNIK Ads/`)
+- **16s total:** ~13s playground film + 3s end card. Baked female VO + Backpack Morning music, audio fades on the card.
+- **Why this exists:** client Thuy asked for a non-locker setting ("those little girls look too young to have lockers"). Moved to a playground/cafeteria walk on the first morning.
+- **Concept:** two best friends (khaki + hunter green GU07 skirts) walk one direction toward the cafeteria — arm-hook + shoulder bump, one walks backward facing her friend, arm around the shoulder, a wave at the doors. One continuous walk = natural; skirt detail shows through walking, never crouching.
+- **VO (baked):** "First day of school, and these two are ready. / A pleated skirt with built-in shorts underneath, comfy for the whole day. / From Unique, dressing kids for school for over twenty years."
+- **HARD LESSON (now a universal safety rule):** the first roll had a deep crouch that rode the skirt up and put the camera low on the lower body. NEVER crouch/squat/kneel a kid in a skirt — standing + walking only. Logged in `CreativeStudio/CLAUDE.md`.
+- Held smile reappeared (reference photos) — Cal accepted the roll. Permanent fix = neutral-face reference photos.
+
+### Content strategy docs (NEW, June 2 2026)
+- `docs/unik-content-masterclass.md` — the content brain. Now opens with a "Start Here" roadmap mapping the client's 10 marketing principles onto UNIK in funnel order. Read this first for any content work.
+- `docs/unik-product-catalog.md` — **single source of truth** for products, prices, and colors (verified live from unikusa.com June 2). Update prices HERE, not in the masterclass.
+- **Skirt price corrected:** GU07 scooter skirt is **$16.99** (not $30 — earlier note was a mistake).
+- **Brand promise (locked):** "The LA family that's kept kids in uniforms that actually last — for 20 years."
+- **CTA goal:** drive to the **webpage** (unikusa.com) — grow the channel they own. (Wholesale = their core via unikla.com; retail = the growth lane content targets. Revenue today: Amazon > Shein > webpage. Source: Cal.)
+
 ---
 
 ## Music
@@ -205,6 +240,10 @@ powershell -Command "Remove-Item seg1.mp4, seg2.mp4, video_only.mp4, concat.txt 
 | `clients/Unik/outputs/finals/unik_vto_boy_v2.mp4` | FINAL APPROVED — Pro Virtual Try On boy, 10.1s |
 | `clients/Unik/outputs/finals/unik_dress_safari.mp4` | FINAL APPROVED — Girl Safari dress mom-presents, 14.88s |
 | `clients/Unik/outputs/girls_scenes/girls_v6_endcard.mp4` | FINAL APPROVED ⭐ — girls playground, 15.09s (best yet) |
+| `clients/Unik/outputs/finals/unik_two_girls_locker_music.mp4` | FINAL FINAL — GU07 skirt, two girls stuck-locker, 15.6s (AI VO, clean voice still to add) |
+| `clients/Unik/build/GU07/` | GU07 skirt: 4 reference photos (khaki + hunter green, front + back), all prompts, locked VO script |
+| `assets/audio/Backpack Morning.mp3` | Suno music track used on the two-girls locker ad |
+| `assets/end-card/unik_endcard_animated.mp4` | Animated end card (logo + "Built for the School Day / available at amazon"), 5.9s, clean text |
 | `clients/Unik/outputs/iterations/` | All previous drafts and test versions |
 | `clients/Unik/outputs/iterations/end_card_3s.mp4` | 3s end card clip (496x864) |
 | `clients/Unik/docs/unik-content-masterclass.md` | Brand brain doc — audience, voice, content pillars, what's failed |
@@ -220,9 +259,14 @@ powershell -Command "Remove-Item seg1.mp4, seg2.mp4, video_only.mp4, concat.txt 
 
 1. Once UNIK picks favorites → post organically, watch saves/shares/comments before any paid spend
 2. Build whatever the winner's direction is — if it's the playground, follow `docs/seedance-girls-playground-WINNER.md`
-3. ElevenLabs ($6/mo Starter) decision — connect for clean human VO if we want to replace AI voices. Research saved in `research-to-connect/elevenlabs-api.md`. Needs paid plan for ad rights.
-4. Gray background swap on product photos — prep for next Seedance workflow (deferred)
-5. Deal Alert content format — deferred
-6. No paid Meta engagement started yet — hold until organic feedback comes in
+3. **GU07 two-girls locker ad — swap the AI voice for a clean recorded VO (ElevenLabs).** The video + music are locked; only the voice is open. VO script in `build/GU07/two_girls_VO.txt`. This is the one unfinished step on the final final.
+4. ElevenLabs ($6/mo Starter) decision — connect for clean human VO. Research saved in `research-to-connect/elevenlabs-api.md`. Needs paid plan for ad rights.
+5. Gray background swap on product photos — prep for next Seedance workflow (deferred)
+6. Deal Alert content format — deferred
+7. No paid Meta engagement started yet — hold until organic feedback comes in
 
-**Done this session (May 30):** girls playground ad (best yet) + dress ad finished, all 4 ads shared with UNIK, project folder fully reorganized.
+**⚠️ Credits low — ~360 of 3000 left this month (renews May 7). Burned a big chunk on GU07 iterations. Hold heavy gen work until renewal; if generating, keep one simple prompt, run a few times, keep the best roll.**
+
+**Done this session (June 1):** GU07 skirt two-girls locker ad finished (final final, AI voice for now), cracked the held-smile problem (stuck-locker task-focus), built full GU07 reference set (khaki + hunter green, front + back), folder cleaned (drafts archived to iterations, junk to _trash-review).
+
+**Done prior session (May 30):** girls playground ad (best yet) + dress ad finished, all 4 ads shared with UNIK, project folder fully reorganized.
