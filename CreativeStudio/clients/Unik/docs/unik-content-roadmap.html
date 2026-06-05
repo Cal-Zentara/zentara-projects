@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNIK — 10-Week Content Roadmap</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #e8e8e8;
+    color: #111;
+    padding: 40px 20px;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+  }
+
+  .header {
+    background: #2E6DA4;
+    padding: 52px 56px 48px;
+  }
+
+  .label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .header p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.7;
+    max-width: 500px;
+    font-weight: 400;
+  }
+
+  .principle {
+    background: #111;
+    padding: 36px 56px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .principle-bar {
+    width: 3px;
+    background: #2E6DA4;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 2px;
+  }
+
+  .principle-text h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .principle-text p {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.7;
+  }
+
+  .phase-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .phase {
+    padding: 18px 24px;
+    text-align: center;
+  }
+
+  .phase-1 { background: #1a1a1a; }
+  .phase-2 { background: #222; }
+  .phase-3 { background: #2E6DA4; }
+
+  .phase-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 4px;
+  }
+
+  .phase-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+
+  .phase-weeks {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .phase-divider {
+    background: #111;
+    padding: 14px 56px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .phase-divider.blue { background: #2E6DA4; }
+
+  .pd-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    flex-shrink: 0;
+  }
+
+  .pd-sep {
+    width: 1px;
+    height: 18px;
+    background: rgba(255,255,255,0.15);
+    flex-shrink: 0;
+  }
+
+  .pd-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .body { padding: 0 56px; }
+
+  .week-block {
+    padding: 36px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .week-block:last-child { border-bottom: none; }
+
+  .week-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .week-num {
+    background: #2E6DA4;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .week-num.dark { background: #111; }
+  .week-num.push { background: #E05A2B; }
+
+  .week-focus {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.3;
+  }
+
+  .week-why {
+    font-size: 13px;
+    color: #999;
+    margin-top: 3px;
+    font-style: italic;
+  }
+
+  .week-goal {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    background: #111;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+
+  .posts { display: flex; flex-direction: column; gap: 12px; }
+
+  .post {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 18px 20px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .post-num {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    background: #2E6DA4;
+    flex-shrink: 0;
+    padding: 3px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 1px;
+  }
+
+  .post-body h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 5px;
+    line-height: 1.3;
+  }
+
+  .post-body .hook {
+    font-size: 12px;
+    color: #2E6DA4;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-style: italic;
+  }
+
+  .post-body p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.6;
+  }
+
+  .post-tags {
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 3px;
+  }
+
+  .tag-reel { background: #E8F4FD; color: #2E6DA4; }
+  .tag-tt { background: #F0F0F0; color: #555; }
+  .tag-carousel { background: #FFF3E0; color: #BF5000; }
+  .tag-static { background: #F3E5F5; color: #6A1B9A; }
+
+  .goal-section {
+    background: #111;
+    padding: 48px 56px;
+  }
+
+  .goal-section .label { color: #2E6DA4; margin-bottom: 16px; }
+
+  .goal-section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+    line-height: 1.35;
+  }
+
+  .goals { display: flex; flex-direction: column; gap: 16px; }
+
+  .goal-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .goal-dot {
+    width: 6px;
+    height: 6px;
+    background: #2E6DA4;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+
+  .goal-item p {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.65;
+  }
+
+  .goal-item strong { color: #fff; font-weight: 600; }
+
+  .footer {
+    padding: 18px 56px;
+    font-size: 11px;
+    color: #bbb;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="label">unik: Content Strategy</div>
+    <h1>10-Week Content Roadmap</h1>
+    <p>30 posts. Instagram and TikTok. June 1 to August 18. Every post has a purpose, a hook, and a clear goal. This is the exact content plan, week by week, — to build an audience of moms before back to school season starts.</p>
+  </div>
+
+  <div style="background:#fff; padding: 28px 56px; border-bottom: 3px solid #2E6DA4;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#2E6DA4;margin-bottom:14px;">How This Roadmap Works</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
+      <div style="text-align:center;padding:16px;background:#f7f7f7;border-radius:8px;">
+        <div style="font-size:28px;font-weight:800;color:#111;line-height:1;">30</div>
+        <div style="font-size:12px;color:#666;margin-top:4px;">Total Posts</div>
+      </div>
+      <div style="text-align:center;padding:16px;background:#f7f7f7;border-radius:8px;">
+        <div style="font-size:28px;font-weight:800;color:#111;line-height:1;">3</div>
+        <div style="font-size:12px;color:#666;margin-top:4px;">Posts Per Week</div>
+      </div>
+      <div style="text-align:center;padding:16px;background:#f7f7f7;border-radius:8px;">
+        <div style="font-size:28px;font-weight:800;color:#111;line-height:1;">2</div>
+        <div style="font-size:12px;color:#666;margin-top:4px;">Platforms (IG + TT)</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 36px 56px; border-bottom: 1px solid #f0f0f0; background: #fafafa;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#2E6DA4;margin-bottom:16px;">How We Built This</div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <div style="background:#2E6DA4;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;white-space:nowrap;flex-shrink:0;margin-top:1px;">Your Reviews</div>
+        <p style="font-size:13px;color:#555;line-height:1.6;">Hundreds of real Amazon reviews across your four products. The four audiences, the customer quotes, the 20-stitches story. None of it invented.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <div style="background:#2E6DA4;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;white-space:nowrap;flex-shrink:0;margin-top:1px;">Mom Research</div>
+        <p style="font-size:13px;color:#555;line-height:1.6;">We studied what moms actually save and share on Instagram and TikTok. The emotional content in Phase 1 comes from that research.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;">
+        <div style="background:#111;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:3px;white-space:nowrap;flex-shrink:0;margin-top:1px;">Content Strategy</div>
+        <p style="font-size:13px;color:#555;line-height:1.6;">Give value first, earn trust, then sell. Brands that skip straight to selling get ignored. That is the structure behind every phase.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="principle">
+    <div class="principle-bar"></div>
+    <div class="principle-text">
+      <h3>The rule behind every post.</h3>
+      <p>Nobody wakes up wanting to see a uniform ad. But every mom wakes up carrying weight that nobody acknowledges. The morning she had, the list she's managing, the invisible work she does every single day. UNIK's job is to see that. Show up there.. The product is secondary. The feeling comes first.</p>
+    </div>
+  </div>
+
+  <div style="padding: 0; overflow: hidden; display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; background: #111;">
+    <img src="images/girl-white-polo.jpeg" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;" />
+    <img src="images/boy-burgundy-polo.jpeg" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;" />
+    <img src="images/girl-safari-dress.jpeg" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;" />
+    <img src="images/boy-navy-polo.jpeg" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;" />
+    <img src="images/girl-navy-skirt.jpeg" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;" />
+  </div>
+
+  <div class="phase-bar">
+    <div class="phase phase-1">
+      <div class="phase-label">Phase 1</div>
+      <div class="phase-title">Make Her Feel Seen</div>
+      <div class="phase-weeks">Weeks 1 to 3</div>
+    </div>
+    <div class="phase phase-2">
+      <div class="phase-label">Phase 2</div>
+      <div class="phase-title">Build the Want</div>
+      <div class="phase-weeks">Weeks 4 to 7</div>
+    </div>
+    <div class="phase phase-3">
+      <div class="phase-label">Phase 3</div>
+      <div class="phase-title">Drive the Sale</div>
+      <div class="phase-weeks">Weeks 8 to 10</div>
+    </div>
+  </div>
+
+  <div class="phase-divider">
+    <div class="pd-label">Phase 1</div>
+    <div class="pd-sep"></div>
+    <div class="pd-title">Make Her Feel Seen. No selling. Just show up for her.</div>
+  </div>
+
+  <div class="body">
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num dark">Week 1</span>
+        <div>
+          <div class="week-focus">The invisible work.</div>
+          <div class="week-why">She does everything. Nobody says it. UNIK says it first.</div>
+          <div class="week-goal">Goal: Stop her scroll. Make her feel seen.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">Post 1 of 3</div>
+          <div class="post-body">
+            <h4>Nobody sees the 6am prep.</h4>
+            <div class="hook">Hook: "You were up before everyone. You'll be last to sit down."</div>
+            <p>AI-generated quiet morning scene. Uniforms laid out the night before. Lunches lined up. House still dark. No voiceover. Text on screen. Caption acknowledges the invisible prep every mom does that no one thanks her for.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>The list no one else sees.</h4>
+            <div class="hook">Hook: "Permission slip. Lunch money. PE day. Picture day. Early dismissal. And that's just Monday."</div>
+            <p>Static image or simple text post. No product. Just a list of things moms mentally track every week. Caption: "You hold this family together. We see you." UNIK's name at the bottom. Nothing else.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>The morning that actually went well.</h4>
+            <div class="hook">Hook: "Shoes on. Backpacks on. Nobody cried. That's a win."</div>
+            <p>Relatable win. Short reel. Kids dressed, shoes on, backpacks ready, mom exhales. UNIK uniforms in frame, naturally. Caption celebrates the small victory every mom knows.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num dark">Week 2</span>
+        <div>
+          <div class="week-focus">The emotional weight of back to school.</div>
+          <div class="week-why">It's not just shopping. It's realizing how fast they're growing.</div>
+          <div class="week-goal">Goal: Get saves. This is the content moms share with other moms.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">1</div>
+          <div class="post-body">
+            <h4>They outgrew last year's uniform over summer.</h4>
+            <div class="hook">Hook: "You blinked. They grew three inches."</div>
+            <p>Emotional, relatable moment every parent feels in August. No pitch. Just the feeling. UNIK mentioned softly in caption as the brand moms come back to every year.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>First day feelings: hers, not the kid's.</h4>
+            <div class="hook">Hook: "She walked in like she owned the place. You cried in the car."</div>
+            <p>Content for the mom, not the child. The pride, the nostalgia, the quiet grief of another year starting. This type of content tends to get saved and shared far more than product posts.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>The kid who finally feels confident.</h4>
+            <div class="hook">Hook: "You didn't notice how much he'd grown up. Then he put it on."</div>
+            <p>AI-generated image of a kid in a UNIK uniform, head high, ready. Caption ties the feeling of confidence to getting dressed right. Not about the shirt. About how he feels in it.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num dark">Week 3</span>
+        <div>
+          <div class="week-focus">You're not alone in this.</div>
+          <div class="week-why">Community is one of the most valuable things a brand can build.</div>
+          <div class="week-goal">Goal: Get comments. Start conversations. Build the community.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">1</div>
+          <div class="post-body">
+            <h4>The things moms don't say out loud.</h4>
+            <div class="hook">Hook: "Tell me something about back to school that nobody talks about."</div>
+            <p>Question post. Invite moms to respond. This builds comments, saves, and shares. UNIK becomes the brand that started the conversation, not just the one selling the product.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>Real words from real moms.</h4>
+            <div class="hook">Hook: "A mom left this review at midnight after doing laundry. We still think about it."</div>
+            <p>Pull the best customer quote from the Amazon reviews. "My son lives in these." "Still looks good a full year later." One quote, big text, real name. Let another mom sell it.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>The budget stretch is real.</h4>
+            <div class="hook">Hook: "3 kids. Back to school. One paycheck. You figure it out every year."</div>
+            <p>No judgment. No advice. Just acknowledgment. Caption validates what she's managing without offering a pitch. UNIK sits quietly at the bottom as an option, not a solution being sold.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="phase-divider">
+    <div class="pd-label">Phase 2</div>
+    <div class="pd-sep"></div>
+    <div class="pd-title">Build the Want. She trusts UNIK. Now show her the product.</div>
+  </div>
+
+  <div class="body">
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num">Week 4</span>
+        <div>
+          <div class="week-focus">The product earns its place.</div>
+          <div class="week-why">She already feels seen. Now show her what UNIK actually does.</div>
+          <div class="week-goal">Goal: Introduce the product naturally. No hard sell.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">1</div>
+          <div class="post-body">
+            <h4>The pants that survived a full school year.</h4>
+            <div class="hook">Hook: "He wore these twice a week from September to June. Still look new."</div>
+            <p>Durability post. AI-generated image. Real customer words in the caption. Let the proof speak, not the brand.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>No buttons. No fight. Out the door.</h4>
+            <div class="hook">Hook: "For the kid who can't do buttons yet. For the mom who doesn't have time for the battle."</div>
+            <p>Speak to sensory kids and little ones without labeling it. Just describe the morning win. Pull-on pants, elastic waist, no drama. Show it. Caption tells the story.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>The girls playground video.</h4>
+            <div class="hook">Hook: "This is what recess looks like when you're not worried about your outfit."</div>
+            <p>Post the approved girls playground ad. No hard sell in caption. Just the feeling of a great school day. Product is visible. Let the video do the work.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num">Week 5</span>
+        <div>
+          <div class="week-focus">Every kid. Every fit.</div>
+          <div class="week-why">She needs to see her kid in it before she buys.</div>
+          <div class="week-goal">Goal: Show the full product range. Make it easy to picture her kid in it.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">1</div>
+          <div class="post-body">
+            <h4>For the boy who runs everywhere.</h4>
+            <div class="hook">Hook: "He doesn't walk anywhere. He sprints. These keep up."</div>
+            <p>Post the approved hallway video. High energy. Back to school feeling. Caption is about the kid, not the product.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>She wanted something different from the polo.</h4>
+            <div class="hook">Hook: "The only girl in school with this shirt. She noticed."</div>
+            <p>Girls V-neck shirt. Real quote from Regee's review built into the caption. Speaks to the mom who wants her daughter to feel a little special even in a uniform.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>Finding pants that actually fit.</h4>
+            <div class="hook">Hook: "For the mom who's been through six brands and still can't find the right fit."</div>
+            <p>Speak to husky kids, tall kids, hard-to-fit kids. No labels. Just the relief of finding something that works. UNIK elastic waist pants as the quiet solution.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num">Week 6</span>
+        <div>
+          <div class="week-focus">The comparison she's already making.</div>
+          <div class="week-why">She's been to Children's Place. She knows the difference. Let her say it.</div>
+          <div class="week-goal">Goal: Build social proof. Let real customers sell for you.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">1</div>
+          <div class="post-body">
+            <h4>"Better than Children's Place and French Toast."</h4>
+            <div class="hook">Hook: "A mom typed this at 11pm after doing laundry. We're not going to argue with her."</div>
+            <p>Real Amazon review. Big text. Real name. No added copy. The comparison lands harder when it comes from a mom, not a brand.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>What a full UNIK order looks like.</h4>
+            <div class="hook">Hook: "3 kids. Done."</div>
+            <p>Carousel showing a complete back to school haul. Polos, pants, dresses. Every kid covered. Each slide is one kid's full look. Final slide: link to shop on Amazon.</p>
+            <div class="post-tags">
+              <span class="tag tag-carousel">Carousel</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>The dress that does both.</h4>
+            <div class="hook">Hook: "School Monday. Church Sunday. Same dress."</div>
+            <p>Post the approved Girl Safari dress video. Caption speaks to the value of a piece that works beyond just school. Moms with tight budgets love versatility.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num">Week 7</span>
+        <div>
+          <div class="week-focus">School is three weeks away. Time is real now.</div>
+          <div class="week-why">Soft urgency. Plant the seed without pushing.</div>
+          <div class="week-goal">Goal: Plant urgency. Make her think about ordering before it's too late.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">1</div>
+          <div class="post-body">
+            <h4>August is closer than you think.</h4>
+            <div class="hook">Hook: "You have 3 weeks before the first day panic sets in. No pressure."</div>
+            <p>No pressure. Just a gentle reminder. Warm visual of kids ready for school. Caption is light. The urgency is implied, not forced.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>The size guide she actually needs.</h4>
+            <div class="hook">Hook: "She ordered the wrong size. Couldn't return it easily. Don't let that be you."</div>
+            <p>Genuine value. Simple visual size guide for UNIK products. Girls size up, boys size down, pants run long. This post saves her a bad experience. That's the value.</p>
+            <div class="post-tags">
+              <span class="tag tag-carousel">Carousel</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>Best performing content from the whole campaign so far.</h4>
+            <div class="hook">Reuse the hook that worked best in weeks 1 to 6.</div>
+            <p>By week 7 you should have a clear sense of what's resonating. Recreate that format with fresh content before the final push begins.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="phase-divider blue">
+    <div class="pd-label">Phase 3</div>
+    <div class="pd-sep"></div>
+    <div class="pd-title">Drive the Sale. She knows UNIK. Now give her a reason to buy today.</div>
+  </div>
+
+  <div class="body">
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num push">Week 8</span>
+        <div>
+          <div class="week-focus">Two weeks out. Time to buy.</div>
+          <div class="week-why">She's been following for 7 weeks. She's ready. Make it easy.</div>
+          <div class="week-goal">Goal: Convert followers into buyers. Link in bio on every post.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">1</div>
+          <div class="post-body">
+            <h4>The 20-stitches story.</h4>
+            <div class="hook">Hook: "He got 20 stitches. The pants were fine."</div>
+            <p>Text on screen. Real words from chris's Amazon review. No voiceover needed. End with the product and a link. Let the story speak for itself.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>Order now. First day is August 18.</h4>
+            <div class="hook">Hook: "You know exactly what happens when you wait until the night before."</div>
+            <p>Clear. Direct. No fluff. Link in bio. She's been warmed up for seven weeks. This is not cold selling. This is a reminder to someone who already wants it.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>14,000 parents already made the call.</h4>
+            <div class="hook">Hook: "14,000 parents reviewed these. We'll let them do the talking."</div>
+            <p>Social proof close. Amazon rating as the final push. Pull three more review quotes. Let the crowd close the sale.</p>
+            <div class="post-tags">
+              <span class="tag tag-carousel">Carousel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num push">Week 9</span>
+        <div>
+          <div class="week-focus">Last chance to order in time.</div>
+          <div class="week-why">Real deadline. Real urgency. No manufactured pressure needed.</div>
+          <div class="week-goal">Goal: Final push. Hard deadline. Close the sale.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">1</div>
+          <div class="post-body">
+            <h4>One week left to order.</h4>
+            <div class="hook">Hook: "Order by Sunday. Arrives before the first bell."</div>
+            <p>Hard deadline. Specific. Actionable. Link in bio. Short caption. She knows what UNIK is by now. Just tell her when to move.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>The mom who orders every year.</h4>
+            <div class="hook">Hook: "This is like my fourth time ordering."</div>
+            <p>JoJo's real quote. Built into a simple visual. Real loyalty is more persuasive than any discount. End with the link.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>Best video from the whole campaign.</h4>
+            <div class="hook">Repost the top performer with a buy-now caption.</div>
+            <p>End the run on your strongest content. Fresh caption adds the urgency. Same video, new call to action.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="week-header">
+        <span class="week-num push">Week 10</span>
+        <div>
+          <div class="week-focus">First day of school. Be there for it.</div>
+          <div class="week-why">Don't sell on the first day. Celebrate with her.</div>
+          <div class="week-goal">Goal: Build loyalty. Be part of the moment. Set up next year.</div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post">
+          <div class="post-num">1</div>
+          <div class="post-body">
+            <h4>Happy first day.</h4>
+            <div class="hook">Hook: "All that prep. All those early mornings. This is what it was for."</div>
+            <p>No selling. Just celebration. AI-generated first day image. Kids walking in confident. Caption is warm and short. UNIK is part of this moment without selling anything.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 2 of 3</div>
+          <div class="post-body">
+            <h4>Tag us in your first day photo.</h4>
+            <div class="hook">Hook: "Show us how they showed up today."</div>
+            <p>Community call. Invite moms to share their kids' first day. Start building real UGC for next year. Real photos from real families are the best content you can have going into next year.</p>
+            <div class="post-tags">
+              <span class="tag tag-static">Image Post</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-num">Post 3 of 3</div>
+          <div class="post-body">
+            <h4>20 years. Thank you.</h4>
+            <div class="hook">Hook: "We've been dressing LA kids for 20 years. This year felt different."</div>
+            <p>Closes the campaign on pride, not a pitch. Human. Honest. Sets the foundation for next year before this one ends. The brand shows its face, finally, after earning the right to.</p>
+            <div class="post-tags">
+              <span class="tag tag-reel">Reel</span>
+              <span class="tag tag-tt">TikTok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="goal-section">
+    <div class="label">What success looks like</div>
+    <h2>By August 18, UNIK should be the brand she already knows.</h2>
+    <div class="goals">
+      <div class="goal-item">
+        <div class="goal-dot"></div>
+        <p><strong>Saves over likes.</strong> A save means she wants to come back to it. That's the signal that content is working and she's ready to buy.</p>
+      </div>
+      <div class="goal-item">
+        <div class="goal-dot"></div>
+        <p><strong>Comments from moms.</strong> When she tags another mom in the comments, UNIK has entered the community, not just the feed.</p>
+      </div>
+      <div class="goal-item">
+        <div class="goal-dot"></div>
+        <p><strong>One post that breaks through.</strong> In 10 weeks, you'll have real data on what resonates. That's what informs next year and tells you when paid ads are worth testing.</p>
+      </div>
+      <div class="goal-item">
+        <div class="goal-dot"></div>
+        <p><strong>Real UGC by week 10.</strong> If moms tag UNIK in their first day photos, the brand has crossed from content to community. That's the real win.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Prepared by Zentara, UNIK Back to School Campaign 2026</div>
+
+</div>
+</body>
+</html>

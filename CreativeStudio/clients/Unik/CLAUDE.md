@@ -1,14 +1,30 @@
 # Unik — Client Docs
 
-## Folder Map (organized May 30, 2026 — keep it this way)
+## Doc Map — which doc, what job, when to open it (organized June 5, 2026)
+
+Docs are grouped into three folders by job: **facts** (look something up), **strategy** (decide what to make), **production** (make the video). Plus **archive** for outdated docs you should not trust as current.
+
+| Doc | Folder | What it's for | Open it when |
+|---|---|---|---|
+| `unik-product-catalog.md` | facts/ | Every product, price, color. Single source of truth. | You need a price, SKU, or color. Update prices HERE. |
+| `review-gold.md` | facts/ | 10 real Amazon customer quotes | You need trust content or proof |
+| `competitor-swipe-file.md` | facts/ | Competitor intel + locked message lines + carousel hooks | Writing carousels or positioning |
+| `unik-helpful-content-bank.md` | facts/ | Researched, sourced tips (laundry, sizing, budgets) | Writing a "helpful" top-of-funnel post |
+| `unik-content-masterclass.md` | strategy/ | The brand brain: audience, voice, content pillars, funnel | Any content work — read first |
+| `unik-social-strategy.md` | strategy/ | IG + FB + TikTok playbook, hooks, account revival, metrics | Planning posts or reviving the accounts |
+| `VIDEO-CHEAT-SHEET.md` | production/ | Current plain-English rules for making AI videos | Before making any video — read first |
+| `seedance-girls-playground-WINNER.md` | production/ | The winning kid-video formula + every lesson | Before any Seedance kid video |
+| `wild-ugc-format.md` | production/ | Locked spec for the Wild UGC disaster format | Building a Wild UGC ad (or use the `wild-ugc` skill) |
+| `seedance-hallway-formula.md` | **archive/** | OUTDATED boys hallway recipe. Bakes audio in (wrong). | Reference only. Do not follow the audio setting. |
 
 ```
 clients/Unik/
-├── CLAUDE.md                  ← this file
-├── docs/                      ← all guides & knowledge
-│     seedance-girls-playground-WINNER.md   (the winning kid-video formula)
-│     seedance-hallway-formula.md           (boys hallway recipe)
-│     unik-content-masterclass.md           (brand brain: audience, voice)
+├── CLAUDE.md                  ← this file (ops bible + doc map)
+├── docs/
+│     facts/        ← prices, reviews, competitor intel, sourced tips
+│     strategy/     ← content brain + social playbook (IG/FB/TT)
+│     production/   ← video rules + winning formulas + wild-ugc spec
+│     archive/      ← outdated docs, kept for history only
 ├── assets/
 │     audio/      ← Hall Pass Bounce.mp3, unik_audio_extract.mp3, music clips
 │     logo/       ← unik_logo.png, UNIK-LOGO_190x.avif
@@ -120,7 +136,7 @@ School hallway setting. Real-feeling, not staged. Kids walking, lockers in backg
 - **15.09s total:** 14s playground film + 1s end card hard cut, v6 audio runs all the way through (trim video at 14.0s so it ends exactly when the 15s audio ends — no trailing silence, no black)
 - **Model:** Seedance 2.0, 4 girl product photos as `--image` references (no start frame — drift was never a problem)
 - **Concept:** One continuous camcorder take, 4 girls at golden-hour recess. Four clean beats: two girls laughing → green girl drawing chalk → two girls + a ladybug → red girl joins them. Energy from camera + light + beat, NOT from the kids' actions.
-- **⭐ The full winning formula + every lesson is saved in `clients/Unik/docs/seedance-girls-playground-WINNER.md` — READ IT before any future Seedance kid video.**
+- **⭐ The full winning formula + every lesson is saved in `clients/Unik/docs/production/seedance-girls-playground-WINNER.md` — READ IT before any future Seedance kid video.**
 - Cal approved May 30, 2026. His words: "that's our best one yet."
 
 ### `unik_vto_boy_v2.mp4` — FINAL APPROVED (Pro Virtual Try On)
@@ -159,8 +175,8 @@ School hallway setting. Real-feeling, not staged. Kids walking, lockers in backg
 - Held smile reappeared (reference photos) — Cal accepted the roll. Permanent fix = neutral-face reference photos.
 
 ### Content strategy docs (NEW, June 2 2026)
-- `docs/unik-content-masterclass.md` — the content brain. Now opens with a "Start Here" roadmap mapping the client's 10 marketing principles onto UNIK in funnel order. Read this first for any content work.
-- `docs/unik-product-catalog.md` — **single source of truth** for products, prices, and colors (verified live from unikusa.com June 2). Update prices HERE, not in the masterclass.
+- `docs/strategy/unik-content-masterclass.md` — the content brain. Now opens with a "Start Here" roadmap mapping the client's 10 marketing principles onto UNIK in funnel order. Read this first for any content work.
+- `docs/facts/unik-product-catalog.md` — **single source of truth** for products, prices, and colors (verified live from unikusa.com June 2). Update prices HERE, not in the masterclass.
 - **Skirt price corrected:** GU07 scooter skirt is **$16.99** (not $30 — earlier note was a mistake).
 - **Brand promise (locked):** "The LA family that's kept kids in uniforms that actually last — for 20 years."
 - **CTA goal:** drive to the **webpage** (unikusa.com) — grow the channel they own. (Wholesale = their core via unikla.com; retail = the growth lane content targets. Revenue today: Amazon > Shein > webpage. Source: Cal.)
@@ -246,7 +262,7 @@ powershell -Command "Remove-Item seg1.mp4, seg2.mp4, video_only.mp4, concat.txt 
 | `assets/end-card/unik_endcard_animated.mp4` | Animated end card (logo + "Built for the School Day / available at amazon"), 5.9s, clean text |
 | `clients/Unik/outputs/iterations/` | All previous drafts and test versions |
 | `clients/Unik/outputs/iterations/end_card_3s.mp4` | 3s end card clip (496x864) |
-| `clients/Unik/docs/unik-content-masterclass.md` | Brand brain doc — audience, voice, content pillars, what's failed |
+| `clients/Unik/docs/strategy/unik-content-masterclass.md` | Brand brain doc — audience, voice, content pillars, what's failed |
 | `assets/end-card/unik_end_card.png` | End card poster image (752x1344) |
 | `assets/audio/Hall Pass Bounce.mp3` | Music track — 50% mix under VO |
 | `assets/logo/unik_logo.png` | UNIK logo PNG (white bg, 190x91) |
@@ -258,7 +274,7 @@ powershell -Command "Remove-Item seg1.mp4, seg2.mp4, video_only.mp4, concat.txt 
 **WAITING ON: UNIK (the cousins) to pick which of the 4 ads they like best.** Cal shared all four with them May 30. Hold next production until they respond.
 
 1. Once UNIK picks favorites → post organically, watch saves/shares/comments before any paid spend
-2. Build whatever the winner's direction is — if it's the playground, follow `docs/seedance-girls-playground-WINNER.md`
+2. Build whatever the winner's direction is — if it's the playground, follow `docs/production/seedance-girls-playground-WINNER.md`
 3. **GU07 two-girls locker ad — swap the AI voice for a clean recorded VO (ElevenLabs).** The video + music are locked; only the voice is open. VO script in `build/GU07/two_girls_VO.txt`. This is the one unfinished step on the final final.
 4. ElevenLabs ($6/mo Starter) decision — connect for clean human VO. Research saved in `research-to-connect/elevenlabs-api.md`. Needs paid plan for ad rights.
 5. Gray background swap on product photos — prep for next Seedance workflow (deferred)
