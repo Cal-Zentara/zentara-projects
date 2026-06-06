@@ -4,6 +4,8 @@
 
 **June 5 reorg:** docs split into 4 folders (facts / strategy / production / archive). CLAUDE.md now has a Doc Map. Merged the old platform-strategy + hook-ideas into `docs/strategy/unik-social-strategy.md` (now covers TikTok too). Moved the outdated hallway formula to archive. Added FB page access + Insights (484 followers, 4s avg watch time, reaching 35-44 moms but not holding them).
 
+**June 5 token cleanup:** slimmed both big rules files to cut what loads every session. Unik `CLAUDE.md` 23.5k → 9k chars and CreativeStudio `CLAUDE.md` 24.9k → 9.6k chars (~7,400 tokens saved per session). All hard rules, hard facts, the logo rule, and locked formulas stayed in the main files; history + build code + asset index moved word-for-word to `UNIK-PRODUCTION-REFERENCE.md` and `../../VIDEO-PRODUCTION-REFERENCE.md`, each pointed to by a signpost on line 1 of the main file. Also stashed 141 unused global skills and deleted 14 duplicate skills (both outside this repo).
+
 ## What this is
 AI video ads + content strategy for UNIK Inc — Cal's cousins' kids-apparel/school-uniform brand. Target: LA moms (Latina core), back-to-school. 9:16 Reels/TikTok plus 16:9 wide for Amazon listings.
 
@@ -23,6 +25,46 @@ AI video ads + content strategy for UNIK Inc — Cal's cousins' kids-apparel/sch
 - **New global rule added** (`~/.claude/CLAUDE.md`): source every stat/number/fact, every time. Flagged the doc's 86%/$38 audience stats as UNVERIFIED.
 - **Walked all 10 marketing principles** with Cal one at a time, locking each in the masterclass roadmap (1–5 discussed live; 6–10 reviewed and confirmed on a second pass).
 - **NEW doc `docs/facts/unik-helpful-content-bank.md`** — 5 researched + sourced topics for top-of-funnel "helpful" posts (how-many-uniforms, keep-whites-white, LA dress-code rules, budgeting, special-needs angles). Every fact has a source link; flagged to re-verify before public use.
+
+## Account Access (June 5, 2026)
+- **Facebook:** DONE. Cal manages the Unik Inc page through his personal FB profile (the "Cal La" profile, logged in under aestheticcal22@gmail.com). UNIK shows in his FB profile switcher. The page is NOT inside a Business Manager portfolio — it is a direct page role on his profile (new Pages experience).
+- **Instagram:** DONE. @unikusa is linked to the Unik Inc Facebook page (confirmed in Page Settings > Linked accounts). Cal manages it through the page / Meta Business Suite — no separate IG password needed.
+- **TikTok:** Cal ACCEPTED the Business Center invite (under his TikTok "Christopher Le970", Business Center "Unik Inc", ID 7382997150952800257). BUT the invite only shared 1 advertiser (ads) account and **0 TikTok accounts** — so Cal is in the Business Center but CANNOT post organic content yet. The actual UNIK TikTok account (the posting handle) must be added by Ben/Thuy. Cal messaged Ben to add the TikTok account, not just the ad account. This is the one remaining access blocker.
+- **Two-email gotcha:** Ben sent all access to cal.zentara@gmail.com, but Cal's working Meta account is under aestheticcal22@gmail.com. FB + IG resolved because Thuy invited his actual profile + IG is page-linked. Only TikTok still needs re-pointing.
+- **Cal's personal "Cal's Business Manager" is RESTRICTED from ads** — does NOT affect UNIK. The summer scope is organic only (no paid ads). If UNIK ever runs paid ads, use UNIK's own ad account, never Cal's restricted one.
+
+## Client asks captured (June 5, 2026)
+- Ben/Thuy confirmed scope: Cal manages TT, IG, FB (organic). Tool question raised (Meta Business Suite direct vs a third-party like Buffer) — not yet decided.
+- Next content ask from client: a **pants ad** + a **general UNIK brand video**. Thuy: "whenever you're ready, send the pants my way."
+
+## Engagement level — LIGHT TOUCH (Cal's call, June 5, 2026)
+Cal is intentionally keeping UNIK low-effort until there's a paid arrangement. Reasons: unpaid until ~mid-July, no agreed cut, the webpage (the channel a % would pay on) has near-zero traffic today, and Cal's real upside is the Zentara platform + paying clients. UNIK = warm case study, not a job.
+**How "light" looks:** do the quick wins they directly ask for (e.g. the June 23–26 sale ad), reuse/repurpose the 4 existing ads instead of building new from scratch, batch + space out posting (not daily). Stay warm with the family; don't go cold. When the mid-July ad budget comes up, that's the natural opening for Cal to raise how he gets paid. **Do NOT propose big new content builds for UNIK unless Cal explicitly asks.**
+
+## Thuy meeting (June 5, 2026) — direct from the call
+**Money / ads:**
+- Wants to **start paying for ads mid-July** (so organic until then, then paid).
+- They already run **some ads on Faire** (the wholesale marketplace).
+
+**Positioning (locked by Thuy):**
+- "**Premium quality, budget price**" — confirms our quality-first angle.
+- **Family stories = about REVIEWS only, nothing personal.** Do NOT make personal/family-life content. Lean on the 14,000+ reviews for the "family/trust" feeling, not the owners' personal lives.
+
+**Wholesale facts:**
+- Most wholesale buyers **come into the store to physically feel the products** (touch = their close).
+- Wholesale pricing is **5 shirts in bulk**.
+- New **Amazon storefront** ("Amazon front") in the works.
+
+**Content direction:**
+- She wants **fun videos + UGC videos**.
+- **Traffic goes to Amazon**, but **mention the Unik webpage** in the content.
+
+**URGENT — sale to promote:**
+- **20% off EVERYTHING, June 23–26, 2026.**
+- Thuy wants a **TikTok sale ad** for it.
+- Featured blouse w/ lightning deal: `https://www.amazon.com/dp/B084S6YVY3`
+- **CONFIRMED (Cal): the sale runs June 23–26** — NOT a make-it-now deadline. We have until ~June 22 to build + schedule the TikTok sale ad.
+- ⚠️ TikTok posting still blocked — Ben must add the real TT account before this can go live.
 
 ## What's broken / blocked
 - **Credits low** (~360 of 3000, renews May 7) — hold heavy gen.
