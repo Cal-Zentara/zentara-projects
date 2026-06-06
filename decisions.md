@@ -90,6 +90,10 @@ Learned building UNIK's content graphics, June 5 2026. Applies to any social gra
 **Why:** Cal (June 5) asked for "something fun" and rated the playful concept 9.5 vs the straight quote-card. Fun stops the scroll; polished blends in. Matches his standing note: AI creative wins when it's fun, not perfect.
 **When:** Any social graphic, especially for a small account that needs to earn attention.
 
+**Rule:** When you commit to a concept, commit ALL the way. No half-measures. If it's a WANTED poster, it needs: full-width rectangular mugshot photo (not a small circle), a tagline ("DEAD OR WASHED"), case numbers in corners, reward amount ($0.00 for comedy), a "Last Seen" line, AND the fix block anchored to the bottom filling all remaining space. Every element of the real thing should be present. An underwhelming first version with a small portrait and dead white space at the bottom is not committing — it's hinting. Fill the frame.
+**Why:** Cal (June 8): "if you're going to commit, commit all the way." First version had a small circle portrait and a lot of empty space below the info. Redesign with full-width mugshot, $0.00 reward, Last Seen row, ornate 3-ring border, and fix block pinned to bottom = the difference between "underwhelming" and a carousel worth posting.
+**When:** Any time you pick a playful object (wanted poster, report card, receipt, ticket). Ask: does this have ALL the real elements of that object? If not, add them.
+
 **Rule:** NEVER put a "Shop on Amazon" button (or any filled CTA pill button) on a social graphic. Banned for good.
 **Why:** Cal (June 5): "get rid of this and never see it again." A big shop button makes the graphic look like a cheap ad and cheapens the whole piece. The CTA belongs in the caption ("link in bio"), not stamped on the image. End graphics with the logo as a clean sign-off instead.
 **When:** Every social graphic, every client.

@@ -4,6 +4,16 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## June 6, 2026 — I Put Uniform Stains on a Wanted Poster
+
+I had to make a post about getting stains out of school uniforms. Riveting stuff. So instead of a normal tips list, I turned every stain into a wanted criminal. The grass stain, the marker, the yellow collar, each one got its own old western wanted poster with a mugshot, a fake rap sheet, and a reward like "your Saturday back." For the mugshots I had AI make photos of actual stained kids' uniforms, a grass smear on the knee, blue marker exploded across a pocket, and they came out so real you'd swear someone photographed their kid's worst laundry day.
+
+**What I learned:** The most boring topic on earth becomes a scroll stopper the second you wrap it in a fun idea. Don't make the tips list. Make the wanted poster.
+
+**Content idea:** "I had to make a boring post about laundry stains. So I put every stain on a wanted poster like a criminal. Grass Stain: wanted dead or washed. Reward: your Saturday back."
+
+---
+
 ## June 5, 2026 — I Spent Hours Building It Wrong, and the Answer Was in the First Sentence
 
 I was making a banner for my cousins' clothing brand and I kept building it by hand, dragging cutout photos of kids onto a background. They came out stiff and dead, like little robots standing in a line. I kept polishing it and it kept looking cheap. Then I went back and reread what I asked for at the very start: feed the kid photos into the AI as references and let it generate the whole thing. The second I actually did that, one shot, it came out exactly right, kids jumping and high fiving and playing, looking like a real class. All that struggle was just me taking the long way to the thing I said in my first sentence.
