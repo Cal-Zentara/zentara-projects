@@ -3,24 +3,25 @@
 ## ⚠️ Need a past video recipe, the build code, or an asset path? Read `UNIK-PRODUCTION-REFERENCE.md`.
 This file holds the brand truths, hard rules, locked formulas, and current next steps. The history of finished videos, the FFmpeg assembly code, the asset index, and the "what doesn't work" notes live in the reference file.
 
-## Doc Map — which doc, what job (organized June 5, 2026)
+## ⚠️ THE CONTENT MAP — single source of truth (locked June 6, 2026)
 
-Docs are grouped by job: **facts** (look something up), **strategy** (decide what to make), **production** (make the video). Plus **archive** for outdated docs.
+**All content follows ONE plan: https://cal-zentara.github.io/unik-content-roadmap/**
+
+This live link is the only roadmap. 50 posts, 5 a week, 10 weeks (June 8 to August 16), in 3 phases (Plant Seeds, Build Trust, Convert). Fetch it before writing any UNIK post. Every post's week, theme, hook, and format comes from there.
+
+The old strategy + facts docs (masterclass, social strategy, product catalog, review-gold, helpful-content-bank, competitor swipe) were **archived June 6, 2026** to `docs/archive/strategy-facts-2026-06-06/`. They are NOT the plan anymore. If a post needs a price or a review quote, re-pull it live from unikusa.com / Amazon (always sourced).
+
+## Doc Map — what's still live
 
 | Doc | Folder | What it's for |
 |---|---|---|
-| `unik-product-catalog.md` | facts/ | Every product, price, color. Single source of truth — update prices HERE. |
-| `review-gold.md` | facts/ | 10 real Amazon customer quotes |
-| `competitor-swipe-file.md` | facts/ | Competitor intel + locked message lines + carousel hooks |
-| `unik-helpful-content-bank.md` | facts/ | Researched, sourced tips (laundry, sizing, budgets) |
-| `unik-content-masterclass.md` | strategy/ | The brand brain: audience, voice, pillars, funnel — read first for content |
-| `unik-social-strategy.md` | strategy/ | IG + FB + TikTok playbook, hooks, account revival, metrics |
+| (the live link above) | — | THE content map. Follow it for every post. |
 | `VIDEO-CHEAT-SHEET.md` | production/ | Plain-English rules for making AI videos — read before any video |
 | `seedance-girls-playground-WINNER.md` | production/ | The winning kid-video formula — read before any Seedance kid video |
 | `wild-ugc-format.md` | production/ | Locked spec for the Wild UGC disaster format (or use the `wild-ugc` skill) |
 | `seedance-hallway-formula.md` | **archive/** | OUTDATED. Do not follow its audio setting. |
 
-Folder layout: `docs/` (facts / strategy / production / archive), `assets/` (audio, logo, end-card), `build/` (raw gen intermediates), `outputs/` (finals / iterations / girls_scenes). Shareable finals are also copied to the desktop `UNIK Ads/` folder.
+Folder layout: `docs/` (production / archive), `assets/` (audio, logo, end-card), `build/` (raw gen intermediates), `outputs/` (finals / iterations / girls_scenes). Shareable finals are also copied to the desktop `UNIK Ads/` folder.
 
 ---
 
@@ -95,10 +96,9 @@ Use the school uniforms from the reference image (white polo, khaki dress, burgu
 
 1. Once UNIK picks favorites → post organically, watch saves/shares/comments before any paid spend
 2. Build the winner's direction — if it's the playground, follow `docs/production/seedance-girls-playground-WINNER.md`
-3. **GU07 two-girls locker ad — swap the AI voice for a clean recorded VO (ElevenLabs).** Video + music are locked; only the voice is open. Script: `build/GU07/two_girls_VO.txt`. The one unfinished step.
-4. ElevenLabs ($6/mo Starter) decision — research in `research-to-connect/elevenlabs-api.md`. Needs paid plan for ad rights.
-5. Gray background swap on product photos (deferred)
-6. Deal Alert content format (deferred)
-7. No paid Meta engagement yet — hold until organic feedback comes in
+3. ~~GU07 locker ad AI voice swap (ElevenLabs)~~ — DROPPED (Cal, June 6 2026): baked AI voice is fine, no recorded VO needed.
+4. Gray background swap on product photos (deferred)
+5. Deal Alert content format (deferred)
+6. No paid Meta engagement yet — hold until organic feedback comes in
 
 **⚠️ Credits low — ~360 of 3000 left this month (renews May 7). Hold heavy gen work until renewal; if generating, keep one simple prompt, run a few times, keep the best roll.**
