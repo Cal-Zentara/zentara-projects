@@ -66,7 +66,7 @@ AI-powered creative studio using Higgsfield CLI to generate product ads and cont
 | Client | Status | Notes |
 |---|---|---|
 | Unik | **Active — sole focus** | 6 ad videos + 5 social graphics + Amazon storefront banner (3000x1200) made. Landing page live. Waiting on Cynthia's feedback + paid engagement. |
-| Garlic High | Parked | UGC Clip 1 approved, Clip 2 pending. Yellow commercial + anime both ready to send. See `clients/Garlic-high/CLAUDE.md`. |
+| Garlic High | **Archived** (Jun 6 2026) | Moved to `clients/_archive/Garlic-high/`. Finished work (yellow commercial + anime + UGC Clip 1) kept in its FINAL/outputs folders. UGC Clip 2 never finished. |
 | Nail'd It Spa | Parked — blocked | Waiting on 5 real salon photos from Dalena. See `clients/NaildItSpa/CLAUDE.md`. |
 | Salvia Lion | Parked — waiting on stickers | Post 1 Reiki content approved. Video pending. See `clients/Salvia-lion/CLAUDE.md`. |
 | Lucy (@xolucy.pearls) | Parked | AI influencer for Nail'd It Spa. Character locked. 4 prompts ready. |
