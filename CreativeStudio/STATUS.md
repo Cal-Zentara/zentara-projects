@@ -1,6 +1,18 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-05-31 — cleaned up, Unik is sole active focus*
+*Last updated: 2026-06-05 — UNIK Amazon storefront banner shipped*
+
+---
+
+## Completed this session (2026-06-05 — UNIK Amazon storefront banner)
+
+- Built UNIK's Amazon storefront hero banner. Cal's verdict: "looks great."
+- **Key lesson (cost the whole session):** "generate a banner, add the images for ref" = feed the kid photos into Higgsfield Nano Banana Pro as REFERENCES, not hand-build it in HTML. Spent hours pasting flat cutouts (looked like robots in a stiff line, Cal: "ugly", "7/10") before doing what was actually asked. One Higgsfield gen with 6 real product photos = playful, real scene in one shot.
+- Final recipe: 6 reference photos (4 girls + 2 boys, accurate uniforms) → `higgsfield generate create nano_banana_2 --image x6 --aspect_ratio 21:9` → overlay logo + quote in HTML, render to PNG via Chrome headless.
+- Verified Amazon hero spec (sourced from Amazon Stores Creative Asset Requirements): **3000 wide, 600 min to 1200 max tall**, keep key content in the center 50% safe area (sides + left ~18% get cropped/overlaid on small screens). Delivered at 3000x1200.
+- Quote locked: "Built to last, on the playground and in class."
+- Files on Cal's desktop + `UNIK Ads/`: "UNIK Amazon Hero 3000x1200" + "UNIK Wide Banner 21x9". Working files in `ZentaraHQ/clients/Unik/graphics/`.
+- Also built 5 single-image social graphics earlier same day (logged in `ZentaraHQ/clients/Unik/work-log.md`).
 
 ---
 
@@ -53,7 +65,7 @@ AI-powered creative studio using Higgsfield CLI to generate product ads and cont
 ## Clients
 | Client | Status | Notes |
 |---|---|---|
-| Unik | **Active — sole focus** | 4 ad videos made. Landing page live. Waiting on Cynthia's feedback + paid engagement. |
+| Unik | **Active — sole focus** | 6 ad videos + 5 social graphics + Amazon storefront banner (3000x1200) made. Landing page live. Waiting on Cynthia's feedback + paid engagement. |
 | Garlic High | Parked | UGC Clip 1 approved, Clip 2 pending. Yellow commercial + anime both ready to send. See `clients/Garlic-high/CLAUDE.md`. |
 | Nail'd It Spa | Parked — blocked | Waiting on 5 real salon photos from Dalena. See `clients/NaildItSpa/CLAUDE.md`. |
 | Salvia Lion | Parked — waiting on stickers | Post 1 Reiki content approved. Video pending. See `clients/Salvia-lion/CLAUDE.md`. |

@@ -4,6 +4,56 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## June 5, 2026 — I Spent Hours Building It Wrong, and the Answer Was in the First Sentence
+
+I was making a banner for my cousins' clothing brand and I kept building it by hand, dragging cutout photos of kids onto a background. They came out stiff and dead, like little robots standing in a line. I kept polishing it and it kept looking cheap. Then I went back and reread what I asked for at the very start: feed the kid photos into the AI as references and let it generate the whole thing. The second I actually did that, one shot, it came out exactly right, kids jumping and high fiving and playing, looking like a real class. All that struggle was just me taking the long way to the thing I said in my first sentence.
+
+**What I learned:** When something turns into a fight, stop and reread the original ask. The answer is usually sitting right there in the first thing you said.
+
+**Content idea:** "I spent hours building something by hand and it kept coming out like trash. Turns out the instructions were sitting in my first sentence the whole time. The second I actually followed them, it worked in one try."
+
+---
+
+## June 4, 2026 — I Went Looking for My Client's Competition and Found an Empty Room
+
+I spent an afternoon digging for what's actually working online for kids' uniforms, expecting to find a wall of competitors I'd have to outrun. Instead I found almost nobody. The two biggest uniform brands in the country basically don't post at all. The only one showing up was getting a few hundred likes, that's it. Twenty years my cousins have run this brand and the whole social media lane is just sitting there empty, waiting. I also learned the hard way that the AI everyone hypes up will straight up make up statistics to sound smart, until you force it to show its receipts.
+
+**What I learned:** Sometimes the opportunity isn't beating the competition, it's that the competition never showed up. And never trust an AI's numbers unless it can tell you where they came from.
+
+**Content idea:** "I spent a whole day researching my client's competition online. Found out the biggest brands in their entire industry barely post anything. The lane was just empty. Nobody's even trying."
+
+---
+
+## June 3, 2026 — I Built Myself a Room of Advisors and It Talked Me Out of Working for Free
+
+My cousins asked me how I want to get paid for the marketing I've been doing for their family clothing brand. First time anyone's ever asked me that, and I froze. I didn't even know what to say. So I built myself a little panel of AI advisors, each one with a different job, and asked them. The one whose whole job is to argue with me went straight for the throat: you already gave them a website, six videos, and a whole plan for free, and now you're about to do it again. Don't you dare put a price on the free stuff, just charge going forward. It said out loud the thing I already knew but kept dodging.
+
+**What I learned:** You don't charge family for the work you already gave away. That was the sample. You charge for what comes next.
+
+**Content idea:** "My cousins asked how I want to get paid and I completely froze. So I built a room of AI advisors to argue it out for me. The blunt one caught what I was too scared to admit: I was about to give away thousands in free work. Again."
+
+---
+
+## June 2, 2026 — I Had to Build a Whole Facebook Business Just to Spend $100
+
+My client got $100 to run ads on her healing business. Easy, right? Nope. Turns out you can't run a single Instagram ad without a Facebook Page behind it, and she didn't have one. So before spending a dollar I had to create a Facebook Page, a whole business account, and link it all to her Instagram. Nobody tells you that part. The actual ad takes 5 minutes. The setup nobody warns you about takes an hour.
+
+**What I learned:** You can't run Instagram ads without a Facebook Page connected behind the scenes — set that up first, before you ever touch the ad.
+
+**Content idea:** "I had $100 to run my first ad. Spent the first hour building a Facebook Page I'll never even post on, just because Instagram won't let you advertise without one. Nobody tells you this."
+
+---
+
+## June 1, 2026 — The AI Kids Wouldn't Stop Smiling Like Robots
+
+I was making a school uniform ad with two AI girls and they would NOT stop grinning at the camera. Looked fake, honestly a little creepy. I tried every way of typing "don't smile" and nothing worked. Turns out the AI copies the smile straight off the photos you feed it, and no amount of words can override that. The fix had nothing to do with the words. I gave one girl a jammed locker she had to focus on opening, and the second they had a real problem to solve, the posing stopped cold. They looked like actual kids.
+
+**What I learned:** AI people stop posing the moment you give them something real to do instead of looking at the camera.
+
+**Content idea:** "The AI kids wouldn't stop smiling like creepy little robots. The fix had nothing to do with what I was typing. I just gave them a problem to solve."
+
+---
+
 ## May 30, 2026 — I Made One 8-Second Clip and Stretched It Into a Full Video
 
 Tonight was a Blue Moon — the second full moon in a month, only happens every couple years. Perfect night to launch my client's healing business. I tried a bunch of video ideas and hated all of them. Photos with text on top — trash. Then I stopped forcing a story and just made one quiet shot of the desert at night under the moon. The trick to filling 30 seconds without paying for a long video: I made one 8-second clip, then played it forward, backward, forward, backward. Held the frame for a breath at each turn so it didn't feel jumpy. Loops forever, looks intentional, cost almost nothing. She loved it.
