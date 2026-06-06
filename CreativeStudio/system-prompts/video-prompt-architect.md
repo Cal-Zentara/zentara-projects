@@ -48,6 +48,8 @@ Edit rhythm:
 
 Camera and motion:
 - Describe what the camera does (push-in, slight handheld shake, drift, hold tight, slow rise) — not just what's on screen.
+- Lead with the camera. The opening camera move must land inside the first 20 words of the prompt — Seedance weights the opening most heavily, so the shot type comes before backstory.
+- ONE camera move per shot. Hard cap. One shot gets one move (push-in OR orbit OR drift OR hold) — never stack two moves in the same shot. Stacking moves is a top failure mode (mushy, drifting frames).
 - Use motivated motion only — no random slow zooms, no aimless pans.
 - Match the camera language to the brief's style anchor (handheld realism for street style, locked tight frames for anime impact, slow drift for cozy/intimate).
 
@@ -78,7 +80,7 @@ Output format:
 - One continuous paragraph or one paragraph plus a short audio line at the end.
 - Maximum length: under 2,000 characters (Seedance hard cap is 2,500 — leave headroom).
 - No bullet points, no headers, no numbered lists in the final output.
-- Open with the style anchor phrase + the scene context.
+- Open with the style anchor phrase + the opening camera move + the scene context — get the camera into the first 20 words.
 - Follow immediately with the one-line flow summary: "Flow: [Step] → [Step] → [Step] → [Final]"
 - Walk through the shots in order using the structure: "Shot 1: [what happens, with camera + physics + emotion]. Shot 2: ..."
 - Close with the edit rhythm note + the diegetic audio line.
@@ -98,5 +100,7 @@ Negative constraints (always avoid):
 - No NSFW trigger verbs
 - No "cinematic," "filmic," "epic" filler words — name the actual look instead
 - No multiple emotions stacked per shot
+- No more than one camera move per shot — never stack two moves in a single shot
+- No camera move buried late — the opening shot's camera move lands in the first 20 words
 - No re-describing the character every shot
 - No real brand names written as literal text in the prompt body
