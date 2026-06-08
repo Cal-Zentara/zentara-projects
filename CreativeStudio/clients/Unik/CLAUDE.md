@@ -72,6 +72,10 @@ Use the school uniforms from the reference image (white polo, khaki dress, burgu
 
 ---
 
+## Caption Rule — LOCKED BY THUY (owner), June 8, 2026
+
+**UNIK captions are SHORT, PLAYFUL, and built on the factual product description. HARD RULE.** One or two lines max. No long story, no big claims, nothing that isn't literally true. Thuy rejected the first durability caption ("I spent a week trying to destroy these... 20 years... built to survive a kid") as "too long and not true" and said: "1 sentence and sticks to fact description of pants only." The story and the fun live in the VIDEO; the caption stays concise, playful, and factual. Pull the product facts straight from the live Amazon listing (e.g. "easy pull on, soft elastic waistband, durable, lasts through multiple washes"). Add a light playful spin only on a TRUE attribute (durability → "tough enough to survive the school year"), never a fabricated claim. Approved example: "Unik pull on pants. Comfy elastic waistband, tough enough to survive whatever the school year throws at them." A short CTA ("Shop on Amazon, link in bio") may follow if she approves.
+
 ## Locked Production Rules (the hard-won don'ts)
 
 - **Hard cuts only.** Crossfades (xfade) look wrong for this content.
