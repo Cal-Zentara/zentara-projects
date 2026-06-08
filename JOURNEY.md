@@ -4,6 +4,16 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## June 8, 2026 — I Spent the Day Trying to Destroy a Pair of Kids' Pants
+
+First day of actually posting content for the uniform brand. The post is a fake scientist in a lab coat who stress tests school pants on a yellow crash test dummy in his driveway. He pressure washes them point blank, drags the dummy across the concrete on its knees, then ties it to his bike and rides off dragging it. Picks the pants up. Not a rip. He just stares at the camera and goes "...huh." The whole thing is one AI generation and it actually holds together, the same guy, same pants, all three tests.
+
+**What I learned:** The joke isn't the pants surviving. It's filming something insane like it's the most boring Tuesday of your life. Deadpan plus chaos is the whole formula.
+
+**Content idea:** "I built a fake scientist whose only job is to destroy a pair of $14 school pants. Pressure washer. Dragged behind a bike. They would not die. His reaction? 'Huh.'"
+
+---
+
 ## June 6, 2026 — I Put Uniform Stains on a Wanted Poster
 
 I had to make a post about getting stains out of school uniforms. Riveting stuff. So instead of a normal tips list, I turned every stain into a wanted criminal. The grass stain, the marker, the yellow collar, each one got its own old western wanted poster with a mugshot, a fake rap sheet, and a reward like "your Saturday back." For the mugshots I had AI make photos of actual stained kids' uniforms, a grass smear on the knee, blue marker exploded across a pocket, and they came out so real you'd swear someone photographed their kid's worst laundry day.

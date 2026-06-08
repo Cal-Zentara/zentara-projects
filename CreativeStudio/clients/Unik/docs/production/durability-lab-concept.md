@@ -2,7 +2,36 @@
 
 **For:** the "Challenge" posts on the content roadmap (single source of truth: https://cal-zentara.github.io/unik-content-roadmap/). Week 1 = Challenge Round 1. Week 7 = Challenge Round 2 ("you said we went easy").
 
-**Status:** IDEA LOCKED June 6, 2026 (Cal). Photos + generation NOT done yet, on purpose. Locked the concept first.
+**Status:** ROUND 1 BUILT + GENERATED June 8, 2026 (Cal). Cal generated the video himself from 3 locked reference photos and confirmed "everything is holding" — pants held across all three tests, deadpan voice came through, "visual hook is working." Final locked prompt + learnings below.
+
+---
+
+## ROUND 1 — FINAL LOCKED PROMPT (used June 8, 2026, 2,377 chars, ran at 480p)
+Attach 3 reference photos: scientist, yellow crash test dummy, real UNIK pants. 9:16.
+```
+Handheld vertical 9:16 phone selfie video, the man filming himself at arm's length, grainy raw UGC look, harsh natural daylight, never cinematic, one continuous real phone clip in a sunny driveway with the open garage behind him. Flow: test one water, test two knee drag, test three bike drag, flat huh.
+
+Use the reference photos exactly. The deadpan male scientist matches his reference photo throughout: white lab coat, safety goggles pushed up on his forehead, lanyard badge, pen in his breast pocket, calm tired neutral face, he never smiles. The crash test dummy matches its reference photo and lies on the driveway wearing the EXACT tan khaki boys uniform pants from the pants reference photo, elastic pull on waistband, straight legs, flat smooth front with no crease, slash front pockets, plain black tee. The pants are the hero, match them to the reference exactly with no crease, and keep the dummy and scientist identical to their references throughout.
+
+Shot 1, 0 to 5s: he glances into the lens, flat voice, "Test one," then turns and hits the dummy's pants point blank with a pressure washer, a hard jet of water and brown dirt sheeting off the fabric, droplets flicking at the lens, mud running onto the concrete. He leans in, inspects the soaked pants deadpan.
+
+Shot 2, 5 to 10s: quick handheld reframe, "Test two," he grips the dummy's ankles and drags it on its knees across the rough concrete, knees grinding over the pavement, grit kicking up, the body bumping along. He crouches, runs a thumb over the knees hunting for holes, finds none, blinks.
+
+Shot 3, 10 to 15s: he sets the phone down propped on a cardboard box, the shot goes static and wide on the driveway, flat voice off camera, "Test three." He walks into frame, ties a rope from the dummy to his bike, climbs on and rides past the camera dragging the dummy behind him in a cloud of dust, the body bouncing over the concrete. He circles back, drops the bike, lifts the dummy and turns the pants to the lens, no holes, no damage, then steps in and stares dead flat into the camera, the longest beat, "...huh."
+
+Hard cuts only, no fades, keep the motion alive through the final frame. Audio: pressure washer hiss, water spray, concrete scrape, grit, bike chain and tires, wind, his flat deadpan voice. No music. No on screen text, captions, words, letters, logos, or brand names anywhere in frame.
+```
+
+## ROUND 1 — LEARNINGS LOCKED (reuse for Round 2 and any UGC product test)
+1. **Pants are FLAT FRONT, NO crease.** Higgsfield keeps adding a pressed center crease; the real pants have none. Always write "flat smooth front with no crease" or it gets it wrong.
+2. **To lock an exact product on a dummy, generate the dummy as a separate reference photo first** — stand it upright against boxes/a wall with the camera at waist height so the pants fill the frame. This forces Higgsfield to copy the real pants instead of inventing them. A loose verbal description alone kept drifting.
+3. **Use the YELLOW crash test dummy** (yellow vest, black body, calibration target on the chest). It reads instantly as a lab test and sells the gag. A plain store mannequin loses the joke; legs-only loses the character.
+4. **Bike beat = prop the phone.** The scientist can't film a selfie while riding a bike and dragging a dummy. Fix: he sets the phone on a box, the shot goes static + wide, he rides past the camera. Solves the logic hole AND keeps everything in one location (no "down the street").
+5. **Thumbnail text instead of an end card.** The cover frame carries the words ("I tried to destroy these uniform pants") — earns the tap better than a card at the end. Burning text on the thumbnail is fine; the no-text rule only applies to the video frames.
+6. **Don't overstuff each beat.** Three tests in 15s is already tight. Cut the per-beat clipboard scribbles down to nothing/one so each test breathes.
+7. **Voice is the one wildcard** — three spoken lines + the "huh" are fully improvised by Seedance. It worked this time; keep a post-voice backup ready in case a future roll comes out rough.
+
+---
 
 ---
 
