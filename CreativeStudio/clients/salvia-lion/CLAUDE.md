@@ -94,6 +94,7 @@ These trigger Higgsfield NSFW filters specifically on Salvia Lion prompts.
 | "ritual" + "dark" + "hands" | "wellness routine" or "evening routine" |
 | "flat lay" | "arranged on a surface" |
 | "dark moody" + "bathtub" | "cozy spa atmosphere" or "warm moody" |
+| "bathwater" / "bath salt" + "near darkness" / "dark" | "warm water" / "mineral salt" / "soft warm candlelight" — bath + dark reads as possible nudity even with NO person in frame. Flagged the energy-lion reel June 8 2026. |
 | `restyle` mode | Avoid entirely — gets NSFW flagged for this client |
 
 ---
@@ -110,6 +111,18 @@ These trigger Higgsfield NSFW filters specifically on Salvia Lion prompts.
 ---
 
 ## Status
+
+**Content strategy locked + Post 6 live (2026-06-09):**
+- LIVE: "The hidden cost of always putting others first" carousel (9 slides) on @salvialion. First post in the new high-contrast DARK premium-editorial style, glowing teal+purple lion acting out each line. Logged as Post 6 in `CONTENT-TRACKER.md` + `work-log.md`.
+- New content rule locked: **follow the IDEA, not the format** — each carousel invents its own shape, never a reused template. Folded into `9-WEEK-ROADMAP.md` (learning #6) + `content-ideas-bank.md`.
+- New freshness rules in `content-ideas-bank.md`: (1) **EMOTIONAL RANGE** — stop drawing from the "you absorb others' energy / drained" well every time; 7 other wells listed (rest, sensitivity-as-gift, solitude, gratitude, etc.); never two posts from the same well in a row. (2) **Found-message format freshness** — lock the frame (one clean line on a real humble surface, shot candid, no brand), keep it fresh by rotating the surface + one human touch each time; keep it REAL not pretty (don't force her pastel palette onto it, keep her in the voice + warm settings).
+- Studied @mindset.therapy (11.4M) live for what works: their engine is "name the invisible feeling out loud," built to be SHARED not commented. Their found-message format (quote on a real surface) = her "found message" style.
+
+**LIVE — first "energy lion" reel posted (2026-06-08):**
+- Official MASCOT locked: `assets/mascot/SalviaLionMascot.png` — a glowing teal/purple felted lion. Use as reference for all lion content + future plush.
+- Theme song locked: `assets/audio/Moon-Bowl-Rite.mp3` (ambient). 12s reel cut saved as `Moon-Bowl-Rite-reel-12s.mp3`.
+- "Gratitude" reel LIVE on @salvialion: the energy lion forms out of the steam, breathes, dissolves as salt falls; her real gratitude story as VO (Anaya voice); Moon Bowl Rite under it; faceless, no on-screen text; pure connect caption (no product pitch). Final: `outputs/SalviaLion-gratitude-reel-FINAL.mp4`. Plan/prompts: `SpiritNancy/Marketing/content/salvialion/2026-06-08/gratitude-reel.md`.
+- New NSFW trap logged (bath + dark). See NSFW Traps table above.
 
 Locked formulas validated 2026-05-05. Hero product shot + 3-clip video collection complete.
 

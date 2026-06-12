@@ -1,0 +1,62 @@
+[
+  {
+    "id": "20e004c0-1f8b-497e-bc6b-3790b4edc58d",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260601_233059_20e004c0-1f8b-497e-bc6b-3790b4edc58d.mp4",
+    "created_at": 1780356659.81011,
+    "params": {
+      "width": 854,
+      "height": 480,
+      "prompt": "Sony Handycam DCR-TRV consumer camcorder, CCD sensor color, auto exposure hunting, warm color cast, soft digital noise, motion blur on movement. One continuous 15 second handheld take in a bright school hallway on the first morning of school, warm low sun through tall windows, gold light across a run of lockers, long soft shadows. No text, no captions, no words or letters anywhere on screen. The skirt is the focus of every shot: the camera always frames the skirts clearly, front facing and eye level, never zooming on the rear, never low, never lifting the skirt, hands always away from the skirt.\n\nTwo friends stand at their lockers on the first day, wearing the exact same skirt in two colors. One girl wears a khaki pleated scooter skirt just above the knee, white top. The other has full curly pigtails and wears the matching hunter green version, white top. Both skirts are identical: crisp pressed pleats across the front, two small buttons on the front waistband, a completely flat back panel with a plain elastic waistband and no pleats in the back. Only the color is different.\n\nThe take opens at eye level holding on both girls from the front, full body, the two skirts side by side clear in the gold light, the pressed front pleats and the two front waistband buttons sharp on each, khaki and hunter green. The girls share an easy look and a laugh, a small smile coming and going, never held, eyes on each other and not the camera.\n\nThe camera eases slowly across the front of the khaki skirt, the crisp pleats and the two buttons catching the warm light, then drifts over to the hunter green skirt and does the same, both fronts clear and detailed at a respectful eye level distance. The girls reach into their open lockers and each pulls out a book, standing tall, hands on the books, the skirts hanging clean and natural.\n\nThey swing their lockers shut and walk off down the hallway side by side, each holding a book to her chest, full body and wide, the flat backs of both skirts and the plain elastic waistbands clear as they head toward class, the skirts swinging naturally, their smiles flickering up then gone.\n\nAudio: a bright upbeat bouncy beat from the first frame, fun and quick, light and happy. Under it: sneakers on the floor, lockers clicking, two girls laughing, distant first day chatter, a warm morning hum.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "90376df4-0cc8-4446-b9ad-a608819ba3d2",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/90376df4-0cc8-4446-b9ad-a608819ba3d2.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "45723437-f6ed-4c18-8b07-87f16c951ba3",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/45723437-f6ed-4c18-8b07-87f16c951ba3.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "a4e79487-aff7-47de-a427-0eee5e789231",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/a4e79487-aff7-47de-a427-0eee5e789231.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "3e0f4465-3f13-40b4-82e1-a71903148e25",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/3e0f4465-3f13-40b4-82e1-a71903148e25.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        }
+      ],
+      "duration": 15,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "std",
+      "model": "seedance_2_0"
+    }
+  }
+]

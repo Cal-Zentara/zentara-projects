@@ -1,0 +1,102 @@
+[
+  {
+    "id": "8870707e-c37e-456e-9ff0-8693207a6780",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_235421_8870707e-c37e-456e-9ff0-8693207a6780.mp4",
+    "created_at": 1781222061.193558,
+    "params": {
+      "width": 854,
+      "height": 480,
+      "prompt": "Start on the reference image band: six boys mid song as a real kid rock band in an infinite white seamless studio, instrument cables on the floor, bright even daylight. A stadium rock anthem at full power, a huge chorus guitar riff, every boy playing ON the beat. One continuous handheld concert camera at kid waist height, alive, whipping between band members, never static. Nobody looks at the camera, everyone is lost in the song, faces intense and natural, never a held grin, no microphones, nobody sings. The song builds through five moments and lands on the finale. First the small five year old Latino boy in the light blue polo and deep navy pull on pants dances his heart out front and center, hopping, fist pumping on the hits, one quick spin, pure joy. Then the Black boy in the white polo and true black pull on pants, head down in a deep groove, his cherry red bass held low, fingers walking the strings. Then the auburn haired boy in the white polo, wearing the EXACT blue uniform pants from his reference photo, that same deep blue, sits on the floor shredding his sunburst orange guitar, rocking back as he plays. Then the big solidly built boy in the light blue polo and khaki pull on pants hammers his kid sized drum kit, sticks flying, polo bouncing, head banging, his body and pants visible beside the kit. Then the fourteen year old Asian boy in the black polo and DARK FOREST GREEN pull on pants, deep dark green, never light green, never olive, leans way back mid solo on his matte black guitar while the brown haired boy in the white polo tucked in, heather grey pull on pants, throws a huge windmill strum on his white guitar behind him. On the final huge hit the camera pulls wide and the whole band lands the last note at once exactly like the reference image: the Black boy raising his red bass high, the drummer's sticks crossed overhead, the little one's fist up mid hop, the teenager leaning into his black guitar, feet on the ground, nobody jumping, the cut hitting mid move, never frozen. Every pair of pants is smooth twill school uniform fabric, no jeans, flat front, NO crease on any leg, soft wide elastic waistbands, fabric swinging with real physics, every pant color matching its reference photo precisely. The pants are the hero of every shot. Audio under the anthem: drum hits, sneakers, fabric swish, one wild kid whoop. Real skin, film grain, like real concert footage. Not AI, not retouched. No text, no captions, no words or letters anywhere on screen.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "1f78ff1c-de15-4cc7-8e94-b80b89cfee71",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/1f78ff1c-de15-4cc7-8e94-b80b89cfee71.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "8dc28f19-2e64-4cfa-a31b-829fcc1c70fd",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/8dc28f19-2e64-4cfa-a31b-829fcc1c70fd.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "19d0e346-056a-4ec7-b969-a1261e7053c3",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/19d0e346-056a-4ec7-b969-a1261e7053c3.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "ff239024-0f05-4b34-9f42-a78af55cccc7",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/ff239024-0f05-4b34-9f42-a78af55cccc7.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "510f18e5-21c2-4832-9fa6-c92c8cb25715",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/510f18e5-21c2-4832-9fa6-c92c8cb25715.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "aacd8244-f5fe-4d97-af1a-442d212f02c6",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/aacd8244-f5fe-4d97-af1a-442d212f02c6.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "451bf9ac-705d-4705-822d-fdff4a59159f",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/451bf9ac-705d-4705-822d-fdff4a59159f.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "a04eaba6-7de9-4338-9b1c-fe0980a1fac2",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/a04eaba6-7de9-4338-9b1c-fe0980a1fac2.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "13681141-418b-419a-9613-a97a997a7db2",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/13681141-418b-419a-9613-a97a997a7db2.mp3",
+            "type": "audio_input"
+          },
+          "role": "audio"
+        }
+      ],
+      "duration": 10,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "fast",
+      "model": "seedance_2_0_fast"
+    }
+  }
+]

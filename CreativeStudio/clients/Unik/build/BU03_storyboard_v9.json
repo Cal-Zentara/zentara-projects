@@ -1,0 +1,58 @@
+[
+  {
+    "id": "cabe81fb-9679-45a0-9906-05cca8ea1de6",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_233356_cabe81fb-9679-45a0-9906-05cca8ea1de6.png",
+    "created_at": 1781220836.206653,
+    "params": {
+      "width": 1376,
+      "height": 768,
+      "aspect_ratio": "16:9",
+      "resolution": "1k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "f2df781e-aacc-4d37-acb5-fc994cec1b58",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/f2df781e-aacc-4d37-acb5-fc994cec1b58.png",
+          "type": "media_input"
+        },
+        {
+          "id": "c0418263-3fd5-482e-82ad-e82a99694610",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/c0418263-3fd5-482e-82ad-e82a99694610.png",
+          "type": "media_input"
+        },
+        {
+          "id": "7b5cb484-09a7-470c-a758-192ade5e4fcb",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/7b5cb484-09a7-470c-a758-192ade5e4fcb.png",
+          "type": "media_input"
+        },
+        {
+          "id": "ea28b563-b3c0-42a3-bb27-40a4e0ef9b3f",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/ea28b563-b3c0-42a3-bb27-40a4e0ef9b3f.png",
+          "type": "media_input"
+        },
+        {
+          "id": "0bdc37ab-9353-42ee-9f93-a04d076cbcb2",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/0bdc37ab-9353-42ee-9f93-a04d076cbcb2.png",
+          "type": "media_input"
+        },
+        {
+          "id": "0fb7a325-6710-4358-bd1c-eab2fa9b54a1",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/0fb7a325-6710-4358-bd1c-eab2fa9b54a1.png",
+          "type": "media_input"
+        },
+        {
+          "id": "9cffd207-ff9a-4159-99f7-02c3576ce1eb",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/9cffd207-ff9a-4159-99f7-02c3576ce1eb.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "The FIRST reference image is a photo of an adult rock band on a white background. Recreate that exact scene, energy, and staging, but replace the six adults with the six BOYS from the other reference images. Copy each boy's face, hair, skin tone, polo, and pants color exactly from his reference photo. Do not invent new kids.\r\n\r\nSame white seamless studio as the band photo, instrument cables on the floor like the band photo, same wild emotional energy: bodies leaning, instruments raised, everyone lost in the music, mid motion, NOT posing for the camera, nobody looking at the camera.\r\n\r\nThe mapping: where the adult bassist raises his bass high, put the Black boy in the white polo and black pants raising his kid sized cherry red bass. Where the saxophone player stands, put the brown haired boy in grey pants shredding a white electric guitar instead, NO saxophone. Where the woman sings, put the small Latino boy in the light blue polo and navy pants dancing with one fist up, NO microphone, mouth closed, nobody sings. Where the guitarist sits playing on the floor, put the auburn haired boy in blue pants sitting and playing his sunburst orange electric guitar. Where the drummer plays, put the big boy in the light blue polo and khaki pants behind a kid sized drum kit, sticks up mid hit. Where the guitarist leans on the right, put the Asian teenager in the black polo and dark forest green pants, deep dark green never light green, leaning back into his matte black electric guitar.\r\n\r\nThe blue pants are a medium denim blue exactly like the reference photo, never royal blue, never bright blue. All instruments are kid sized and every guitar is a DIFFERENT color: cherry red bass, white guitar, sunburst orange guitar, matte black guitar, no two guitars alike. Pants stay visible on every boy. Each boy appears exactly once, six boys total. Faces natural and caught up in the music, no posed grins at the camera. Photorealistic, real fabric, film grain, documentary texture, like a real band photoshoot caught mid song. No text anywhere."
+    }
+  }
+]

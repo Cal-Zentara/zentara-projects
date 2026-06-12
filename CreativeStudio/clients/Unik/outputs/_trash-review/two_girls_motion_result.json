@@ -1,0 +1,46 @@
+[
+  {
+    "id": "b7cb6acf-df17-4fab-b3a1-ff69d8cc3baf",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260602_000232_b7cb6acf-df17-4fab-b3a1-ff69d8cc3baf.mp4",
+    "created_at": 1780358552.260756,
+    "params": {
+      "width": 854,
+      "height": 480,
+      "prompt": "Sony Handycam DCR-TRV consumer camcorder, CCD sensor color, auto exposure hunting, warm color cast, soft digital noise, motion blur on movement. One continuous 15 second handheld take in a bright school hallway on the first morning of school, warm low sun pouring through tall windows, raking gold light across a run of lockers, long soft shadows. Two best friends arrive for the first day, wearing the exact same skirt in two colors. One girl wears a khaki pleated scooter skirt that hits just above the knee, pressed pleats across the front, two small buttons on the front waistband, white top. The other has full curly pigtails and wears the matching hunter green version, white top. Same skirt, only the color is different. The camera moves with them, close and alive, eye level, both girls fully in frame, their eyes on each other and their lockers, lost in their own conversation, a small real smile coming and going, never held.\n\nThe take opens following alongside the two girls as they walk in side by side, heads leaning together mid laugh, the khaki and hunter green skirts swaying with their strides, the pressed pleats catching the gold light. A warm easy female voice over drifts in: First day. New fits. Best friends ready to go.\n\nThey reach their lockers next to each other and pop the doors open, the camera drifting alongside and catching the fronts of both skirts in the warm light, the pleats and waistbands glinting, the girls talking the whole time, one turning to say something to the other.\n\nEach girl reaches in and pulls a book from her locker, standing easy, hands on the books, the skirts moving naturally as they shift their weight, one nudging the other with a laugh. Voice over lands warm: Same skirt, every color.\n\nThey swing the lockers shut and head off down the hall together toward class, books in their arms, the skirts swinging with their strides, the gold light warm down the hall, their smiles flickering up then gone as they talk. The camera holds easy as they walk away into the morning light. Voice over lands easy: Walking in like they own the place.\n\nAudio: a bright upbeat bouncy beat from the first frame, fun and quick, light and happy. Under it: sneakers on the floor, lockers clicking, two girls laughing, distant first day chatter, a warm morning hum.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "e3f906af-a7a6-470d-a00c-9e4e7488523c",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/e3f906af-a7a6-470d-a00c-9e4e7488523c.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "89b958ab-002a-4204-ba7d-795cae27cd7f",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/89b958ab-002a-4204-ba7d-795cae27cd7f.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        }
+      ],
+      "duration": 15,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "std",
+      "model": "seedance_2_0"
+    }
+  }
+]

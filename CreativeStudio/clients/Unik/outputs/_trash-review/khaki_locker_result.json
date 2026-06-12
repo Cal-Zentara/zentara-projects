@@ -1,0 +1,46 @@
+[
+  {
+    "id": "527884b4-9b08-4be4-9bcc-585c1f296513",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260601_221709_527884b4-9b08-4be4-9bcc-585c1f296513.mp4",
+    "created_at": 1780352229.092338,
+    "params": {
+      "width": 854,
+      "height": 480,
+      "prompt": "Sony Handycam DCR-TRV consumer camcorder, CCD sensor color, auto exposure hunting, warm color cast, soft digital noise, motion blur on movement. One continuous 15 second handheld take in a bright school hallway on the first morning of school, warm low sun pouring through tall windows, raking gold light across a run of lockers, long soft shadows. A young girl wears a khaki pleated scooter skirt that hits just above the knee, pressed pleats across the front, two small decorative buttons on the front waistband, built in shorts underneath, paired with a white top. She walks up to her locker, easy and unbothered, a small real smile coming and going, never held, her eyes on her locker and her backpack, never on the camera. The camera moves with her, close and alive, always finding the skirt as she moves.\n\nThe take opens following alongside her as she steps up to the locker, the khaki skirt swaying with her stride, the pressed front pleats catching the gold light, her backpack on one shoulder. She reaches up and pops the locker open, and the camera drifts in close on the front waistband, catching the two small decorative buttons and the clean stitched edge glinting in the warm light, then settles on the run of pleats below. A warm female voice over drifts in, easy and bright: Crisp pressed pleats. Wrinkle resistant all day.\n\nShe leans down to slide her backpack off and tuck a book into the bottom of the locker, the skirt moving naturally with her, the built in shorts showing just beneath as she bends, soft and full, full coverage underneath, no fuss, no pulling at it. The camera follows the movement low, the front pleats opening and falling back into a clean line as she straightens up. Voice over lands warm: Built in shorts underneath. Made to move.\n\nShe swings the locker shut and turns to head down the hall, the khaki skirt swinging with the turn, the gold light raking the front pleats and the two buttons one last time, her smile flickering up then gone as she looks down the hallway. The camera holds as she steps away, the khaki glowing. Voice over lands warm and clear: Four colors. Built to last. UNIQUE.\n\nAudio: a bright upbeat bouncy beat from the first frame, fun and quick. Under it: sneakers on the hallway floor, the click of a locker, distant first day chatter, a warm morning hum.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "2f07f62a-7072-40e7-bbc1-f5c44e009f5c",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/2f07f62a-7072-40e7-bbc1-f5c44e009f5c.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "0561174d-2ec8-478a-826c-ddd6bc64d93b",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/0561174d-2ec8-478a-826c-ddd6bc64d93b.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        }
+      ],
+      "duration": 15,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "std",
+      "model": "seedance_2_0"
+    }
+  }
+]

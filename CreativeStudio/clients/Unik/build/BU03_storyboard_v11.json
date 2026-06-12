@@ -1,0 +1,58 @@
+[
+  {
+    "id": "4873c480-3134-4158-bfce-da076f1816d6",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_235033_4873c480-3134-4158-bfce-da076f1816d6.png",
+    "created_at": 1781221833.012761,
+    "params": {
+      "width": 1376,
+      "height": 768,
+      "aspect_ratio": "16:9",
+      "resolution": "1k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "f567dfc0-ca1b-4efb-a22a-f683d3dc0600",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/f567dfc0-ca1b-4efb-a22a-f683d3dc0600.png",
+          "type": "media_input"
+        },
+        {
+          "id": "498be57c-b75e-486e-b55c-32fcd0b6cfeb",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/498be57c-b75e-486e-b55c-32fcd0b6cfeb.png",
+          "type": "media_input"
+        },
+        {
+          "id": "73fd3991-f20e-424b-96b6-b4f51960ee0e",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/73fd3991-f20e-424b-96b6-b4f51960ee0e.png",
+          "type": "media_input"
+        },
+        {
+          "id": "9d821610-ccda-4027-9a7b-a7230e8306b2",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/9d821610-ccda-4027-9a7b-a7230e8306b2.png",
+          "type": "media_input"
+        },
+        {
+          "id": "ae0431db-1395-4ab5-a2a5-b456589ebebc",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/ae0431db-1395-4ab5-a2a5-b456589ebebc.png",
+          "type": "media_input"
+        },
+        {
+          "id": "868cdcad-a09f-4c9e-bbfd-15625d14198a",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/868cdcad-a09f-4c9e-bbfd-15625d14198a.png",
+          "type": "media_input"
+        },
+        {
+          "id": "9dec8e31-ea2c-41fb-91e2-9d5b5e2a6d14",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/9dec8e31-ea2c-41fb-91e2-9d5b5e2a6d14.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "The FIRST reference image is the master photo: six boys as a kid rock band on white, cables on the floor. Build a 6 panel video storyboard, 3x2 grid, thin white gutters, showing moments from the SAME performance with the SAME six boys, same faces, same polos, same pants, same instruments and same instrument colors as the master photo. Copy each boy's face and pants exactly from the reference photos, every pant color matches its reference photo precisely. Same white seamless studio and floor cables in every panel. Nobody looks at the camera, everyone is lost in the song, no posed grins, no microphones, nobody sings, all pants smooth twill school uniform pants, no jeans.\r\n\r\nPanels 1 to 5 are DIFFERENT moments of the show, none of them copies of the master photo:\r\n\r\nPanel 1: the small Latino boy in the light blue polo and navy pants mid dance, hopping, one fist pumping, the others playing behind him out of focus.\r\n\r\nPanel 2: the Black boy in the white polo and black pants head down in a deep groove on his cherry red bass, fingers on the strings, bass held low.\r\n\r\nPanel 3: the auburn haired boy in the blue pants from his reference photo sitting on the floor rocking back as he shreds his sunburst orange guitar.\r\n\r\nPanel 4: the big boy in the light blue polo and khaki pants mid drum hit, one stick striking down, head banging, full body visible beside the kid sized kit.\r\n\r\nPanel 5: the Asian teenager in the black polo and dark forest green pants, deep dark green never light green, leaning way back mid solo on his matte black guitar while the brown haired boy in grey pants throws a windmill strum on his white guitar behind him.\r\n\r\nPanel 6: recreate the master photo EXACTLY as it is, the full band finale, every boy in the same position, same poses, same instruments.\r\n\r\nRules: pants always fully visible, flat front, no crease, soft elastic waistbands. Each boy appears once per panel where shown, exactly six boys in panel 6. Photorealistic, real fabric, film grain, documentary texture. No text anywhere."
+    }
+  }
+]

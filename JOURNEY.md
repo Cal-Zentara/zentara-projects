@@ -4,6 +4,96 @@ A running log of real moments — what happened, what it meant, what's worth sha
 
 ---
 
+## June 12, 2026 — I Paid AI All Morning and the Free Flipbook Won
+
+I burned real money trying to get AI to make one good video for the nail salon. Three paid tries: too much going on, the shop sign came out misspelled, the photo looked cheap. Killed it. Then we made a reel a completely different way: her real nail photos, untouched, with little hand drawn doodles dancing around them — arrows, sparkles, a tiny crown. Built like a flipbook, 480 still pictures glued together, 30 per second. Cost nothing. It's the best looking thing we've made for her page.
+
+**What I learned:** When the fancy tool keeps failing, the answer might be the oldest trick in animation, done with free tools.
+
+**Content idea:** "I paid AI three times this morning and hated everything it made. Then I made the best post of the week for free, using a trick cartoonists have used for 100 years."
+
+---
+
+## June 11, 2026 — The AI Gave My Kid Model a Dog's Head
+
+I was building an ad with six kids as a rock band. One of the kids is a bigger build, so I described him to the AI as "husky." It gave him the head of an actual Siberian husky. A whole dog face on a kid's body, holding drumsticks. Same night, I asked for kids playing "air guitar" and it handed them real guitars. I wrote "denim blue" pants and got jeans instead of school pants. Every single word you type, the AI might take literally. Name a thing, get the thing.
+
+**What I learned:** Never write a word you don't want to see on screen. Describe around it or point at a photo instead.
+
+**Content idea:** "I told the AI one of my kid models was husky. It gave him a dog's head. Why every word you type into AI matters."
+
+---
+
+## June 11, 2026 — I Made a Kid Ride a Squirrel at a Skate Park to Sell School Uniforms
+
+The video is eight seconds. AI-generated. Fish-eye lens. Golden hour. A kid in a white school shirt doing tricks at a skate park — except instead of a skateboard, he's riding a squirrel. It's completely insane. I added the logo, burned in the text, and we posted it with one caption: "I swear kids are wild these days when they feel confident with our school uniforms." That's it. No hard sell. No price. Just the most unhinged eight seconds you've ever seen next to a one-liner that made you nod.
+
+**What I learned:** You don't need a big production budget to stop a scroll. You need something nobody expected to see.
+
+**Content idea:** "I used AI to make a kid ride a squirrel at a skate park. Posted it for a school uniform brand. The caption wrote itself."
+
+---
+
+## June 10, 2026 — I Spent a Month Selling Nails. Nobody Buys Nails.
+
+I've been building content for a nail salon thinking the product was nails. Pretty sets, prices, designs. Then it hit me tonight: nobody books a $60 appointment because their nails are bad. She books because of how she feels walking out. Catching her own hands on the steering wheel. Someone at dinner saying "your nails are so cute." The nails are just the receipt. We were never selling nails. We're selling confidence, swag, the feeling. Changed the whole playbook in one line.
+
+**What I learned:** Whatever you think you're selling, you're probably selling the feeling that comes after it.
+
+**Content idea:** "I spent a month making content to sell nails. Then I realized nobody buys nails. Here's what they're actually paying for."
+
+---
+
+## June 10, 2026 — I Made Content for Moms and the Algorithm Sent It to Dads
+
+My best post this week was reaching the wrong people. I built it for moms buying school uniforms, checked the numbers, and most of the viewers were men. Memes travel wide but they don't aim. So I sent five AI researchers out at once to figure out what actually stops a mom mid scroll, what makes her share something, and what makes her buy. Came back with the whole map: she shares what makes her feel seen, she saves what relieves the guilt, and she buys what other moms vouch for. Now every post has one rule: the mom is the main character, not the product.
+
+**What I learned:** Reach means nothing if it's reaching the wrong person. The numbers tell you who's actually watching, not who you made it for.
+
+**Content idea:** "I made a video for moms. The data said most of my viewers were men. Here's how I found out and what I changed."
+
+---
+
+## June 10, 2026 — A T-Shirt Company Made $150 Million Off One Joke Format. My Posts Already Matched It.
+
+I dug into how a t-shirt brand went from three grand to 150 million dollars in three years. Turns out their whole engine was one thing: deadpan comedy skits where the product is the punchline, not the pitch. Their first comedy ad made nine dollars for every one they spent, overnight. Then I looked at my own numbers for the uniform brand. My two best posts ever? Both deadpan comedy. I'd stumbled into their formula before I ever read about it. So tonight I locked it in as the official strategy: comedy first, the sell rides inside the joke.
+
+**What I learned:** Your own numbers will tell you the strategy before any research does. The research just gives you permission to trust them.
+
+**Content idea:** "I spent an hour studying how a t-shirt company turned $3,000 into $150 million. Then I checked my own posts. I'd already found their secret by accident."
+
+---
+
+## June 10, 2026 — I Made a Post About Kids' Clothes That Made Parents Feel Like Crying
+
+I wrote one line on a dusty school bus window. "One day they won't need you at the bus stop. Not today though." That's it. No product. No price. No brand. AI generated the photo, a yellow bus window with the words scratched in the dust, a small backpack on the curb. Posted it tonight and the caption was just "To every parent still standing at the bus stop. Send this to one who gets it." We posted two totally different posts today, a dumb Egypt meme in the morning and a gut punch at night. Neither one sold a single thing.
+
+**What I learned:** The posts that build a following aren't the ones selling. They're the ones that name the feeling people carry and never say. Say it out loud and they send it to someone they love.
+
+**Content idea:** "I put one sentence on a dusty school bus window. A whole year of parenting in one line. Made it this morning, posted it tonight. No product. No price. Just the thing every parent already knows."
+
+---
+
+## June 9, 2026 — I Studied an Account With 11 Million Followers to Steal Their Secret
+
+I went digging through one of the biggest self help accounts on the planet, the kind with eleven million followers, to figure out what they actually do that works. I thought it'd be some clever trick. It's not. Their single biggest post, thirty six million views, is just one line: here's what people see, and here's what they don't see. That's it. And here's the part that got me, it had way more shares than comments. People weren't arguing about it, they were quietly sending it to someone they love who needed to hear it. The whole game is saying the quiet thing out loud so the right person feels seen and passes it on.
+
+**What I learned:** You don't grow by selling. You grow by naming the thing people feel but never say. Every share is a stranger introducing you to a friend for free.
+
+**Content idea:** "I studied an account with 11 million followers to steal their secret. Their biggest post ever was one sentence. No selling, no trick. They just said the quiet thing out loud, and a million people sent it to a friend."
+
+---
+
+## June 9, 2026 — I Stole a Viral Meme and Made It About School Uniforms
+
+There's a guy on TikTok who said "I bought a property in Egypt and what they do for you is they give you the property." Eleven million views. Just the most obvious sentence in the world delivered totally deadpan. So I took that exact format and made a video where a mom says "I bought school uniforms and what they do is they give you the uniform. And at the end of the year it still looks like this." Same energy. Different product. Cut to the kid in a perfect uniform.
+
+**What I learned:** You don't have to invent the joke. Borrow the format that's already working and swap your product in. If the swap is a good fit, you ride their wave for free.
+
+**Content idea:** "I took the most viral meme on TikTok right now and made it about school uniforms. The mom is deadpan. The kid is in Egypt. The pants survived."
+
+---
+
 ## June 8, 2026 — I Spent the Day Trying to Destroy a Pair of Kids' Pants
 
 First day of actually posting content for the uniform brand. The post is a fake scientist in a lab coat who stress tests school pants on a yellow crash test dummy in his driveway. He pressure washes them point blank, drags the dummy across the concrete on its knees, then ties it to his bike and rides off dragging it. Picks the pants up. Not a rip. He just stares at the camera and goes "...huh." The whole thing is one AI generation and it actually holds together, the same guy, same pants, all three tests.
@@ -11,6 +101,26 @@ First day of actually posting content for the uniform brand. The post is a fake 
 **What I learned:** The joke isn't the pants surviving. It's filming something insane like it's the most boring Tuesday of your life. Deadpan plus chaos is the whole formula.
 
 **Content idea:** "I built a fake scientist whose only job is to destroy a pair of $14 school pants. Pressure washer. Dragged behind a bike. They would not die. His reaction? 'Huh.'"
+
+---
+
+## June 8, 2026 — I Turned a Bath Brand Into a Glowing Spirit Lion
+
+For my client who makes Reiki bath salts, I made a little reel where steam rises off the water and slowly turns into a glowing blue and purple lion. It breathes, looks right at you, then melts back into the steam as the salt falls in. Her own voice plays over it, talking about how she found her peace in gratitude. It honestly looks like something out of a movie, and there's not a single person or face in it.
+
+**What I learned:** A brand doesn't need a face to feel alive. Give it a character people recognize and it becomes unforgettable.
+
+**Content idea:** "I made my client a glowing spirit lion that rises out of the steam of her bath, breathes, looks at you, then dissolves back into the mist. No face, no actor, just steam turning into magic."
+
+---
+
+## June 8, 2026 — My Design Looked Perfect. Every Time I Saved It, It Broke.
+
+Spent way too long fixing a nail post that looked flawless on my screen. Every time I downloaded it, something was off. A gray bar across the bottom. The nail tech's little headshot squished like a funhouse mirror. So I kept changing the design thinking I messed it up, and kept making it worse, going in circles. Turns out the design was fine the whole time. The thing that saves the picture reads it differently than what shows on screen. Once I figured that out, I built myself a way to see the real saved version before I ever post it, so I stop guessing.
+
+**What I learned:** What's on your screen and what actually saves out can be two different pictures. Trust the real file, not the preview.
+
+**Content idea:** "I spent an hour fixing a design that was never broken. It looked perfect on my screen. Every single time I hit save, it came out wrong. The file was lying to my face."
 
 ---
 

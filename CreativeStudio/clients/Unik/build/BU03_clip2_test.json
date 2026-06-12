@@ -1,0 +1,86 @@
+[
+  {
+    "id": "46022c57-b896-4451-b6d2-419aa0046b5d",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_215549_46022c57-b896-4451-b6d2-419aa0046b5d.mp4",
+    "created_at": 1781214949.376252,
+    "params": {
+      "width": 480,
+      "height": 480,
+      "prompt": "The same infinite pure white seamless studio, bright even daylight, soft shadows under twelve sneakers. One continuous wide shot, camera at waist height pulling back as the group advances, every body full in frame, six pairs of pants owning the center band. A stadium anthem with a huge chorus riff, the boys walk ON the beat, loose unison, not military, rowdy and alive, boys being boys on their way somewhere great. Six boys walk toward camera in a staggered line, smallest to tallest left to right: a five year old Latino boy, light blue polo, deep navy pull on pants, breaking into a half jog every few steps to keep up, arms pumping, determined, finally landing in step beside the boy next to him; a seven year old Black boy, white polo, true black pull on pants, who notices the little one catching up, slows half a step and drops him a quick low high five as he lands in stride, a grin that fades as they fall in step; an eight year old, brown hair, white polo tucked in showing the elastic waistband, heather grey pull on pants, who bumps shoulders with the boy beside him then walks backward two steps facing the group like he is hyping them up before spinning forward; a ten year old, light auburn hair, white polo, medium blue pull on pants, laughing at the shoulder bump and answering it with a quick sideways hop step, a burst of boy energy, pant legs flaring with the jump; a husky ten year old, light blue polo, khaki pull on pants, the steadiest walker, trading one quick nod with the tallest boy; on the far right a fourteen year old Asian boy, black polo, DARK FOREST GREEN pull on pants, deep dark green, never light green, never olive, setting the pace like a captain, glancing back once to check his crew. Nobody looks into the lens. The line is staggered in depth, no two boys on one plane, every pair of pants fully visible the whole walk. Pant legs swing with real fabric physics, flat front, NO crease down any leg, soft wide elastic waistbands, straight relaxed legs, colors true to a real product photo. The pants are the hero of every shot. Audio under the anthem: sneakers in loose rhythm, fabric swish, one bright kid laugh. In the final seconds the boys pass the camera one by one on both sides, wiping the frame, until only clean white remains. Faces calm, smiles flicker and fade, never held, no mugging, no winking, no thumbs up. Documentary texture: real skin, film grain. Not AI, not retouched, not a catalog. No text, no captions, no words or letters anywhere on screen.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "edaadb83-f39a-45cc-ad47-1ff0bf7df6c8",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/edaadb83-f39a-45cc-ad47-1ff0bf7df6c8.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "36026638-5d69-4f14-8043-e825f16b2bd0",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/36026638-5d69-4f14-8043-e825f16b2bd0.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "277bdba7-2658-4d48-bffa-042a3d34498c",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/277bdba7-2658-4d48-bffa-042a3d34498c.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "3603ad0b-e1c4-4a61-ab64-8ba067b4b1ec",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/3603ad0b-e1c4-4a61-ab64-8ba067b4b1ec.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "9f8d98f8-5829-4de1-9c62-7d156916e669",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/9f8d98f8-5829-4de1-9c62-7d156916e669.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "2eb9ab6c-cf6f-49fa-b88e-bff85bec42eb",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/2eb9ab6c-cf6f-49fa-b88e-bff85bec42eb.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "f7480a96-4d47-482f-bb3a-2c0112cb0514",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/f7480a96-4d47-482f-bb3a-2c0112cb0514.mp3",
+            "type": "audio_input"
+          },
+          "role": "audio"
+        }
+      ],
+      "duration": 10,
+      "resolution": "480p",
+      "aspect_ratio": "1:1",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "fast",
+      "model": "seedance_2_0_fast"
+    }
+  }
+]

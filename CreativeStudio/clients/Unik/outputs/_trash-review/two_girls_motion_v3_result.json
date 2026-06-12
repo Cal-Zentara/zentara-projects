@@ -1,0 +1,62 @@
+[
+  {
+    "id": "0d0b176a-8b89-46bf-8665-b20c8ef986a1",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260602_002821_0d0b176a-8b89-46bf-8665-b20c8ef986a1.mp4",
+    "created_at": 1780360101.142857,
+    "params": {
+      "width": 854,
+      "height": 480,
+      "prompt": "Sony Handycam DCR-TRV consumer camcorder, CCD sensor color, auto exposure hunting, warm color cast, soft digital noise, motion blur on movement. One continuous 15 second handheld take, slow and unhurried, lingering and relaxed, in a bright school hallway on the first morning of school, warm low sun pouring through tall windows, raking gold light across a run of lockers, long soft shadows.\n\nTwo best friends arrive together for the first day. They wear the exact same skirt, identical in every detail, only the color is different. One girl wears a khaki pleated scooter skirt that hits just above the knee, with crisp pressed pleats across the front, two small decorative buttons on the front waistband, a clean stitched waistband, built in shorts underneath for full coverage, and a flat back panel with a plain elastic waistband and no pleats in the back. The other girl has full curly pigtails and wears the matching hunter green version of the very same skirt. Both girls wear white polo shirts. The camera moves slowly with them, close and alive, eye level, both girls fully in frame, their eyes on each other and their lockers, lost in their own conversation, mouths moving as they talk and laugh, faces relaxed, animated and natural, mostly mid sentence and easy, a real smile only breaking through for a second now and then, never a held grin and never aimed at the camera. Do not copy the posed smile from the photos, their faces are alive and changing as they talk, not posing.\n\nThe take opens following slowly alongside the two girls as they walk in side by side, unhurried, heads leaning together mid laugh, the khaki and hunter green skirts swaying gently with their easy strides, the pressed front pleats catching the gold light. A warm easy female voice over drifts in: First day. New fits. Best friends ready to go.\n\nThey reach their lockers next to each other and slowly pop the doors open, the camera drifting alongside and lingering on the fronts of both skirts in the warm light, the crisp pleats and the small front waistband buttons glinting, the girls talking the whole time, one turning to say something to the other.\n\nEach girl reaches in and pulls a book from her locker, standing easy and relaxed, hands on the books, the skirts shifting softly as they move, one nudging the other with a quiet laugh. Voice over lands warm: Same skirt, every color.\n\nThey swing the lockers shut and walk off slowly down the hall together toward class, books held in their arms, the skirts swinging gently with their unhurried strides, the flat backs and plain elastic waistbands catching the warm gold light down the hall, their smiles flickering up then gone as they talk. Voice over lands easy: Walking in like they own the place.\n\nAudio: a warm relaxed upbeat beat from the first frame, easy and light, not rushed. Under it: soft sneakers on the floor, lockers clicking, two girls laughing, distant first day chatter, a warm morning hum.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "6eef4333-4a18-47c1-8b8f-0fc2cb6163eb",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/6eef4333-4a18-47c1-8b8f-0fc2cb6163eb.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "7395a42b-3446-4d26-bd04-9885682f7a17",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/7395a42b-3446-4d26-bd04-9885682f7a17.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "221baf3e-9c5d-4ada-9eae-c6383db79c9b",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/221baf3e-9c5d-4ada-9eae-c6383db79c9b.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "b62cd98f-ca77-43f1-9f50-8a0d5a1b9644",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/b62cd98f-ca77-43f1-9f50-8a0d5a1b9644.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        }
+      ],
+      "duration": 15,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "std",
+      "model": "seedance_2_0"
+    }
+  }
+]

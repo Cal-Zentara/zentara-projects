@@ -1,0 +1,53 @@
+[
+  {
+    "id": "6d53822b-9928-49b5-9f5d-0865960f0c92",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_231735_6d53822b-9928-49b5-9f5d-0865960f0c92.png",
+    "created_at": 1781219855.354795,
+    "params": {
+      "width": 1376,
+      "height": 768,
+      "aspect_ratio": "16:9",
+      "resolution": "1k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "f5320068-2bc9-4cd2-b21c-721b35c26c06",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/f5320068-2bc9-4cd2-b21c-721b35c26c06.png",
+          "type": "media_input"
+        },
+        {
+          "id": "e1079619-6067-4e74-bf01-5c1f838c2d8c",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/e1079619-6067-4e74-bf01-5c1f838c2d8c.png",
+          "type": "media_input"
+        },
+        {
+          "id": "95c82b87-d46d-460b-9e08-665d8fe2f782",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/95c82b87-d46d-460b-9e08-665d8fe2f782.png",
+          "type": "media_input"
+        },
+        {
+          "id": "3ec97404-b245-4a66-9470-3af270b166d0",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/3ec97404-b245-4a66-9470-3af270b166d0.png",
+          "type": "media_input"
+        },
+        {
+          "id": "bb565b59-f7ec-4f59-87d9-c97ee5b06e27",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/bb565b59-f7ec-4f59-87d9-c97ee5b06e27.png",
+          "type": "media_input"
+        },
+        {
+          "id": "5d1d46ee-3ae4-4947-9868-50d4d212a5ea",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/5d1d46ee-3ae4-4947-9868-50d4d212a5ea.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Use the six boys from the reference images, the SAME six kids with the same faces, same hair, same polos, and the EXACT same pants in every panel: the small Latino boy in the light blue polo and deep navy pull on pants, the Black boy in the white polo and true black pull on pants, the brown haired boy in the white polo and heather grey pull on pants, the auburn haired boy in the white polo and medium blue pull on pants, the solidly built bigger boy in the light blue polo and khaki pull on pants, and the teenage Asian boy in the black polo and dark forest green pull on pants, deep dark green never light green. All six are human boys, each appears exactly once per panel, never duplicated. Build a 6 panel video storyboard, a clean 3x2 grid with thin white gutters. Every panel: infinite pure white seamless studio, bright even daylight, soft shadows under sneakers. The boys are a REAL KID BAND mid performance with kid sized instruments, playing hard. Every instrument is held high or worn so the boys' pants stay fully visible in every panel, nothing ever blocks their legs. The song is an instrumental, nobody sings, no microphones anywhere. Panel 1: wide shot, the whole band staggered in depth like a real stage plot, never a flat line: the small navy pants boy down front center dancing wild as the hype man, no instrument, the forest green teenager and blue pants boy flanking a step behind with electric guitars, the black pants boy deeper left with a bass guitar, the grey pants boy deeper right with an electric guitar, the khaki pants boy center back standing tall at a single snare drum on a stand, drumsticks raised. Panel 2: the small navy pants boy front and center mid dance move, arms swinging, pure joy. Panel 3: the forest green teenager leaning way back mid guitar solo, fingers flying on the strings. Panel 4: the teenager and the blue pants boy BACK TO BACK, both shredding their guitars, leaning on each other. Panel 5: the khaki pants boy standing at his snare drum mid hit, sticks blurred with motion, head nodding, full body visible. Panel 6: the final hit, all SIX boys in one frame in the same staggered staging, count them, six, no extras, no duplicates, the navy boy with both fists raised in triumph, feet on the ground, nobody jumping, every other boy landing his last note. Photorealistic, real kids, real instruments, real fabric, film grain, documentary texture. The pants sharp and accurate in every panel: flat front, no crease, soft elastic waistbands, true colors matching the reference images exactly. No text, no labels, no numbers, no words anywhere."
+    }
+  }
+]

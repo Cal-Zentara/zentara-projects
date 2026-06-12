@@ -1,0 +1,58 @@
+[
+  {
+    "id": "df9b04d9-8ac1-44a5-891e-c1c92c1b6560",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_233027_df9b04d9-8ac1-44a5-891e-c1c92c1b6560.png",
+    "created_at": 1781220627.272218,
+    "params": {
+      "width": 1376,
+      "height": 768,
+      "aspect_ratio": "16:9",
+      "resolution": "1k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "3f4d907c-7791-47bd-be4a-ba6bdd6df524",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/3f4d907c-7791-47bd-be4a-ba6bdd6df524.png",
+          "type": "media_input"
+        },
+        {
+          "id": "d9bbcce5-d770-467f-9047-c872f71b1bcf",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/d9bbcce5-d770-467f-9047-c872f71b1bcf.png",
+          "type": "media_input"
+        },
+        {
+          "id": "d528e703-1356-4913-b669-59185607ca21",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/d528e703-1356-4913-b669-59185607ca21.png",
+          "type": "media_input"
+        },
+        {
+          "id": "81ef8afb-3760-4731-a058-87743f7e7bd0",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/81ef8afb-3760-4731-a058-87743f7e7bd0.png",
+          "type": "media_input"
+        },
+        {
+          "id": "c4a35708-6b7f-4eee-acca-e6dc866d35ed",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/c4a35708-6b7f-4eee-acca-e6dc866d35ed.png",
+          "type": "media_input"
+        },
+        {
+          "id": "a9b671ae-4ffc-4e31-9b29-9af1a1b307d6",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/a9b671ae-4ffc-4e31-9b29-9af1a1b307d6.png",
+          "type": "media_input"
+        },
+        {
+          "id": "d98d652c-d47e-42e2-afc9-d5d6ef1cdc50",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/d98d652c-d47e-42e2-afc9-d5d6ef1cdc50.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "The FIRST reference image is a photo of an adult rock band on a white background. Recreate that exact scene, energy, and staging, but replace the six adults with the six BOYS from the other reference images. Copy each boy's face, hair, skin tone, polo, and pants color exactly from his reference photo. Do not invent new kids.\r\n\r\nSame white seamless studio as the band photo, instrument cables on the floor like the band photo, same wild emotional energy: bodies leaning, instruments raised, everyone lost in the music, mid motion, NOT posing for the camera, nobody looking at the camera.\r\n\r\nThe mapping: where the adult bassist raises his bass high, put the Black boy in the white polo and black pants raising his kid sized bass. Where the saxophone player stands, put the brown haired boy in grey pants shredding an electric guitar instead, NO saxophone. Where the woman sings, put the small Latino boy in the light blue polo and navy pants dancing with one fist up, NO microphone, mouth closed, nobody sings. Where the guitarist sits playing on the floor, put the auburn haired boy in blue pants sitting and playing his electric guitar. Where the drummer plays, put the big boy in the light blue polo and khaki pants behind a kid sized drum kit, sticks up mid hit. Where the guitarist leans on the right, put the Asian teenager in the black polo and dark forest green pants, deep dark green never light green, leaning back into his guitar.\r\n\r\nThe blue pants are a medium denim blue exactly like the reference photo, never royal blue, never bright blue. All instruments are kid sized. Pants stay visible on every boy. Each boy appears exactly once, six boys total. Faces natural and caught up in the music, no posed grins at the camera. Photorealistic, real fabric, film grain, documentary texture, like a real band photoshoot caught mid song. No text anywhere."
+    }
+  }
+]

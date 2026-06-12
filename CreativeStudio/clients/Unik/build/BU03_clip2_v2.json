@@ -1,0 +1,86 @@
+[
+  {
+    "id": "93b12430-b865-4d08-a530-8bbe9c1de5f3",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_222707_93b12430-b865-4d08-a530-8bbe9c1de5f3.mp4",
+    "created_at": 1781216827.983321,
+    "params": {
+      "width": 854,
+      "height": 480,
+      "prompt": "An infinite pure white seamless studio, bright even daylight, soft shadows under sneakers, an endless invisible arena mid show. A stadium rock anthem at full power, huge chorus guitar riff. ONE continuous handheld shot whipping between members like a live concert camera: six boys are a BAND with NO instruments, playing the anthem on pure air, completely committed, as if fifty thousand people are screaming back. Center stage: the five year old Latino boy, light blue polo, deep navy pull on pants, the FRONTMAN, belting into his own fist like a microphone, hopping on the beat, tiny body carrying the whole show. Stage right: the fourteen year old Asian boy, black polo, DARK FOREST GREEN pull on pants, deep dark green, never light green, never olive, shredding lead air guitar, leaning way back on the high notes, fingers flying on invisible strings. Beside him: the ten year old with light auburn hair, white polo, medium blue pull on pants, rhythm air guitar, and the two of them go back to back leaning on each other mid solo, the classic band move. Stage left: the seven year old Black boy, white polo, true black pull on pants, cool and smooth on air bass, barely moving, all groove, head nodding in the pocket. Behind them: the husky ten year old, light blue polo, khaki pull on pants, DESTROYING the air drums, full arm swings on every hit, hair and polo bouncing. Front left: the eight year old, brown hair, white polo tucked in showing the elastic waistband, heather grey pull on pants, doing huge windmill strums and a quick footwork shuffle between them. The camera dives between members, pushing in on the little frontman, whipping to the guitar duel, pulling wide for the full band. On the final huge hit of the riff, all six JUMP at once, the cut landing while every boy is still in the air, sneakers off the ground, pant legs flying, never landing on screen. Pant fabric moves with real physics on every hit, flat front, NO crease on any leg, soft wide elastic waistbands, true accurate colors like a real product photo. The pants are the hero of every shot. Audio under the anthem: sneakers hammering, fabric swishing, one wild kid whoop. Faces alive and shifting, eyes closed on big notes, never a frozen grin, nobody looks into the lens. Real skin, film grain. Not AI, not retouched, not a catalog. No text, no captions, no words or letters anywhere on screen.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "7aa54df9-a384-48f7-91b6-fb9eb462e111",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/7aa54df9-a384-48f7-91b6-fb9eb462e111.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "7e2680ab-4d40-463f-a28f-9c8d64357e42",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/7e2680ab-4d40-463f-a28f-9c8d64357e42.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "65e0f6fa-571f-4040-9fba-f56d2f8a53f2",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/65e0f6fa-571f-4040-9fba-f56d2f8a53f2.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "e74d27f8-1c6e-49df-9b51-85ed004b9229",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/e74d27f8-1c6e-49df-9b51-85ed004b9229.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "be2bd944-8715-4398-8555-4e1524e9f3a3",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/be2bd944-8715-4398-8555-4e1524e9f3a3.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "03544644-91b2-4363-9ecc-c81cb13d1b8d",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/03544644-91b2-4363-9ecc-c81cb13d1b8d.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "526a1b21-ca6d-4069-934a-fc9a23813537",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/526a1b21-ca6d-4069-934a-fc9a23813537.mp3",
+            "type": "audio_input"
+          },
+          "role": "audio"
+        }
+      ],
+      "duration": 10,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "fast",
+      "model": "seedance_2_0_fast"
+    }
+  }
+]

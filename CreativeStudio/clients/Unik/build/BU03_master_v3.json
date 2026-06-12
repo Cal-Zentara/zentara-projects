@@ -1,0 +1,58 @@
+[
+  {
+    "id": "9b092dfb-886e-45c0-a298-612c6c90547a",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_234532_9b092dfb-886e-45c0-a298-612c6c90547a.png",
+    "created_at": 1781221532.691587,
+    "params": {
+      "width": 1376,
+      "height": 768,
+      "aspect_ratio": "16:9",
+      "resolution": "1k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "75dc237b-9971-4ba3-aa42-eb9a5cfa2654",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/75dc237b-9971-4ba3-aa42-eb9a5cfa2654.png",
+          "type": "media_input"
+        },
+        {
+          "id": "a2ac37a0-bd80-4699-a5ba-68f0e671d423",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/a2ac37a0-bd80-4699-a5ba-68f0e671d423.png",
+          "type": "media_input"
+        },
+        {
+          "id": "57411c54-1d84-4eae-a914-60cf141b328f",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/57411c54-1d84-4eae-a914-60cf141b328f.png",
+          "type": "media_input"
+        },
+        {
+          "id": "1cc0d2f5-acc3-4dca-ab72-1eb061bbf2af",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/1cc0d2f5-acc3-4dca-ab72-1eb061bbf2af.png",
+          "type": "media_input"
+        },
+        {
+          "id": "460ac281-4bbd-4df0-a138-016ba2222b94",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/460ac281-4bbd-4df0-a138-016ba2222b94.png",
+          "type": "media_input"
+        },
+        {
+          "id": "d855ba60-cd65-42b6-9126-3f2849a64c70",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/d855ba60-cd65-42b6-9126-3f2849a64c70.png",
+          "type": "media_input"
+        },
+        {
+          "id": "b3914383-e2fd-46af-b3ed-c555604d538a",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/b3914383-e2fd-46af-b3ed-c555604d538a.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "The FIRST reference image is a photo of an adult rock band on a white background. Recreate that exact scene, energy, and staging, but replace the six adults with the six BOYS from the other reference images. Copy each boy's face, hair, skin tone, polo, and pants exactly from his reference photo. Do not invent new kids. Every pair of pants is the SAME smooth twill school uniform pant as the reference photos: flat front, no crease, soft elastic waistband, smooth matte twill fabric, NO jeans, no denim texture, no jean stitching, no pockets rivets. Same white seamless studio as the band photo, instrument cables on the floor, same wild emotional energy: bodies leaning, instruments raised, everyone lost in the music, mid motion, NOT posing, nobody looking at the camera. The mapping: where the adult bassist raises his bass high, put the Black boy in the white polo and true black uniform pants raising his kid sized cherry red bass. Where the saxophone player stands, put the brown haired boy in heather grey uniform pants shredding a white electric guitar, NO saxophone. Where the woman sings, put the small Latino boy in the light blue polo and deep navy uniform pants dancing with one fist up, NO microphone, mouth closed, nobody sings. Where the guitarist sits playing on the floor, put the auburn haired boy sitting and playing his sunburst orange electric guitar, wearing the EXACT blue uniform pants from his reference photo, match that photo's pant color precisely, the same deep blue, do not lighten it, do not brighten it, no other blue. Where the drummer plays, put the big boy in the light blue polo and khaki uniform pants behind a kid sized drum kit, sticks up mid hit. Where the guitarist leans on the right, put the Asian teenager in the black polo and dark forest green uniform pants, deep dark green never light green, leaning back into his matte black guitar. All instruments kid sized, every guitar a different color: cherry red bass, white guitar, sunburst orange guitar, matte black guitar. Pants fully visible on every boy. Each boy appears exactly once, six boys total. Faces natural, caught in the music, no posed grins. Photorealistic, real fabric, film grain, like a real band photoshoot mid song. No text anywhere."
+    }
+  }
+]

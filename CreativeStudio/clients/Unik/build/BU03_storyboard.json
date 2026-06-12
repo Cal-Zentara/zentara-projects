@@ -1,0 +1,21 @@
+[
+  {
+    "id": "efc9b1a1-940f-4cbd-8358-bf3048ffb412",
+    "status": "completed",
+    "display_name": "GPT Image 2",
+    "job_set_type": "gpt_image_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_223758_efc9b1a1-940f-4cbd-8358-bf3048ffb412.png",
+    "created_at": 1781217478.721644,
+    "params": {
+      "width": 1344,
+      "height": 752,
+      "prompt": "An 8 panel video storyboard, a clean 4x2 grid of equal panels with thin white gutters. Every panel shows the same scene: six boys performing as a band with NO instruments anywhere, hands completely EMPTY in every panel, miming on pure air, no guitars, no drums, no microphones, no objects of any kind. Setting in all panels: infinite pure white seamless studio, bright even daylight, soft shadows under sneakers. The six boys, identical in every panel: a five year old Latino boy in a light blue polo and deep navy pull on pants; a seven year old Black boy in a white polo and true black pull on pants; an eight year old brown haired boy in a white polo tucked in and heather grey pull on pants; a ten year old with light auburn hair in a white polo and medium blue pull on pants; a husky ten year old in a light blue polo and khaki pull on pants; a fourteen year old Asian boy in a black polo and dark forest green pull on pants, deep dark green. Panel 1: wide shot, the whole six boy band mid performance, spread across the white space, every hand empty. Panel 2: the five year old front and center, his own fist held to his mouth like a singer, mouth open belting, mid hop. Panel 3: the fourteen year old leaning way back, fingers flying over empty air at his waist in a strumming motion, nothing in his hands. Panel 4: the fourteen year old and the auburn haired boy back to back, both strumming empty air, leaning on each other. Panel 5: the seven year old cool and smooth, head down in a groove, fingers plucking empty air at his hip. Panel 6: the husky boy mid swing, both empty fists hammering down at invisible space in front of him, polo bouncing. Panel 7: the eight year old mid windmill, one arm swept high overhead, empty hand wide open, tucked polo showing the elastic waistband. Panel 8: all six boys mid jump at once, sneakers off the ground, pant legs flying, arms up. Photorealistic, real kids, real fabric, film grain, documentary texture. The pants sharp and accurate in every panel: flat front, no crease, elastic waistbands, true colors. No text, no labels, no numbers, no words anywhere.",
+      "medias": [],
+      "aspect_ratio": "16:9",
+      "quality": "low",
+      "resolution": "1k",
+      "model": "videotape-alpha",
+      "reference_elements": []
+    }
+  }
+]

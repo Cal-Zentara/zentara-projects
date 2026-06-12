@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 540px;
+    height: 675px;
+    overflow: hidden;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #1a1a1a;
+    position: relative;
+  }
+
+  .photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+  }
+
+  /* dark gradient bottom half */
+  .gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0) 30%,
+      rgba(0,0,0,0.45) 55%,
+      rgba(0,0,0,0.82) 100%
+    );
+  }
+
+  /* bottom content block */
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 28px 30px 30px;
+  }
+
+  .stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  .star {
+    width: 18px;
+    height: 18px;
+    fill: #f5a623;
+  }
+
+  .star-half {
+    fill: url(#halfGrad);
+  }
+
+  .review-count {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: -1.5px;
+  }
+
+  .review-label {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    margin-top: 4px;
+    letter-spacing: 0.2px;
+  }
+
+  .divider {
+    width: 36px;
+    height: 2px;
+    background: #29ABE2;
+    margin: 14px 0;
+    border-radius: 2px;
+  }
+
+  .review-quote {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.55;
+    font-style: italic;
+    max-width: 420px;
+  }
+
+  .logo-row {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+  }
+
+  .logo-badge {
+    background: rgba(255,255,255,0.92);
+    border-radius: 8px;
+    padding: 6px 14px;
+    display: inline-block;
+  }
+
+  .logo-text {
+    font-size: 18px;
+    font-weight: 800;
+    color: #29ABE2;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+</style>
+</head>
+<body>
+
+  <img
+    class="photo"
+    src="C:\Users\Aesth\Desktop\Zentara\Projects\ZentaraHQ\clients\Unik\graphics\gen2-raw.png"
+    alt=""
+  />
+
+  <div class="gradient"></div>
+
+  <!-- logo top left -->
+  <div class="logo-row">
+    <img src="C:\Users\Aesth\Desktop\Zentara\Projects\CreativeStudio\clients\Unik\assets\logo\unik_logo_transparent.png" style="height:36px;width:auto;" alt="unik" />
+  </div>
+
+  <!-- bottom proof block -->
+  <div class="bottom">
+
+    <!-- star row -->
+    <div class="stars">
+      <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+      <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+      <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+      <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+      <svg viewBox="0 0 24 24" class="star" style="fill:#c8952a;"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+      <span style="font-size:15px;font-weight:700;color:#f5a623;margin-left:4px;">4.2</span>
+    </div>
+
+    <div class="review-count">14,000+</div>
+    <div class="review-label">verified reviews. School moms have spoken.</div>
+
+    <div class="divider"></div>
+
+    <div class="review-quote">"The only ones that didn't end the year with holes in the knees."</div>
+
+  </div>
+
+</body>
+</html>

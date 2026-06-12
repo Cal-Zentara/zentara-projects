@@ -1,0 +1,53 @@
+[
+  {
+    "id": "e5ee2620-3f8f-41d4-a4c7-53948d4a8ef1",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_232336_e5ee2620-3f8f-41d4-a4c7-53948d4a8ef1.png",
+    "created_at": 1781220216.673581,
+    "params": {
+      "width": 1376,
+      "height": 768,
+      "aspect_ratio": "16:9",
+      "resolution": "1k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "f2c0db5b-0dcd-4883-b831-c1948d3de7cb",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/f2c0db5b-0dcd-4883-b831-c1948d3de7cb.png",
+          "type": "media_input"
+        },
+        {
+          "id": "f71869b7-1659-4222-8d9b-fafd9c272727",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/f71869b7-1659-4222-8d9b-fafd9c272727.png",
+          "type": "media_input"
+        },
+        {
+          "id": "04fbb633-b6d7-4dd1-8151-ec955986f40d",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/04fbb633-b6d7-4dd1-8151-ec955986f40d.png",
+          "type": "media_input"
+        },
+        {
+          "id": "ed0f2341-6d8a-47b7-b4e9-8c82f438d8f1",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/ed0f2341-6d8a-47b7-b4e9-8c82f438d8f1.png",
+          "type": "media_input"
+        },
+        {
+          "id": "bc8f09ff-bafa-4fba-ac77-06f2dda93d21",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/bc8f09ff-bafa-4fba-ac77-06f2dda93d21.png",
+          "type": "media_input"
+        },
+        {
+          "id": "010235af-dc8a-4283-9d5e-4d48ac80da35",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/010235af-dc8a-4283-9d5e-4d48ac80da35.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Create a 6 panel storyboard, 3x2 grid, thin white gutters. Use the exact six boys from the reference photos. Copy each boy's face, hair, skin tone, polo, and pants color exactly from his reference photo. Do not invent new kids. Every panel is the same white seamless studio with bright even light.\r\n\r\nThe six boys: Boy 1 is the small Latino boy, light blue polo, navy pants. Boy 2 is the Black boy, white polo, black pants. Boy 3 is the brown haired boy, white polo, grey pants. Boy 4 is the auburn haired boy, white polo, blue pants. Boy 5 is the big boy, light blue polo, khaki pants. Boy 6 is the Asian teenager, black polo, dark forest green pants.\r\n\r\nPanel 1: all six boys playing as a rock band, staggered in depth like a real stage. Boy 1 dances in front, no instrument. Boy 6 and Boy 4 play electric guitars behind him. Boy 2 plays bass on the left. Boy 3 plays electric guitar on the right. Boy 5 stands at a snare drum in the back, sticks up.\r\n\r\nPanel 2: Boy 1 alone, mid dance move, arms swinging, having the time of his life.\r\n\r\nPanel 3: Boy 6 alone, leaning back, mid guitar solo.\r\n\r\nPanel 4: Boy 6 and Boy 4 back to back, both playing guitars.\r\n\r\nPanel 5: Boy 5 alone at his snare drum, mid hit, full body visible.\r\n\r\nPanel 6: all six boys, same staggered staging as panel 1, the final note. Boy 1 has both fists up. Feet on the ground, nobody jumps.\r\n\r\nRules: pants always fully visible, nothing blocks any boy's legs. Instruments are kid sized. No microphones. No singing. Each boy appears once per panel, exactly six boys in panels 1 and 6. Photorealistic, real fabric, film grain. No text anywhere."
+    }
+  }
+]

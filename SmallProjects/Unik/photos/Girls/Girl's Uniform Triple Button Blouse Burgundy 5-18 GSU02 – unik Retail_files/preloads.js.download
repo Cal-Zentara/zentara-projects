@@ -1,0 +1,78 @@
+
+    (function() {
+      var preconnectOrigins = ["https://cdn.shopify.com"];
+      var scripts = ["/cdn/shopifycloud/checkout-web/assets/c1/polyfills.iRHCMwIP.js","/cdn/shopifycloud/checkout-web/assets/c1/app.Bwh4oZkW.js","/cdn/shopifycloud/checkout-web/assets/c1/esnext-vendor.CnnNClxR.js","/cdn/shopifycloud/checkout-web/assets/c1/browser.CJC2rR84.js","/cdn/shopifycloud/checkout-web/assets/c1/shared-is-shop-pay-active.Bal3Bf7k.js","/cdn/shopifycloud/checkout-web/assets/c1/types-UnauthenticatedErrorModalPayload.DF2b4imu.js","/cdn/shopifycloud/checkout-web/assets/c1/images-payment-icon.C_9SDN8i.js","/cdn/shopifycloud/checkout-web/assets/c1/utilities-shop-discount-offer.CFYl46Ey.js","/cdn/shopifycloud/checkout-web/assets/c1/phone-phoneCountryCode.r6mjoTwW.js","/cdn/shopifycloud/checkout-web/assets/c1/shared-unactionable-errors.Co-JjdIE.js","/cdn/shopifycloud/checkout-web/assets/c1/helpers-installmentsNotSupportedForAddress.C-2TWCjd.js","/cdn/shopifycloud/checkout-web/assets/c1/NotFound.Spm6mbfg.js","/cdn/shopifycloud/checkout-web/assets/c1/FullScreenBackground.ui6DbM09.js","/cdn/shopifycloud/checkout-web/assets/c1/graphql-ShopPayCheckoutSessionQuery.ByratjbQ.js","/cdn/shopifycloud/checkout-web/assets/c1/helpers-setAddressErrors.BoFj_A9B.js","/cdn/shopifycloud/checkout-web/assets/c1/types-index.BoP0EIpN.js","/cdn/shopifycloud/checkout-web/assets/c1/images-flag-icon.C_eXYJRt.js","/cdn/shopifycloud/checkout-web/assets/c1/locale-en.C72jX7Qr.js","/cdn/shopifycloud/checkout-web/assets/c1/page-OnePage.C5rQfj9T.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useWalletsTimeout.Bj_YBrNS.js","/cdn/shopifycloud/checkout-web/assets/c1/remember-me-hooks.CiOsqpbn.js","/cdn/shopifycloud/checkout-web/assets/c1/MarketsProDisclaimer.CFOoclcP.js","/cdn/shopifycloud/checkout-web/assets/c1/SplitDeliveryMerchandiseContainer.B6vO3AQd.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useUiComponentsColorContrast.FpAVtjL1.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useUnauthenticatedErrorModal.D7ZLgVTj.js","/cdn/shopifycloud/checkout-web/assets/c1/ChangeCompanyLocationLink.C-Tmbiwb.js","/cdn/shopifycloud/checkout-web/assets/c1/WalletsSandbox-WalletSandbox.DwNWI7Cd.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useForceShopPayUrl.Bctho1ED.js","/cdn/shopifycloud/checkout-web/assets/c1/GooglePayButton-index.uZoYhYVS.js","/cdn/shopifycloud/checkout-web/assets/c1/ShippingGroupsSummaryLine.h9aGqBYn.js","/cdn/shopifycloud/checkout-web/assets/c1/StackedMerchandisePreview.BHI9hPBG.js","/cdn/shopifycloud/checkout-web/assets/c1/AutocompleteField-hooks.CJqDk5-S.js","/cdn/shopifycloud/checkout-web/assets/c1/LocalizationExtensionField.CeGZ4CTU.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useShopPayPaymentRequiredMethod.DzTWCxu2.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useUpdateCheckoutAddress.BPoWO5bu.js","/cdn/shopifycloud/checkout-web/assets/c1/WalletLogo.D3IaDqsi.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useGeneralPaymentErrorMessage.BRHWb46G.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useShowShopPayOptin.Bj_pqOrh.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useShowCreateMoreAccountsGdprTreatment.GdQ2Q6mJ.js","/cdn/shopifycloud/checkout-web/assets/c1/Section.CvZ6P1b1.js","/cdn/shopifycloud/checkout-web/assets/c1/MobileOrderSummary.DbKvmzuo.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useOnePageFormSubmit.KpFOnZOL.js","/cdn/shopifycloud/checkout-web/assets/c1/PayPalOverCaptureInfoBanner.CB3ofmWJ.js","/cdn/shopifycloud/checkout-web/assets/c1/useShopPayButtonClassName.Dqp9V48i.js","/cdn/shopifycloud/checkout-web/assets/c1/hooks-useShopPayCheckoutGqlVersion.CEETSlO-.js","/cdn/shopifycloud/checkout-web/assets/c1/utilities-get-negotiation-input.DtGwVfaJ.js","/cdn/shopifycloud/checkout-web/assets/c1/shop-cash-constants.C0EVa7WW.js","/cdn/shopifycloud/checkout-web/assets/c1/PaymentErrorBanner.DExMIvi-.js","/cdn/shopifycloud/checkout-web/assets/c1/StockProblems-StockProblemsLineItemList.CcsYl9V3.js","/cdn/shopifycloud/checkout-web/assets/c1/DutyOptions.DRf5U9vS.js","/cdn/shopifycloud/checkout-web/assets/c1/ShipmentBreakdown.B5VXpUyb.js","/cdn/shopifycloud/checkout-web/assets/c1/MerchandiseModal.BN08141o.js","/cdn/shopifycloud/checkout-web/assets/c1/extension-targets-shipping-options.BZRxSYcE.js","/cdn/shopifycloud/checkout-web/assets/c1/ShippingMethodSelector.CzEw9ls3.js","/cdn/shopifycloud/checkout-web/assets/c1/SubscriptionPriceBreakdown.CYL0X94E.js","/cdn/shopifycloud/checkout-web/assets/c1/assets-index.msVqe5dh.js"];
+      var styles = ["/cdn/shopifycloud/checkout-web/assets/c1/assets/app.DQm2XSFQ.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/is-shop-pay-active.Bz45BrAn.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/UnauthenticatedErrorModalPayload.CO286Meg.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/FullScreenBackground.B_iZlQze.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/index.DgE9h97U.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/OnePage.Du-yF2xV.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/SplitDeliveryMerchandiseContainer.CRDql5Io.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/LocalizationExtensionField.DSgaD89Q.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/MobileOrderSummary.CqVkJv9Z.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/useOnePageFormSubmit.CFcgLtAD.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/WalletLogo.DSXJIrkc.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/ChangeCompanyLocationLink.uqpm88mq.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/Section.CU18S7Ap.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/DutyOptions.LcqrKXE1.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/PayPalOverCaptureInfoBanner.CuS5ve3d.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/WalletSandbox.CnR7qNLY.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/useShopPayButtonClassName.Ho_Bkwiw.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/ShippingMethodSelector.B0hio2RO.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/SubscriptionPriceBreakdown.BSemv9tH.css","/cdn/shopifycloud/checkout-web/assets/c1/assets/StackedMerchandisePreview.D6OuIVjc.css"];
+      var fontPreconnectUrls = [];
+      var fontPrefetchUrls = [];
+      var imgPrefetchUrls = ["https://cdn.shopify.com/s/files/1/0089/6840/5073/files/UNIK-LOGO_x320.png?v=1613741852"];
+
+      function preconnect(url, callback) {
+        var link = document.createElement('link');
+        link.rel = 'dns-prefetch preconnect';
+        link.href = url;
+        link.crossOrigin = '';
+        link.onload = link.onerror = callback;
+        document.head.appendChild(link);
+      }
+
+      function preconnectAssets() {
+        var resources = preconnectOrigins.concat(fontPreconnectUrls);
+        var index = 0;
+        (function next() {
+          var res = resources[index++];
+          if (res) preconnect(res, next);
+        })();
+      }
+
+      function prefetch(url, as, callback) {
+        var link = document.createElement('link');
+        if (link.relList.supports('prefetch')) {
+          link.rel = 'prefetch';
+          link.fetchPriority = 'low';
+          link.as = as;
+          if (as === 'font') link.type = 'font/woff2';
+          link.href = url;
+          link.crossOrigin = '';
+          link.onload = link.onerror = callback;
+          document.head.appendChild(link);
+        } else {
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', url, true);
+          xhr.onloadend = callback;
+          xhr.send();
+        }
+      }
+
+      function prefetchAssets() {
+        var resources = [].concat(
+          scripts.map(function(url) { return [url, 'script']; }),
+          styles.map(function(url) { return [url, 'style']; }),
+          fontPrefetchUrls.map(function(url) { return [url, 'font']; }),
+          imgPrefetchUrls.map(function(url) { return [url, 'image']; })
+        );
+        var index = 0;
+        function run() {
+          var res = resources[index++];
+          if (res) prefetch(res[0], res[1], next);
+        }
+        var next = (self.requestIdleCallback || setTimeout).bind(self, run);
+        next();
+      }
+
+      function onLoaded() {
+        try {
+          if (parseFloat(navigator.connection.effectiveType) > 2 && !navigator.connection.saveData) {
+            preconnectAssets();
+            prefetchAssets();
+          }
+        } catch (e) {}
+      }
+
+      if (document.readyState === 'complete') {
+        onLoaded();
+      } else {
+        addEventListener('load', onLoaded);
+      }
+    })();
+  

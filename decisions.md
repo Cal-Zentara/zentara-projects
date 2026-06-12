@@ -118,6 +118,30 @@ Learned building UNIK's content graphics, June 5 2026. Applies to any social gra
 **Why:** Locks a consistent, on-brand look across all UNIK social graphics.
 **When:** Every UNIK social graphic or carousel.
 
+**Rule:** For a tip / educational carousel, do TWO things: (1) build it as a designed object, not a plain tips list (a certificate, a survival guide, a care card, a checklist, a field guide), and (2) make the tips insider-level, the stuff only a pro would tell you, never the obvious advice everyone already knows. Obvious tips do not earn the save; insider tips do.
+**Why:** Nail'd It Week 1 carousel (June 7 2026) got a 10/10 from Cal once it became a "Gel Survival Guide" (Playfair italic keyword, gold seal, kicker labels, committed all the way) AND the weak obvious tips (don't use nails as tools, don't pick a lift) were swapped for sharper ones (hot water lifts gel, never file your own grown out edge). Design AND subject both have to clear the bar.
+**When:** Any tip, how-to, or educational carousel for any client.
+
+**Rule:** Do not frame a service-business graphic around a "warranty" or "guarantee" concept. It implies a promise the business may not want to make and could invite free-fix expectations or complaints.
+**Why:** Nail'd It Week 1 carousel (June 7 2026) started as a "3 week warranty" concept; Cal flagged he did not want to imply a guarantee. Reframed to "Gel Survival Guide," which is just as fun with zero liability.
+**When:** Any social graphic for a service business (salon, trades, etc.).
+
+**Rule:** Every carousel built as an HTML mockup MUST ship with download controls baked in: a "Download all" button plus a "Download" button under each slide, each exporting that slide as its own 1080x1080 PNG (1:1). Use html2canvas; to capture at full res, clone the slide, strip the preview transform/scale, and render at scale 1, width/height 1080. Inline any logo or photo as a base64 data URI so the export never taints the canvas. Name files clearly: client-week-slideN-role.png.
+**Why:** Cal posts the slides himself and needs to download finished, ready-to-post PNGs straight from the page. Built for Nail'd It Week 1 carousel (June 7 2026); Cal asked for it on every carousel from now on.
+**When:** Every carousel, every client, every time.
+
+**Rule:** Every social-graphic / carousel HTML mockup MUST also be a lightweight in-browser editor, baked in by default (do not wait to be asked). Each element on the card is: click-to-select (dashed outline), drag-to-move, drag-a-corner-dot-to-resize, double-click-to-edit-text, and deletable (Delete key + an × button + a "Delete selected" button). Add a "Reset" button (reload). Implementation that works: on load (after document.fonts.ready) "freeze" every editable element to absolute positioning — MEASURE ALL rects first, THEN apply position:absolute in a second pass (one-pass shifts each sibling as you go and piles everything at the top). Resize scales width, and for text also font-size, by the same factor. Download = html2canvas(slide,{scale:2}) on the live card after deselecting, so it captures exactly what Cal arranged (no separate hand-tuned export clone needed).
+**Why:** Cal (June 7 2026): "give me the ability to change and move and resize, delete anything on the card before downloading, so I don't have to tell you every single time." He should never have to ask me to nudge pixels — he adjusts the layout himself and downloads.
+**When:** Every social graphic / carousel mockup, every client, from now on.
+
+**Rule:** A text-only graphic on a colored card tops out around a 6.5–7 with Cal, "okay, not inspired." To get to an 8+, give it (1) a REAL photo as a hero element, ideally a full-height photo COLUMN down one side with the content in an editorial split beside it (magazine layout), and (2) ONE high-contrast focal element (e.g. a dark terracotta box on a light card) so the eye has somewhere to land. Do this from the START on menus, lists, and info graphics, don't ship the flat all-one-tone version first and make Cal climb.
+**Why:** Nail'd It Week 1 Service menu (June 7 2026). The flat blush menu got a 6.5 ("not inspired"); a full-dark redo dropped to 6 ("whole redo, just needed contrast"); restoring the light menu + a terracotta VIP box hit 7.5; adding her real strawberry-nail photo as a left column made it an 8 ("looks fun and has contrast"). The photo + one contrast block is the lift. Use her real nail photos (never AI, never stock).
+**When:** Any menu, list, tips, or info graphic for any client, especially ones that would otherwise be text on a colored card.
+
+**Rule:** Animated DOODLE REELS around real photos are FREE — no Higgsfield, no credits. Build one HTML page with a deterministic `renderFrame(t)` function (doodles = SVG strokes that draw in, pop in, and "boil" with a tiny 8x-per-second jitter so they feel hand drawn), screenshot it frame by frame with Playwright at 30fps, stitch with FFmpeg. The real photo is never touched by AI, motion is pure code. Always render per-scene TEST frames and check doodle placement/label contrast before the full render. Master template: `CreativeStudio/clients/NaildItSpa/outputs/doodle-reel/`.
+**Why:** Cal (June 12 2026): "looks really good, I love this idea" — after three Higgsfield gens failed that same day. Doodles around an untouched photo gives motion + personality with zero AI risk and zero credit spend, and the format is reusable for any client (any 3 photos in, doodle reel out).
+**When:** Any reel or animated post built from real client photos, any client. Reach for this BEFORE any AI video gen when the photos are the star.
+
 <!-- Add rules here as you redirect Claude during builds. Format:
 **Rule:** [what to do]
 **Why:** [reason you made the call]

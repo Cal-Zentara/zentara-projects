@@ -1,0 +1,86 @@
+[
+  {
+    "id": "abd7b992-b7ad-447d-83a5-1961d5b8d3e9",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_222436_abd7b992-b7ad-447d-83a5-1961d5b8d3e9.mp4",
+    "created_at": 1781216676.332964,
+    "params": {
+      "width": 854,
+      "height": 480,
+      "prompt": "An infinite pure white seamless studio, bright even softbox daylight, soft natural shadows under sneakers. A stadium rock anthem builds: stomp stomp clap. Every footfall lands on the stomps, every hard cut lands on the clap. The camera is handheld and alive, reacting to each boy like a concert cameraman, full body always in frame, the pants always center frame. Six boys enter one at a time, each with ROCK STAR attitude, like they are walking out to perform a sold out show, and every entrance is COMPLETELY different. Nobody stops moving, nobody poses, nobody looks into the lens, every shot ends mid action. Cut one: a five year old Latino boy, short dark hair, light blue polo slightly big on him, deep navy pull on pants, white sneakers, strutting in with a bounce, the most serious game face a five year old can make, tiny body, headliner energy, camera tracking low beside him. Cut two: a seven year old Black boy with a short fade, white polo, true black pull on pants, walking in slow and smooth while rolling his shoulders and cracking his neck side to side like he is about to go on, camera pushing in with him. Cut three: an eight year old boy, brown hair, white polo tucked in showing the elastic waistband, heather grey pull on pants, walking in while throwing one big air guitar windmill strum mid stride, a tease of the show coming, camera bouncing on his beat. Cut four: a ten year old, light auburn hair, white polo, medium blue pull on pants, sprinting in and dropping into a rock star KNEE SLIDE across the white floor, fists clenched, fabric holding strong, camera whipping sideways to catch it, popping back up as the shot ends. Cut five: a husky ten year old, light blue polo, khaki pull on pants, walking in with arms spreading wide like he is soaking up a roaring invisible crowd, head nodding hard on the beat, camera circling him. Final cut: a fourteen year old Asian boy, athletic, black polo, DARK FOREST GREEN pull on pants, deep dark green, never light green, never olive, the frontman arrival, long slow strides as one fist rises with the building riff, the cut hitting while the fist is still rising and his feet still moving, never frozen. Every pair of pants: flat front, NO crease, soft wide elastic waistband, straight relaxed leg, true accurate colors. The pants are the hero of every shot. Faces intense and alive, expressions shifting, never a held grin, no mugging at the lens. Real skin, real fabric physics, film grain. Not AI, not retouched. No text, no captions, no words or letters anywhere on screen.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "daacf4f2-9275-47d5-a039-8707878d58b3",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/daacf4f2-9275-47d5-a039-8707878d58b3.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "617dd557-aab7-47ab-8e01-d667107e386f",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/617dd557-aab7-47ab-8e01-d667107e386f.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "fc446f4f-11f2-4ecb-8d76-ef74677f5309",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/fc446f4f-11f2-4ecb-8d76-ef74677f5309.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "c13de655-da63-4c4e-bb34-d81194924276",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/c13de655-da63-4c4e-bb34-d81194924276.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "2214c651-39fc-4e14-b36e-7ff4b05d9617",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/2214c651-39fc-4e14-b36e-7ff4b05d9617.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "2f4f3d55-2cf7-4b85-b621-f886fa143c83",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/2f4f3d55-2cf7-4b85-b621-f886fa143c83.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "a8bafeb4-ace2-46c3-858c-389f321b83c9",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/a8bafeb4-ace2-46c3-858c-389f321b83c9.mp3",
+            "type": "audio_input"
+          },
+          "role": "audio"
+        }
+      ],
+      "duration": 15,
+      "resolution": "480p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "fast",
+      "model": "seedance_2_0_fast"
+    }
+  }
+]

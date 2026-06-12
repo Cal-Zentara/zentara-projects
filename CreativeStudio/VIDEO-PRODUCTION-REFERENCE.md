@@ -26,6 +26,7 @@ These are the lessons that separate AI slop from real productions. Apply on ever
 11. **Prompts describe what the CAMERA does, not just what's on screen.** "Slow push-in" = caption. "Camera holds, then drifts forward 2 feet as she exhales" = direction.
 12. **Write personality traits as words into the prompt** ("arrogant," "calm," "tired," "defeated"). Seedance reads emotion. Skip this = blank-face character.
 13. **Write dialogue lines INSIDE the prompt.** Seedance generates the delivery. Don't describe the line — write the line.
+13a. **NEVER put timestamps on a dialogue line. HARD RULE.** Telling Seedance "say this line between 7 and 12 seconds" makes it hallucinate extra filler lines and act robotic. Give it the line plus the emotion, then let it breathe. Don't direct delivery second by second. (From JS Films / Agent One walkthrough, June 9 2026 — his single biggest Seedance dialogue lesson.)
 14. **Write PHYSICS, not actions.** "Punches monster" = caption. "Body folds backwards, debris cascades, dust kicks up" = impact. Same for soft moments: "shoulders drop, breath leaves slowly" beats "she sits down tired."
 15. **For heavy movement, describe the consequence** (ground buckles, dust rises). Makes weight feel real instead of floaty.
 
@@ -105,8 +106,9 @@ These apply to every client. Client-specific NSFW words and prompt traps live in
 | **Higgsfield MCP image tools are text-to-image only** | No reference image input via MCP. CLI only. |
 | **Higgsfield app vs Cloud are separate** | higgsfield.ai (app subscription) and cloud.higgsfield.ai (developer API) have separate credit pools. CLI and MCP both use app subscription credits. |
 | **Seedance 2.0 minimum duration is 4 seconds** | `--duration 3` errors. Minimum is 4. |
+| **Seedance 2.0 full param sheet** (verified via `higgsfield model get seedance_2_0`, June 10 2026) | `aspect_ratio`: auto/16:9/9:16/4:3/3:4/1:1/21:9 (default 16:9) · `duration`: integer, default 5 · `genre`: auto/action/horror/comedy/noir/drama/epic · `medias`: ARRAY — multiple reference images allowed in one gen · `mode`: **std or fast** (default std) · `resolution`: 480p/720p/1080p (default 720p). To re-verify any model's params: `higgsfield model get <model>` — free, no credits. Note: bare `hf` is the HuggingFace CLI on this machine, always type `higgsfield` in full. |
 | **Never freeze-extend a video to match a longer VO** | `tpad` freeze frames always look bad. Fix: lock VO duration FIRST, then set `--duration` on the Seedance gen to match. Regenerate the video — never pad it. |
-| **`--generate_audio` not supported on Seedance 2.0** | No audio flag exists. Strip audio post-generation with FFmpeg: `ffmpeg -i input.mp4 -an output.mp4` |
+| **`--generate_audio` not supported on Seedance 2.0** | That specific flag doesn't exist (it's `marketing_studio_video` only). But `--audio ./track.mp3` DOES work to bake in your own music track. To strip audio instead: `ffmpeg -i input.mp4 -an output.mp4` |
 | **`--start-image` always locks first frame** | No "reference only" mode. When passed, the video starts from that exact image frame. Use it when you want a specific object/character to appear at the start; omit for lifestyle scenes. |
 | **Video text/spelling is unreliable** | AI garbles label text on generated assets. Accept it for now — resolved when real sticker product photos are used as reference. |
 | **Tracker log.js deprecation warning** | `[DEP0040] punycode` — harmless, logging still works. |

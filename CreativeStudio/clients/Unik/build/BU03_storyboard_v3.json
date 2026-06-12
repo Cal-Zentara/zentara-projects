@@ -1,0 +1,53 @@
+[
+  {
+    "id": "cf23251d-e431-4e49-a35e-213aea65061b",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_224926_cf23251d-e431-4e49-a35e-213aea65061b.png",
+    "created_at": 1781218166.818382,
+    "params": {
+      "width": 1376,
+      "height": 768,
+      "aspect_ratio": "16:9",
+      "resolution": "1k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "5c38a42a-0de6-4bce-a7c8-487cd9875adb",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/5c38a42a-0de6-4bce-a7c8-487cd9875adb.png",
+          "type": "media_input"
+        },
+        {
+          "id": "71316c19-19aa-465d-8796-31ff302a0a58",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/71316c19-19aa-465d-8796-31ff302a0a58.png",
+          "type": "media_input"
+        },
+        {
+          "id": "7c880a6b-9a95-4860-9878-6318a70b31ab",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/7c880a6b-9a95-4860-9878-6318a70b31ab.png",
+          "type": "media_input"
+        },
+        {
+          "id": "325bbf18-c6c1-447f-815a-c960f39e715c",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/325bbf18-c6c1-447f-815a-c960f39e715c.png",
+          "type": "media_input"
+        },
+        {
+          "id": "5d2d63d5-a43f-4a9e-9bdc-a16c125b64d2",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/5d2d63d5-a43f-4a9e-9bdc-a16c125b64d2.png",
+          "type": "media_input"
+        },
+        {
+          "id": "cd490416-c3df-45b9-8a53-c91a81f4ead5",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/cd490416-c3df-45b9-8a53-c91a81f4ead5.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Use the six boys from the reference images, the SAME six kids with the same faces, same hair, same polos, and the EXACT same pants in every panel: the small Latino boy in the light blue polo and deep navy pull on pants, the Black boy in the white polo and true black pull on pants, the brown haired boy in the white polo and heather grey pull on pants, the auburn haired boy in the white polo and medium blue pull on pants, the husky boy in the light blue polo and khaki pull on pants, and the teenage Asian boy in the black polo and dark forest green pull on pants, deep dark green never light green. Each boy appears exactly ONCE per panel, never duplicated, no boy repeated within a panel. Build an 8 panel video storyboard, a clean 4x2 grid with thin white gutters. Every panel: infinite pure white seamless studio, bright even daylight, soft shadows under sneakers. The boys perform as a band with NO instruments anywhere, every hand completely EMPTY, miming on pure air, no guitars, no drums, no microphones, no objects. The song is an instrumental: no singing, no talking, no microphone gestures, calm natural faces. Panel 1: wide shot, all six mid performance spread across the white space, every hand empty, everyone mid move. Panel 2: the small Latino boy front and center DANCING his heart out, mid headbang, arms swinging wild, the band hype man. Panel 3: the teenage boy leaning way back, fingers flying over empty air at his waist in a strumming motion. Panel 4: the teenage boy and the auburn haired boy back to back, both strumming empty air, leaning on each other. Panel 5: the Black boy cool and smooth, head down in a groove, fingers plucking empty air at his hip. Panel 6: the husky boy mid swing, both empty fists hammering down at invisible space in front of him, polo bouncing. Panel 7: the brown haired boy mid windmill, one arm swept high overhead, empty hand wide open. Panel 8: the final hit of the song, all SIX boys in one frame, exactly one of each pant color, navy, black, grey, blue, khaki, forest green, each boy caught mid final move, the small boy with both fists raised in triumph, feet on the ground, nobody jumping. Photorealistic, real kids, real fabric, film grain, documentary texture. The pants sharp and accurate in every panel: flat front, no crease, soft elastic waistbands, true colors matching the reference images exactly. No text, no labels, no numbers, no words anywhere."
+    }
+  }
+]

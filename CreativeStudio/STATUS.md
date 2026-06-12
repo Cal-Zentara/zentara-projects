@@ -1,6 +1,15 @@
 # STATUS — CreativeStudio
 
-*Last updated: 2026-06-05 — UNIK Amazon storefront banner shipped*
+*Last updated: 2026-06-09 — Salvia Lion content strategy + Post 6 live*
+
+---
+
+## Completed this session (2026-06-09 — Salvia Lion: Post 6 live + content freshness rules)
+
+- LIVE: "The hidden cost of always putting others first" carousel (9 slides) on @salvialion. New high-contrast DARK premium-editorial style, glowing teal+purple lion acting out each line. Logged as Post 6 in `CONTENT-TRACKER.md` + `clients/Salvia-lion/work-log.md`.
+- Studied @mindset.therapy (11.4M followers) live via Chrome to learn what works. Their engine: **name an invisible feeling out loud** so the right person feels seen and forwards it (built to be SHARED, not commented — their 36M reel had 257K shares vs 2.8K comments).
+- Locked content rule: **follow the IDEA, not the format** — each carousel invents its own shape, never a reused template. Folded into `9-WEEK-ROADMAP.md` (learning #6) + `content-ideas-bank.md`.
+- Added two freshness rules to `content-ideas-bank.md`: (1) **EMOTIONAL RANGE** — stop drawing from the "you absorb others' energy / drained" well every time (7 other wells listed; never two posts from the same well in a row). (2) **Found-message format freshness** — lock the frame (one clean line on a real humble surface, candid, no brand), keep fresh by rotating the surface + one human touch; keep it REAL not pretty (don't force her pastel palette, keep her in the voice + warm settings).
 
 ---
 
@@ -68,13 +77,12 @@ AI-powered creative studio using Higgsfield CLI to generate product ads and cont
 | Unik | **Active — sole focus** | 6 ad videos + 5 social graphics + Amazon storefront banner (3000x1200) made. Landing page live. Waiting on Cynthia's feedback + paid engagement. |
 | Garlic High | **Archived** (Jun 6 2026) | Moved to `clients/_archive/Garlic-high/`. Finished work (yellow commercial + anime + UGC Clip 1) kept in its FINAL/outputs folders. UGC Clip 2 never finished. |
 | Nail'd It Spa | Parked — blocked | Waiting on 5 real salon photos from Dalena. See `clients/NaildItSpa/CLAUDE.md`. |
-| Salvia Lion | Parked — waiting on stickers | Post 1 Reiki content approved. Video pending. See `clients/Salvia-lion/CLAUDE.md`. |
+| Salvia Lion | **Unblocked** (stickers arrived Jun 9 2026) | Post 1 Reiki content approved. Stickers in hand — hero shot redo + video can now proceed. See `clients/Salvia-lion/CLAUDE.md`. |
 | Lucy (@xolucy.pearls) | Parked | AI influencer for Nail'd It Spa. Character locked. 4 prompts ready. |
 | Cal (Zentara) | Parked | Soul ID made, voice clone done. Blocked on facial movement fix. |
 
 ## Waiting on
 - **Unik:** Cynthia's feedback on landing page + paid engagement discussion
-- **Salvia Lion:** stickers to arrive for hero shot redo
 - **Nail'd It Spa:** 5 real salon photos from Dalena
 
 ## What's next

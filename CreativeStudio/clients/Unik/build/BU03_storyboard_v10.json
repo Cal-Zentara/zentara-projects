@@ -1,0 +1,58 @@
+[
+  {
+    "id": "50f0bb93-f055-42f7-bcf0-a0095c11c54d",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/hf_20260611_233738_50f0bb93-f055-42f7-bcf0-a0095c11c54d.png",
+    "created_at": 1781221058.41072,
+    "params": {
+      "width": 1376,
+      "height": 768,
+      "aspect_ratio": "16:9",
+      "resolution": "1k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "af6d45d1-4bf5-4d52-af4d-d052ebcb3bb3",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/af6d45d1-4bf5-4d52-af4d-d052ebcb3bb3.png",
+          "type": "media_input"
+        },
+        {
+          "id": "1415fbf4-439a-4c50-84f8-d6844aa5e60c",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/1415fbf4-439a-4c50-84f8-d6844aa5e60c.png",
+          "type": "media_input"
+        },
+        {
+          "id": "5f1b68cc-b0c3-46fd-b282-6fdd8c6ed60d",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/5f1b68cc-b0c3-46fd-b282-6fdd8c6ed60d.png",
+          "type": "media_input"
+        },
+        {
+          "id": "c922f3b0-045e-463e-8ad0-3240a7990f23",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/c922f3b0-045e-463e-8ad0-3240a7990f23.png",
+          "type": "media_input"
+        },
+        {
+          "id": "da0d5198-8d49-46f8-bfbc-c96e29351e70",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/da0d5198-8d49-46f8-bfbc-c96e29351e70.png",
+          "type": "media_input"
+        },
+        {
+          "id": "a039bbdb-7ef3-424a-a7cc-05caca187c6a",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/a039bbdb-7ef3-424a-a7cc-05caca187c6a.png",
+          "type": "media_input"
+        },
+        {
+          "id": "f01cdd58-6de0-4e18-8a04-7992f623e6df",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3CfpBCi3mGpl36780z9cawWE9H8/f01cdd58-6de0-4e18-8a04-7992f623e6df.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "The FIRST reference image is the master band photo: six boys as a kid rock band on white, cables on the floor. Build a 6 panel video storyboard from it, 3x2 grid, thin white gutters. Every panel uses the SAME six boys, same faces, same polos, same pants, same instruments and same instrument colors as the master photo: cherry red bass, white guitar, sunburst orange guitar, matte black guitar, kid sized drum kit. Copy the boys' faces exactly from the other reference photos. Same white seamless studio in every panel. Nobody looks at the camera, everyone is lost in the song, no posed grins, no microphones, nobody sings.\r\n\r\nPanel 1: the full band wide, exactly like the master photo, everyone mid song.\r\n\r\nPanel 2: the small Latino boy in the light blue polo and navy pants front and center, mid dance move, one fist up, pure joy.\r\n\r\nPanel 3: the auburn haired boy in the medium denim blue pants, never royal blue, sitting on the floor shredding his sunburst orange guitar, rocking back, cables around him.\r\n\r\nPanel 4: the big boy in the light blue polo and khaki pants hammering his kid sized drum kit, sticks mid swing, full body visible beside the kit, pants in view.\r\n\r\nPanel 5: the Asian teenager in the black polo and dark forest green pants, deep dark green never light green, leaning way back mid solo on his matte black guitar, while the brown haired boy in grey pants throws a windmill strum on his white guitar behind him.\r\n\r\nPanel 6: the final note, the full band wide in the same staging as panel 1, every boy striking his last hit at once, the small boy with both fists raised, feet on the ground, nobody jumping, everyone mid move.\r\n\r\nRules: pants always fully visible, flat front, no crease, soft elastic waistbands, true colors matching the reference photos. Each boy appears exactly once per panel, exactly six boys in panels 1 and 6. Photorealistic, real fabric, film grain, documentary texture. No text anywhere."
+    }
+  }
+]
