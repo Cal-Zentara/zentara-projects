@@ -31,7 +31,7 @@ Social content production for Dalena Huynh's nail salon in Stanton, CA (Cal post
 - **Salon photos saved**: `assets/salon-storefront.png`, `assets/salon-interior.png` (interior has real customers — consent/crop needed before any posting use).
 - **Photo log fixed**: IMG_9234 is Halloween (mummy) — moved to do-not-use; Christmas set2.x also flagged.
 - **New hard rules added to CreativeStudio CLAUDE.md**: video prompts ~2,500 chars + always show char/word count; every long prompt gets a self-rating scorecard (Emotion/Hook/Overall + situational).
-- **Google Sheet tracker BROKEN**: OAuth token expired (invalid_grant). Fix = re-auth in tracker/ (auth.js), then backfill the two June 10 Seedance gens. Cal has a paste-ready fix prompt for another session.
+- ~~Google Sheet tracker BROKEN~~ **FIXED June 12** (Cal re-authed). All unlogged gens backfilled: 2x June 10 grievance clips + June 12 paparazzi, nano frame, gpt storefront, AND an orphan June 12 paparazzi duplicate (the first piped attempt fired the gen before the logger crashed — double charge, lesson: if the logger pipe errors, CHECK `higgsfield generate list` before re-running the gen).
 
 ## What changed June 10 (evening session)
 - **5-agent web research pull DONE** — algorithm signals (shares > saves > likes, one job per post), hooks, summer/fall/Tết trend calendar, competitor gap (lane is empty — coastal accounts + Yelp-only locals), comment-to-DM reality, Google-first booking path. All findings + sources saved in `content-playbook.md`.
@@ -47,12 +47,10 @@ Social content production for Dalena Huynh's nail salon in Stanton, CA (Cal post
 - Summer Menu posted June 11 (bracket tags). **NO-HASHTAG / brackets rule locked into CreativeStudio CLAUDE.md** (every caption, every client).
 
 ## What's next
-1. **Tomorrow (June 11): post Summer Menu** — but FIRST text Dalena: confirm the 4 unconfirmed prices (Gel Mani $35, Happy Pedi $32, Spa Pedi $25, VIP $90) + is the FREE sugar scrub with pedicures still live?
-2. **Friday (June 12): post Bingo**
-3. **Week 2:** 47-screenshots found message (gen on Cal's go) + hygiene trust post + pedicure carousel — full plan in `content-playbook.md`
-4. Fix the Google tracker auth + backfill the 2 unlogged June 10 Seedance gens
-5. Get real footage moving: send Dalena the 2-minute shot list (process reels are the #1 booking driver per research and can't be faked)
-6. Optional: revive the UGC reel concept ONLY if Dalena changes her mind on AI people
+1. **Week 2:** 47-screenshots found message (gen on Cal's go) + hygiene trust post + pedicure carousel — full plan in `content-playbook.md`. Bingo is built and banked for a future Community slot.
+2. **Watch the doodle reel's numbers vs the stills** — if it wins (it should), doodle reel becomes a weekly fixture; photo bank + template are ready.
+3. Get real footage moving: send Dalena the 2-minute shot list (process reels are the #1 booking driver per research and can't be faked) + ask her for one vertical phone photo of every fresh set (photo bank is down to ~5 usable)
+4. Optional: revive the UGC reel concept ONLY if Dalena changes her mind on AI people
 
 ## Parked concepts
 - **"Start With Your Nails"** — Strawberry nail set, summer day unfolds to match. Parked: AI scenes look fake, real photos not polished enough. Needs real footage.
